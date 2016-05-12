@@ -1531,6 +1531,11 @@ body {
     padding: 20px 0;
 }
 
+.custom-logo-link {
+    float: left;
+    margin-right: 10px;
+}
+
 .logo,
 .site-title-wrapper,
 .logo-wrapper {
