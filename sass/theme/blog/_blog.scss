@@ -150,3 +150,18 @@ article .entry-content {
         width: 100%;
     }
 }
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+  background: #00a9e0 none repeat scroll 0 0;
+  border-color: #00a9e0;
+  color: #fff;
+  padding: 4px 10px;
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+  padding: 3px 10px;
+}
+
+.wp-pagenavi .pages {
+  color: #8c8c8c;
+}
