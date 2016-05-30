@@ -50,9 +50,11 @@ get_header(); ?>
 							 get_template_part( 'template-parts/content', get_post_format() );
 						  ?>
 
-					   <?php endwhile; ?>
+						<?php endwhile;
+					   
+						get_template_part( 'navigation', 'none' );
 
-					<?php else : ?>
+						else : ?>
 
 					   <?php get_template_part( 'template-parts/content', 'none' ); ?>
 

@@ -30,7 +30,8 @@ get_header(); ?>
 		<main id="main" class="clearfix <?php echo esc_attr($estore_layout); ?>">
 			<div class="tg-container">
 				<div id="primary">
-					<?php while ( have_posts() ) : the_post(); ?>
+					<?php
+					while ( have_posts() ) : the_post(); ?>
 
 						<?php get_template_part( 'template-parts/content', 'page' ); ?>
 
@@ -39,9 +40,10 @@ get_header(); ?>
 						if ( comments_open() || get_comments_number() ) :
 							comments_template();
 						endif;
-						?>
-
-					<?php endwhile; // End of the loop. ?>
+						
+						get_template_part('navigation', 'none');
+						
+					endwhile; // End of the loop. ?>
 				</div> <!-- Primary end -->
 					<?php estore_sidebar_select(); ?>
 			</div>
