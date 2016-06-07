@@ -282,7 +282,7 @@ class eStore_Admin {
 				<li><?php printf(__('<a href="%s" target="_blank">WooCommerce</a>', 'estore'), esc_url('https://wordpress.org/plugins/woocommerce/')); ?></li>
 				<li><?php printf(__('<a href="%s" target="_blank">YITH WooCommerce Wishlist</a>', 'estore'), esc_url('https://wordpress.org/plugins/yith-woocommerce-wishlist/')); ?></li>
 				<li>
-					<?php printf(__('<a href="%s" target="_blank">WMPL</a>', 'estore'), esc_url('https://wpml.org/')); ?>
+					<?php printf(__('<a href="%s" target="_blank">WPML</a>', 'estore'), esc_url('https://wpml.org/')); ?>
 				</li>
 			</ol>
 
