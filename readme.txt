@@ -94,6 +94,12 @@ and we will include it within the theme from next version update.
 
 == Changelog ==
 
+= Version 1.1 - 2016-06-07 =
+* Fix - Compatibility with WPML
+* Fix - Logo alignment for WP Custom Logo
+* Added - Compatibility with WP-Pagenavi
+* Added - About page for theme information
+
 = Version 1.0.9 =
 * Added - Upsell button
 * Added - Support for custom logo introduced in WordPress 4.5
