@@ -23,6 +23,7 @@ class eStore_Admin {
 	 */
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
+		add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
 		add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
 	}
 
@@ -49,10 +50,31 @@ class eStore_Admin {
 	 * Add admin notice.
 	 */
 	public function admin_notice() {
-		global $pagenow;
+		global $estore_version, $pagenow;
 
+		// Let's bail on theme activation.
 		if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
 			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+			update_option( 'estore_admin_notice_welcome', 1 );
+		// No option? Let run the notice wizard again..
+		} elseif( ! get_option( 'estore_admin_notice_welcome' ) ) {
+			add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
+		}
+	}
+
+	/**
+	 * Hide a notice if the GET variable is set.
+	 */
+	public static function hide_notices() {
+		if ( isset( $_GET['estore-hide-notice'] ) && isset( $_GET['_estore_notice_nonce'] ) ) {
+			if ( ! wp_verify_nonce( $_GET['_estore_notice_nonce'], 'estore_hide_notices_nonce' ) ) {
+				wp_die( __( 'Action failed. Please refresh the page and retry.', 'estore' ) );
+			}
+			if ( ! current_user_can( 'manage_options' ) ) {
+				wp_die( __( 'Cheatin&#8217; huh?', 'estore' ) );
+			}
+			$hide_notice = sanitize_text_field( $_GET['estore-hide-notice'] );
+			update_option( 'estore_admin_notice_' . $hide_notice, 1 );
 		}
 	}
 
@@ -61,9 +83,12 @@ class eStore_Admin {
 	 */
 	public function welcome_notice() {
 		?>
-		<div class="updated notice is-dismissible">
-			<p><?php echo sprintf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-welcome' ) ) . '">', '</a>' ); ?></p>
-			<p><a href="<?php echo esc_url( admin_url( 'themes.php?page=estore-welcome' ) ); ?>" class="button" style="text-decoration: none;"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a></p>
+		<div id="message" class="updated estore-message">
+			<a class="estore-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'estore-hide-notice', 'welcome' ) ), 'estore_hide_notices_nonce', '_estore_notice_nonce' ) ); ?>"><?php _e( 'Dismiss', 'estore' ); ?></a>
+			<p><?php printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-welcome' ) ) . '">', '</a>' ); ?></p>
+			<p class="submit">
+				<a class="button-secondary" href="<?php echo esc_url( admin_url( 'themes.php?page=estore-welcome' ) ); ?>"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a>
+			</p>
 		</div>
 		<?php
 	}
@@ -474,7 +499,7 @@ class eStore_Admin {
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'http://themegrill.com/themes/spacious-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'spacious' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'http://themegrill.com/themes/estore-pro/' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'estore' ); ?></a>
 						</td>
 					</tr>
 				</tbody>
