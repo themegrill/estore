@@ -184,3 +184,10 @@ define( 'Estore_ADMIN_IMAGES_URL', get_template_directory_uri() . '/inc/admin/im
  * Design Related Metaboxes
  */
 require get_template_directory() . '/inc/admin/meta-boxes.php';
+
+/**
+ * eStore About Page
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/class-estore-admin.php';
+}
