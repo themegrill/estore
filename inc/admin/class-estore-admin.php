@@ -231,10 +231,10 @@ class eStore_Admin {
 			<div class="return-to-dashboard estore">
 				<?php if ( current_user_can( 'update_core' ) && isset( $_GET['updated'] ) ) : ?>
 					<a href="<?php echo esc_url( self_admin_url( 'update-core.php' ) ); ?>">
-						<?php is_multisite() ? esc_html_e( 'Return to Updates' ) : esc_html_e( 'Return to Dashboard &rarr; Updates' ); ?>
+						<?php is_multisite() ? esc_html_e( 'Return to Updates', 'estore' ) : esc_html_e( 'Return to Dashboard &rarr; Updates', 'estore' ); ?>
 					</a> |
 				<?php endif; ?>
-				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home' ) : esc_html_e( 'Go to Dashboard' ); ?></a>
+				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home' ) : esc_html_e( 'Go to Dashboard', 'estore' ); ?></a>
 			</div>
 		</div>
 		<?php
@@ -305,18 +305,18 @@ class eStore_Admin {
 
 			<p class="about-description"><?php esc_html_e( 'This theme recommends following plugins.', 'estore' ); ?></p>
 			<ol>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/social-icons/' ); ?>" target="_blank"><?php esc_html_e( 'Social Icons', 'spacious' ); ?></a>
-					<?php esc_html_e(' by ThemeGrill', 'spacious'); ?>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/social-icons/' ); ?>" target="_blank"><?php esc_html_e( 'Social Icons', 'estore' ); ?></a>
+					<?php esc_html_e(' by ThemeGrill', 'estore'); ?>
 				</li>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'spacious' ); ?></a>
-					<?php esc_html_e(' by ThemeGrill', 'spacious'); ?>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/easy-social-sharing/' ); ?>" target="_blank"><?php esc_html_e( 'Easy Social Sharing', 'estore' ); ?></a>
+					<?php esc_html_e(' by ThemeGrill', 'estore'); ?>
 				</li>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/contact-form-7/' ); ?>" target="_blank"><?php esc_html_e( 'Contact Form 7', 'spacious' ); ?></a></li>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/wp-pagenavi/' ); ?>" target="_blank"><?php esc_html_e( 'WP-PageNavi', 'spacious' ); ?></a></li>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'spacious' ); ?></a></li>
-				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/yith-woocommerce-wishlist/' ); ?>" target="_blank"><?php esc_html_e( 'YITH WooCommerce Wishlist', 'spacious' ); ?></a>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/contact-form-7/' ); ?>" target="_blank"><?php esc_html_e( 'Contact Form 7', 'estore' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/wp-pagenavi/' ); ?>" target="_blank"><?php esc_html_e( 'WP-PageNavi', 'estore' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/woocommerce/' ); ?>" target="_blank"><?php esc_html_e( 'WooCommerce', 'estore' ); ?></a></li>
+				<li><a href="<?php echo esc_url( 'https://wordpress.org/plugins/yith-woocommerce-wishlist/' ); ?>" target="_blank"><?php esc_html_e( 'YITH WooCommerce Wishlist', 'estore' ); ?></a>
 				</li>
-				<li><a href="<?php echo esc_url( 'https://wpml.org/' ); ?>" target="_blank"><?php esc_html_e( 'WPML', 'spacious' ); ?></a>
+				<li><a href="<?php echo esc_url( 'https://wpml.org/' ); ?>" target="_blank"><?php esc_html_e( 'WPML', 'estore' ); ?></a>
 				</li>
 			</ol>
 
