@@ -387,7 +387,7 @@ if ( ! function_exists( 'estore_woocommerce_layout_class' ) ) :
 function estore_woocommerce_layout_class() {
 	global $post;
 
-	$layout = get_theme_mod( 'estore_woocommerce_global_layout_section', 'right_sidebar' );
+	$layout = get_theme_mod( 'estore_woocommerce_global_layout', 'right_sidebar' );
 
 
 	// Front page displays in Reading Settings
@@ -408,7 +408,7 @@ function estore_woocommerce_layout_class() {
 	}
 
 	elseif( is_page() ) {
-		$layout = get_theme_mod( 'estore_woocommerce_global_layout_section', 'right_sidebar' );
+		$layout = get_theme_mod( 'estore_woocommerce_global_layout', 'right_sidebar' );
 		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
 			$layout = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
 		}
