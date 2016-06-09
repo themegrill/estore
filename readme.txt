@@ -18,16 +18,16 @@ Resources packed within the theme.
   Code licensed under MIT License, http://www.opensource.org/licenses/MIT
 
   jQuery Superfish Menu Plugin - v1.7.7, https://github.com/joeldbirch/superfish
-  Copyright © 2015, Joeldbirch, 
-  Dual Licensed under the terms of the MIT License, http://www.opensource.org/licenses/mit-license.php and 
+  Copyright © 2015, Joeldbirch,
+  Dual Licensed under the terms of the MIT License, http://www.opensource.org/licenses/mit-license.php and
   GNU GPL, http://www.gnu.org/licenses/gpl.html
-  
+
   jQuery bxSlider - v4.2.5, https://github.com/stevenwanderski/bxslider-4
   Copyright © 2013-2015, Steven Wanderski, MIT License, http://www.opensource.org/licenses/mit-license.php
 
   prettyPhoto - v3.1.6, http://www.no-margin-for-errors.com
   Copyright ©, Stephane Caron, GNU GPL v2, http://www.gnu.org/licenses/gpl-2.0.html
-  
+
 * Images used in screenshot
   Kids Clothes: https://pixabay.com/en/child-childrens-baby-children-s-817368/
   Copyright © 2015, Bessi, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
@@ -40,7 +40,7 @@ Resources packed within the theme.
 
   Header Ad Image: https://pixabay.com/en/jeans-fashion-ruptured-modern-828693/
   Copyright © 2015, Unsplash, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-  
+
   Tie Image: https://pixabay.com/en/neckties-cravats-ties-fashion-210347/
   Copyright © 2013, FULVIO_TOGNON, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
 
@@ -87,14 +87,13 @@ All available options can be used from Appearance->Customize
 /**********************************************************/
 
 == TRANSLATIONS ==
-If you've translated this theme into your language, feel free to send the translation over to themegrill@gmail.com
-and we will include it within the theme from next version update.
+If you want the theme to be translated into your language, feel free to contribute the translation over here https://translate.wordpress.org/projects/wp-themes/estore
 
 /**********************************************************/
 
 == Changelog ==
 
-= Version 1.1 - 2016-06-07 =
+= Version 1.1 - 2016-06-09 =
 * Fix - Compatibility with WPML
 * Fix - Logo alignment for WP Custom Logo
 * Added - Compatibility with WP-Pagenavi
