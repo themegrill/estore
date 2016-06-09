@@ -93,6 +93,9 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 
+= Version 1.1.1 - 2016-06-09 =
+* Fix - Layout issue on WooCommerce Archive Pages
+
 = Version 1.1 - 2016-06-09 =
 * Fix - Compatibility with WPML
 * Fix - Logo alignment for WP Custom Logo
