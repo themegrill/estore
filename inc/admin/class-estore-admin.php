@@ -234,7 +234,7 @@ class eStore_Admin {
 						<?php is_multisite() ? esc_html_e( 'Return to Updates', 'estore' ) : esc_html_e( 'Return to Dashboard &rarr; Updates', 'estore' ); ?>
 					</a> |
 				<?php endif; ?>
-				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home' ) : esc_html_e( 'Go to Dashboard', 'estore' ); ?></a>
+				<a href="<?php echo esc_url( self_admin_url() ); ?>"><?php is_blog_admin() ? esc_html_e( 'Go to Dashboard &rarr; Home', 'estore' ) : esc_html_e( 'Go to Dashboard', 'estore' ); ?></a>
 			</div>
 		</div>
 		<?php
