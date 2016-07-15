@@ -184,7 +184,7 @@ class estore_728x90_ad extends WP_Widget {
 				<?php endif; ?>
 			</div>
 			<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( $image_url ); ?>" name="<?php echo $this->get_field_name( $image_url ); ?>" value="<?php echo esc_url( $instance[$image_url] ); ?>" style="margin-top:5px;" />
-			<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( $image_url ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'estore' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'estore' ); ?></button>
+			<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( $image_url ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select an Image', 'estore' ); ?></button>
 		</div>
 	</p>
 
@@ -1049,7 +1049,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 					<?php endif; ?>
 				</div>
 				<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" name="<?php echo $this->get_field_name( 'cat_image_url' ); ?>" value="<?php echo esc_url( $instance['cat_image_url'] ); ?>" style="margin-top:5px;" />
-				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'estore' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'estore' ); ?></button>
+				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select an Image', 'estore' ); ?></button>
 			</div>
 		</p>
 
@@ -1506,7 +1506,7 @@ class estore_logo_widget extends WP_Widget {
 				<?php endif; ?>
 			</div>
 			<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( $image_url ); ?>" name="<?php echo $this->get_field_name( $image_url ); ?>" value="<?php echo esc_url( $instance[$image_url] ); ?>" style="margin-top:5px;" />
-			<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( $image_url ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'estore' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'estore' ); ?></button>
+			<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( $image_url ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select an Image', 'estore' ); ?></button>
 		</div>
 	</p>
 
@@ -2069,7 +2069,7 @@ class estore_posts_grid extends WP_Widget {
 					<?php endif; ?>
 				</div>
 				<input type="text" class="widefat custom_media_input" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" name="<?php echo $this->get_field_name( 'cat_image_url' ); ?>" value="<?php echo esc_url( $instance['cat_image_url'] ); ?>" style="margin-top:5px;" />
-				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" data-choose="<?php echo esc_attr( 'Choose an image', 'estore' ); ?>" data-update="<?php echo esc_attr( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php echo esc_html( 'Select an Image', 'estore' ); ?></button>
+				<button class="custom_media_upload button button-secondary button-large" id="<?php echo $this->get_field_id( 'cat_image_url' ); ?>" data-choose="<?php esc_attr_e( 'Choose an image', 'estore' ); ?>" data-update="<?php esc_attr_e( 'Use image', 'estore' ); ?>" style="width:100%;margin-top:6px;margin-right:30px;"><?php esc_html_e( 'Select an Image', 'estore' ); ?></button>
 			</div>
 		</p>
 

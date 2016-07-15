@@ -94,6 +94,9 @@ and we will include it within the theme from next version update.
 
 == CHANGE LOG ==
 
+= Version TBD =
+* Tweaks - Enhancement for the media uploader scripts used in widgets.
+
 = Version 1.0.9 =
 * Added - Upsell button
 * Added - Support for custom logo introduced in WordPress 4.5
