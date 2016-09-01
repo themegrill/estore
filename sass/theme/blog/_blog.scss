@@ -158,10 +158,42 @@ article .entry-content {
   padding: 4px 10px;
 }
 
+.wp-pagenavi {
+  margin-left: 3%;
+}
+
 .wp-pagenavi a, .wp-pagenavi span {
   padding: 3px 10px;
 }
 
 .wp-pagenavi .pages {
   color: #8c8c8c;
+}
+
+.archive-grid .entry-thumbnail .posted-on {
+  padding: 0 20px;
+}
+
+.archive-grid #primary {
+  margin-left: -3%;
+  width: 74.5%;
+}
+
+.archive-grid  article {
+  border: 1px solid #e1e1e1;
+  display: inline-block;
+  margin: 0 -4px 30px 3%;
+  vertical-align: top;
+  width: 47%;
+  margin-top: 0 !important;
+	padding: 0;
+}
+
+.archive-grid .entry-title {
+    margin: 30px 0 0;
+    padding: 0 20px;
+}
+
+.archive-grid .entry-title, .archive-grid .entry-content-text-wrapper {
+    padding: 0 20px 20px;
 }

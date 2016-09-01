@@ -387,6 +387,39 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Default Single Post Layout
+	$wp_customize->add_section(
+		'estore_archive_page_section',
+		array(
+			'priority'  => 40,
+			'title'     => esc_html__( 'Archive Page: Grid/List View', 'estore' ),
+			'panel'     => 'estore_design_options'
+		)
+	);
+
+	$wp_customize->add_setting(
+		'estore_archive_page_style',
+		array(
+			'default'           => 'archive-grid',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_choices'
+		)
+	);
+
+	$wp_customize->add_control(
+		'estore_archive_page_style',
+		array(
+			'label'    => esc_html__( 'Choose the layout style for archive pages.', 'estore' ),
+			'section'  => 'estore_archive_page_section',
+			'type'     => 'select',
+			'choices'    => array(
+				'archive-list' => esc_html__('List View', 'estore'),
+				'archive-grid' => esc_html__('Grid View', 'estore'),
+        	),
+		)
+	);
+
+
 	// Custom CSS Section
 	$wp_customize->add_section(
 		'estore_custom_css_section',
@@ -718,7 +751,18 @@ function estore_customize_register( $wp_customize ) {
 		$input = esc_attr($input);
 		return $input;
 	}
+	// Sanitize Choices
+	function estore_sanitize_choices( $input, $setting ) {
+		global $wp_customize;
 
+		$control = $wp_customize->get_control( $setting->id );
+
+		if ( array_key_exists( $input, $control->choices ) ) {
+			return $input;
+		} else {
+			return $setting->default;
+		}
+	}
 }
 add_action( 'customize_register', 'estore_customize_register' );
 
