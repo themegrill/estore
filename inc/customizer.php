@@ -392,7 +392,7 @@ function estore_customize_register( $wp_customize ) {
 		'estore_archive_page_section',
 		array(
 			'priority'  => 40,
-			'title'     => esc_html__( 'Archive Page: Grid/List View', 'estore' ),
+			'title'     => esc_html__( 'Blog Layout', 'estore' ),
 			'panel'     => 'estore_design_options'
 		)
 	);
@@ -400,7 +400,7 @@ function estore_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'estore_archive_page_style',
 		array(
-			'default'           => 'archive-grid',
+			'default'           => 'archive-list',
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'estore_sanitize_choices'
 		)

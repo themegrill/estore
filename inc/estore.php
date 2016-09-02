@@ -580,7 +580,7 @@ if ( ! function_exists( 'estore_the_custom_logo' ) ) {
  */
 function estore_body_classes( $classes ) {
 	// Adds a class for grid/list layout.
-	$layout_class = esc_attr(get_theme_mod( 'estore_archive_page_style', 'archive-grid' ));
+	$layout_class = esc_attr(get_theme_mod( 'estore_archive_page_style', 'archive-list' ));
 	if (  is_archive() || is_search() || is_home() ) {
 		$classes[] = $layout_class;
 	}
