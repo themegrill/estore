@@ -43,6 +43,10 @@ function estore_customize_register( $wp_customize ) {
 					'link' => esc_url('http://docs.themegrill.com/estore/'),
 					'text' => esc_html__('Documentation', 'estore'),
 				),
+				'view-pro' => array(
+					'link' => esc_url('http://themegrill.com/themes/estore/'),
+					'text' => esc_html__('View Pro', 'estore'),
+				),
 				'demo' => array(
 					'link' => esc_url('http://demo.themegrill.com/estore/'),
 					'text' => esc_html__('View Demo', 'estore'),
