@@ -93,6 +93,9 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 
+= Version 1.1.2 - 2016-09-02 =
+* Added - List/Grid View Option for Blog pages
+
 = Version 1.1.2 - 2016-06-21 =
 * Tweaks - Update WooCommerce Templates to 2.6.1
 
