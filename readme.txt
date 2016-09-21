@@ -108,6 +108,9 @@ If you want the theme to be translated into your language, feel free to contribu
 * Added - Compatibility with WP-Pagenavi
 * Added - About page for theme information
 
+= Version TBD =
+* Tweaks - Enhancement for the media uploader scripts used in widgets.
+
 = Version 1.0.9 =
 * Added - Upsell button
 * Added - Support for custom logo introduced in WordPress 4.5
