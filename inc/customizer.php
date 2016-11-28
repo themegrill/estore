@@ -423,7 +423,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-
+if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
 	// Custom CSS Section
 	$wp_customize->add_section(
 		'estore_custom_css_section',
@@ -450,10 +450,11 @@ function estore_customize_register( $wp_customize ) {
 			'estore_custom_css',
 			array(
 				'label'   => esc_html__( 'Write your Custom CSS here', 'estore' ),
-				'section' => 'estore_custom_css_section'
+				'section' => 'estore_custom_css_section',
 			)
 		)
 	);
+ }
 
 	// Footer Widget Section
 	$wp_customize->add_section(
