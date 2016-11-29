@@ -591,7 +591,7 @@ add_filter( 'body_class', 'estore_body_classes' );
 /**
  * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
  */
-function estore_customm_css_migrate() {
+function estore_custom_css_migrate() {
 	if ( function_exists( 'wp_update_custom_css_post' ) ) {
 		$custom_css = get_theme_mod( 'estore_custom_css' );
 		if ( $custom_css ) {
@@ -604,4 +604,4 @@ function estore_customm_css_migrate() {
 		}
 	}
 }
-add_action( 'after_setup_theme', 'estore_customm_css_migrate' );
+add_action( 'after_setup_theme', 'estore_custom_css_migrate' );
