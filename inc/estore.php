@@ -624,3 +624,15 @@ function estore_site_logo_migrate() {
 }
 
 add_action( 'after_setup_theme', 'estore_site_logo_migrate' );
+
+if ( ! function_exists( 'estore_the_custom_logo' ) ) {
+	/**
+	 * Displays the optional custom logo.
+	 *	 *
+	 */
+	function estore_the_custom_logo() {
+		if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'estore_logo', '' ) == '') ) {
+			the_custom_logo();
+		}
+	}
+}
