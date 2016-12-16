@@ -786,6 +786,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 		$defaults[ 'source' ]           = '';
 		$defaults[ 'category' ]         = '';
 		$defaults[ 'product_number' ]   = 10;
+		$defaults[ 'hide_thumbnail_mask' ]   = 0;
 
 		$instance = wp_parse_args( (array) $instance, $defaults );
 
@@ -794,6 +795,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 		$source           = $instance[ 'source' ];
 		$category         = absint( $instance[ 'category' ] );
 		$product_number   = absint( $instance[ 'product_number' ] );
+		$hide_thumbnail_mask = $instance[ 'hide_thumbnail_mask' ] ? 'checked="checked"' : '';
 		?>
 
 		<p>
@@ -833,6 +835,10 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'product_number' ); ?>"><?php esc_html_e( 'Number of Products:', 'estore' ); ?></label>
 			<input id="<?php echo $this->get_field_id( 'product_number' ); ?>" name="<?php echo $this->get_field_name( 'product_number' ); ?>" type="number" value="<?php echo $product_number; ?>" />
 		</p>
+		<p>
+	    	<input class="checkbox" <?php echo $hide_thumbnail_mask; ?> id="<?php echo $this->get_field_id( 'hide_thumbnail_mask' ); ?>" name="<?php echo $this->get_field_name( 'hide_thumbnail_mask' ); ?>" type="checkbox" />
+	    	<label for="<?php echo $this->get_field_id('hide_thumbnail_mask'); ?>"><?php esc_html_e( 'Check to hide image hover effect.', 'estore' ); ?></label>
+	   	</p>
 		<?php
 	}
 
@@ -846,6 +852,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 		$instance[ 'source' ]         = $new_instance[ 'source' ];
 		$instance[ 'category' ]       = absint( $new_instance[ 'category' ] );
 		$instance[ 'product_number' ] = absint( $new_instance[ 'product_number' ] );
+		$instance[ 'hide_thumbnail_mask' ]   = isset( $new_instance[ 'hide_thumbnail_mask' ] ) ? 1 : 0;
 
 		return $instance;
 	}
@@ -860,6 +867,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 		$source           = isset( $instance[ 'source' ] ) ? $instance[ 'source' ] : '';
 		$category         = isset( $instance[ 'category' ] ) ? $instance[ 'category' ] : '';
 		$product_number   = isset( $instance[ 'product_number' ] ) ? $instance[ 'product_number' ] : '';
+		$hide_thumbnail_mask = isset( $instance[ 'hide_thumbnail_mask' ] ) ? $instance[ 'hide_thumbnail_mask' ] : 0;
 
 		// For Multilingual compatibility
 		if ( function_exists( 'icl_register_string' ) ) {
@@ -938,24 +946,27 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 						$image_id = get_post_thumbnail_id();
 						$image_url = wp_get_attachment_image_src($image_id,'estore-square', false); ?>
 						<figure class="featured-img">
-						<?php if($image_url[0]) { ?>
-							<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
+							<?php if($image_url[0]) { ?>
+								<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>"></a>
 							<?php } else { ?>
-								<img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>">
+								<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>"></a>
 							<?php } ?>
 							<?php if ( $product->is_on_sale() ) : ?>
 								<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 							<?php endif; ?>
-							<div class="featured-hover-wrapper">
-								<div class="featured-hover-block">
-									<?php if($image_url[0]) { ?>
-									<a href="<?php echo esc_url( $image_url[0] ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-									<?php } else {?>
-									<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>"  class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-									<?php }
-									woocommerce_template_loop_add_to_cart( $featured_query->post, $product ); ?>
-								</div>
-							</div><!-- featured hover end -->
+
+							<?php if ( $hide_thumbnail_mask != 1 ) : ?>
+								<div class="featured-hover-wrapper">
+									<div class="featured-hover-block">
+										<?php if($image_url[0]) { ?>
+										<a href="<?php echo esc_url( $image_url[0] ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
+										<?php } else {?>
+										<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>"  class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
+										<?php }
+										woocommerce_template_loop_add_to_cart( $featured_query->post, $product ); ?>
+									</div>
+								</div><!-- featured hover end -->
+							<?php endif; ?>
 						</figure>
 						<div class="featured-content-wrapper">
 							<h3 class="featured-title"> <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

@@ -97,6 +97,7 @@ Version 1.1.4 TBD =
 * Feature - Migrated the Custom CSS code added in theme settings to Additional CSS section introduced in WordPress 4.7
 * Feature - Migrate script for Site Logo
 * Feature - Content width is now adjusted according to the layout choosed
+* Feature - Added option to hide hover mask on product image
 
 = Version 1.1.3 - 2016-09-02 =
 * Added - List/Grid View Layout for Archive Pages
