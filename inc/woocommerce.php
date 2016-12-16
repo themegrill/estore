@@ -229,6 +229,24 @@ function estore_woocommerce_settings_register($wp_customize) {
 		)
 	);
 
+	$wp_customize->add_setting(
+		'estore_woocommerce_product_thumb_mask',
+		array(
+			'default'           => '',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_checkbox'
+		)
+	);
+
+	$wp_customize->add_control(
+		'estore_woocommerce_product_thumb_mask',
+		array(
+			'label'   => esc_html__( 'Check to hide hover effect on Product Images in WooCommerce Archive Pages.', 'estore' ),
+			'section' => 'estore_woocommerce_global_layout_section',
+			'type'    => 'checkbox',
+		)
+	);
+
 }
 
 add_action( 'customize_register', 'estore_woocommerce_settings_register' );
@@ -301,12 +319,15 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
-				<div class="products-hover-wrapper">
-					<div class="products-hover-block">
-						<a href="<?php echo $image_url[0]; ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-						<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
-					</div>
-				</div><!-- featured hover end -->
+
+				<?php if ( get_theme_mod( 'estore_woocommerce_product_thumb_mask', '' ) != 1) : ?>
+					<div class="products-hover-wrapper">
+						<div class="products-hover-block">
+							<a href="<?php echo $image_url[0]; ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
+							<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
+						</div>
+					</div><!-- featured hover end -->
+				<?php endif; ?>
 			</figure>
 		<?php
 		} else { ?>
@@ -315,12 +336,15 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
-				<div class="products-hover-wrapper">
-					<div class="products-hover-block">
-						<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-						<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
-					</div>
-				</div><!-- featured hover end -->
+
+				<?php if ( get_theme_mod( 'estore_woocommerce_product_thumb_mask', '' ) != 1) : ?>
+					<div class="products-hover-wrapper">
+						<div class="products-hover-block">
+							<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
+							<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
+						</div>
+					</div><!-- featured hover end -->
+				<?php endif; ?>
 			</figure>
 		<?php }
 	}
