@@ -9,6 +9,29 @@
  * @since eStore 0.1
  */
 
+/**
+ * Set the content width based on the theme's design and stylesheet.
+ */
+if ( ! isset( $content_width ) )
+   $content_width = 870;
+/**
+ * $content_width global variable adjustment as per layout option.
+ */
+function estore_content_width() {
+   global $post;
+   global $content_width;
+   if( $post ) { $layout_meta = get_post_meta( $post->ID, 'estore_layout_call', true ); }
+   if( empty( $layout_meta ) || is_archive() || is_search() ) { $layout_meta = 'default_layout'; }
+   $estore_global_layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
+   if( $layout_meta == 'default_layout' ) {
+      if ( $estore_global_layout == 'no_sidebar_full_width' ) { $content_width = 1200; /* pixels */ }
+      else { $content_width = 870; /* pixels */ }
+   }
+   elseif ( $layout_meta == 'no_sidebar_full_width' ) { $content_width = 1200; /* pixels */ }
+   else { $content_width = 870; /* pixels */ }
+}
+add_action( 'template_redirect', 'estore_content_width' );
+
 if ( ! function_exists( 'estore_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -94,18 +117,6 @@ endif; // estore_setup
 add_action( 'after_setup_theme', 'estore_setup' );
 
 /**
- * Set the content width in pixels, based on the theme's design and stylesheet.
- *
- * Priority 0 to make it available to lower priority callbacks.
- *
- * @global int $content_width
- */
-function estore_content_width() {
-   $GLOBALS['content_width'] = apply_filters( 'estore_content_width', 870 );
-}
-add_action( 'after_setup_theme', 'estore_content_width', 0 );
-
-/**
  * Enqueue scripts and styles.
  */
 function estore_scripts() {
@@ -113,7 +124,7 @@ function estore_scripts() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
 	// Load fontawesome
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.3.0' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/font-awesome/css/font-awesome.min.css', array(), '4.7.0' );
 
 	// Load bxslider
 	wp_enqueue_script( 'bxslider', get_template_directory_uri().'/js/jquery.bxslider' . $suffix . '.js', array('jquery'), false, true );

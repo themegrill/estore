@@ -452,7 +452,8 @@
      .error-404.not-found .search-field {
          width: 87%;
      }
-     .archive-grid article {
+     .archive-grid article,
+     .archive-grid #primary {
 	  width: 100%;
 	}
  }

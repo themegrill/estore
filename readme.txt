@@ -92,6 +92,15 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.1.4 - 2016-12-23 =
+* Tweaks - Updated Font Awessome to `v.4.7.0` for new icon  support.
+* Feature - Migrated the Custom CSS code added in theme settings to Additional CSS section introduced in WordPress 4.7
+* Feature - Migrate script for Site Logo
+* Feature - Content width is now adjusted according to the layout choosed
+* Feature - Added option to hide hover mask on product image
+
+= Version 1.1.3 - 2016-09-02 =
+* Added - List/Grid View Layout for Archive Pages
 
 = Version 1.1.2 - 2016-09-02 =
 * Added - List/Grid View Option for Blog pages
@@ -107,6 +116,7 @@ If you want the theme to be translated into your language, feel free to contribu
 * Fix - Logo alignment for WP Custom Logo
 * Added - Compatibility with WP-Pagenavi
 * Added - About page for theme information
+* Tweaks - Enhancement for the media uploader scripts used in widgets.
 
 = Version 1.0.9 =
 * Added - Upsell button

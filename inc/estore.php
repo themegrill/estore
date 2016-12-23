@@ -531,8 +531,8 @@ function estore_primary_color_css() {
 	<?php
 	}
 
-	$estore_custom_css = get_theme_mod( 'estore_custom_css', '' );
-	if( !empty( $estore_custom_css ) ) {
+	$estore_custom_css = get_theme_mod( 'estore_custom_css' );
+	if( $estore_custom_css && ! function_exists( 'wp_update_custom_css_post' ) ) {
 		echo '<!-- '.get_bloginfo('name').' Custom Styles -->';
 	?>
 		<style type="text/css"><?php echo esc_html( $estore_custom_css ); ?></style>
@@ -587,3 +587,52 @@ function estore_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'estore_body_classes' );
+
+/**
+ * Migrate any existing theme CSS codes added in Customize Options to the core option added in WordPress 4.7
+ */
+function estore_custom_css_migrate() {
+	if ( function_exists( 'wp_update_custom_css_post' ) ) {
+		$custom_css = get_theme_mod( 'estore_custom_css' );
+		if ( $custom_css ) {
+			$core_css = wp_get_custom_css(); // Preserve any CSS already added to the core option.
+			$return = wp_update_custom_css_post( $core_css . $custom_css );
+			if ( ! is_wp_error( $return ) ) {
+				// Remove the old theme_mod, so that the CSS is stored in only one place moving forward.
+				remove_theme_mod( 'estore_custom_css' );
+			}
+		}
+	}
+}
+add_action( 'after_setup_theme', 'estore_custom_css_migrate' );
+
+/**
+ * Function to transfer the Header Logo added in Customizer Options of theme to Site Logo in Site Identity section
+ */
+function estore_site_logo_migrate() {
+	if ( function_exists( 'the_custom_logo' ) && ! has_custom_logo( $blog_id = 0 ) ) {
+		$logo_url = get_theme_mod( 'estore_logo' );
+
+		if ( $logo_url ) {
+			$customizer_site_logo_id = attachment_url_to_postid( $logo_url );
+			set_theme_mod( 'custom_logo', $customizer_site_logo_id );
+
+			// Delete the old Site Logo theme_mod option.
+			remove_theme_mod( 'estore_logo' );
+		}
+	}
+}
+
+add_action( 'after_setup_theme', 'estore_site_logo_migrate' );
+
+if ( ! function_exists( 'estore_the_custom_logo' ) ) {
+	/**
+	 * Displays the optional custom logo.
+	 *	 *
+	 */
+	function estore_the_custom_logo() {
+		if ( function_exists( 'the_custom_logo' )  && ( get_theme_mod( 'estore_logo', '' ) == '') ) {
+			the_custom_logo();
+		}
+	}
+}

@@ -31,6 +31,10 @@ function estore_customize_register( $wp_customize ) {
 		public function render_content() {
 			//Add Theme instruction, Support Forum, Demo Link, Rating Link
 			$important_links = array(
+				'view-pro' => array(
+					'link' => esc_url('http://themegrill.com/themes/estore/'),
+					'text' => esc_html__('View Pro', 'estore'),
+				),
 				'theme-info' => array(
 					'link' => esc_url('http://themegrill.com/themes/estore/'),
 					'text' => esc_html__('Theme Info', 'estore'),
@@ -136,7 +140,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	if ( !function_exists( 'the_custom_logo' ) || ( get_theme_mod( 'estore_logo', '' ) != '') ) {
+	if ( ! function_exists('the_custom_logo') ) {
 		// Logo Upload
 		$wp_customize->add_setting(
 			'estore_logo',
@@ -423,37 +427,37 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
+	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
+		// Custom CSS Section
+		$wp_customize->add_section(
+			'estore_custom_css_section',
+			array(
+				'priority'  => 50,
+				'title'     => esc_html__( 'Custom CSS', 'estore' ),
+				'panel'     => 'estore_design_options'
+			)
+		);
 
-	// Custom CSS Section
-	$wp_customize->add_section(
-		'estore_custom_css_section',
-		array(
-			'priority'  => 50,
-			'title'     => esc_html__( 'Custom CSS', 'estore' ),
-			'panel'     => 'estore_design_options'
-		)
-	);
+		$wp_customize->add_setting(
+			'estore_custom_css',
+			array(
+				'default'              => '',
+				'capability'           => 'edit_theme_options',
+				'sanitize_callback'    => 'wp_filter_nohtml_kses',
+				'sanitize_js_callback' => 'wp_filter_nohtml_kses'
+			)
+		);
 
-	$wp_customize->add_setting(
-		'estore_custom_css',
-		array(
-			'default'              => '',
-			'capability'           => 'edit_theme_options',
-			'sanitize_callback'    => 'wp_filter_nohtml_kses',
-			'sanitize_js_callback' => 'wp_filter_nohtml_kses'
-		)
-	);
-
-	$wp_customize->add_control(
-		new eStore_Custom_CSS_Control(
+		$wp_customize->add_control(
+			new eStore_Custom_CSS_Control(
 			$wp_customize,
 			'estore_custom_css',
 			array(
 				'label'   => esc_html__( 'Write your Custom CSS here', 'estore' ),
-				'section' => 'estore_custom_css_section'
+				'section' => 'estore_custom_css_section',
 			)
-		)
-	);
+		) );
+	}
 
 	// Footer Widget Section
 	$wp_customize->add_section(
@@ -770,15 +774,6 @@ function estore_customize_register( $wp_customize ) {
 }
 add_action( 'customize_register', 'estore_customize_register' );
 
-/**
- * Enqueue scripts for customizer
- */
-function estore_customizer_js() {
-	wp_enqueue_script( 'estore_customizer_script', get_template_directory_uri() . '/js/customizer.js', array("jquery"), 'false', true  );
-;
-}
-add_action( 'customize_controls_enqueue_scripts', 'estore_customizer_js' );
-
 /*
  * Custom Scripts
  */
@@ -791,7 +786,6 @@ function estore_customizer_custom_scripts() { ?>
 	li#accordion-section-estore_important_links h3.accordion-section-title:hover { background-color: #289DCC !important; color: #fff !important; }
 	li#accordion-section-estore_important_links h3.accordion-section-title:after { color: #fff !important; }
 	/* Upsell button CSS */
-	.themegrill-pro-info,
 	.customize-control-estore-important-links a {
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#8fc800+0,8fc800+100;Green+Flat+%232 */
 		background: #008EC2;
@@ -807,7 +801,6 @@ function estore_customizer_custom_scripts() { ?>
 		padding: 8px 0;
 	}
 
-	.themegrill-pro-info:hover,
 	.customize-control-estore-important-links a:hover {
 		color: #ffffff;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#006e2e+0,006e2e+100;Green+Flat+%233 */
