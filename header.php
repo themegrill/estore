@@ -30,7 +30,7 @@
 
 		<?php do_action( 'estore_before_header' ); ?>
 
-		<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_manu' ) == 'header_media_above_site_title' ) {
+		<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_menu' ) == 'header_media_above_site_title' ) {
 			estore_the_custom_header_markup();
 		} ?>
 
@@ -227,7 +227,7 @@
 		 </div> <!-- bottom-header.wrapper end -->
 	</header>
 
-	<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_manu' ) == 'header_media_blow_main_manu' ) {
+	<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_menu' ) == 'header_media_blow_main_menu' ) {
 		estore_the_custom_header_markup();
 	} ?>
 

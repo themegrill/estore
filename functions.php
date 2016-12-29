@@ -120,6 +120,7 @@ function estore_setup() {
 		'flex-height'          => true,
 		'header-text'          => true,
 		'video'                => true,
+		'header-text'          => false,
 	) );
 }
 endif; // estore_setup
