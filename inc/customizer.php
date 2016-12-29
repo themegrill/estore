@@ -219,6 +219,39 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Media Section
+	$wp_customize->add_section(
+		'estore_header_media',
+		array(
+			'priority'   => 40,
+			'title'      => esc_html__( 'Header Media Position', 'estore' ),
+			'panel'      => 'estore_header_options'
+		)
+	);
+
+	// Header Media Placement
+	$wp_customize->add_setting(
+		'estore_header_media_placement',
+		array(
+			'default'            => 'header_media_blow_main_manu',
+			'capability'         => 'edit_theme_options',
+			'sanitize_callback'  => 'estore_sanitize_radio'
+		)
+	);
+
+	$wp_customize->add_control(
+		'estore_header_media_placement',
+		array(
+			'label'    => esc_html__( 'Choose the required option', 'estore' ),
+			'section'  => 'estore_header_media',
+			'type'     => 'radio',
+			'choices'  => array(
+				'header_media_above_site_title' => esc_html__( 'Position One: Display Header Media just above the site Title/Text', 'estore' ),
+				'header_media_blow_main_manu' => esc_html__( 'Postion Two: Dispaly Header Media just below the Main/Primary Menu', 'estore' ),
+			)
+		)
+	);
+
 	// Header Bar Left Section
 	$wp_customize->add_setting(
 		'estore_bar_text',

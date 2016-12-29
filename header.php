@@ -29,6 +29,11 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'estore' ); ?></a>
 
 		<?php do_action( 'estore_before_header' ); ?>
+
+		<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_manu' ) == 'header_media_above_site_title' ) {
+			estore_the_custom_header_markup();
+		} ?>
+
 		<header id="masthead" class="site-header" role="banner">
 		<?php if( get_theme_mod( 'estore_bar_activation' ) == '1' ) : ?>
 			<div class="top-header-wrapper clearfix">
@@ -221,5 +226,10 @@
 			</div>
 		 </div> <!-- bottom-header.wrapper end -->
 	</header>
+
+	<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_blow_main_manu' ) == 'header_media_blow_main_manu' ) {
+		estore_the_custom_header_markup();
+	} ?>
+
 	<?php do_action( 'estore_after_header' ); ?>
 	<?php do_action( 'estore_before_main' ); ?>

@@ -636,3 +636,17 @@ if ( ! function_exists( 'estore_the_custom_logo' ) ) {
 		}
 	}
 }
+
+// Video Header introduced in WordPress 4.7
+if ( ! function_exists( 'estore_the_custom_header_markup' ) ) {
+	/**
+	* Displays the optional custom media headers.
+	*/
+	function estore_the_custom_header_markup() {
+		if ( function_exists('the_custom_header_markup') ) {
+			the_custom_header_markup();
+		} else {
+			the_header_image_tag();
+		}
+	}
+}

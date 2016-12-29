@@ -112,6 +112,15 @@ function estore_setup() {
 
 	// Declare WooCommerce Support
 	add_theme_support( 'woocommerce' );
+
+	// Add Image Headers / Video Headers in 4.7
+	add_theme_support( 'custom-header', array(
+		'width'                => 2000,
+		'height'               => 400,
+		'flex-height'          => true,
+		'header-text'          => true,
+		'video'                => true,
+	) );
 }
 endif; // estore_setup
 add_action( 'after_setup_theme', 'estore_setup' );
