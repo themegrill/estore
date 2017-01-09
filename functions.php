@@ -112,16 +112,6 @@ function estore_setup() {
 
 	// Declare WooCommerce Support
 	add_theme_support( 'woocommerce' );
-
-	// Add Image Headers / Video Headers in 4.7
-	add_theme_support( 'custom-header', array(
-		'width'                => 2000,
-		'height'               => 400,
-		'flex-height'          => true,
-		'header-text'          => true,
-		'video'                => true,
-		'header-text'          => false,
-	) );
 }
 endif; // estore_setup
 add_action( 'after_setup_theme', 'estore_setup' );
@@ -183,6 +173,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Widgets.
  */
 require get_template_directory() . '/inc/widgets.php';
+
+/**
+ * Header Image Functions.
+ */
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * eStore Functions.
