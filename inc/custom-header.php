@@ -4,7 +4,7 @@
  *
  * @package ThemeGrill
  * @subpackage eStore
- * @since eStore 1.0.1
+ * @since eStore 1.1.5
  */
 
 /**
