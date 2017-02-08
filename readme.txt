@@ -76,10 +76,10 @@ eStore is distributed under the terms of the GNU GPL
 == THEME USAGE ==
 
 = Theme Instruction =
-Get theme instruction at http://docs.themegrill.com/estore/
+Get theme instruction at https://docs.themegrill.com/estore/
 
 = Free Support =
-Get free support at http://themegrill.com/support-forum/
+Get free support at https://themegrill.com/support-forum/
 
 = Theme Features Usage =
 All available options can be used from Appearance->Customize
@@ -93,7 +93,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 
-= Version TBD =
+= Version 1.1.5 - 2017-02-08 =
 * Feature - Adds Support for Video Header introduced in WordPress 4.7
 
 = Version 1.1.4 - 2016-12-23 =
