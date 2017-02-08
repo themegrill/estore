@@ -92,6 +92,10 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+
+= Version TBD =
+* Feature - Adds Support for Video Header introduced in WordPress 4.7
+
 = Version 1.1.4 - 2016-12-23 =
 * Tweaks - Updated Font Awessome to `v.4.7.0` for new icon  support.
 * Feature - Migrated the Custom CSS code added in theme settings to Additional CSS section introduced in WordPress 4.7

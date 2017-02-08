@@ -175,6 +175,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/widgets.php';
 
 /**
+ * Header Image Functions.
+ */
+require get_template_directory() . '/inc/custom-header.php';
+
+/**
  * eStore Functions.
  */
 require get_template_directory() . '/inc/estore.php';
