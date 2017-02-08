@@ -8,9 +8,8 @@
  * @subpackage eStore
  * @since eStore 0.1
  */
+get_header();
 
-get_header(); ?>
-	<?php
 	$estore_layout = estore_layout_class();
 	?>
 	<div id="content" class="site-content"><!-- #content.site-content -->
@@ -35,7 +34,7 @@ get_header(); ?>
 						if ( comments_open() || get_comments_number() ) :
 							comments_template();
 						endif;
-						
+
 						get_template_part('navigation', 'none');
 
 					endwhile; // End of the loop. ?>

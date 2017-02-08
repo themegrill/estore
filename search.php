@@ -6,11 +6,9 @@
  * @subpackage eStore
  * @since eStore 1.0
  */
-?>
+get_header();
 
-<?php get_header(); ?>
-
-	<?php do_action( 'estore_before_body_content' );
+	do_action( 'estore_before_body_content' );
 
 	$estore_layout = estore_layout_class();
 	?>

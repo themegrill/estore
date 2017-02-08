@@ -6,9 +6,6 @@
  * @subpackage eStore
  * @since eStore 1.1
  */
-?>
-
-<?php
 if( is_archive() || is_home() || is_search() ) {
 	/**
 	 * Checking WP-PageNaviplugin exist

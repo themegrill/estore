@@ -13,9 +13,8 @@
  * @subpackage eStore
  * @since eStore 0.1
  */
+get_header();
 
-get_header(); ?>
-	<?php
 	do_action( 'estore_before_body_content' );
 
 	$estore_layout = estore_layout_class();
@@ -51,7 +50,7 @@ get_header(); ?>
 						  ?>
 
 						<?php endwhile;
-					   
+
 						get_template_part( 'navigation', 'none' );
 
 						else : ?>

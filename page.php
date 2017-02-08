@@ -13,9 +13,8 @@
  * @subpackage eStore
  * @since eStore 0.1
  */
+get_header();
 
-get_header(); ?>
-	<?php
 	do_action( 'estore_before_body_content' );
 
 	$estore_layout = estore_layout_class();
@@ -40,9 +39,9 @@ get_header(); ?>
 						if ( comments_open() || get_comments_number() ) :
 							comments_template();
 						endif;
-						
+
 						get_template_part('navigation', 'none');
-						
+
 					endwhile; // End of the loop. ?>
 				</div> <!-- Primary end -->
 					<?php estore_sidebar_select(); ?>
