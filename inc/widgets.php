@@ -348,7 +348,7 @@ class estore_about extends WP_Widget {
 class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
-					'classname'   => 'widget_full_width_promo widget-collection-thumb clearfix"',
+					'classname'   => 'widget_full_width_promo widget-collection-thumb clearfix',
 					'description' => esc_html__( 'Display WooCommerce Product Categories with featured image in horizontal layout.', 'estore' ) );
 		$control_ops = array(
 				'width'  => 200,
@@ -467,7 +467,7 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 class estore_full_width_promo_widget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
-					'classname'   => 'widget_full_width_promo widget-collection-thumb clearfix"',
+					'classname'   => 'widget_full_width_promo widget-collection-thumb clearfix',
 					'description' => esc_html__( 'Display some pages with featured image in horizontal layout.', 'estore' ) );
 		$control_ops = array(
 				'width'  => 200,
@@ -571,7 +571,7 @@ class estore_full_width_promo_widget extends WP_Widget {
 class estore_woocommerce_vertical_promo_widget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
-					'classname'   => 'widget_vertical_promo collection-wrapper clearfix"',
+					'classname'   => 'widget_vertical_promo collection-wrapper clearfix',
 					'description' => esc_html__( 'Display WooCommerce Product Categories in vertical layout with featured image.', 'estore' ) );
 		$control_ops = array(
 				'width'  => 200,
@@ -678,7 +678,7 @@ class estore_woocommerce_vertical_promo_widget extends WP_Widget {
 class estore_vertical_promo_widget extends WP_Widget {
 	function __construct() {
 		$widget_ops = array(
-					'classname'   => 'widget_vertical_promo collection-wrapper clearfix"',
+					'classname'   => 'widget_vertical_promo collection-wrapper clearfix',
 					'description' => esc_html__( 'Display some pages in vertical layout with featured image.', 'estore' ) );
 		$control_ops = array(
 				'width'  => 200,
