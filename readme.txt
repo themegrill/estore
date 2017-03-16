@@ -92,6 +92,8 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Feature - Added compatibility for ThemeGrill Demo Importer plugin
 
 = Version 1.1.5 - 2017-02-08 =
 * Feature - Adds Support for Video Header introduced in WordPress 4.7
