@@ -6,6 +6,7 @@
  * @subpackage eStore
  * @since 1.0
  */
+
 get_header(); ?>
 
 	<div id="content" class="clearfix">

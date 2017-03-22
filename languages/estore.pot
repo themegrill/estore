@@ -1155,7 +1155,7 @@ msgid "Related Products"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://www.themegrill.com/themes/estore/"
+msgid "https://www.themegrill.com/themes/estore/"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -1166,8 +1166,8 @@ msgid ""
 "organized. Theme is fully compatible with WooCommerce and YITH WooCommerce "
 "Wishlist plugins. As an online store owner, attracting customers and "
 "selling products will be lot easier with this theme. Check the demo here: "
-"http://demo.themegrill.com/estore and get free support here: "
-"http://themegrill.com/support-forum/forum/estore-free/"
+"https://demo.themegrill.com/estore and get free support here: "
+"https://themegrill.com/support-forum/forum/estore-free/"
 msgstr ""
 
 #. Author of the plugin/theme
@@ -1175,7 +1175,7 @@ msgid "ThemeGrill"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.themegrill.com"
+msgid "https://www.themegrill.com"
 msgstr ""
 
 #. Template Name of the plugin/theme

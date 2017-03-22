@@ -6,6 +6,7 @@
  * @subpackage eStore
  * @since eStore 1.0
  */
+
 get_header();
 
 	$estore_layout = estore_layout_class();

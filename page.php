@@ -13,6 +13,7 @@
  * @subpackage eStore
  * @since eStore 0.1
  */
+
 get_header();
 
 	do_action( 'estore_before_body_content' );

@@ -32,27 +32,27 @@ function estore_customize_register( $wp_customize ) {
 			//Add Theme instruction, Support Forum, Demo Link, Rating Link
 			$important_links = array(
 				'view-pro' => array(
-					'link' => esc_url('http://themegrill.com/themes/estore/'),
+					'link' => esc_url('https://themegrill.com/themes/estore/'),
 					'text' => esc_html__('View Pro', 'estore'),
 				),
 				'theme-info' => array(
-					'link' => esc_url('http://themegrill.com/themes/estore/'),
+					'link' => esc_url('https://themegrill.com/themes/estore/'),
 					'text' => esc_html__('Theme Info', 'estore'),
 				),
 				'support' => array(
-					'link' => esc_url('http://themegrill.com/support-forum/'),
+					'link' => esc_url('https://themegrill.com/support-forum/'),
 					'text' => esc_html__('Support', 'estore'),
 				),
 				'documentation' => array(
-					'link' => esc_url('http://docs.themegrill.com/estore/'),
+					'link' => esc_url('https://docs.themegrill.com/estore/'),
 					'text' => esc_html__('Documentation', 'estore'),
 				),
 				'view-pro' => array(
-					'link' => esc_url('http://themegrill.com/themes/estore/'),
+					'link' => esc_url('https://themegrill.com/themes/estore/'),
 					'text' => esc_html__('View Pro', 'estore'),
 				),
 				'demo' => array(
-					'link' => esc_url('http://demo.themegrill.com/estore/'),
+					'link' => esc_url('https://demo.themegrill.com/estore/'),
 					'text' => esc_html__('View Demo', 'estore'),
 				),
 				'rating' => array(
