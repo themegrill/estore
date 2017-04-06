@@ -970,12 +970,13 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 						</figure>
 						<div class="featured-content-wrapper">
 							<h3 class="featured-title"> <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-							<?php
-							 if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
-									<?php echo $rating_html; ?>
-								<?php } else {
-									echo '<div class="star-rating"></div>' ;
-								}?>
+							<div class="woocommerce-product-rating woocommerce"> <?php
+								 if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
+										<?php echo $rating_html; ?>
+									<?php } else {
+										echo '<div class="star-rating"></div>' ;
+									}?>
+							</div>
 							<?php if ( $price_html = $product->get_price_html() ) : ?>
 								<span class="price"><span class="price-text"><?php esc_html_e('Price:', 'estore'); ?></span><?php echo $price_html; ?></span>
 							<?php endif; ?>
@@ -1213,12 +1214,13 @@ class estore_woocommerce_product_grid extends WP_Widget {
 								<h3 class="hot-title"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<div class="hot-content"><?php the_excerpt(); ?></div>
 								<!-- Rating products -->
-								<?php if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
-									<?php echo $rating_html; ?>
-								<?php } else {
-									echo '<div class="star-rating"></div>' ;
-								}?>
-
+								<div class="woocommerce-product-rating woocommerce">
+									<?php if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
+										<?php echo $rating_html; ?>
+									<?php } else {
+										echo '<div class="star-rating"></div>' ;
+									}?>
+								</div>
 								<?php
 								if( function_exists( 'YITH_WCWL' ) ){
 									$url = add_query_arg( 'add_to_wishlist', $product->get_id() );

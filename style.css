@@ -2532,6 +2532,10 @@ body {
   font-size: 14px;
   margin: 15px 0 5px; }
 
+.hot-content-wrapper .woocommerce-product-rating.woocommerce .star-rating {
+  margin: 5px auto 17px;
+  float: none; }
+
 /*--------------------------------------------------------------
 ## index-blog
 --------------------------------------------------------------*/
