@@ -2526,6 +2526,12 @@ body {
   padding: 0;
   margin: 6px 0; }
 
+.featured-content-wrapper .star-rating {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  margin: 15px 0 5px; }
+
 /*--------------------------------------------------------------
 ## index-blog
 --------------------------------------------------------------*/
