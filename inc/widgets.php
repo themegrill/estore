@@ -971,13 +971,11 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 						<div class="featured-content-wrapper">
 							<h3 class="featured-title"> <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 							<?php
-							$rating_count = $product->get_rating_count();
-							$average      = $product->get_average_rating(); ?>
-								<div class="woocommerce-product-rating woocommerce" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-									<div class="star-rating" title="<?php printf( esc_html__( 'Rated %s out of 5', 'estore' ), $average ); ?>">
-										<span style="width:<?php echo ( ( $average / 5 ) * 100 ); ?>%"></span>
-									</div>
-								</div>
+							 if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
+									<?php echo $rating_html; ?>
+								<?php } else {
+									echo '<div class="star-rating"></div>' ;
+								}?>
 							<?php if ( $price_html = $product->get_price_html() ) : ?>
 								<span class="price"><span class="price-text"><?php esc_html_e('Price:', 'estore'); ?></span><?php echo $price_html; ?></span>
 							<?php endif; ?>
