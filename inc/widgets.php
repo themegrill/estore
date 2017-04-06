@@ -940,16 +940,16 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 				$featured_query = new WP_Query( $args );
 				while ($featured_query->have_posts()) :
 					$featured_query->the_post();
-					$product = get_product( $featured_query->post->ID ); ?>
+					$product = wc_get_product( $featured_query->post->ID ); ?>
 					<li>
 					<?php
 						$image_id = get_post_thumbnail_id();
 						$image_url = wp_get_attachment_image_src($image_id,'estore-square', false); ?>
 						<figure class="featured-img">
 							<?php if($image_url[0]) { ?>
-								<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>"></a>
+								<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>"></a>
 							<?php } else { ?>
-								<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>"></a>
+								<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>"></a>
 							<?php } ?>
 							<?php if ( $product->is_on_sale() ) : ?>
 								<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
@@ -963,7 +963,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 										<?php } else {?>
 										<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>"  class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
 										<?php }
-										woocommerce_template_loop_add_to_cart( $featured_query->post, $product ); ?>
+										woocommerce_template_loop_add_to_cart( $product ); ?>
 									</div>
 								</div><!-- featured hover end -->
 							<?php endif; ?>
@@ -984,7 +984,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 
 							<?php
 							if( function_exists( 'YITH_WCWL' ) ){
-								$url = add_query_arg( 'add_to_wishlist', $product->id );
+								$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
 							?>
 							<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
 							<?php } ?>
@@ -1184,7 +1184,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 				$featured_query = new WP_Query( $args );
 				while ($featured_query->have_posts()) :
 					$featured_query->the_post();
-					$product = get_product( $featured_query->post->ID );
+					$product = wc_get_product( $featured_query->post->ID );
 				if($count == 1){ ?>
 				<div class="tg-column-4 collection-block">
 					<div class="hot-product-block">
@@ -1202,7 +1202,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 									<?php } ?>
 								</a>
 								<div class="cart-price-wrapper clearfix">
-									<?php woocommerce_template_loop_add_to_cart( $featured_query->post, $product ); ?>
+									<?php woocommerce_template_loop_add_to_cart( $product ); ?>
 									<?php if ( $price_html = $product->get_price_html() ) : ?>
 									<span class="hot-price price"><?php echo $price_html; ?></span>
 								<?php endif; ?>
@@ -1229,7 +1229,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 
 								<?php
 								if( function_exists( 'YITH_WCWL' ) ){
-									$url = add_query_arg( 'add_to_wishlist', $product->id );
+									$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
 								?>
 									<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
 								<?php } ?>
@@ -1265,11 +1265,11 @@ class estore_woocommerce_product_grid extends WP_Widget {
 								<div class="cart-wishlist-btn">
 								<?php
 								if( function_exists( 'YITH_WCWL' ) ){
-									$url = add_query_arg( 'add_to_wishlist', $product->id );
+									$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
 								?>
 									<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
 								<?php }
-									woocommerce_template_loop_add_to_cart( $featured_query->post, $product );
+									woocommerce_template_loop_add_to_cart( $product );
 								?>
 
 								</div> <!-- cart-wishlist-btn end -->

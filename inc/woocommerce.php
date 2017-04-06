@@ -315,7 +315,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 			$image_id = get_post_thumbnail_id($post->ID);
 			$image_url = wp_get_attachment_image_src($image_id, $size, false); ?>
 			<figure class="products-img">
-				<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>"></a>
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
@@ -324,7 +324,8 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 					<div class="products-hover-wrapper">
 						<div class="products-hover-block">
 							<a href="<?php echo $image_url[0]; ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-							<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
+
+							<?php woocommerce_template_loop_add_to_cart( $product ); ?>
 						</div>
 					</div><!-- featured hover end -->
 				<?php endif; ?>
@@ -332,7 +333,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 		<?php
 		} else { ?>
 			<figure class="products-img">
-				<a href="<?php echo esc_url( get_permalink( $product->ID ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>"></a>
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
@@ -341,7 +342,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 					<div class="products-hover-wrapper">
 						<div class="products-hover-block">
 							<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
-							<?php woocommerce_template_loop_add_to_cart( $product->post, $product ); ?>
+							<?php woocommerce_template_loop_add_to_cart( $product ); ?>
 						</div>
 					</div><!-- featured hover end -->
 				<?php endif; ?>

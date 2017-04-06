@@ -66,7 +66,7 @@ get_header();
 					<?php
 						while ($get_featured_cat->have_posts()) :
 							$get_featured_cat->the_post();
-							$product = get_product( $get_featured_cat->post->ID ); ?>
+							$product = wc_get_product( $get_featured_cat->post->ID ); ?>
 
 						<li class="product products-block tg-column-4">
 							<?php
