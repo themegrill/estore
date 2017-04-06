@@ -232,6 +232,9 @@
 .woocommerce a.button.add_to_cart_button {
     background: none;
 }
+.woocommerce a.button.add_to_cart_button:hover {
+    background: none;
+}
 
 .hot-content-wrapper .star-rating {
     margin: 0 auto;
