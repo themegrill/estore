@@ -1046,11 +1046,6 @@ body {
   margin-left: -3px;
   width: 46px; }
 
-.hot-product-block .star-rating {
-  margin: 0 auto;
-  display: block;
-  margin-bottom: 20px; }
-
 /*--------------------------------------------------------------
 # layouts
 --------------------------------------------------------------*/
@@ -2230,6 +2225,11 @@ body {
 
 .woocommerce a.button.add_to_cart_button {
   background: none; }
+
+.hot-content-wrapper .star-rating {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
 ## thumb-collection
