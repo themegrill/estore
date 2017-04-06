@@ -1062,12 +1062,14 @@ body {
 
 .left_sidebar #secondary {
   float: left; }
+
 .left_sidebar #primary {
   float: right; }
 
 .no_sidebar_full_width #primary {
   width: 100%;
   float: none; }
+
 .no_sidebar_full_width #secondary {
   display: none; }
 
@@ -1465,6 +1467,7 @@ body {
   margin: 20px 0 0;
   padding: 5px 0;
   text-align: center; }
+
 .widget_shopping_cart .button {
   border: 1px solid #e6e6e6;
   border-radius: 25px;
@@ -1872,6 +1875,7 @@ body {
       display: block; }
   .widget_vertical_promo .collection-block:first-child {
     margin-bottom: 20px; }
+
 .widget_vertical_promo .slider-title {
   background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
   bottom: 0;
@@ -2218,6 +2222,17 @@ body {
 
 .collection-right-align .tg-column-wrapper .tg-column-4.collection-block {
   float: right; }
+
+.woocommerce a.button.add_to_cart_button {
+  background: none; }
+
+.woocommerce a.button.add_to_cart_button:hover {
+  background: none; }
+
+.hot-content-wrapper .star-rating {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px; }
 
 /*--------------------------------------------------------------
 ## thumb-collection
@@ -2736,6 +2751,7 @@ body {
     font-weight: 600; }
   .entry-meta span i {
     margin-right: 5px; }
+
 .entry-meta span:first-child {
   border-left: none;
   margin-left: 0px;
@@ -2979,14 +2995,17 @@ article .entry-content {
 --------------------------------------------------------------*/
 .single-product.woocommerce-page .product .images .thumbnails a {
   border: 1px solid #00A9E0; }
+
 .single-product.woocommerce-page .product .product_title {
   float: left;
   font-size: 32px; }
+
 .single-product.woocommerce-page .product .summary .price {
   float: right;
   font-weight: 700;
   font-style: 16px;
   color: #00A9E0; }
+
 .single-product.woocommerce-page .product .woocommerce-product-rating {
   border: none;
   border-top: 1px solid #e1e1e1;
@@ -3003,11 +3022,13 @@ article .entry-content {
     font-weight: 600;
     margin-left: 15px;
     padding-left: 25px; }
+
 .single-product.woocommerce-page .product div[itemprop="description"] {
   border-bottom: 1px solid #e1e1e1;
   color: #6a6868;
   margin-bottom: 15px;
   padding-bottom: 0; }
+
 .single-product.woocommerce-page .product .cart {
   display: inline-block;
   margin-bottom: 0; }
@@ -3029,6 +3050,7 @@ article .entry-content {
       color: #ffffff;
       font-size: 16px;
       margin-left: 10px; }
+
 .single-product.woocommerce-page .product .yith-wcwl-add-to-wishlist {
   display: inline-block;
   vertical-align: top;
@@ -3056,6 +3078,7 @@ article .entry-content {
     .single-product.woocommerce-page .product .yith-wcwl-add-to-wishlist .single_add_to_cart_button i {
       margin: 0;
       margin-left: 5px; }
+
 .single-product.woocommerce-page .product .product_meta {
   border-top: 1px solid #e1e1e1;
   margin: 10px 0;
@@ -3065,6 +3088,7 @@ article .entry-content {
     font-weight: 700; }
     .single-product.woocommerce-page .product .product_meta .posted_in a {
       font-weight: 400; }
+
 .single-product.woocommerce-page .product .woocommerce-tabs {
   border: 1px solid #e1e1e1;
   margin-bottom: 30px; }
@@ -3153,6 +3177,7 @@ article .entry-content {
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
       -o-transform: translate(-50%, -50%) rotate(-45deg);
       transform: translate(-50%, -50%) rotate(-45deg); }
+
 .woocommerce.widget_price_filter .price_slider_wrapper .price_slider_amount .price_label {
   font-size: 14px; }
 
@@ -3216,6 +3241,7 @@ article .entry-content {
   font-size: 14px;
   border-bottom: 1px solid #e6e6e6;
   color: #333333; }
+
 .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-remove {
   text-align: center; }
   .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-remove a {
@@ -3229,17 +3255,20 @@ article .entry-content {
     width: 20px; }
     .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-remove a:hover {
       background: #0191BC; }
+
 .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-thumbnail {
   text-align: center; }
   .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-thumbnail img {
     border-radius: 100%;
     width: 80px; }
+
 .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-name a {
   color: #454545;
   font-size: 14px;
   font-weight: 700; }
   .woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-name a:hover {
     color: #0191BC; }
+
 .woocommerce-cart .woocommerce table.shop_table.cart tr td.actions {
   border: none;
   padding: 15px 12px; }
@@ -3307,6 +3336,7 @@ article .entry-content {
         transition: background 0.5s ease; }
         .woocommerce .cart-collaterals .cart_totals .shop_table td button:hover {
           background: #0191BC; }
+
 .woocommerce .cart-collaterals .cross-sells {
   float: right; }
   .woocommerce .cart-collaterals .cross-sells .products {
@@ -3378,6 +3408,7 @@ article .entry-content {
 
 .woocommerce #content .wishlist_table thead th {
   text-align: center; }
+
 .woocommerce #content .wishlist_table tbody tr td {
   border: medium none;
   height: 120px;
@@ -3385,6 +3416,7 @@ article .entry-content {
   text-align: center;
   font-size: 14px;
   color: #333; }
+
 .woocommerce #content .wishlist_table tbody tr td.product-remove {
   text-align: center; }
   .woocommerce #content .wishlist_table tbody tr td.product-remove a.remove_from_wishlist {
@@ -3398,17 +3430,20 @@ article .entry-content {
     width: 20px; }
     .woocommerce #content .wishlist_table tbody tr td.product-remove a.remove_from_wishlist:hover {
       background: #0191BC; }
+
 .woocommerce #content .wishlist_table tbody tr td.product-thumbnail {
   text-align: center; }
   .woocommerce #content .wishlist_table tbody tr td.product-thumbnail img {
     border-radius: 100%;
     width: 80px; }
+
 .woocommerce #content .wishlist_table tbody tr td.product-name a {
   color: #454545;
   font-size: 14px;
   font-weight: 700; }
   .woocommerce #content .wishlist_table tbody tr td.product-name a:hover {
     color: #0191BC; }
+
 .woocommerce #content .wishlist_table tbody tr td.product-add-to-cart a {
   background: #00a9e0 none repeat scroll 0 0;
   border-radius: 0;
@@ -3422,6 +3457,7 @@ article .entry-content {
   transition: background 0.5s ease; }
   .woocommerce #content .wishlist_table tbody tr td.product-add-to-cart a:hover {
     background: #0191BC; }
+
 .woocommerce #content .wishlist_table tfoot td {
   border: none;
   border-top: 1px solid #e1e1e1; }
@@ -3454,8 +3490,10 @@ article .entry-content {
   .woocommerce .woocommerce-message .showcoupon {
     margin-left: 10px;
     display: inline-block; }
+
 .woocommerce .woocommerce-info {
   margin-bottom: 0 !important; }
+
 .woocommerce .woocommerce-error {
   border-left: 3px solid #F65656;
   margin-bottom: 30px !important; }
@@ -3468,12 +3506,14 @@ article .entry-content {
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); }
+
 .woocommerce .woocommerce-message {
   margin-bottom: 30px;
   border-left: 3px solid #82B341; }
   .woocommerce .woocommerce-message:before {
     content: "\f058";
     color: #82B341; }
+
 .woocommerce form.checkout_coupon {
   margin: 0;
   padding: 20px;
@@ -3583,16 +3623,19 @@ article .entry-content {
   background: #F9F9F9; }
   .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr th:first-child {
     border-right: 1px solid #e1e1e1; }
+
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr td {
   border: none;
   border-bottom: 1px solid #e1e1e1;
   color: #333333; }
   .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr td:first-child {
     border-right: 1px solid #e1e1e1; }
+
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr.cart-subtotal th,
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr.shipping th {
   background: none;
   border-bottom: 1px solid #e1e1e1; }
+
 .woocommerce table.shop_table.woocommerce-checkout-review-order-table tr.order-total td {
   background: #F9F9F9;
   border-bottom: none; }
