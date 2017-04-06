@@ -1215,17 +1215,11 @@ class estore_woocommerce_product_grid extends WP_Widget {
 								<h3 class="hot-title"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 								<div class="hot-content"><?php the_excerpt(); ?></div>
 								<!-- Rating products -->
-								<?php
-								$rating_count = $product->get_rating_count();
-								$average      = $product->get_average_rating(); ?>
-
-								<div class="woocommerce-product-rating woocommerce" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
-									<div class="star-rating" title="<?php printf( esc_html__( 'Rated %s out of 5', 'estore' ), $average ); ?>">
-										<span style="width:<?php echo ( ( $average / 5 ) * 100 ); ?>%">
-											<strong itemprop="ratingValue" class="rating"><?php echo esc_html( $average ); ?></strong> <?php printf( esc_html__( 'out of %s5%s', 'estore' ), '<span itemprop="bestRating">', '</span>' ); ?>
-										</span>
-									</div>
-								</div>
+								<?php if ( $rating_html = wc_get_rating_html( $product->get_average_rating() ) ) { ?>
+									<?php echo $rating_html; ?>
+								<?php } else {
+									echo '<div class="star-rating"></div>' ;
+								}?>
 
 								<?php
 								if( function_exists( 'YITH_WCWL' ) ){
