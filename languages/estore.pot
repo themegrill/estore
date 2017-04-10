@@ -1,31 +1,31 @@
-# Copyright (C) 2016 ThemeGrill
+# Copyright (C) 2017 ThemeGrill
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.1.2\n"
+"Project-Id-Version: eStore 1.1.7\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2016-09-02 11:15:50+00:00\n"
+"POT-Creation-Date: 2017-04-10 11:45:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: 404.php:21 404.php:34
+#: 404.php:20 404.php:33
 msgid "404"
 msgstr ""
 
-#: 404.php:36
+#: 404.php:35
 msgid "error"
 msgstr ""
 
-#: 404.php:39
+#: 404.php:38
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:42
+#: 404.php:41
 msgid "It looks like nothing was found at this location. Try the search below."
 msgstr ""
 
@@ -53,15 +53,15 @@ msgstr ""
 msgid "Proudly powered by %s."
 msgstr ""
 
-#: functions.php:60
+#: functions.php:83
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:61
+#: functions.php:84
 msgid "Header Top Bar Menu"
 msgstr ""
 
-#: functions.php:62
+#: functions.php:85
 msgid "Secondary Menu"
 msgstr ""
 
@@ -69,24 +69,24 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:62 header.php:203
+#: header.php:67 header.php:208
 msgid "My Account"
 msgstr ""
 
-#: header.php:65
+#: header.php:70
 msgid "Login/Register"
 msgstr ""
 
-#: header.php:65
+#: header.php:70
 msgid "Login/ Register"
 msgstr ""
 
-#: header.php:151 inc/woocommerce.php:469 woocommerce/cart/cart-totals.php:99
+#: header.php:156 inc/woocommerce.php:494 woocommerce/cart/cart-totals.php:99
 #: woocommerce/cart/cart-totals.php:100
 msgid "Total"
 msgstr ""
 
-#: header.php:206
+#: header.php:211
 msgid "Login / Register"
 msgstr ""
 
@@ -124,16 +124,17 @@ msgstr ""
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:130 inc/customizer.php:52
+#: inc/admin/class-estore-admin.php:130 inc/customizer.php:56
 msgid "View Demo"
 msgstr ""
 
 #: inc/admin/class-estore-admin.php:132 inc/admin/class-estore-admin.php:202
 #: inc/admin/class-estore-admin.php:511 inc/customizer.php:36
+#: inc/customizer.php:52
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:134 inc/customizer.php:56
+#: inc/admin/class-estore-admin.php:134 inc/customizer.php:60
 msgid "Rate this theme"
 msgstr ""
 
@@ -306,7 +307,7 @@ msgstr ""
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:364 inc/customizer.php:257
+#: inc/admin/class-estore-admin.php:364 inc/customizer.php:284
 msgid "Primary Color Option"
 msgstr ""
 
@@ -366,7 +367,7 @@ msgstr ""
 msgid "Extra Options on Widgets"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:418 inc/widgets.php:267
+#: inc/admin/class-estore-admin.php:418 inc/widgets.php:266
 msgid "TG: About Widget"
 msgstr ""
 
@@ -374,31 +375,31 @@ msgstr ""
 msgid "TG: Advertisement"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:428 inc/widgets.php:1859
+#: inc/admin/class-estore-admin.php:428 inc/widgets.php:1861
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:433 inc/widgets.php:2029
+#: inc/admin/class-estore-admin.php:433 inc/widgets.php:2031
 msgid "TG: Category Grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:438 inc/widgets.php:1617
+#: inc/admin/class-estore-admin.php:438 inc/widgets.php:1619
 msgid "TG: Category Slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:443 inc/widgets.php:1297
+#: inc/admin/class-estore-admin.php:443 inc/widgets.php:1300
 msgid "TG: Featured Posts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:448 inc/widgets.php:477
+#: inc/admin/class-estore-admin.php:448 inc/widgets.php:476
 msgid "TG: Horizontal Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:453 inc/widgets.php:358
+#: inc/admin/class-estore-admin.php:453 inc/widgets.php:357
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:458 inc/widgets.php:1457
+#: inc/admin/class-estore-admin.php:458 inc/widgets.php:1460
 msgid "TG: Logo"
 msgstr ""
 
@@ -410,7 +411,7 @@ msgstr ""
 msgid "TG: Logos"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:473 inc/widgets.php:781
+#: inc/admin/class-estore-admin.php:473 inc/widgets.php:780
 msgid "TG: Products Carousel"
 msgstr ""
 
@@ -418,11 +419,11 @@ msgstr ""
 msgid "TG: Product slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:483 inc/widgets.php:688
+#: inc/admin/class-estore-admin.php:483 inc/widgets.php:687
 msgid "TG: Vertical Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:488 inc/widgets.php:581
+#: inc/admin/class-estore-admin.php:488 inc/widgets.php:580
 msgid "TG: Vertical Promo WC Category"
 msgstr ""
 
@@ -442,7 +443,7 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:28 inc/customizer.php:288
+#: inc/admin/meta-boxes.php:28 inc/customizer.php:315
 msgid "Default Layout"
 msgstr ""
 
@@ -462,224 +463,236 @@ msgstr ""
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:69
+#: inc/customizer.php:73
 msgid "eStore Important Links"
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:90
 msgid "Important Links"
 msgstr ""
 
-#: inc/customizer.php:99
+#: inc/customizer.php:111
+msgid "Choose the required option for Header Media placement"
+msgstr ""
+
+#: inc/customizer.php:115
+msgid "Position One: Display Header Media just above the site Title/Text"
+msgstr ""
+
+#: inc/customizer.php:116
+msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
+msgstr ""
+
+#: inc/customizer.php:126
 msgid "Change Header Settings here"
 msgstr ""
 
-#: inc/customizer.php:101
+#: inc/customizer.php:128
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:108
+#: inc/customizer.php:135
 msgid "Header Integrations"
 msgstr ""
 
-#: inc/customizer.php:121
+#: inc/customizer.php:148
 msgid "Enable Language Selection (WPML)"
 msgstr ""
 
-#: inc/customizer.php:134
+#: inc/customizer.php:161
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:155 inc/customizer.php:696
+#: inc/customizer.php:182 inc/customizer.php:723
 msgid "Upload logo"
 msgstr ""
 
-#: inc/customizer.php:177
+#: inc/customizer.php:204
 msgid "Choose the required option"
 msgstr ""
 
-#: inc/customizer.php:181
+#: inc/customizer.php:208
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:209
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:183
+#: inc/customizer.php:210
 msgid "Show both header logo and text"
 msgstr ""
 
-#: inc/customizer.php:184
+#: inc/customizer.php:211
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:194
+#: inc/customizer.php:221
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:212
+#: inc/customizer.php:239
 msgid "Activate the header top bar"
 msgstr ""
 
-#: inc/customizer.php:233
+#: inc/customizer.php:260
 msgid "Header Text"
 msgstr ""
 
-#: inc/customizer.php:234
+#: inc/customizer.php:261
 msgid "Paste the Font Awesome icon font"
 msgstr ""
 
-#: inc/customizer.php:246
+#: inc/customizer.php:273
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:248
+#: inc/customizer.php:275
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:277
+#: inc/customizer.php:304
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:307
+#: inc/customizer.php:334
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:325
+#: inc/customizer.php:352
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:344
+#: inc/customizer.php:371
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:362
+#: inc/customizer.php:389
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:381
+#: inc/customizer.php:408
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:399
+#: inc/customizer.php:426
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:416
+#: inc/customizer.php:443
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:420
+#: inc/customizer.php:447
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:421
+#: inc/customizer.php:448
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:432
+#: inc/customizer.php:459
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:452
+#: inc/customizer.php:479
 msgid "Write your Custom CSS here"
 msgstr ""
 
-#: inc/customizer.php:463
+#: inc/customizer.php:490
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:480
+#: inc/customizer.php:507
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:484
+#: inc/customizer.php:511
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:485
+#: inc/customizer.php:512
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:486
+#: inc/customizer.php:513
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:487
+#: inc/customizer.php:514
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:497
+#: inc/customizer.php:524
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:499
+#: inc/customizer.php:526
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:506 inc/woocommerce.php:125
+#: inc/customizer.php:533 inc/woocommerce.php:125
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:529 inc/woocommerce.php:148
+#: inc/customizer.php:556 inc/woocommerce.php:148
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:544
+#: inc/customizer.php:571
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:546
+#: inc/customizer.php:573
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:563
+#: inc/customizer.php:590
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:583
+#: inc/customizer.php:610
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:603
+#: inc/customizer.php:630
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:623
+#: inc/customizer.php:650
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:643
+#: inc/customizer.php:670
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:663
+#: inc/customizer.php:690
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:675
+#: inc/customizer.php:702
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1416 inc/widgets.php:2244
+#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
 msgid "0 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1416 inc/widgets.php:2244
+#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
 msgid "1 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1416 inc/widgets.php:2244
+#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
 msgid " % Comments"
 msgstr ""
 
@@ -711,7 +724,7 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: inc/estore.php:201 inc/widgets.php:286
+#: inc/estore.php:201 inc/widgets.php:285
 msgid "Page"
 msgstr ""
 
@@ -756,9 +769,9 @@ msgstr ""
 msgid "Add your Advertisement here"
 msgstr ""
 
-#: inc/widgets.php:170 inc/widgets.php:281 inc/widgets.php:801
-#: inc/widgets.php:1031 inc/widgets.php:1316 inc/widgets.php:1489
-#: inc/widgets.php:1879 inc/widgets.php:2053
+#: inc/widgets.php:170 inc/widgets.php:280 inc/widgets.php:802
+#: inc/widgets.php:1040 inc/widgets.php:1319 inc/widgets.php:1492
+#: inc/widgets.php:1881 inc/widgets.php:2055
 msgid "Title:"
 msgstr ""
 
@@ -774,240 +787,246 @@ msgstr ""
 msgid "Advertisement Image "
 msgstr ""
 
-#: inc/widgets.php:189 inc/widgets.php:1055 inc/widgets.php:1513
+#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
 #: inc/widgets.php:2077
-msgid "Upload Image"
+msgid "Choose an image"
 msgstr ""
 
-#: inc/widgets.php:261
+#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
+#: inc/widgets.php:2077
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
+#: inc/widgets.php:2077
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets.php:260
 msgid "Show your about page. Suitable for Click to Action."
 msgstr ""
 
-#: inc/widgets.php:285
+#: inc/widgets.php:284
 msgid "Select a page to display Title, Excerpt and Featured image."
 msgstr ""
 
-#: inc/widgets.php:353
+#: inc/widgets.php:352
 msgid ""
 "Display WooCommerce Product Categories with featured image in horizontal "
 "layout."
 msgstr ""
 
-#: inc/widgets.php:375 inc/widgets.php:598
+#: inc/widgets.php:374 inc/widgets.php:597
 msgid "Category"
 msgstr ""
 
-#: inc/widgets.php:472
+#: inc/widgets.php:471
 msgid "Display some pages with featured image in horizontal layout."
 msgstr ""
 
-#: inc/widgets.php:494 inc/widgets.php:705
+#: inc/widgets.php:493 inc/widgets.php:704
 msgid "Pages"
 msgstr ""
 
-#: inc/widgets.php:576
+#: inc/widgets.php:575
 msgid ""
 "Display WooCommerce Product Categories in vertical layout with featured "
 "image."
 msgstr ""
 
-#: inc/widgets.php:683
+#: inc/widgets.php:682
 msgid "Display some pages in vertical layout with featured image."
 msgstr ""
 
-#: inc/widgets.php:775
+#: inc/widgets.php:774
 msgid "Show WooCommerce Featured Products Carousel."
 msgstr ""
 
-#: inc/widgets.php:805 inc/widgets.php:1035 inc/widgets.php:1883
-#: inc/widgets.php:2057
+#: inc/widgets.php:806 inc/widgets.php:1044 inc/widgets.php:1885
+#: inc/widgets.php:2059
 msgid "Description:"
 msgstr ""
 
-#: inc/widgets.php:809
+#: inc/widgets.php:810
 msgid "Product Source:"
 msgstr ""
 
-#: inc/widgets.php:811
+#: inc/widgets.php:812
 msgid "Latest Products"
 msgstr ""
 
-#: inc/widgets.php:812
+#: inc/widgets.php:813
 msgid "Featured Products"
 msgstr ""
 
-#: inc/widgets.php:813
+#: inc/widgets.php:814
 msgid "On Sale Products"
 msgstr ""
 
-#: inc/widgets.php:814
+#: inc/widgets.php:815
 msgid "Certain Category"
 msgstr ""
 
-#: inc/widgets.php:819 inc/widgets.php:1066 inc/widgets.php:2088
+#: inc/widgets.php:820 inc/widgets.php:1074 inc/widgets.php:2089
 msgid "Category:"
 msgstr ""
 
-#: inc/widgets.php:834 inc/widgets.php:1080
+#: inc/widgets.php:835 inc/widgets.php:1088
 msgid "Number of Products:"
 msgstr ""
 
-#: inc/widgets.php:948 inc/widgets.php:1202 inc/woocommerce.php:302
-#: inc/woocommerce.php:316
+#: inc/widgets.php:840
+msgid "Check to hide image hover effect."
+msgstr ""
+
+#: inc/widgets.php:955 inc/widgets.php:1210 inc/woocommerce.php:320
+#: inc/woocommerce.php:338
 msgid "Sale!"
 msgstr ""
 
-#: inc/widgets.php:967 inc/widgets.php:1214
-msgid "Rated %s out of 5"
-msgstr ""
-
-#: inc/widgets.php:972
+#: inc/widgets.php:981
 msgid "Price:"
 msgstr ""
 
-#: inc/widgets.php:979 inc/widgets.php:1225 inc/widgets.php:1261
+#: inc/widgets.php:988 inc/widgets.php:1228 inc/widgets.php:1264
 msgid "Add to Wishlist"
 msgstr ""
 
-#: inc/widgets.php:1001
+#: inc/widgets.php:1010
 msgid "Show WooCommerce Featured Products Grid."
 msgstr ""
 
-#: inc/widgets.php:1007
+#: inc/widgets.php:1016
 msgid "TG: Product Grid"
 msgstr ""
 
-#: inc/widgets.php:1038 inc/widgets.php:2060
+#: inc/widgets.php:1047 inc/widgets.php:2062
 msgid "Add your Category Image here."
 msgstr ""
 
-#: inc/widgets.php:1041 inc/widgets.php:2063
+#: inc/widgets.php:1050 inc/widgets.php:2065
 msgid "Image Link"
 msgstr ""
 
-#: inc/widgets.php:1045 inc/widgets.php:2067
+#: inc/widgets.php:1054 inc/widgets.php:2069
 msgid "Category Image"
 msgstr ""
 
-#: inc/widgets.php:1058 inc/widgets.php:2080
+#: inc/widgets.php:1066 inc/widgets.php:2081
 msgid "Choose where to align your image."
 msgstr ""
 
-#: inc/widgets.php:1061 inc/widgets.php:2083
+#: inc/widgets.php:1069 inc/widgets.php:2084
 msgid "Right Align"
 msgstr ""
 
-#: inc/widgets.php:1062 inc/widgets.php:2084
+#: inc/widgets.php:1070 inc/widgets.php:2085
 msgid "Left Align"
 msgstr ""
 
-#: inc/widgets.php:1155 inc/widgets.php:2170
-#: page-templates/template-wc-collection.php:60
+#: inc/widgets.php:1163 inc/widgets.php:2171
+#: page-templates/template-wc-collection.php:61
 msgid "View all"
 msgstr ""
 
-#: inc/widgets.php:1182
+#: inc/widgets.php:1190
 msgid "Hot products"
 msgstr ""
 
-#: inc/widgets.php:1216
-msgid "out of %s5%s"
-msgstr ""
-
-#: inc/widgets.php:1254 woocommerce/loop/price.php:26
+#: inc/widgets.php:1257 woocommerce/loop/price.php:26
 msgid "Price: "
 msgstr ""
 
-#: inc/widgets.php:1291
+#: inc/widgets.php:1294
 msgid "Display latest posts or posts of specific category"
 msgstr ""
 
-#: inc/widgets.php:1320 inc/widgets.php:1633 inc/widgets.php:1887
+#: inc/widgets.php:1323 inc/widgets.php:1635 inc/widgets.php:1889
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets.php:1325 inc/widgets.php:1638 inc/widgets.php:1892
+#: inc/widgets.php:1328 inc/widgets.php:1640 inc/widgets.php:1894
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets.php:1326 inc/widgets.php:1639 inc/widgets.php:1893
+#: inc/widgets.php:1329 inc/widgets.php:1641 inc/widgets.php:1895
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets.php:1330 inc/widgets.php:1643 inc/widgets.php:1759
-#: inc/widgets.php:1897
+#: inc/widgets.php:1333 inc/widgets.php:1645 inc/widgets.php:1761
+#: inc/widgets.php:1899
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets.php:1403
+#: inc/widgets.php:1406
 msgid "Blog Image"
 msgstr ""
 
-#: inc/widgets.php:1428 template-parts/content.php:38
+#: inc/widgets.php:1431 template-parts/content.php:38
 msgid "Read more"
 msgstr ""
 
-#: inc/widgets.php:1451
+#: inc/widgets.php:1454
 msgid "Add your clients/brand logo images here"
 msgstr ""
 
-#: inc/widgets.php:1492
+#: inc/widgets.php:1495
 msgid "Add your clients/brands logo Here"
 msgstr ""
 
-#: inc/widgets.php:1499
+#: inc/widgets.php:1502
 msgid "Logo Link "
 msgstr ""
 
-#: inc/widgets.php:1503
+#: inc/widgets.php:1506
 msgid "Logo Image "
 msgstr ""
 
-#: inc/widgets.php:1610
+#: inc/widgets.php:1612
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the slider."
 msgstr ""
 
-#: inc/widgets.php:1706 inc/widgets.php:2003
+#: inc/widgets.php:1708 inc/widgets.php:2005
 msgid "Read More"
 msgstr ""
 
-#: inc/widgets.php:1726
+#: inc/widgets.php:1728
 msgid "Display WooCommerce Product from category."
 msgstr ""
 
-#: inc/widgets.php:1733
+#: inc/widgets.php:1735
 msgid "TG: Product Slider"
 msgstr ""
 
-#: inc/widgets.php:1749
+#: inc/widgets.php:1751
 msgid "Number of products to display:"
 msgstr ""
 
-#: inc/widgets.php:1754
+#: inc/widgets.php:1756
 msgid "Show Latest Products"
 msgstr ""
 
-#: inc/widgets.php:1755
+#: inc/widgets.php:1757
 msgid "Show Products from a category"
 msgstr ""
 
-#: inc/widgets.php:1832
+#: inc/widgets.php:1834
 msgid "Add to Cart"
 msgstr ""
 
-#: inc/widgets.php:1852
+#: inc/widgets.php:1854
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the carousel."
 msgstr ""
 
-#: inc/widgets.php:2023
+#: inc/widgets.php:2025
 msgid "Show Featured Category Posts in Grid Layout."
 msgstr ""
 
-#: inc/widgets.php:2101
+#: inc/widgets.php:2102
 msgid "Number of Posts:"
 msgstr ""
 
@@ -1053,11 +1072,15 @@ msgstr ""
 msgid "This layout will be reflected in product page of WooCommerce."
 msgstr ""
 
-#: navigation.php:24 navigation.php:36
+#: inc/woocommerce.php:244
+msgid "Check to hide hover effect on Product Images in WooCommerce Archive Pages."
+msgstr ""
+
+#: navigation.php:21 navigation.php:33
 msgid "&larr; Previous"
 msgstr ""
 
-#: navigation.php:25 navigation.php:37
+#: navigation.php:22 navigation.php:34
 msgid "Next &rarr;"
 msgstr ""
 
@@ -1105,26 +1128,20 @@ msgstr ""
 msgid "estimated for %s"
 msgstr ""
 
-#: woocommerce/cart/cross-sells.php:47
+#: woocommerce/cart/cross-sells.php:27
 msgid "You may be interested in&hellip;"
 msgstr ""
 
-#: woocommerce/checkout/form-billing.php:28
+#: woocommerce/checkout/form-billing.php:26
 msgid "Billing &amp; Shipping"
 msgstr ""
 
-#: woocommerce/checkout/form-billing.php:32
-msgid "Billing Details"
+#: woocommerce/checkout/form-billing.php:30
+msgid "Billing details"
 msgstr ""
 
-#: woocommerce/checkout/form-billing.php:56
+#: woocommerce/checkout/form-billing.php:51
 msgid "Create an account?"
-msgstr ""
-
-#: woocommerce/checkout/form-billing.php:67
-msgid ""
-"Create an account by entering the information below. If you are a returning "
-"customer please login at the top of the page."
 msgstr ""
 
 #: woocommerce/checkout/form-checkout.php:28
@@ -1150,7 +1167,7 @@ msgid ""
 "Shipping section."
 msgstr ""
 
-#: woocommerce/single-product/related.php:51
+#: woocommerce/single-product/related.php:26
 msgid "Related Products"
 msgstr ""
 
@@ -1193,12 +1210,12 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: navigation.php:44
+#: navigation.php:41
 msgctxt "Previous post link"
 msgid "&larr;"
 msgstr ""
 
-#: navigation.php:45
+#: navigation.php:42
 msgctxt "Next post link"
 msgid "&rarr;"
 msgstr ""

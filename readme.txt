@@ -93,6 +93,9 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 
+= Version 1.1.7 - 2017-04-10 =
+* Update - Added compatibility with WooCommerce 3.0.1
+
 = Version 1.1.6 - 2017-04-06 =
 * Update - Added compatibility with WooCommerce 3.0
 * Feature - Added compatibility for ThemeGrill Demo Importer plugin
