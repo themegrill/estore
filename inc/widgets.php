@@ -880,9 +880,14 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 		if ( $source == 'featured' ) {
 			$args = array(
 				'post_type'        => 'product',
-				'meta_key'         => '_featured',
-				'meta_value'       => 'yes',
-				'posts_per_page'   => $product_number
+				'posts_per_page'   => $product_number,
+				'tax_query' => array(
+					array(
+						'taxonomy' => 'product_visibility',
+						'field'    => 'name',
+						'terms'    => 'featured',
+					),
+				)
 			);
 		} elseif ( $source == 'sale' ) {
 			$args = array(
