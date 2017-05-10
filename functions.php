@@ -218,3 +218,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-admin.php';
 }
+
+/**
+ * Load TGMPA Configs.
+ */
+require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/class-tgm-plugin-activation.php' );
+require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/tgmpa-estore.php' );
