@@ -95,7 +95,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 
-= Version TBD =
+= Version 1.1.9 - 2017-05-10 =
 * Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
 * Fix - Product Carousel features product issue fix.
 

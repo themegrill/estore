@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.1.8\n"
+"Project-Id-Version: eStore 1.1.9\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2017-04-17 08:33:10+00:00\n"
+"POT-Creation-Date: 2017-05-10 11:38:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -375,19 +375,19 @@ msgstr ""
 msgid "TG: Advertisement"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:428 inc/widgets.php:1861
+#: inc/admin/class-estore-admin.php:428 inc/widgets.php:1866
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:433 inc/widgets.php:2031
+#: inc/admin/class-estore-admin.php:433 inc/widgets.php:2036
 msgid "TG: Category Grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:438 inc/widgets.php:1619
+#: inc/admin/class-estore-admin.php:438 inc/widgets.php:1624
 msgid "TG: Category Slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:443 inc/widgets.php:1300
+#: inc/admin/class-estore-admin.php:443 inc/widgets.php:1305
 msgid "TG: Featured Posts"
 msgstr ""
 
@@ -399,7 +399,7 @@ msgstr ""
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:458 inc/widgets.php:1460
+#: inc/admin/class-estore-admin.php:458 inc/widgets.php:1465
 msgid "TG: Logo"
 msgstr ""
 
@@ -684,15 +684,15 @@ msgstr ""
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
+#: inc/estore.php:24 inc/widgets.php:1424 inc/widgets.php:2250
 msgid "0 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
+#: inc/estore.php:24 inc/widgets.php:1424 inc/widgets.php:2250
 msgid "1 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1419 inc/widgets.php:2245
+#: inc/estore.php:24 inc/widgets.php:1424 inc/widgets.php:2250
 msgid " % Comments"
 msgstr ""
 
@@ -726,6 +726,373 @@ msgstr ""
 
 #: inc/estore.php:201 inc/widgets.php:285
 msgid "Page"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
+#: inc/tgm-plugin-activation/tgmpa-estore.php:40
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:328
+#: inc/tgm-plugin-activation/tgmpa-estore.php:41
+msgid "Install Plugins"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:330
+#: inc/tgm-plugin-activation/tgmpa-estore.php:43
+#. translators: %s: plugin name.
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:332
+#: inc/tgm-plugin-activation/tgmpa-estore.php:45
+#. translators: %s: plugin name.
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:333
+#: inc/tgm-plugin-activation/tgmpa-estore.php:46
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:370
+#: inc/tgm-plugin-activation/tgmpa-estore.php:83
+#. translators: 1: plugin name(s).
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:375
+#: inc/tgm-plugin-activation/tgmpa-estore.php:88
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:380
+#: inc/tgm-plugin-activation/tgmpa-estore.php:93
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:385
+#: inc/tgm-plugin-activation/tgmpa-estore.php:98
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:386
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:827
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3580
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:387
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3159
+#: inc/tgm-plugin-activation/tgmpa-estore.php:99
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:388
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2952
+#: inc/tgm-plugin-activation/tgmpa-estore.php:100
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:390
+#: inc/tgm-plugin-activation/tgmpa-estore.php:102
+#. translators: 1: plugin name.
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:392
+#: inc/tgm-plugin-activation/tgmpa-estore.php:104
+#. translators: 1: plugin name.
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:394
+#: inc/tgm-plugin-activation/tgmpa-estore.php:106
+#. translators: 1: dashboard link.
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:395
+#: inc/tgm-plugin-activation/tgmpa-estore.php:107
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:396
+#: inc/tgm-plugin-activation/tgmpa-estore.php:108
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:397
+#: inc/tgm-plugin-activation/tgmpa-estore.php:109
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:522
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:523
+msgid "Update Required"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:934
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:937
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1982
+#. translators: %s: version number
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2273
+msgid "Required"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2276
+msgid "Recommended"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2292
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2295
+msgid "External Source"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2298
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2315
+msgid "Not Installed"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2319
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2321
+msgid "Active"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2327
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2330
+msgid "Requires Update"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2333
+msgid "Update recommended"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2392
+#. translators: 1: number of plugins.
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2396
+#. translators: 1: number of plugins.
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2400
+#. translators: 1: number of plugins.
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2490
+msgid "Installed version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2498
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2510
+msgid "Available version:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2533
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2547
+msgid "Plugin"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2548
+msgid "Source"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2549
+msgid "Type"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2553
+msgid "Version"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2554
+msgid "Status"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2603
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Install %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2608
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Update %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2614
+#. translators: %2$s: plugin name in screen reader markup
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2684
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2717
+msgid "Install"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2723
+msgid "Update"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2726
+msgid "Activate"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2757
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2759
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2800
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2802
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2908
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2934
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3158
+msgid "Plugin activation failed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3498
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3501
+#. translators: 1: plugin name, 2: error message.
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3503
+#. translators: 1: plugin name.
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3507
+msgid ""
+"The installation and activation process is starting. This process may take "
+"a while on some hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#. translators: 1: plugin name.
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Show Details"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3509
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+msgid "Hide Details"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3510
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3512
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3515
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3517
+#. translators: 1: plugin name.
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3518
+msgid "All installations have been completed."
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:3520
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: inc/widgets.php:40
@@ -770,8 +1137,8 @@ msgid "Add your Advertisement here"
 msgstr ""
 
 #: inc/widgets.php:170 inc/widgets.php:280 inc/widgets.php:802
-#: inc/widgets.php:1040 inc/widgets.php:1319 inc/widgets.php:1492
-#: inc/widgets.php:1881 inc/widgets.php:2055
+#: inc/widgets.php:1045 inc/widgets.php:1324 inc/widgets.php:1497
+#: inc/widgets.php:1886 inc/widgets.php:2060
 msgid "Title:"
 msgstr ""
 
@@ -787,18 +1154,18 @@ msgstr ""
 msgid "Advertisement Image "
 msgstr ""
 
-#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
-#: inc/widgets.php:2077
+#: inc/widgets.php:187 inc/widgets.php:1067 inc/widgets.php:1519
+#: inc/widgets.php:2082
 msgid "Choose an image"
 msgstr ""
 
-#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
-#: inc/widgets.php:2077
+#: inc/widgets.php:187 inc/widgets.php:1067 inc/widgets.php:1519
+#: inc/widgets.php:2082
 msgid "Use image"
 msgstr ""
 
-#: inc/widgets.php:187 inc/widgets.php:1062 inc/widgets.php:1514
-#: inc/widgets.php:2077
+#: inc/widgets.php:187 inc/widgets.php:1067 inc/widgets.php:1519
+#: inc/widgets.php:2082
 msgid "Select an Image"
 msgstr ""
 
@@ -842,8 +1209,8 @@ msgstr ""
 msgid "Show WooCommerce Featured Products Carousel."
 msgstr ""
 
-#: inc/widgets.php:806 inc/widgets.php:1044 inc/widgets.php:1885
-#: inc/widgets.php:2059
+#: inc/widgets.php:806 inc/widgets.php:1049 inc/widgets.php:1890
+#: inc/widgets.php:2064
 msgid "Description:"
 msgstr ""
 
@@ -867,11 +1234,11 @@ msgstr ""
 msgid "Certain Category"
 msgstr ""
 
-#: inc/widgets.php:820 inc/widgets.php:1074 inc/widgets.php:2089
+#: inc/widgets.php:820 inc/widgets.php:1079 inc/widgets.php:2094
 msgid "Category:"
 msgstr ""
 
-#: inc/widgets.php:835 inc/widgets.php:1088
+#: inc/widgets.php:835 inc/widgets.php:1093
 msgid "Number of Products:"
 msgstr ""
 
@@ -879,154 +1246,154 @@ msgstr ""
 msgid "Check to hide image hover effect."
 msgstr ""
 
-#: inc/widgets.php:955 inc/widgets.php:1210 inc/woocommerce.php:320
+#: inc/widgets.php:960 inc/widgets.php:1215 inc/woocommerce.php:320
 #: inc/woocommerce.php:338
 msgid "Sale!"
 msgstr ""
 
-#: inc/widgets.php:981
+#: inc/widgets.php:986
 msgid "Price:"
 msgstr ""
 
-#: inc/widgets.php:988 inc/widgets.php:1228 inc/widgets.php:1264
+#: inc/widgets.php:993 inc/widgets.php:1233 inc/widgets.php:1269
 msgid "Add to Wishlist"
 msgstr ""
 
-#: inc/widgets.php:1010
+#: inc/widgets.php:1015
 msgid "Show WooCommerce Featured Products Grid."
 msgstr ""
 
-#: inc/widgets.php:1016
+#: inc/widgets.php:1021
 msgid "TG: Product Grid"
 msgstr ""
 
-#: inc/widgets.php:1047 inc/widgets.php:2062
+#: inc/widgets.php:1052 inc/widgets.php:2067
 msgid "Add your Category Image here."
 msgstr ""
 
-#: inc/widgets.php:1050 inc/widgets.php:2065
+#: inc/widgets.php:1055 inc/widgets.php:2070
 msgid "Image Link"
 msgstr ""
 
-#: inc/widgets.php:1054 inc/widgets.php:2069
+#: inc/widgets.php:1059 inc/widgets.php:2074
 msgid "Category Image"
 msgstr ""
 
-#: inc/widgets.php:1066 inc/widgets.php:2081
+#: inc/widgets.php:1071 inc/widgets.php:2086
 msgid "Choose where to align your image."
 msgstr ""
 
-#: inc/widgets.php:1069 inc/widgets.php:2084
+#: inc/widgets.php:1074 inc/widgets.php:2089
 msgid "Right Align"
 msgstr ""
 
-#: inc/widgets.php:1070 inc/widgets.php:2085
+#: inc/widgets.php:1075 inc/widgets.php:2090
 msgid "Left Align"
 msgstr ""
 
-#: inc/widgets.php:1163 inc/widgets.php:2171
+#: inc/widgets.php:1168 inc/widgets.php:2176
 #: page-templates/template-wc-collection.php:61
 msgid "View all"
 msgstr ""
 
-#: inc/widgets.php:1190
+#: inc/widgets.php:1195
 msgid "Hot products"
 msgstr ""
 
-#: inc/widgets.php:1257 woocommerce/loop/price.php:26
+#: inc/widgets.php:1262 woocommerce/loop/price.php:26
 msgid "Price: "
 msgstr ""
 
-#: inc/widgets.php:1294
+#: inc/widgets.php:1299
 msgid "Display latest posts or posts of specific category"
 msgstr ""
 
-#: inc/widgets.php:1323 inc/widgets.php:1635 inc/widgets.php:1889
+#: inc/widgets.php:1328 inc/widgets.php:1640 inc/widgets.php:1894
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets.php:1328 inc/widgets.php:1640 inc/widgets.php:1894
+#: inc/widgets.php:1333 inc/widgets.php:1645 inc/widgets.php:1899
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets.php:1329 inc/widgets.php:1641 inc/widgets.php:1895
+#: inc/widgets.php:1334 inc/widgets.php:1646 inc/widgets.php:1900
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets.php:1333 inc/widgets.php:1645 inc/widgets.php:1761
-#: inc/widgets.php:1899
+#: inc/widgets.php:1338 inc/widgets.php:1650 inc/widgets.php:1766
+#: inc/widgets.php:1904
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets.php:1406
+#: inc/widgets.php:1411
 msgid "Blog Image"
 msgstr ""
 
-#: inc/widgets.php:1431 template-parts/content.php:38
+#: inc/widgets.php:1436 template-parts/content.php:38
 msgid "Read more"
 msgstr ""
 
-#: inc/widgets.php:1454
+#: inc/widgets.php:1459
 msgid "Add your clients/brand logo images here"
 msgstr ""
 
-#: inc/widgets.php:1495
+#: inc/widgets.php:1500
 msgid "Add your clients/brands logo Here"
 msgstr ""
 
-#: inc/widgets.php:1502
+#: inc/widgets.php:1507
 msgid "Logo Link "
 msgstr ""
 
-#: inc/widgets.php:1506
+#: inc/widgets.php:1511
 msgid "Logo Image "
 msgstr ""
 
-#: inc/widgets.php:1612
+#: inc/widgets.php:1617
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the slider."
 msgstr ""
 
-#: inc/widgets.php:1708 inc/widgets.php:2005
+#: inc/widgets.php:1713 inc/widgets.php:2010
 msgid "Read More"
 msgstr ""
 
-#: inc/widgets.php:1728
+#: inc/widgets.php:1733
 msgid "Display WooCommerce Product from category."
 msgstr ""
 
-#: inc/widgets.php:1735
+#: inc/widgets.php:1740
 msgid "TG: Product Slider"
 msgstr ""
 
-#: inc/widgets.php:1751
+#: inc/widgets.php:1756
 msgid "Number of products to display:"
 msgstr ""
 
-#: inc/widgets.php:1756
+#: inc/widgets.php:1761
 msgid "Show Latest Products"
 msgstr ""
 
-#: inc/widgets.php:1757
+#: inc/widgets.php:1762
 msgid "Show Products from a category"
 msgstr ""
 
-#: inc/widgets.php:1834
+#: inc/widgets.php:1839
 msgid "Add to Cart"
 msgstr ""
 
-#: inc/widgets.php:1854
+#: inc/widgets.php:1859
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the carousel."
 msgstr ""
 
-#: inc/widgets.php:2025
+#: inc/widgets.php:2030
 msgid "Show Featured Category Posts in Grid Layout."
 msgstr ""
 
-#: inc/widgets.php:2102
+#: inc/widgets.php:2107
 msgid "Number of Posts:"
 msgstr ""
 
@@ -1209,6 +1576,31 @@ msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:1121
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2948
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2342
+#. translators: 1: install status, 2: update status
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2388
+#. translators: 1: number of plugins.
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:2482
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
 
 #: navigation.php:41
 msgctxt "Previous post link"
