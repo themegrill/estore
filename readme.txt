@@ -1,4 +1,4 @@
-﻿== eStore ==
+== eStore ==
 
 eStore is a clean, beautiful and fully customizable responsive WooCommerce WordPress theme. This theme packs many premium features and several custom widgets which helps making your online store professional and well organized. Theme is fully compatible with WooCommerce and YITH WooCommerce Wishlist plugins. As an online store owner, attracting customers and selling products will be lot easier with this theme.
 
@@ -66,6 +66,8 @@ Resources packed within the theme.
   placeholder-shop-380x250.jpg
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
 
+* TGM-Plugin-Activation by Thomas Griffin, Gary Jones, Juliette Reinders Folmer | GPL v2 Licensed
+
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 eStore WordPress Theme, Copyright (c) 2015, ThemeGrill
@@ -94,6 +96,7 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 
 = Version TBD =
+* Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
 * Fix - Product Carousel features product issue fix.
 
 = Version 1.1.8 - 2017-04-17 =
