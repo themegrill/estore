@@ -66,6 +66,8 @@ Resources packed within the theme.
   placeholder-shop-380x250.jpg
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
 
+* TGM-Plugin-Activation by Thomas Griffin, Gary Jones, Juliette Reinders Folmer | GPL v2 Licensed
+
 Unless otherwise specified, all the theme files, scripts and images including the screenshot image are licensed under [GNU GPL] (http://www.gnu.org/licenses/gpl-3.0.txt), version 3 or later.
 
 eStore WordPress Theme, Copyright (c) 2015, ThemeGrill
