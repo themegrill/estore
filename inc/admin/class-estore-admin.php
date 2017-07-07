@@ -131,7 +131,7 @@ class eStore_Admin {
 
 			<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore-pro/' ) ); ?>" class="button button-primary docs" target="_blank"><?php esc_html_e( 'View Pro', 'estore' ); ?></a>
 
-			<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'http://wordpress.org/support/view/theme-reviews/estore?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'estore' ); ?></a>
+			<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://wordpress.org/support/theme/estore/reviews/?filter=5' ) ); ?>" class="button button-secondary docs" target="_blank"><?php esc_html_e( 'Rate this theme', 'estore' ); ?></a>
 		</p>
 
 		<h2 class="nav-tab-wrapper">
