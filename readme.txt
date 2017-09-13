@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD = 
+= Version 1.2.0 - 2017-09-13 = 
 * Tweaks - Updated the WooCommerce template file billing
 
 = Version 1.1.9 - 2017-05-10 =
