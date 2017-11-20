@@ -96,6 +96,7 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 = TBD =
 * Tweak - Add theme support for Jetpack Responsive Videos.
+* Tweak - Fix the category link not displaying in different widget title
 
 = Version 1.2.0 - 2017-09-13 = 
 * Tweaks - Updated the WooCommerce template file billing
