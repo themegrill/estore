@@ -427,7 +427,7 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 				$j = 1;
  				foreach ($all_categories as $cat) {
 					$cat_id   = $cat->term_id;
-					$cat_link = get_category_link( $cat_id );
+					$cat_link = get_term_link( $cat_id );
 				?>
 				<div class="tg-column-3 collection-thumb-block">
 					<a href="<?php echo esc_url( $cat_link ); ?>">
@@ -647,7 +647,7 @@ class estore_woocommerce_vertical_promo_widget extends WP_Widget {
 				$j = 1;
  				foreach ($all_categories as $cat) {
 					$cat_id   = $cat->term_id;
-					$cat_link = get_category_link( $cat_id );
+					$cat_link = get_term_link( $cat_id );
 				?>
 				<div class="collection-block">
 					<figure class="slider-collection-img">
@@ -1158,14 +1158,14 @@ class estore_woocommerce_product_grid extends WP_Widget {
 			<div class="section-title-wrapper clearfix">
 				<div class="section-title-block">
 					<?php if ( !empty( $title ) ) { ?>
-					<h3 class="page-title"><a href="<?php echo esc_url( get_category_link( $category ) ); ?>"><?php echo esc_html( $title ); ?></a></h3>
+					<h3 class="page-title"><a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php }
 					if ( !empty( $subtitle ) ) { ?>
 					<h4 class="page-sub-title"><?php echo esc_textarea( $subtitle );?></h4>
 					<?php } ?>
 				</div>
 				<div class="sorting-form-wrapper">
-					<a href="<?php echo esc_url( get_category_link( $category ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
+					<a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
 				</div>
 			</div>
 			<div class="collection-block-wrapper tg-column-wrapper clearfix">
@@ -2166,14 +2166,14 @@ class estore_posts_grid extends WP_Widget {
 			<div class="section-title-wrapper clearfix">
 				<div class="section-title-block">
 					<?php if ( !empty( $title ) ) { ?>
-					<h3 class="page-title"><a href="<?php echo esc_url( get_category_link( $category ) ); ?>"><?php echo esc_html( $title ); ?></a></h3>
+					<h3 class="page-title"><a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php echo esc_html( $title ); ?></a></h3>
 					<?php }
 					if ( !empty( $subtitle ) ) { ?>
 					<h4 class="page-sub-title"><?php echo esc_textarea( $subtitle );?></h4>
 					<?php } ?>
 				</div>
 				<div class="sorting-form-wrapper">
-					<a href="<?php echo esc_url( get_category_link( $category ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
+					<a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
 				</div>
 			</div>
 			<div class="collection-block-wrapper tg-column-wrapper clearfix">
