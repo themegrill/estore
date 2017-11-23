@@ -16,8 +16,7 @@
     tr.cart_item {
         td {
             border: medium none;
-            height: 120px;
-            padding: 0 12px;
+            padding: 15px 12px;
             font-size: 14px;
             border-bottom: 1px solid #e6e6e6;
             color: #333333;
@@ -100,7 +99,7 @@
             td {
                 background: #f8f8f8;
                 border: none;
-                padding: 20px 12px 0;
+                padding: 20px 12px;
                 .shipping-calculator-button {
                     color: #454545;
                     font-weight: 700;
