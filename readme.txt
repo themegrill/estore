@@ -97,6 +97,7 @@ If you want the theme to be translated into your language, feel free to contribu
 = Version 1.2.1 - 2017-11-21 = 
 * Tweak - Add theme support for Jetpack Responsive Videos.
 * Tweak - Fix the category link not displaying in different widget title
+* Tweak - Replace the deprecated function get_cart_url
 
 = Version 1.2.0 - 2017-09-13 = 
 * Tweaks - Updated the WooCommerce template file billing

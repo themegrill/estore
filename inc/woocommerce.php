@@ -486,7 +486,7 @@ function estore_woocommerce_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
 	<div class="estore-cart-views">
-		<a href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" class="wcmenucart-contents">
+		<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="wcmenucart-contents">
 			<i class="fa fa-shopping-cart"></i>
 			<span class="cart-value"><?php echo wp_kses_data ( WC()->cart->get_cart_contents_count() ); ?></span>
 		</a> <!-- quick wishlist end -->
