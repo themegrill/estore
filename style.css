@@ -3381,7 +3381,8 @@ article .entry-content {
   color: #ffffff;
   display: inline-block;
   font-weight: 600;
-  padding: 8px 15px;
+  height: auto;
+  padding: 3px 18px;
   margin: 10px 0 15px; }
   .woocommerce ul.products li.product .add_to_cart_button:hover {
     background: #0191BC; }

@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix   - WooCommerce add to cart button not displaying in product archive page
+
 = Version 1.2.1 - 2017-11-21 = 
 * Tweak - Add theme support for Jetpack Responsive Videos.
 * Tweak - Fix the category link not displaying in different widget title
