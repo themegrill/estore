@@ -737,6 +737,7 @@ function estore_customize_register( $wp_customize ) {
 			array(
 				'default'            => '',
 				'capability'         => 'edit_theme_options',
+				'transport'          => $customizer_selective_refresh,
 				'sanitize_callback'  => 'esc_url_raw'
 			)
 		);
@@ -752,6 +753,14 @@ function estore_customize_register( $wp_customize ) {
 				)
 			)
 		);
+
+		// Selective refresh for payment logo
+		if ( isset( $wp_customize->selective_refresh ) ) {
+			$wp_customize->selective_refresh->add_partial( 'estore_payment_logo'.$i, array(
+				'selector'        => '.payment-partner-wrapper',
+				'render_callback' => '',
+			) );
+		}
 	}
 
 	// Check if WPML Active
