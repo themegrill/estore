@@ -22,6 +22,8 @@ add_action( 'customize_register', 'estore_custom_controls' );
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function estore_customize_register( $wp_customize ) {
+ 	// Transport postMessage variable set
+    $customizer_selective_refresh = isset( $wp_customize->selective_refresh ) ? 'postMessage' : 'refresh';
 
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
@@ -263,6 +265,7 @@ function estore_customize_register( $wp_customize ) {
 		array(
 			'default'            => '',
 			'capability'         => 'edit_theme_options',
+			'transport'          => $customizer_selective_refresh,
 			'sanitize_callback'  => 'estore_sanitize_text'
 		)
 	);
@@ -279,6 +282,14 @@ function estore_customize_register( $wp_customize ) {
 			)
 		)
 	);
+
+	// Selective refresh for header top bar text
+	if ( isset( $wp_customize->selective_refresh ) ) {
+		$wp_customize->selective_refresh->add_partial( 'estore_bar_text', array(
+			'selector'        => '#header-ticker',
+			'render_callback' => 'estore_bar_text',
+		) );
+	}
 
 	// Design Related Options
 	$wp_customize->add_panel(
@@ -840,6 +851,11 @@ function estore_customize_partial_blogdescription() {
    bloginfo( 'description' );
 }
 
+// Function for top eader text selective refresh support
+function estore_bar_text(){
+	$header_bar_text = get_theme_mod( 'estore_bar_text' );
+	echo wp_kses_post($header_bar_text);
+} 
 /*
  * Custom Scripts
  */
