@@ -317,6 +317,7 @@ function estore_customize_register( $wp_customize ) {
 		array(
 			'default'              => '#00a9e0',
 			'capability'           => 'edit_theme_options',
+			'transport'            => 'postMessage',
 			'sanitize_callback'    => 'estore_hex_color_sanitize',
 			'sanitize_js_callback' => 'estore_color_escaping_sanitize'
 		)
