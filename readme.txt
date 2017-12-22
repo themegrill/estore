@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix   - Category link not working in wooCommerce category collection template
+
 = Version 1.2.2 - 2017-12-15 =
 * Fix   - Link color of widget product carousel and featured posts carousel not working with primary color change
 * Tweak - Replace the deprecated function get_cart_url
