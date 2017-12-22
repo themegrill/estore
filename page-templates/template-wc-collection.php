@@ -52,13 +52,13 @@ get_header();
 				<section class="product-collection estore-cat-color_<?php echo $woo_category->term_id; ?>">
 					<div class="section-title-wrapper clearfix">
 						<div class="section-title-block">
-							<h2 class="page-title"><a href="<?php echo esc_url( get_category_link( $woo_category->term_id ) ); ?>"><?php echo $woo_category->name; ?></a></h2>
+							<h2 class="page-title"><a href="<?php echo esc_url( get_term_link( $woo_category->term_id ) ); ?>"><?php echo $woo_category->name; ?></a></h2>
 							<?php if(!empty($woo_category->description)) : ?>
 							<h3 class="page-sub-title"><?php echo $woo_category->description; ?></h3>
 							<?php endif; ?>
 						</div> <!-- section-title-block end -->
 						<div class="view-all">
-							<a href="<?php echo esc_url( get_category_link( $woo_category->term_id ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
+							<a href="<?php echo esc_url( get_term_link( $woo_category->term_id ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
 						</div> <!-- sorting-form-wrapper end -->
 					</div>
 
