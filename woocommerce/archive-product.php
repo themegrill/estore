@@ -10,10 +10,10 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woothemes.com/document/template-structure/
+ * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     2.0.0
+ * @version     3.3.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -92,13 +92,17 @@ get_header( 'shop' );
 				 * @hooked woocommerce_pagination - 10
 				 */
 				do_action( 'woocommerce_after_shop_loop' );
-			?>
+				
+			else :
 
-		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
+				/**
+				 * Hook: woocommerce_no_products_found.
+				 *
+				 * @hooked wc_no_products_found - 10
+				 */
+				do_action( 'woocommerce_no_products_found' );
 
-			<?php wc_get_template( 'loop/no-products-found.php' ); ?>
-
-		<?php endif; ?>
+		endif; ?>
 
 		<?php
 			/**
