@@ -1,14 +1,14 @@
-# Copyright (C) 2017 ThemeGrill
+# Copyright (C) 2018 ThemeGrill
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.2.1\n"
+"Project-Id-Version: eStore 1.2.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2017-11-21 10:19:16+00:00\n"
+"POT-Creation-Date: 2018-01-31 06:24:17+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -81,7 +81,7 @@ msgstr ""
 msgid "Login/ Register"
 msgstr ""
 
-#: header.php:156 inc/woocommerce.php:494 woocommerce/cart/cart-totals.php:99
+#: header.php:156 inc/woocommerce.php:499 woocommerce/cart/cart-totals.php:99
 #: woocommerce/cart/cart-totals.php:100
 msgid "Total"
 msgstr ""
@@ -120,21 +120,21 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:128 inc/customizer.php:40
+#: inc/admin/class-estore-admin.php:128 inc/customizer.php:57
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:130 inc/customizer.php:56
+#: inc/admin/class-estore-admin.php:130 inc/customizer.php:73
 msgid "View Demo"
 msgstr ""
 
 #: inc/admin/class-estore-admin.php:132 inc/admin/class-estore-admin.php:202
-#: inc/admin/class-estore-admin.php:511 inc/customizer.php:36
-#: inc/customizer.php:52
+#: inc/admin/class-estore-admin.php:511 inc/customizer.php:53
+#: inc/customizer.php:69
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:134 inc/customizer.php:60
+#: inc/admin/class-estore-admin.php:134 inc/customizer.php:77
 msgid "Rate this theme"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgid "Customize"
 msgstr ""
 
 #: inc/admin/class-estore-admin.php:188 inc/admin/class-estore-admin.php:190
-#: inc/customizer.php:48
+#: inc/customizer.php:65
 msgid "Documentation"
 msgstr ""
 
@@ -307,7 +307,7 @@ msgstr ""
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:364 inc/customizer.php:284
+#: inc/admin/class-estore-admin.php:364 inc/customizer.php:310
 msgid "Primary Color Option"
 msgstr ""
 
@@ -351,7 +351,7 @@ msgstr ""
 msgid "Demo Content"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:408 inc/customizer.php:44
+#: inc/admin/class-estore-admin.php:408 inc/customizer.php:61
 msgid "Support"
 msgstr ""
 
@@ -443,7 +443,7 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:28 inc/customizer.php:315
+#: inc/admin/meta-boxes.php:28 inc/customizer.php:342
 msgid "Default Layout"
 msgstr ""
 
@@ -463,224 +463,224 @@ msgstr ""
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:73
+#: inc/customizer.php:90
 msgid "eStore Important Links"
 msgstr ""
 
-#: inc/customizer.php:90
+#: inc/customizer.php:107
 msgid "Important Links"
 msgstr ""
 
-#: inc/customizer.php:111
+#: inc/customizer.php:128
 msgid "Choose the required option for Header Media placement"
 msgstr ""
 
-#: inc/customizer.php:115
+#: inc/customizer.php:132
 msgid "Position One: Display Header Media just above the site Title/Text"
 msgstr ""
 
-#: inc/customizer.php:116
+#: inc/customizer.php:133
 msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
 msgstr ""
 
-#: inc/customizer.php:126
+#: inc/customizer.php:143
 msgid "Change Header Settings here"
 msgstr ""
 
-#: inc/customizer.php:128
+#: inc/customizer.php:145
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:135
+#: inc/customizer.php:152
 msgid "Header Integrations"
 msgstr ""
 
-#: inc/customizer.php:148
+#: inc/customizer.php:165
 msgid "Enable Language Selection (WPML)"
 msgstr ""
 
-#: inc/customizer.php:161
+#: inc/customizer.php:178
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:182 inc/customizer.php:723
+#: inc/customizer.php:199 inc/customizer.php:751
 msgid "Upload logo"
 msgstr ""
 
-#: inc/customizer.php:204
+#: inc/customizer.php:221
 msgid "Choose the required option"
 msgstr ""
 
-#: inc/customizer.php:208
+#: inc/customizer.php:225
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:209
+#: inc/customizer.php:226
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:210
+#: inc/customizer.php:227
 msgid "Show both header logo and text"
 msgstr ""
 
-#: inc/customizer.php:211
+#: inc/customizer.php:228
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:221
+#: inc/customizer.php:238
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:239
+#: inc/customizer.php:256
 msgid "Activate the header top bar"
 msgstr ""
 
-#: inc/customizer.php:260
+#: inc/customizer.php:278
 msgid "Header Text"
 msgstr ""
 
-#: inc/customizer.php:261
+#: inc/customizer.php:279
 msgid "Paste the Font Awesome icon font"
 msgstr ""
 
-#: inc/customizer.php:273
+#: inc/customizer.php:299
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:275
+#: inc/customizer.php:301
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:304
+#: inc/customizer.php:331
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:334
+#: inc/customizer.php:361
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:352
+#: inc/customizer.php:379
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:371
+#: inc/customizer.php:398
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:389
+#: inc/customizer.php:416
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:408
+#: inc/customizer.php:435
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:426
+#: inc/customizer.php:453
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:443
+#: inc/customizer.php:470
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:447
+#: inc/customizer.php:474
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:448
+#: inc/customizer.php:475
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:459
+#: inc/customizer.php:486
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:479
+#: inc/customizer.php:506
 msgid "Write your Custom CSS here"
 msgstr ""
 
-#: inc/customizer.php:490
+#: inc/customizer.php:517
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:534
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:511
+#: inc/customizer.php:538
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:512
+#: inc/customizer.php:539
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:513
+#: inc/customizer.php:540
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:514
+#: inc/customizer.php:541
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:551
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:526
+#: inc/customizer.php:553
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:533 inc/woocommerce.php:125
+#: inc/customizer.php:560 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:556 inc/woocommerce.php:148
+#: inc/customizer.php:583 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:571
+#: inc/customizer.php:598
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:573
+#: inc/customizer.php:600
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:590
+#: inc/customizer.php:617
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:610
+#: inc/customizer.php:637
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:630
+#: inc/customizer.php:657
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:650
+#: inc/customizer.php:677
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:670
+#: inc/customizer.php:697
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:690
+#: inc/customizer.php:717
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:702
+#: inc/customizer.php:729
 msgid "Payment Partners Logo"
 msgstr ""
 
@@ -1246,8 +1246,8 @@ msgstr ""
 msgid "Check to hide image hover effect."
 msgstr ""
 
-#: inc/widgets.php:960 inc/widgets.php:1215 inc/woocommerce.php:320
-#: inc/woocommerce.php:338
+#: inc/widgets.php:960 inc/widgets.php:1215 inc/woocommerce.php:317
+#: inc/woocommerce.php:339
 msgid "Sale!"
 msgstr ""
 
@@ -1397,49 +1397,49 @@ msgstr ""
 msgid "Number of Posts:"
 msgstr ""
 
-#: inc/woocommerce.php:60
+#: inc/woocommerce.php:57
 msgid "Shop Sidebar"
 msgstr ""
 
-#: inc/woocommerce.php:62
+#: inc/woocommerce.php:59
 msgid "Widget area for WooCommerce Pages."
 msgstr ""
 
-#: inc/woocommerce.php:86
+#: inc/woocommerce.php:83
 msgid "WooCommerce Settings"
 msgstr ""
 
-#: inc/woocommerce.php:88
+#: inc/woocommerce.php:85
 msgid "Change WooCommerce settings related to theme."
 msgstr ""
 
-#: inc/woocommerce.php:100
+#: inc/woocommerce.php:97
 msgid "Enable My Account Button"
 msgstr ""
 
-#: inc/woocommerce.php:116
+#: inc/woocommerce.php:113
 msgid "Enable Currency Symbol"
 msgstr ""
 
-#: inc/woocommerce.php:163
+#: inc/woocommerce.php:160
 msgid "Archive Page Layout"
 msgstr ""
 
-#: inc/woocommerce.php:182
+#: inc/woocommerce.php:179
 msgid ""
 "This layout will be reflected in archives, categories, search page etc. of "
 "WooCommerce."
 msgstr ""
 
-#: inc/woocommerce.php:200
+#: inc/woocommerce.php:197
 msgid "Product Page Layout"
 msgstr ""
 
-#: inc/woocommerce.php:219
+#: inc/woocommerce.php:216
 msgid "This layout will be reflected in product page of WooCommerce."
 msgstr ""
 
-#: inc/woocommerce.php:244
+#: inc/woocommerce.php:241
 msgid "Check to hide hover effect on Product Images in WooCommerce Archive Pages."
 msgstr ""
 
