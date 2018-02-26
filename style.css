@@ -3118,11 +3118,13 @@ article .entry-content {
     .single-product.woocommerce-page .product .woocommerce-tabs .tabs.wc-tabs li.active {
       background: #ffffff; }
   .single-product.woocommerce-page .product .woocommerce-tabs #tab-description,
-  .single-product.woocommerce-page .product .woocommerce-tabs #tab-reviews {
+  .single-product.woocommerce-page .product .woocommerce-tabs #tab-reviews,
+  .single-product.woocommerce-page .product .woocommerce-tabs #tab-additional_information {
     padding: 20px 20px 0;
     margin-bottom: 0; }
     .single-product.woocommerce-page .product .woocommerce-tabs #tab-description h2,
-    .single-product.woocommerce-page .product .woocommerce-tabs #tab-reviews h2 {
+    .single-product.woocommerce-page .product .woocommerce-tabs #tab-reviews h2,
+    .single-product.woocommerce-page .product .woocommerce-tabs #tab-additional_information h2 {
       font-size: 18px; }
   .single-product.woocommerce-page .product .woocommerce-tabs #tab-reviews {
     padding-bottom: 20px; }
