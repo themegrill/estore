@@ -80,7 +80,7 @@ get_header( 'shop' );
 					woocommerce_product_subcategories();
 				endif; ?>
 
-				<?php if ( wc_get_loop_prop( 'total' ) ) :
+				<?php if ( ! function_exists( 'wc_get_loop_prop' ) || wc_get_loop_prop( 'total' ) ) :
 					while ( have_posts() ) : the_post(); ?>
 
 						<?php

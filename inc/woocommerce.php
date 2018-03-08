@@ -405,16 +405,20 @@ if ( ! function_exists( 'estore_woocommerce_body_class' ) ) {
 		return $woocommerce_class;
 	}
 }
+/**
+ * Disables theme products per page option for WC >= 3.3 since WC provides option in customizer
+ */
+if ( ! estore_woo_version_check( '3.3' ) ) {
+	add_filter( 'loop_shop_columns', 'estore_woocommerce_loop_columns' );
 
-add_filter( 'loop_shop_columns', 'estore_woocommerce_loop_columns' );
+	if ( ! function_exists( 'estore_woocommerce_loop_columns' ) ) {
 
-if ( ! function_exists( 'estore_woocommerce_loop_columns' ) ) {
-
-	/**
-	 * Change product per row to 4
-	 */
-	function estore_woocommerce_loop_columns() {
-		return 4; // 4 products per row
+		/**
+		 * Change product per row to 4
+		 */
+		function estore_woocommerce_loop_columns() {
+			return 4; // 4 products per row
+		}
 	}
 }
 
@@ -519,15 +523,13 @@ function estore_woocommerce_header_add_to_cart_fragment( $fragments ) {
  *
  * @return bool
  */
-if ( ! function_exists( 'estore_woo_version_check' ) ) :
-	function estore_woo_version_check( $version = '3.0' ) {
-		if ( class_exists( 'WooCommerce' ) ) {
-			global $woocommerce;
-			if ( version_compare( $woocommerce->version, $version, ">=" ) ) {
-				return true;
-			}
+function estore_woo_version_check( $version = '3.0' ) {
+	if ( class_exists( 'WooCommerce' ) ) {
+		global $woocommerce;
+		if ( version_compare( $woocommerce->version, $version, ">=" ) ) {
+			return true;
 		}
-
-		return false;
 	}
-endif;
+
+	return false;
+}

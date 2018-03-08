@@ -73,7 +73,7 @@ $cat_ID      = $categoryobj->term_id;
 					woocommerce_product_subcategories();
 				endif;
 
-				if ( wc_get_loop_prop( 'total' ) ) :
+				if ( ! function_exists( 'wc_get_loop_prop' ) || wc_get_loop_prop( 'total' ) ) :
 					while ( have_posts() ) : the_post();
 
 						/**
