@@ -1,8 +1,7 @@
 /**
- * bxSlider v4.2.5
+ * bxSlider v4.2.12
  * Copyright 2013-2015 Steven Wanderski
  * Written while drinking Belgian ales and listening to jazz
-
  * Licensed under MIT (http://opensource.org/licenses/MIT)
  */
 
@@ -226,12 +225,6 @@
       slider.viewport.parent().css({
         maxWidth: getViewportMaxWidth()
       });
-      // make modification to the wrapper (.bx-wrapper)
-      if (!slider.settings.pager && !slider.settings.controls) {
-        slider.viewport.parent().css({
-          margin: '0 auto 0px'
-        });
-      }
       // apply css to all slider children
       slider.children.css({
         float: slider.settings.mode === 'horizontal' ? 'left' : 'none',
@@ -290,7 +283,7 @@
         $(this).one('load error', function() {
           if (++count === total) { callback(); }
         }).each(function() {
-          if (this.complete) { $(this).load(); }
+          if (this.complete) { $(this).trigger('load'); }
         });
       });
     };
@@ -1114,7 +1107,9 @@
 
         if (slider.viewport.get(0).setPointerCapture) {
           slider.pointerId = orig.pointerId;
-          slider.viewport.get(0).setPointerCapture(slider.pointerId);
+          if(slider.pointerId === 1){
+            slider.viewport.get(0).setPointerCapture(slider.pointerId);
+          }
         }
         // bind a "touchmove" event to the viewport
         slider.viewport.bind('touchmove MSPointerMove pointermove', onTouchMove);
