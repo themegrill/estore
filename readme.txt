@@ -95,7 +95,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = Version TBD =
-* Updated WooCommerce template file for customizer options
+* Update - WooCommerce template file for customizer options
 
 = Version 1.2.3 - 2018-01-31 =
 * Fix   - Category link not working in wooCommerce category collection template
