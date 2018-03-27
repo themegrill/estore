@@ -16,13 +16,31 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Setup demo importer packages.
  *
  * @param  array $packages
+ *
  * @return array
  */
 function estore_demo_importer_packages( $packages ) {
 	$new_packages = array(
-		'estore-free' => array(
+		// Free theme demo
+		'estore-free'        => array(
 			'name'    => esc_html__( 'eStore', 'estore' ),
 			'preview' => 'https://demo.themegrill.com/estore/',
+		),
+		// Pro theme demos link
+		'estore-pro-default' => array(
+			'name'     => esc_html__( 'eStore Pro Default', 'estore' ),
+			'preview'  => 'https://demo.themegrill.com/estore-pro/',
+			'pro_link' => 'https://demo.themegrill.com/estore/'
+		),
+		'estore-pro-fashion' => array(
+			'name'     => esc_html__( 'eStore Pro Fashion', 'estore' ),
+			'preview'  => 'https://demo.themegrill.com/estore-pro-fashion',
+			'pro_link' => 'https://demo.themegrill.com/estore/'
+		),
+		'estore-pro-tech'    => array(
+			'name'     => esc_html__( 'eStore Pro Tech', 'estore' ),
+			'preview'  => 'https://demo.themegrill.com/estore-pro-tech/',
+			'pro_link' => 'https://demo.themegrill.com/estore/'
 		),
 	);
 
