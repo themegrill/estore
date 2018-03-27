@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.2.4 - 2018-03-27 =
 * Fix - bxslider link unclickable in Firefox > 59
 * Update - WooCommerce template file for customizer options
 
