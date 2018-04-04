@@ -927,6 +927,19 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 				'posts_per_page' => $product_number
 			);
 		}
+
+		/**
+         *  Hide out of stock items from the catalog
+         *
+		 * @see https://docs.woocommerce.com/document/configuring-woocommerce-settings/#inventory-options
+		 */
+		$stock_invisibility = get_option( 'woocommerce_hide_out_of_stock_items' );
+
+		if ( $stock_invisibility === 'yes' ) {
+			$args[ 'meta_key' ] = '_stock_status';
+			$args[ 'meta_value' ] = 'instock';
+		}
+
 		echo $before_widget; ?>
 		<div class="tg-container">
 			<div class="section-title-wrapper clearfix">
@@ -1153,6 +1166,19 @@ class estore_woocommerce_product_grid extends WP_Widget {
 			),
 			'posts_per_page' => $product_number
 		);
+
+		/**
+         *  Hide out of stock items from the catalog
+         *
+		 * @see https://docs.woocommerce.com/document/configuring-woocommerce-settings/#inventory-options
+		 */
+		$stock_invisibility = get_option( 'woocommerce_hide_out_of_stock_items' );
+
+		if ( $stock_invisibility === 'yes' ) {
+			$args[ 'meta_key' ] = '_stock_status';
+			$args[ 'meta_value' ] = 'instock';
+		}
+
 		echo $before_widget; ?>
 		<div class="tg-container estore-cat-color_<?php echo $category; ?> <?php echo $align; ?>">
 			<div class="section-title-wrapper clearfix">
@@ -1799,26 +1825,42 @@ class estore_woocommerce_product_slider extends WP_Widget {
 		$category = isset( $instance[ 'category' ] ) ? $instance[ 'category' ] : '';
 
 		if( $type == 'latest' ) {
-			$get_featured_posts = new WP_Query( array(
+			$args = array(
 				'posts_per_page'        => $number,
 				'post_type'             => 'product',
 				'ignore_sticky_posts'   => true
-			) );
+			);
 		}
 		else {
-		$get_featured_posts = new WP_Query( array(
-			'post_type' => 'product',
-			'orderby'   => 'date',
-			'tax_query' => array(
-				array(
-					'taxonomy'  => 'product_cat',
-					'field'     => 'id',
-					'terms'     => $category
-				)
-			),
-			'posts_per_page' => $number
-			) );
+			$args = array(
+				'post_type' => 'product',
+				'orderby'   => 'date',
+				'tax_query' => array(
+					array(
+						'taxonomy'  => 'product_cat',
+						'field'     => 'id',
+						'terms'     => $category
+					)
+				),
+				'posts_per_page' => $number
+			);
 		}
+
+		/**
+         *  Hide out of stock items from the catalog
+         *
+		 * @see https://docs.woocommerce.com/document/configuring-woocommerce-settings/#inventory-options
+		 */
+		$stock_invisibility = get_option( 'woocommerce_hide_out_of_stock_items' );
+
+		if ( $stock_invisibility === 'yes' ) {
+			$args[ 'meta_key' ] = '_stock_status';
+			$args[ 'meta_value' ] = 'instock';
+		}
+
+		$get_featured_posts = new WP_Query( $args );
+
+
 		echo $before_widget;
 		?>
 
