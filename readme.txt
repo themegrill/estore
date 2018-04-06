@@ -95,10 +95,11 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = TBD =
-* Fix - Out of stock visibility WC setting in widgets
+* Feature - Header search option for WC products.
+* Fix     - Out of stock visibility WC setting in widgets
 
 = Version 1.2.4 - 2018-03-27 =
-* Fix - bxslider link unclickable in Firefox > 59
+* Fix    - bxslider link unclickable in Firefox > 59
 * Update - WooCommerce template file for customizer options
 
 = Version 1.2.3 - 2018-01-31 =
@@ -119,7 +120,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 = Version 1.1.9 - 2017-05-10 =
 * Tweaks - Add TGMPA to recommend ThemeGrill Demo Importer plugin
-* Fix - Product Carousel features product issue fix.
+* Fix    - Product Carousel features product issue fix.
 
 = Version 1.1.8 - 2017-04-17 =
 * Update - Added compatibility with WooCommerce 3.0.3
@@ -128,14 +129,14 @@ If you want the theme to be translated into your language, feel free to contribu
 * Update - Added compatibility with WooCommerce 3.0.1
 
 = Version 1.1.6 - 2017-04-06 =
-* Update - Added compatibility with WooCommerce 3.0
+* Update  - Added compatibility with WooCommerce 3.0
 * Feature - Added compatibility for ThemeGrill Demo Importer plugin
 
 = Version 1.1.5 - 2017-02-08 =
 * Feature - Adds Support for Video Header introduced in WordPress 4.7
 
 = Version 1.1.4 - 2016-12-23 =
-* Tweaks - Updated Font Awessome to `v.4.7.0` for new icon  support.
+* Tweaks  - Updated Font Awessome to `v.4.7.0` for new icon  support.
 * Feature - Migrated the Custom CSS code added in theme settings to Additional CSS section introduced in WordPress 4.7
 * Feature - Migrate script for Site Logo
 * Feature - Content width is now adjusted according to the layout choosed
@@ -154,10 +155,10 @@ If you want the theme to be translated into your language, feel free to contribu
 * Fix - Layout issue on WooCommerce Archive Pages
 
 = Version 1.1 - 2016-06-09 =
-* Fix - Compatibility with WPML
-* Fix - Logo alignment for WP Custom Logo
-* Added - Compatibility with WP-Pagenavi
-* Added - About page for theme information
+* Fix    - Compatibility with WPML
+* Fix    - Logo alignment for WP Custom Logo
+* Added  - Compatibility with WP-Pagenavi
+* Added  - About page for theme information
 * Tweaks - Enhancement for the media uploader scripts used in widgets.
 
 = Version 1.0.9 =
@@ -182,14 +183,14 @@ If you want the theme to be translated into your language, feel free to contribu
 * Changed - Template name
 
 = Version 1.0.7 =
-* Fixed - License Attribution
-* Added - Unminified version of prettyphoto css
+* Fixed   - License Attribution
+* Added   - Unminified version of prettyphoto css
 * Removed - Post Formats Support
-* Update - WooCommerce Template
+* Update  - WooCommerce Template
 
 = Version 1.0.6 =
-* Added - Template for no results pages
-* Fixed - Escaping issues
+* Added   - Template for no results pages
+* Fixed   - Escaping issues
 * Changed - Screenshot
 
 = Version 1.0.5 =
@@ -203,26 +204,26 @@ If you want the theme to be translated into your language, feel free to contribu
 = Version 1.0.3 =
 * Removed - Navigation in pages
 * Removed - Filter to add class to post classes
-* Fixed - Grid widget not showing the saved result issue
-* Fixed - Issue with superfish menu on mobile
-* Fixed - Slider issues when using multiple sliders
-* Fixed - Category Carousel not taking posts_per_page arg
+* Fixed   - Grid widget not showing the saved result issue
+* Fixed   - Issue with superfish menu on mobile
+* Fixed   - Slider issues when using multiple sliders
+* Fixed   - Category Carousel not taking posts_per_page arg
 
 = Version 1.0.2 =
-* Changed - Name of widgets ( Removed Featured word )
-* Changed - Order category posts by date
+* Changed  - Name of widgets ( Removed Featured word )
+* Changed  - Order category posts by date
 * Modified - Escaping of values
-* Added - Update cart via ajax
-* Added - Placeholder image
-* Removed - Category Featured Image Display
+* Added    - Update cart via ajax
+* Added    - Placeholder image
+* Removed  - Category Featured Image Display
 
 = Version 1.0.1 =
 * Removed - Theme prefix from wp_enqueue_scripts
-* Added - changelog
-* Added - Attribution and license details of resources used by theme
+* Added   - changelog
+* Added   - Attribution and license details of resources used by theme
 
 = Version 1.0.0 =
-* Added - WooCommerce Support
+* Added   - WooCommerce Support
 * Changed - Screenshot
 
 = Version 0.1 =
