@@ -195,14 +195,7 @@
 				<?php } ?>
 
  				<div class="search-user-wrapper clearfix">
-					<div class="search-wrapper search-user-block">
-						<div class="search-icon">
-							<i class="fa fa-search"> </i>
-						</div>
-						<div class="header-search-box">
-							<?php get_search_form(); ?>
-						</div>
-					</div>
+				    <?php estore_header_search_box(); ?>
 					<div class="user-wrapper search-user-block">
 						<?php if ( is_user_logged_in() ) { ?>
 							<a href="<?php echo esc_url (get_permalink( get_option('woocommerce_myaccount_page_id') )); ?>" title="<?php esc_attr__('My Account','estore'); ?>" class="user-icon"><i class="fa fa-user"></i></a>

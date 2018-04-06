@@ -183,6 +183,9 @@ require get_template_directory() . '/inc/widgets.php';
  */
 require get_template_directory() . '/inc/custom-header.php';
 
+// Load functions
+require get_template_directory() . '/inc/functions.php';
+
 /**
  * eStore Functions.
  */
