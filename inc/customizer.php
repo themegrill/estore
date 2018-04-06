@@ -92,7 +92,7 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	/**
-	* This setting has the dummy Sanitizaition function as it contains no value to be sanitized
+	* This setting has the dummy Sanitization function as it contains no value to be sanitized
 	*/
 	$wp_customize->add_setting('estore_important_links',
 		array(
@@ -135,7 +135,9 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Options
+	/**
+	 * Header Options
+	 */
 	$wp_customize->add_panel(
 		'estore_header_options',
 		array(
@@ -291,7 +293,42 @@ function estore_customize_register( $wp_customize ) {
 		) );
 	}
 
-	// Design Related Options
+	// Header Search
+	$wp_customize->add_section(
+		'estore_header_search',
+		array(
+			'priority' => 40,
+			'title'    => esc_html__( 'Header Search', 'estore' ),
+			'panel'    => 'estore_header_options'
+		)
+	);
+	if ( class_exists( 'WooCommerce' ) ) :
+		// Search option
+		$wp_customize->add_setting(
+			'estore_header_search_option',
+			array(
+				'default'           => 'wp_search',
+				'capability'        => 'edit_theme_options',
+				'sanitize_callback' => 'estore_sanitize_select'
+			)
+		);
+		$wp_customize->add_control(
+			'estore_header_search_option',
+			array(
+				'label'       => esc_html__( 'Choose a search option', 'estore' ),
+				'section'     => 'estore_header_search',
+				'type'        => 'select',
+				'choices'     => array(
+					'wp_search' => esc_html__( 'WordPress search', 'estore' ),
+					'wc_search' => esc_html__( 'WooCommerce search', 'estore' ),
+				),
+			)
+		);
+	endif;
+
+	/**
+	 * Design Related Options
+	 */
 	$wp_customize->add_panel(
 		'estore_design_options',
 		array(
@@ -543,7 +580,9 @@ function estore_customize_register( $wp_customize ) {
  		)
 	);
 
-	// Additional Options
+	/**
+	 * Additional Options
+	 */
 	$wp_customize->add_panel(
 		'estore_additional_options',
 		array(
@@ -771,6 +810,20 @@ function estore_customize_register( $wp_customize ) {
 		} else {
 			return false;
 		}
+	}
+
+	/**
+	 * Sanitize callbacks
+	 */
+	function estore_sanitize_select( $input, $setting ) {
+		// check for valid key
+		$input = sanitize_key( $input );
+
+		// Get all choices from control
+		$choices = $setting->manager->get_control( $setting->id )->choices;
+
+		// return selected input: if valid, default value if invalid
+		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 	}
 
 	// Sanitize Radio Button
