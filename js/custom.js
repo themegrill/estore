@@ -24,6 +24,14 @@ jQuery(document).ready(function() {
 		icon.onclick = function () {
 			showHideSearchForm();
 		};
+
+		// on esc key
+		document.addEventListener( 'keyup', function ( e ) {
+			if ( searchBox.classList.contains( 'active' ) && e.keyCode === 27 ) {
+				showHideSearchForm( 'hide' );
+			}
+		} );
+
 	} )();
 
 	jQuery('.bottom-header-wrapper .category-toggle').click(function() {
