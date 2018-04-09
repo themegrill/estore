@@ -1,8 +1,30 @@
 jQuery(document).ready(function() {
 
-	jQuery('.search-wrapper .search-icon').click(function() {
-		jQuery('.header-search-box').toggleClass('active');
-	});
+	( function () {
+		var searchBox, icon;
+
+		searchBox = document.getElementsByClassName( 'header-search-box' )[0];
+		icon = document.getElementsByClassName( 'search-wrapper' )[0].getElementsByClassName( 'search-icon' )[0];
+
+		var showHideSearchForm = function( action ) {
+			if ( action === 'hide' ) {
+				searchBox.classList.remove( 'active' );
+				return;
+			}
+			// Show/hide search form
+			searchBox.classList.toggle( 'active' );
+
+			// autofocus
+			if ( searchBox.classList.contains( 'active' ) ) {
+				searchBox.getElementsByTagName( 'input' )[0].focus();
+			}
+		};
+
+		// on search icon click
+		icon.onclick = function () {
+			showHideSearchForm();
+		};
+	} )();
 
 	jQuery('.bottom-header-wrapper .category-toggle').click(function() {
 		jQuery('#category-navigation').slideToggle('slow');
