@@ -35,7 +35,7 @@ module.exports = function( grunt ){
 					expand: true,
 					cwd: '<%= dirs.js %>/',
 					src: [
-						'*.js',
+						'custom.js',
 						'!*.min.js'
 					],
 					dest: '<%= dirs.js %>/',
