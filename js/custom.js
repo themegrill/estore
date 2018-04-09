@@ -32,6 +32,14 @@ jQuery(document).ready(function() {
 			}
 		} );
 
+		// on click outside form
+		document.addEventListener( 'click', function (ev) {
+			if ( ev.target.closest('.header-search-box') || ev.target.closest('.search-icon') ) {
+				return;
+			}
+			showHideSearchForm( 'hide' );
+		} );
+
 	} )();
 
 	jQuery('.bottom-header-wrapper .category-toggle').click(function() {
