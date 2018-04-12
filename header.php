@@ -148,15 +148,19 @@
 				if ( class_exists( 'woocommerce' ) ) : ?>
 					<div class="cart-wrapper">
 						<div class="estore-cart-views">
-							<a href="<?php echo esc_url( wc_get_cart_url() ); ?>" class="wcmenucart-contents">
+							<?php $cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url(); ?>
+
+							<a href="<?php echo esc_url( $cart_url ); ?>" class="wcmenucart-contents">
 								<i class="fa fa-shopping-cart"></i>
 								<span class="cart-value"><?php echo wp_kses_data ( WC()->cart->get_cart_contents_count() ); ?></span>
 							</a> <!-- quick wishlist end -->
+
 							<div class="my-cart-wrap">
 								<div class="my-cart"><?php esc_html_e('Total', 'estore'); ?></div>
 								<div class="cart-total"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></div>
 							</div>
 						</div>
+
 						<?php the_widget( 'WC_Widget_Cart', '' ); ?>
 					</div>
 				<?php endif; ?>
