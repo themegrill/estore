@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.5 - 2018-04-12 =
 * Feature - Header search option for WC products.
 * Fix     - Out of stock visibility WC setting in widgets
 
