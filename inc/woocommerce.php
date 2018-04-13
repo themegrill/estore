@@ -149,7 +149,7 @@ function estore_woocommerce_settings_register( $wp_customize ) {
 				)
 			)
 		);
-		$priority ++;
+		$priority++;
 	}
 
 	// WooCommerce Pages layout
@@ -261,7 +261,7 @@ if ( ! function_exists( 'estore_woocommerce_category_color_css' ) ) :
 		$cat_color_css = '';
 		foreach ( $categories as $category ) {
 			$cat_color   = get_theme_mod( 'estore_woocommerce_category_color_' . $category->term_id );
-			$hover_color = estore_darkcolor( $cat_color, - 20 );
+			$hover_color = estore_darkcolor( $cat_color, -20 );
 			$cat_id      = $category->term_id;
 			if ( ! empty( $cat_color ) ) {
 				$cat_color_css .= '
@@ -286,8 +286,8 @@ if ( ! function_exists( 'estore_woocommerce_category_color_css' ) ) :
 
 		if ( ! empty( $cat_color_css ) ) {
 			?>
-            <!-- WooCommerce Category Color -->
-            <style type="text/css"><?php echo $cat_color_css; ?></style>
+			<!-- WooCommerce Category Color -->
+			<style type="text/css"><?php echo $cat_color_css; ?></style>
 			<?php
 		}
 	}
@@ -314,51 +314,51 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 		if ( has_post_thumbnail() ) {
 			$image_id  = get_post_thumbnail_id( $post->ID );
 			$image_url = wp_get_attachment_image_src( $image_id, $size, false ); ?>
-            <figure class="products-img">
-                <a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
-                            src="<?php echo esc_url( $image_url[0] ); ?>"></a>
+			<figure class="products-img">
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
+							src="<?php echo esc_url( $image_url[0] ); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
 
 				<?php if ( get_theme_mod( 'estore_woocommerce_product_thumb_mask', '' ) != 1 ) : ?>
-                    <div class="products-hover-wrapper">
-                        <div class="products-hover-block">
-                            <a href="<?php echo $image_url[0]; ?>" class="zoom" data-rel="prettyPhoto"><i
-                                        class="fa fa-search-plus"> </i></a>
+					<div class="products-hover-wrapper">
+						<div class="products-hover-block">
+							<a href="<?php echo $image_url[0]; ?>" class="zoom" data-rel="prettyPhoto"><i
+										class="fa fa-search-plus"> </i></a>
 
 							<?php woocommerce_template_loop_add_to_cart( $product ); ?>
-                        </div>
-                    </div><!-- featured hover end -->
+						</div>
+					</div><!-- featured hover end -->
 					<?php
 					remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 				else:
 					add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 				endif; ?>
-            </figure>
+			</figure>
 			<?php
 		} else { ?>
-            <figure class="products-img">
-                <a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
-                            src="<?php echo estore_woocommerce_placeholder_img_src(); ?>"></a>
+			<figure class="products-img">
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
+							src="<?php echo estore_woocommerce_placeholder_img_src(); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
 
 				<?php if ( get_theme_mod( 'estore_woocommerce_product_thumb_mask', '' ) != 1 ) : ?>
-                    <div class="products-hover-wrapper">
-                        <div class="products-hover-block">
-                            <a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>" class="zoom"
-                               data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
+					<div class="products-hover-wrapper">
+						<div class="products-hover-block">
+							<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>" class="zoom"
+							   data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
 							<?php woocommerce_template_loop_add_to_cart( $product ); ?>
-                        </div>
-                    </div><!-- featured hover end -->
+						</div>
+					</div><!-- featured hover end -->
 					<?php
 					remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 				else:
 					add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 				endif; ?>
-            </figure>
+			</figure>
 		<?php }
 	}
 }
@@ -499,19 +499,19 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'estore_woocommerce_header_add_
 function estore_woocommerce_header_add_to_cart_fragment( $fragments ) {
 	ob_start();
 	?>
-    <div class="estore-cart-views">
+	<div class="estore-cart-views">
 
 		<?php $cart_url = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : WC()->cart->get_cart_url(); ?>
 
-        <a href="<?php echo esc_url( $cart_url ); ?>" class="wcmenucart-contents">
-            <i class="fa fa-shopping-cart"></i>
-            <span class="cart-value"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() ); ?></span>
-        </a> <!-- quick wishlist end -->
-        <div class="my-cart-wrap">
-            <div class="my-cart"><?php esc_html_e( 'Total', 'estore' ); ?></div>
-            <div class="cart-total"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></div>
-        </div>
-    </div>
+		<a href="<?php echo esc_url( $cart_url ); ?>" class="wcmenucart-contents">
+			<i class="fa fa-shopping-cart"></i>
+			<span class="cart-value"><?php echo wp_kses_data( WC()->cart->get_cart_contents_count() ); ?></span>
+		</a> <!-- quick wishlist end -->
+		<div class="my-cart-wrap">
+			<div class="my-cart"><?php esc_html_e( 'Total', 'estore' ); ?></div>
+			<div class="cart-total"><?php echo wp_kses_data( WC()->cart->get_cart_subtotal() ); ?></div>
+		</div>
+	</div>
 	<?php
 
 	$fragments['div.estore-cart-views'] = ob_get_clean();
