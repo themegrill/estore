@@ -15,7 +15,7 @@
 		 <div id="bottom-footer" class="clearfix">
 			<div class="tg-container">
 				<div class="copy-right">
-					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'estore' ), 'eStore', '<a href="'.esc_url ( 'https://themegrill.com' ).'" rel="designer">ThemeGrill</a>' ); ?>
+					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'estore' ), 'eStore', '<a href="'.esc_url ( 'https://themegrill.com' ).'" rel="author">ThemeGrill</a>' ); ?>
 					<span class="sep"> | </span>
 					<?php printf( esc_html__( 'Proudly powered by %s.', 'estore' ), '<a href="'.esc_url ( 'https://wordpress.org/' ).'">WordPress</a>' ); ?>
 				</div>
