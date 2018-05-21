@@ -593,6 +593,26 @@ function estore_customize_register( $wp_customize ) {
 			)
 		);
 
+	// Author bio.
+	$wp_customize->add_section( 'estore_author_bio_section', array(
+		'priority' => 7,
+		'title'    => esc_html__( 'Author Bio Option', 'estore' ),
+		'panel'    => 'estore_additional_options',
+	) );
+
+	$wp_customize->add_setting( 'estore_author_bio_setting', array(
+		'default'           => 3,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'estore_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'estore_author_bio_setting', array(
+		'type'    => 'checkbox',
+		'label'   => esc_html__( 'Check to display the author bio.', 'estore' ),
+		'setting' => 'estore_author_bio_setting',
+		'section' => 'estore_author_bio_section',
+	) );
+
 	// Category Color Section
 	$wp_customize->add_section( 'estore_category_color_setting', array(
 		'priority' => 1,
@@ -918,7 +938,7 @@ function estore_customize_partial_blogdescription() {
 function estore_bar_text(){
 	$header_bar_text = get_theme_mod( 'estore_bar_text' );
 	echo wp_kses_post($header_bar_text);
-} 
+}
 /*
  * Custom Scripts
  */
