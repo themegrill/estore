@@ -171,6 +171,25 @@ article .entry-content {
 .wp-pagenavi .pages {
 	color: #8c8c8c;
 }
+ 
+// author-bio
+
+.author-box {
+    background: $color__background-screen;
+	padding: 20px;
+	
+	.author-img {
+		float: left;
+	}
+
+	.author-description-wrapper {
+		margin-left: 120px;
+
+		.author-name {
+			clear: none;
+		}
+	}
+}
 
 
 /*--------------------------------------------------------------

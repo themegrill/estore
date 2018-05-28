@@ -456,6 +456,14 @@
      .archive-grid #primary {
 	  width: 100%;
 	}
+    .author-box .author-img {
+        float: none;
+        margin-bottom: 20px;
+    }
+    .author-box .author-description-wrapper {
+        margin-left: 0;
+    }
+}
  }
 
  @media (max-width: 480px) {
@@ -511,4 +519,3 @@
          float: left;
          width: 100%;
      }
- }

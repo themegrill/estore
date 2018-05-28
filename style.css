@@ -1201,7 +1201,7 @@ body {
       margin-left: 3px; }
 
 #lang_sel_click a.lang_sel_sel {
-  background: transparent none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   border: medium none;
   line-height: 38px;
   font-size: 12px;
@@ -1226,7 +1226,7 @@ body {
     background: #f0f0f0;
     width: 100%; }
     #lang_sel_click ul ul li a {
-      background: transparent none repeat scroll 0 0;
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
       border: none;
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       display: block;
@@ -2087,7 +2087,7 @@ body {
         .hot-product-content-wrapper .hot-img .cart-price-wrapper .hot-price del {
           color: #c1c1c1; }
         .hot-product-content-wrapper .hot-img .cart-price-wrapper .hot-price ins {
-          background: transparent none repeat scroll 0 0;
+          background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
           color: #fff;
           font-weight: 700; }
     .hot-product-content-wrapper .hot-img:hover .cart-price-wrapper {
@@ -2786,7 +2786,7 @@ article .entry-content {
   margin-top: 22px; }
 
 .entry-thumbnail .posted-on {
-  background: transparent none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
   display: block;
   position: static;
   width: 100%;
@@ -2813,6 +2813,16 @@ article .entry-content {
 
 .wp-pagenavi .pages {
   color: #8c8c8c; }
+
+.author-box {
+  background: #f1f1f1;
+  padding: 20px; }
+  .author-box .author-img {
+    float: left; }
+  .author-box .author-description-wrapper {
+    margin-left: 120px; }
+    .author-box .author-description-wrapper .author-name {
+      clear: none; }
 
 /*--------------------------------------------------------------
     Archive Grid layout
