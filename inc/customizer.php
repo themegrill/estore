@@ -601,7 +601,7 @@ function estore_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'estore_author_bio_setting', array(
-		'default'           => 3,
+		'default'           => 0,
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'estore_sanitize_checkbox',
 	) );
