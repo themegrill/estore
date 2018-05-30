@@ -10,15 +10,13 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see        https://docs.woocommerce.com/document/template-structure/
- * @author        WooThemes
- * @package    WooCommerce/Templates
- * @version     3.3.0
+ * @see https://docs.woocommerce.com/document/template-structure/
+ * @author WooThemes
+ * @package WooCommerce/Templates
+ * @version 3.4.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
-}
+defined( 'ABSPATH' ) || exit;
 
 $estore_layout = estore_woocommerce_layout_class();
 
@@ -27,11 +25,11 @@ get_header( 'shop' );
 
 <div id="content" class="site-content">
 
-    <div class="page-header clearfix">
-        <div class="tg-container">
+	<div class="page-header clearfix">
+		<div class="tg-container">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-                <h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
+				<h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
 
 			<?php endif; ?>
 			<?php
@@ -43,12 +41,12 @@ get_header( 'shop' );
 			 */
 			do_action( 'woocommerce_archive_description' );
 			?>
-            <h3 class="entry-sub-title"><?php woocommerce_breadcrumb(); ?></h3>
-        </div>
-    </div>
+			<h3 class="entry-sub-title"><?php woocommerce_breadcrumb(); ?></h3>
+		</div>
+	</div>
 
-    <main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
-        <div class="tg-container">
+	<main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
+		<div class="tg-container">
 			<?php
 			/**
 			 * woocommerce_before_main_content hook
@@ -61,7 +59,7 @@ get_header( 'shop' );
 			do_action( 'woocommerce_before_main_content' );
 			?>
 
-			<?php if ( have_posts() ) : ?>
+			<?php if ( function_exists( 'woocommerce_product_loop' ) ? woocommerce_product_loop() : have_posts() ) : ?>
 
 				<?php
 				/**
