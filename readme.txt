@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Update - WooCommerce template files for v3.4.0.
+
 = Version 1.2.5 - 2018-04-12 =
 * Feature - Header search option for WC products.
 * Fix     - Out of stock visibility WC setting in widgets
@@ -115,7 +118,7 @@ If you want the theme to be translated into your language, feel free to contribu
 * Tweak - Add theme support for Jetpack Responsive Videos.
 * Tweak - Fix the category link not displaying in different widget title
 
-= Version 1.2.0 - 2017-09-13 = 
+= Version 1.2.0 - 2017-09-13 =
 * Tweaks - Updated the WooCommerce template file billing
 
 = Version 1.1.9 - 2017-05-10 =
