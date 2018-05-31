@@ -1,7 +1,7 @@
 {
   "name": "estore",
   "title": "eStore",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "homepage": "https://themegrill.com/themes/estore",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "grunt-contrib-uglify": "~2.0.0",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-glotpress": "~0.2.1",
-    "grunt-sass": "~1.2.1",
+    "grunt-sass": "~2.1.0",
     "grunt-wp-i18n": "~0.5.4",
     "node-bourbon": "~4.2.8"
   },

@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.2.5\n"
+"Project-Id-Version: eStore 1.2.6\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-04-12 05:55:07+00:00\n"
+"POT-Creation-Date: 2018-05-30 11:09:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -69,24 +69,24 @@ msgstr ""
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:67 header.php:201
+#: header.php:68 header.php:69 header.php:219
 msgid "My Account"
 msgstr ""
 
-#: header.php:70
+#: header.php:72
 msgid "Login/Register"
 msgstr ""
 
-#: header.php:70
+#: header.php:73
 msgid "Login/ Register"
 msgstr ""
 
-#: header.php:156 inc/woocommerce.php:508 woocommerce/cart/cart-totals.php:99
+#: header.php:172 inc/woocommerce.php:511 woocommerce/cart/cart-totals.php:99
 #: woocommerce/cart/cart-totals.php:100
 msgid "Total"
 msgstr ""
 
-#: header.php:204
+#: header.php:223
 msgid "Login / Register"
 msgstr ""
 
@@ -1556,15 +1556,15 @@ msgstr ""
 msgid "Your order"
 msgstr ""
 
-#: woocommerce/checkout/form-login.php:28
+#: woocommerce/checkout/form-login.php:26
 msgid "Returning customer?"
 msgstr ""
 
-#: woocommerce/checkout/form-login.php:29
+#: woocommerce/checkout/form-login.php:26
 msgid "Click here to login"
 msgstr ""
 
-#: woocommerce/checkout/form-login.php:36
+#: woocommerce/checkout/form-login.php:32
 msgid ""
 "If you have shopped with us before, please enter your details in the boxes "
 "below. If you are a new customer, please proceed to the Billing &amp; "

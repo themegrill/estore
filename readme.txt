@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.6 - 2018-05-30 =
 * Update - WooCommerce template files for v3.4.0.
 
 = Version 1.2.5 - 2018-04-12 =
