@@ -593,6 +593,43 @@ function estore_customize_register( $wp_customize ) {
 			)
 		);
 
+	// Related post
+	$wp_customize->add_section( 'estore_related_posts_section', array(
+		'priority' => 245,
+		'title'    => esc_html__( 'Related Posts', 'estore' ),
+		'panel'    => 'estore_additional_options',
+	) );
+
+	$wp_customize->add_setting( 'estore_related_posts_activate', array(
+		'default'           => 0,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'estore_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'estore_related_posts_activate', array(
+		'type'     => 'checkbox',
+		'label'    => esc_html__( 'Check to activate the related posts', 'estore' ),
+		'section'  => 'estore_related_posts_section',
+		'settings' => 'estore_related_posts_activate',
+	) );
+
+	$wp_customize->add_setting( 'estore_related_posts', array(
+		'default'           => 'categories',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'estore_sanitize_radio',
+	) );
+
+	$wp_customize->add_control( 'estore_related_posts', array(
+		'type'     => 'radio',
+		'label'    => esc_html__( 'Related Posts Must Be Shown As:', 'estore' ),
+		'section'  => 'estore_related_posts_section',
+		'settings' => 'estore_related_posts',
+		'choices'  => array(
+			'categories' => esc_html__( 'Related Posts By Categories', 'estore' ),
+			'tags'       => esc_html__( 'Related Posts By Tags', 'estore' ),
+		),
+	) );
+
 	// Category Color Section
 	$wp_customize->add_section( 'estore_category_color_setting', array(
 		'priority' => 1,
@@ -918,7 +955,7 @@ function estore_customize_partial_blogdescription() {
 function estore_bar_text(){
 	$header_bar_text = get_theme_mod( 'estore_bar_text' );
 	echo wp_kses_post($header_bar_text);
-} 
+}
 /*
  * Custom Scripts
  */
