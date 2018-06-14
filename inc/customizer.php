@@ -593,6 +593,26 @@ function estore_customize_register( $wp_customize ) {
 			)
 		);
 
+	// Author bio.
+	$wp_customize->add_section( 'estore_author_bio_section', array(
+		'priority' => 7,
+		'title'    => esc_html__( 'Author Bio Option', 'estore' ),
+		'panel'    => 'estore_additional_options',
+	) );
+
+	$wp_customize->add_setting( 'estore_author_bio_setting', array(
+		'default'           => 0,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'estore_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'estore_author_bio_setting', array(
+		'type'    => 'checkbox',
+		'label'   => esc_html__( 'Check to display the author bio.', 'estore' ),
+		'setting' => 'estore_author_bio_setting',
+		'section' => 'estore_author_bio_section',
+	) );
+
 	// Related post
 	$wp_customize->add_section( 'estore_related_posts_section', array(
 		'priority' => 245,

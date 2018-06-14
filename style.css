@@ -2814,6 +2814,16 @@ article .entry-content {
 .wp-pagenavi .pages {
   color: #8c8c8c; }
 
+.author-box {
+  background: #f1f1f1;
+  padding: 20px; }
+  .author-box .author-img {
+    float: left; }
+  .author-box .author-description-wrapper {
+    margin-left: 120px; }
+    .author-box .author-description-wrapper .author-name {
+      clear: none; }
+
 /*--------------------------------------------------------------
     Archive Grid layout
 --------------------------------------------------------------*/
