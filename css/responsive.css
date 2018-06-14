@@ -455,7 +455,10 @@
      .archive-grid article,
      .archive-grid #primary {
 	  width: 100%;
-	}
+    }
+    .related-posts-wrapper .tg-column-wrapper {
+        margin-left: 0;
+    }
     .author-box .author-img {
         float: none;
         margin-bottom: 20px;
@@ -463,7 +466,6 @@
     .author-box .author-description-wrapper {
         margin-left: 0;
     }
-}
  }
 
  @media (max-width: 480px) {

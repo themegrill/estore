@@ -40,6 +40,11 @@ get_header();
 							</div>
 						<?php } ?>
 
+						<?php if ( get_theme_mod( 'estore_related_posts_activate', 0 ) == 1 ) {
+						get_template_part( 'inc/related-posts' );
+								}
+						?>
+
 						<?php
 						// If comments are open or we have at least one comment, load up the comment template.
 						if ( comments_open() || get_comments_number() ) :
