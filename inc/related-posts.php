@@ -11,7 +11,6 @@
 		<div class="related-posts tg-column-wrapper clearfix">
 
 			<?php
-			$count = 1;
 			while ( $related_posts->have_posts() ) : $related_posts->the_post(); ?>
 				<div class="tg-column-3">
 
@@ -41,7 +40,6 @@
 
 				</div><!--/.related-->
 			<?php
-			$count ++;
 		endwhile; ?>
 
 		</div><!--/.post-related-->
