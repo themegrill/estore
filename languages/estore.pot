@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.2.6\n"
+"Project-Id-Version: eStore 1.2.7\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-05-30 11:09:14+00:00\n"
+"POT-Creation-Date: 2018-06-14 09:58:05+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -504,7 +504,7 @@ msgstr ""
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:201 inc/customizer.php:790
+#: inc/customizer.php:201 inc/customizer.php:847
 msgid "Upload logo"
 msgstr ""
 
@@ -657,47 +657,75 @@ msgstr ""
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:599 inc/woocommerce.php:122
+#: inc/customizer.php:599
+msgid "Author Bio Option"
+msgstr ""
+
+#: inc/customizer.php:611
+msgid "Check to display the author bio."
+msgstr ""
+
+#: inc/customizer.php:619
+msgid "Related Posts"
+msgstr ""
+
+#: inc/customizer.php:631
+msgid "Check to activate the related posts"
+msgstr ""
+
+#: inc/customizer.php:644
+msgid "Related Posts Must Be Shown As:"
+msgstr ""
+
+#: inc/customizer.php:648
+msgid "Related Posts By Categories"
+msgstr ""
+
+#: inc/customizer.php:649
+msgid "Related Posts By Tags"
+msgstr ""
+
+#: inc/customizer.php:656 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:622 inc/woocommerce.php:145
+#: inc/customizer.php:679 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:637
+#: inc/customizer.php:694
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:639
+#: inc/customizer.php:696
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:656
+#: inc/customizer.php:713
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:676
+#: inc/customizer.php:733
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:696
+#: inc/customizer.php:753
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:716
+#: inc/customizer.php:773
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:736
+#: inc/customizer.php:793
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:756
+#: inc/customizer.php:813
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:768
+#: inc/customizer.php:825
 msgid "Payment Partners Logo"
 msgstr ""
 
@@ -713,15 +741,18 @@ msgstr ""
 msgid "eStore Pro Tech"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1450 inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
+#: inc/widgets.php:2292
 msgid "0 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1450 inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
+#: inc/widgets.php:2292
 msgid "1 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/widgets.php:1450 inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
+#: inc/widgets.php:2292
 msgid " % Comments"
 msgstr ""
 
@@ -763,6 +794,10 @@ msgstr ""
 
 #: inc/functions.php:44
 msgid "Search products ..."
+msgstr ""
+
+#: inc/related-posts.php:8
+msgid "You May Also Like"
 msgstr ""
 
 #: inc/tgm-plugin-activation/class-tgm-plugin-activation.php:327
