@@ -31,7 +31,7 @@ jQuery( document ).ready( function( $ ) {
 			var attachment = file_frame.state().get( 'selection' ).first().toJSON();
 
 			// Initialize input and preview change.
-			file_target_input.val( attachment.url );
+			file_target_input.val( attachment.url ).change();
 			file_target_preview.css({ display: 'none' }).find( 'img' ).remove();
 			file_target_preview.css({ display: 'block' }).append( '<img src="' + attachment.url + '" style="max-width:100%">' );
 		});
