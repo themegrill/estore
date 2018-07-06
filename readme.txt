@@ -96,6 +96,8 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 = TBD =
 * Fix - Image upload button in customize option
+* Fix - My Account page design issue
+* Fix - Image gap removed between product of Shop page
 
 = Version 1.2.7 - 2018-06-14 =
 * Feature - Author Bio display option
