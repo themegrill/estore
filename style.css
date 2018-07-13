@@ -2876,7 +2876,8 @@ article .entry-content {
     text-align: center;
     position: relative; }
     .woocommerce-page ul.products li.product .products-img img {
-      display: block; }
+      display: block;
+      margin: 0; }
     .woocommerce-page ul.products li.product .products-img .products-hover-wrapper {
       background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
       height: 100%;
