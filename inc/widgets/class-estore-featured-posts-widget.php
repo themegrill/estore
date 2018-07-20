@@ -97,8 +97,8 @@ class estore_featured_posts_widget extends WP_Widget {
 			<div class="blog-wrapper tg-column-wrapper clearfix">
 				<?php
 				while( $get_featured_posts->have_posts() ):$get_featured_posts->the_post(); ?>
-					<div <?php post_class(); ?>>
-						<div class="tg-column-3 blog-block">
+					<div <?php post_class( 'tg-column-3' ); ?>>
+						<div class="blog-block">
 							<figure class="entry-thumbnail">
 								<?php
 
