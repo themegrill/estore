@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.2.7\n"
+"Project-Id-Version: eStore 1.2.8\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-06-14 09:58:05+00:00\n"
+"POT-Creation-Date: 2018-07-20 06:14:50+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -368,39 +368,47 @@ msgstr ""
 msgid "Extra Options on Widgets"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:467 inc/widgets.php:266
+#: inc/admin/class-estore-admin.php:467 inc/widgets/class-estore-about.php:13
 msgid "TG: About Widget"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:472 inc/widgets.php:154
+#: inc/admin/class-estore-admin.php:472
+#: inc/widgets/class-estore-728x90-ad.php:13
 msgid "TG: Advertisement"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:477 inc/widgets.php:1908
+#: inc/admin/class-estore-admin.php:477
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:15
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:482 inc/widgets.php:2078
+#: inc/admin/class-estore-admin.php:482
+#: inc/widgets/class-estore-posts-grid.php:13
 msgid "TG: Category Grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:487 inc/widgets.php:1650
+#: inc/admin/class-estore-admin.php:487
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:15
 msgid "TG: Category Slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:492 inc/widgets.php:1331
+#: inc/admin/class-estore-admin.php:492
+#: inc/widgets/class-estore-featured-posts-widget.php:14
 msgid "TG: Featured Posts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:497 inc/widgets.php:476
+#: inc/admin/class-estore-admin.php:497
+#: inc/widgets/class-estore-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:502 inc/widgets.php:357
+#: inc/admin/class-estore-admin.php:502
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:507 inc/widgets.php:1491
+#: inc/admin/class-estore-admin.php:507
+#: inc/widgets/classs-estore-logo-widget.php:13
 msgid "TG: Logo"
 msgstr ""
 
@@ -412,7 +420,8 @@ msgstr ""
 msgid "TG: Logos"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:522 inc/widgets.php:780
+#: inc/admin/class-estore-admin.php:522
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:13
 msgid "TG: Products Carousel"
 msgstr ""
 
@@ -420,11 +429,13 @@ msgstr ""
 msgid "TG: Product slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:532 inc/widgets.php:687
+#: inc/admin/class-estore-admin.php:532
+#: inc/widgets/class-estore-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:537 inc/widgets.php:580
+#: inc/admin/class-estore-admin.php:537
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo WC Category"
 msgstr ""
 
@@ -741,18 +752,21 @@ msgstr ""
 msgid "eStore Pro Tech"
 msgstr ""
 
-#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
-#: inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34
+#: inc/widgets/class-estore-featured-posts-widget.php:133
+#: inc/widgets/class-estore-posts-grid.php:227
 msgid "0 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
-#: inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34
+#: inc/widgets/class-estore-featured-posts-widget.php:133
+#: inc/widgets/class-estore-posts-grid.php:227
 msgid "1 Comment"
 msgstr ""
 
-#: inc/estore.php:24 inc/related-posts.php:34 inc/widgets.php:1450
-#: inc/widgets.php:2292
+#: inc/estore.php:24 inc/related-posts.php:34
+#: inc/widgets/class-estore-featured-posts-widget.php:133
+#: inc/widgets/class-estore-posts-grid.php:227
 msgid " % Comments"
 msgstr ""
 
@@ -784,7 +798,7 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: inc/estore.php:201 inc/widgets.php:285
+#: inc/estore.php:201 inc/widgets/class-estore-about.php:32
 msgid "Page"
 msgstr ""
 
@@ -1167,6 +1181,310 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#: inc/widgets/class-estore-728x90-ad.php:7
+msgid "Add your Advertisement here"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:29
+#: inc/widgets/class-estore-about.php:27
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:35
+#: inc/widgets/class-estore-featured-posts-widget.php:33
+#: inc/widgets/class-estore-posts-grid.php:37
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:35
+#: inc/widgets/class-estore-woocommerce-product-grid.php:37
+#: inc/widgets/classs-estore-logo-widget.php:45
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:32
+msgid "Add your Advertisement Images Here. Any size supported."
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:34
+msgid "Advertisement Image Link "
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:38
+msgid "Advertisement Image "
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:67
+msgid "Choose an image"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:67
+msgid "Use image"
+msgstr ""
+
+#: inc/widgets/class-estore-728x90-ad.php:46
+#: inc/widgets/class-estore-posts-grid.php:59
+#: inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: inc/widgets/classs-estore-logo-widget.php:67
+msgid "Select an Image"
+msgstr ""
+
+#: inc/widgets/class-estore-about.php:7
+msgid "Show your about page. Suitable for Click to Action."
+msgstr ""
+
+#: inc/widgets/class-estore-about.php:31
+msgid "Select a page to display Title, Excerpt and Featured image."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:8
+msgid ""
+"Display latest posts or posts of specific category, which will be used as "
+"the carousel."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:39
+#: inc/widgets/class-estore-posts-grid.php:41
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:39
+#: inc/widgets/class-estore-woocommerce-product-grid.php:41
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:43
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:31
+#: inc/widgets/class-estore-featured-posts-widget.php:37
+msgid "Number of posts to display:"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:48
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:36
+#: inc/widgets/class-estore-featured-posts-widget.php:42
+msgid "Show latest Posts"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:49
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:37
+#: inc/widgets/class-estore-featured-posts-widget.php:43
+msgid "Show posts from a category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:53
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:41
+#: inc/widgets/class-estore-featured-posts-widget.php:47
+#: inc/widgets/class-estore-woocommerce-product-slider.php:41
+msgid "Select category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:159
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:104
+msgid "Read More"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:8
+msgid ""
+"Display latest posts or posts of specific category, which will be used as "
+"the slider."
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:8
+msgid "Display latest posts or posts of specific category"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:120
+msgid "Blog Image"
+msgstr ""
+
+#: inc/widgets/class-estore-featured-posts-widget.php:145
+#: template-parts/content.php:38
+msgid "Read more"
+msgstr ""
+
+#: inc/widgets/class-estore-full-width-promo-widget.php:7
+msgid "Display some pages with featured image in horizontal layout."
+msgstr ""
+
+#: inc/widgets/class-estore-full-width-promo-widget.php:29
+#: inc/widgets/class-estore-vertical-promo-widget.php:29
+msgid "Pages"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:7
+msgid "Show Featured Category Posts in Grid Layout."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:44
+#: inc/widgets/class-estore-woocommerce-product-grid.php:44
+msgid "Add your Category Image here."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:47
+#: inc/widgets/class-estore-woocommerce-product-grid.php:47
+msgid "Image Link"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:51
+#: inc/widgets/class-estore-woocommerce-product-grid.php:51
+msgid "Category Image"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:63
+#: inc/widgets/class-estore-woocommerce-product-grid.php:63
+msgid "Choose where to align your image."
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:66
+#: inc/widgets/class-estore-woocommerce-product-grid.php:66
+msgid "Right Align"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:67
+#: inc/widgets/class-estore-woocommerce-product-grid.php:67
+msgid "Left Align"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:71
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:53
+#: inc/widgets/class-estore-woocommerce-product-grid.php:71
+msgid "Category:"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:84
+msgid "Number of Posts:"
+msgstr ""
+
+#: inc/widgets/class-estore-posts-grid.php:153
+#: inc/widgets/class-estore-woocommerce-product-grid.php:173
+#: page-templates/template-wc-collection.php:61
+msgid "View all"
+msgstr ""
+
+#: inc/widgets/class-estore-vertical-promo-widget.php:7
+msgid "Display some pages in vertical layout with featured image."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:7
+msgid ""
+"Display WooCommerce Product Categories with featured image in horizontal "
+"layout."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:29
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:29
+msgid "Category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:7
+msgid "Show WooCommerce Featured Products Carousel."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:43
+msgid "Product Source:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:45
+msgid "Latest Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:46
+msgid "Featured Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:47
+msgid "On Sale Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:48
+msgid "Certain Category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:68
+#: inc/widgets/class-estore-woocommerce-product-grid.php:85
+msgid "Number of Products:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:73
+msgid "Check to hide image hover effect."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:206
+#: inc/widgets/class-estore-woocommerce-product-grid.php:220
+#: inc/woocommerce.php:321 inc/woocommerce.php:345
+msgid "Sale!"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:232
+msgid "Price:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:239
+#: inc/widgets/class-estore-woocommerce-product-grid.php:238
+#: inc/widgets/class-estore-woocommerce-product-grid.php:274
+msgid "Add to Wishlist"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:7
+msgid "Show WooCommerce Featured Products Grid."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:13
+msgid "TG: Product Grid"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:200
+msgid "Hot products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-grid.php:267
+#: woocommerce/loop/price.php:26
+msgid "Price: "
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:8
+msgid "Display WooCommerce Product from category."
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:15
+msgid "TG: Product Slider"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:31
+msgid "Number of products to display:"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:36
+msgid "Show Latest Products"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:37
+msgid "Show Products from a category"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-product-slider.php:130
+msgid "Add to Cart"
+msgstr ""
+
+#: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:7
+msgid ""
+"Display WooCommerce Product Categories in vertical layout with featured "
+"image."
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:7
+msgid "Add your clients/brand logo images here"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:48
+msgid "Add your clients/brands logo Here"
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:55
+msgid "Logo Link "
+msgstr ""
+
+#: inc/widgets/classs-estore-logo-widget.php:59
+msgid "Logo Image "
+msgstr ""
+
 #: inc/widgets.php:40
 msgid "Header Right Sidebar"
 msgstr ""
@@ -1202,271 +1520,6 @@ msgstr ""
 
 #: inc/widgets.php:121
 msgid "Footer Sidebar 4"
-msgstr ""
-
-#: inc/widgets.php:148
-msgid "Add your Advertisement here"
-msgstr ""
-
-#: inc/widgets.php:170 inc/widgets.php:280 inc/widgets.php:802
-#: inc/widgets.php:1058 inc/widgets.php:1350 inc/widgets.php:1523
-#: inc/widgets.php:1928 inc/widgets.php:2102
-msgid "Title:"
-msgstr ""
-
-#: inc/widgets.php:173
-msgid "Add your Advertisement Images Here. Any size supported."
-msgstr ""
-
-#: inc/widgets.php:175
-msgid "Advertisement Image Link "
-msgstr ""
-
-#: inc/widgets.php:179
-msgid "Advertisement Image "
-msgstr ""
-
-#: inc/widgets.php:187 inc/widgets.php:1080 inc/widgets.php:1545
-#: inc/widgets.php:2124
-msgid "Choose an image"
-msgstr ""
-
-#: inc/widgets.php:187 inc/widgets.php:1080 inc/widgets.php:1545
-#: inc/widgets.php:2124
-msgid "Use image"
-msgstr ""
-
-#: inc/widgets.php:187 inc/widgets.php:1080 inc/widgets.php:1545
-#: inc/widgets.php:2124
-msgid "Select an Image"
-msgstr ""
-
-#: inc/widgets.php:260
-msgid "Show your about page. Suitable for Click to Action."
-msgstr ""
-
-#: inc/widgets.php:284
-msgid "Select a page to display Title, Excerpt and Featured image."
-msgstr ""
-
-#: inc/widgets.php:352
-msgid ""
-"Display WooCommerce Product Categories with featured image in horizontal "
-"layout."
-msgstr ""
-
-#: inc/widgets.php:374 inc/widgets.php:597
-msgid "Category"
-msgstr ""
-
-#: inc/widgets.php:471
-msgid "Display some pages with featured image in horizontal layout."
-msgstr ""
-
-#: inc/widgets.php:493 inc/widgets.php:704
-msgid "Pages"
-msgstr ""
-
-#: inc/widgets.php:575
-msgid ""
-"Display WooCommerce Product Categories in vertical layout with featured "
-"image."
-msgstr ""
-
-#: inc/widgets.php:682
-msgid "Display some pages in vertical layout with featured image."
-msgstr ""
-
-#: inc/widgets.php:774
-msgid "Show WooCommerce Featured Products Carousel."
-msgstr ""
-
-#: inc/widgets.php:806 inc/widgets.php:1062 inc/widgets.php:1932
-#: inc/widgets.php:2106
-msgid "Description:"
-msgstr ""
-
-#: inc/widgets.php:810
-msgid "Product Source:"
-msgstr ""
-
-#: inc/widgets.php:812
-msgid "Latest Products"
-msgstr ""
-
-#: inc/widgets.php:813
-msgid "Featured Products"
-msgstr ""
-
-#: inc/widgets.php:814
-msgid "On Sale Products"
-msgstr ""
-
-#: inc/widgets.php:815
-msgid "Certain Category"
-msgstr ""
-
-#: inc/widgets.php:820 inc/widgets.php:1092 inc/widgets.php:2136
-msgid "Category:"
-msgstr ""
-
-#: inc/widgets.php:835 inc/widgets.php:1106
-msgid "Number of Products:"
-msgstr ""
-
-#: inc/widgets.php:840
-msgid "Check to hide image hover effect."
-msgstr ""
-
-#: inc/widgets.php:973 inc/widgets.php:1241 inc/woocommerce.php:321
-#: inc/woocommerce.php:345
-msgid "Sale!"
-msgstr ""
-
-#: inc/widgets.php:999
-msgid "Price:"
-msgstr ""
-
-#: inc/widgets.php:1006 inc/widgets.php:1259 inc/widgets.php:1295
-msgid "Add to Wishlist"
-msgstr ""
-
-#: inc/widgets.php:1028
-msgid "Show WooCommerce Featured Products Grid."
-msgstr ""
-
-#: inc/widgets.php:1034
-msgid "TG: Product Grid"
-msgstr ""
-
-#: inc/widgets.php:1065 inc/widgets.php:2109
-msgid "Add your Category Image here."
-msgstr ""
-
-#: inc/widgets.php:1068 inc/widgets.php:2112
-msgid "Image Link"
-msgstr ""
-
-#: inc/widgets.php:1072 inc/widgets.php:2116
-msgid "Category Image"
-msgstr ""
-
-#: inc/widgets.php:1084 inc/widgets.php:2128
-msgid "Choose where to align your image."
-msgstr ""
-
-#: inc/widgets.php:1087 inc/widgets.php:2131
-msgid "Right Align"
-msgstr ""
-
-#: inc/widgets.php:1088 inc/widgets.php:2132
-msgid "Left Align"
-msgstr ""
-
-#: inc/widgets.php:1194 inc/widgets.php:2218
-#: page-templates/template-wc-collection.php:61
-msgid "View all"
-msgstr ""
-
-#: inc/widgets.php:1221
-msgid "Hot products"
-msgstr ""
-
-#: inc/widgets.php:1288 woocommerce/loop/price.php:26
-msgid "Price: "
-msgstr ""
-
-#: inc/widgets.php:1325
-msgid "Display latest posts or posts of specific category"
-msgstr ""
-
-#: inc/widgets.php:1354 inc/widgets.php:1666 inc/widgets.php:1936
-msgid "Number of posts to display:"
-msgstr ""
-
-#: inc/widgets.php:1359 inc/widgets.php:1671 inc/widgets.php:1941
-msgid "Show latest Posts"
-msgstr ""
-
-#: inc/widgets.php:1360 inc/widgets.php:1672 inc/widgets.php:1942
-msgid "Show posts from a category"
-msgstr ""
-
-#: inc/widgets.php:1364 inc/widgets.php:1676 inc/widgets.php:1792
-#: inc/widgets.php:1946
-msgid "Select category"
-msgstr ""
-
-#: inc/widgets.php:1437
-msgid "Blog Image"
-msgstr ""
-
-#: inc/widgets.php:1462 template-parts/content.php:38
-msgid "Read more"
-msgstr ""
-
-#: inc/widgets.php:1485
-msgid "Add your clients/brand logo images here"
-msgstr ""
-
-#: inc/widgets.php:1526
-msgid "Add your clients/brands logo Here"
-msgstr ""
-
-#: inc/widgets.php:1533
-msgid "Logo Link "
-msgstr ""
-
-#: inc/widgets.php:1537
-msgid "Logo Image "
-msgstr ""
-
-#: inc/widgets.php:1643
-msgid ""
-"Display latest posts or posts of specific category, which will be used as "
-"the slider."
-msgstr ""
-
-#: inc/widgets.php:1739 inc/widgets.php:2052
-msgid "Read More"
-msgstr ""
-
-#: inc/widgets.php:1759
-msgid "Display WooCommerce Product from category."
-msgstr ""
-
-#: inc/widgets.php:1766
-msgid "TG: Product Slider"
-msgstr ""
-
-#: inc/widgets.php:1782
-msgid "Number of products to display:"
-msgstr ""
-
-#: inc/widgets.php:1787
-msgid "Show Latest Products"
-msgstr ""
-
-#: inc/widgets.php:1788
-msgid "Show Products from a category"
-msgstr ""
-
-#: inc/widgets.php:1881
-msgid "Add to Cart"
-msgstr ""
-
-#: inc/widgets.php:1901
-msgid ""
-"Display latest posts or posts of specific category, which will be used as "
-"the carousel."
-msgstr ""
-
-#: inc/widgets.php:2072
-msgid "Show Featured Category Posts in Grid Layout."
-msgstr ""
-
-#: inc/widgets.php:2149
-msgid "Number of Posts:"
 msgstr ""
 
 #: inc/woocommerce.php:57
