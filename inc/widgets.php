@@ -176,7 +176,6 @@ require_once get_template_directory() . '/inc/widgets/class-estore-woocommerce-f
 // Class: TG: Vertical Promo WC Category.
 require_once get_template_directory() . '/inc/widgets/class-estore-woocommerce-vertical-promo-widget.php';
 
-
 // Class: TG: Products Carousel.
 require_once get_template_directory() . '/inc/widgets/class-estore-woocommerce-product-carousel.php';
 
