@@ -118,7 +118,7 @@ class estore_posts_grid extends WP_Widget {
 		$align            = isset( $instance[ 'align' ] ) ? $instance[ 'align' ] : 'collection-left-align' ;
 
 		$category         = isset( $instance[ 'category' ] ) ? $instance[ 'category' ] : '';
-		$product_number   = isset( $instance[ 'post_number' ] ) ? $instance[ 'post_number' ] : '';
+		$post_number      = isset( $instance[ 'post_number' ] ) ? $instance[ 'post_number' ] : '';
 
 		$args = array(
 			'posts_per_page'        => $post_number,
