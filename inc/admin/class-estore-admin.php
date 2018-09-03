@@ -137,7 +137,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 				   class="button button-secondary docs"
 				   target="_blank"><?php esc_html_e( 'View Demo', 'estore' ); ?></a>
 
-				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore-pro/' ) ); ?>"
+				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore/?utm_source=estore-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>"
 				   class="button button-primary docs" target="_blank"><?php esc_html_e( 'View Pro', 'estore' ); ?></a>
 
 				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://wordpress.org/support/theme/estore/reviews/?filter=5' ) ); ?>"
@@ -235,8 +235,10 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 						<div class="col">
 							<h3><?php esc_html_e( 'Need more features?', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'estore' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/themes/estore-pro/' ); ?>"
-							      class="button button-secondary"><?php esc_html_e( 'View Pro', 'estore' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/estore/?utm_source=estore-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>"
+								   class="button button-secondary" target="_blank"><?php esc_html_e( 'View Pro', 'estore' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
@@ -560,9 +562,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore-pro/' ) ); ?>"
-							   class="button button-secondary docs"
-							   target="_blank"><?php _e( 'View Pro', 'estore' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore/?utm_source=estore-free-vs-pro-table&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'estore' ); ?></a>
 						</td>
 					</tr>
 					</tbody>
