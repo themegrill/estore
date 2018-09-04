@@ -35,7 +35,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 
 			$page = add_theme_page( esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'estore-welcome', array(
 				$this,
-				'welcome_screen'
+				'welcome_screen',
 			) );
 			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_styles' ) );
 		}
@@ -124,20 +124,20 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					<div class="about-text"><?php echo $theme->display( 'Description' ); ?></div>
 
 					<div class="estore-screenshot">
-						<img src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.jpg'; ?>"/>
+						<img src="<?php echo esc_url( get_template_directory_uri() ) . '/screenshot.jpg'; ?>" />
 					</div>
 				</div>
 			</div>
 
 			<p class="estore-actions">
-				<a href="<?php echo esc_url( 'https://themegrill.com/themes/estore/' ); ?>"
+				<a href="<?php echo esc_url( 'https://themegrill.com/themes/estore/?utm_source=estore-about&utm_medium=theme-info-link&utm_campaign=theme-info' ); ?>"
 				   class="button button-secondary" target="_blank"><?php esc_html_e( 'Theme Info', 'estore' ); ?></a>
 
 				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://demo.themegrill.com/estore/' ) ); ?>"
 				   class="button button-secondary docs"
 				   target="_blank"><?php esc_html_e( 'View Demo', 'estore' ); ?></a>
 
-				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore-pro/' ) ); ?>"
+				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore/?utm_source=estore-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>"
 				   class="button button-primary docs" target="_blank"><?php esc_html_e( 'View Pro', 'estore' ); ?></a>
 
 				<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://wordpress.org/support/theme/estore/reviews/?filter=5' ) ); ?>"
@@ -156,7 +156,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
 					'page' => 'estore-welcome',
-					'tab'  => 'supported_plugins'
+					'tab'  => 'supported_plugins',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Supported Plugins', 'estore' ); ?>
 				</a>
@@ -164,7 +164,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
 					'page' => 'estore-welcome',
-					'tab'  => 'free_vs_pro'
+					'tab'  => 'free_vs_pro',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Free Vs Pro', 'estore' ); ?>
 				</a>
@@ -172,7 +172,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
 					'page' => 'estore-welcome',
-					'tab'  => 'changelog'
+					'tab'  => 'changelog',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Changelog', 'estore' ); ?>
 				</a>
@@ -217,31 +217,36 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 						<div class="col">
 							<h3><?php esc_html_e( 'Documentation', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'Please view our documentation page to setup the theme.', 'estore' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://docs.themegrill.com/estore/' ); ?>"
-							      class="button button-secondary"><?php esc_html_e( 'Documentation', 'estore' ); ?></a>
+							<p>
+								<a href="<?php echo esc_url( 'https://docs.themegrill.com/estore/?utm_source=estore-about&utm_medium=documentation-link&utm_campaign=documentation' ); ?>"
+								   class="button button-secondary" target="_blank"><?php esc_html_e( 'Documentation', 'estore' ); ?></a>
 							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got theme support question?', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'Please put it in our dedicated support forum.', 'estore' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/support-forum/' ); ?>"
-							      class="button button-secondary"><?php esc_html_e( 'Support Forum', 'estore' ); ?></a>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/support-forum/?utm_source=estore-about&utm_medium=support-forum-link&utm_campaign=support-forum' ); ?>"
+								   class="button button-secondary" target="_blank"><?php esc_html_e( 'Support Forum', 'estore' ); ?></a>
 							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Need more features?', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'Upgrade to PRO version for more exciting features.', 'estore' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/themes/estore-pro/' ); ?>"
-							      class="button button-secondary"><?php esc_html_e( 'View Pro', 'estore' ); ?></a></p>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/themes/estore/?utm_source=estore-about&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ); ?>"
+								   class="button button-secondary" target="_blank"><?php esc_html_e( 'View Pro', 'estore' ); ?></a>
+							</p>
 						</div>
 
 						<div class="col">
 							<h3><?php esc_html_e( 'Got sales related question?', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'Please send it via our sales contact page.', 'estore' ) ?></p>
-							<p><a href="<?php echo esc_url( 'https://themegrill.com/contact/' ); ?>"
-							      class="button button-secondary"><?php esc_html_e( 'Contact Page', 'estore' ); ?></a>
+							<p>
+								<a href="<?php echo esc_url( 'https://themegrill.com/contact/?utm_source=estore-about&utm_medium=contact-page-link&utm_campaign=contact-page' ); ?>"
+								   class="button button-secondary" target="_blank"><?php esc_html_e( 'Contact Page', 'estore' ); ?></a>
 							</p>
 						</div>
 
@@ -557,9 +562,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 						<td></td>
 						<td></td>
 						<td class="btn-wrapper">
-							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore-pro/' ) ); ?>"
-							   class="button button-secondary docs"
-							   target="_blank"><?php _e( 'View Pro', 'estore' ); ?></a>
+							<a href="<?php echo esc_url( apply_filters( 'estore_pro_theme_url', 'https://themegrill.com/themes/estore/?utm_source=estore-free-vs-pro-table&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro' ) ); ?>" class="button button-secondary docs" target="_blank"><?php _e( 'View Pro', 'estore' ); ?></a>
 						</td>
 					</tr>
 					</tbody>
