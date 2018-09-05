@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.2.8\n"
+"Project-Id-Version: eStore 1.2.9\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-07-20 06:14:50+00:00\n"
+"POT-Creation-Date: 2018-09-05 06:21:57+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -120,21 +120,20 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:134 inc/customizer.php:57
+#: inc/admin/class-estore-admin.php:134
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:138 inc/customizer.php:73
+#: inc/admin/class-estore-admin.php:138
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:141 inc/admin/class-estore-admin.php:237
-#: inc/admin/class-estore-admin.php:562 inc/customizer.php:53
-#: inc/customizer.php:69
+#: inc/admin/class-estore-admin.php:141 inc/admin/class-estore-admin.php:240
+#: inc/admin/class-estore-admin.php:565
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:145 inc/customizer.php:77
+#: inc/admin/class-estore-admin.php:145
 msgid "Rate this theme"
 msgstr ""
 
@@ -162,8 +161,7 @@ msgstr ""
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:218 inc/admin/class-estore-admin.php:221
-#: inc/customizer.php:65
+#: inc/admin/class-estore-admin.php:218 inc/admin/class-estore-admin.php:222
 msgid "Documentation"
 msgstr ""
 
@@ -171,104 +169,104 @@ msgstr ""
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:226
+#: inc/admin/class-estore-admin.php:227
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:227
+#: inc/admin/class-estore-admin.php:228
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:229
+#: inc/admin/class-estore-admin.php:231
 msgid "Support Forum"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:234
+#: inc/admin/class-estore-admin.php:236
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:235 inc/admin/class-estore-admin.php:385
+#: inc/admin/class-estore-admin.php:237 inc/admin/class-estore-admin.php:390
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:241
+#: inc/admin/class-estore-admin.php:245
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:242
+#: inc/admin/class-estore-admin.php:246
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:244
+#: inc/admin/class-estore-admin.php:249
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:251 inc/admin/class-estore-admin.php:260
+#: inc/admin/class-estore-admin.php:256 inc/admin/class-estore-admin.php:265
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:255
+#: inc/admin/class-estore-admin.php:260
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:272
+#: inc/admin/class-estore-admin.php:277
 msgid "Return to Updates"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:272
+#: inc/admin/class-estore-admin.php:277
 msgid "Return to Dashboard &rarr; Updates"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:275
+#: inc/admin/class-estore-admin.php:280
 msgid "Go to Dashboard &rarr; Home"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:275
+#: inc/admin/class-estore-admin.php:280
 msgid "Go to Dashboard"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:292
+#: inc/admin/class-estore-admin.php:297
 msgid "View changelog below."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:346
+#: inc/admin/class-estore-admin.php:351
 msgid "This theme recommends following plugins."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:349
+#: inc/admin/class-estore-admin.php:354
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:350 inc/admin/class-estore-admin.php:354
-#: inc/admin/class-estore-admin.php:358
+#: inc/admin/class-estore-admin.php:355 inc/admin/class-estore-admin.php:359
+#: inc/admin/class-estore-admin.php:363
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:353
+#: inc/admin/class-estore-admin.php:358
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:357
+#: inc/admin/class-estore-admin.php:362
 msgid "Everest Forms – Easy Contact Form and Form Builder"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:361
+#: inc/admin/class-estore-admin.php:366
 msgid "WP-PageNavi"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:363
+#: inc/admin/class-estore-admin.php:368
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:365
+#: inc/admin/class-estore-admin.php:370
 msgid "YITH WooCommerce Wishlist"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:368
+#: inc/admin/class-estore-admin.php:373
 msgid "WPML"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:390
+#: inc/admin/class-estore-admin.php:395
 msgid "Features"
 msgstr ""
 
@@ -276,178 +274,178 @@ msgstr ""
 msgid "eStore"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:392
+#: inc/admin/class-estore-admin.php:397
 msgid "eStore Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:397
+#: inc/admin/class-estore-admin.php:402
 msgid "Different Header Layouts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:398
+#: inc/admin/class-estore-admin.php:403
 msgid "Default header layout (free)"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:399
+#: inc/admin/class-estore-admin.php:404
 msgid "3 different header layouts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:402
+#: inc/admin/class-estore-admin.php:407
 msgid "Google Fonts Option"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:404
+#: inc/admin/class-estore-admin.php:409
 msgid "600+"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:407
+#: inc/admin/class-estore-admin.php:412
 msgid "Font Size options"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:412
+#: inc/admin/class-estore-admin.php:417
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:413 inc/customizer.php:347
+#: inc/admin/class-estore-admin.php:418 inc/customizer.php:326
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:414
+#: inc/admin/class-estore-admin.php:419
 msgid "Multiple Color Options"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:417
+#: inc/admin/class-estore-admin.php:422
 msgid "Translation Ready"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:422
+#: inc/admin/class-estore-admin.php:427
 msgid "Woocommerce Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:427
+#: inc/admin/class-estore-admin.php:432
 msgid "YITH Wishlist Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:432
+#: inc/admin/class-estore-admin.php:437
 msgid "WPML Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:437
+#: inc/admin/class-estore-admin.php:442
 msgid "RTL Support"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:442
+#: inc/admin/class-estore-admin.php:447
 msgid "Footer Copyright Editor"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:447
+#: inc/admin/class-estore-admin.php:452
 msgid "Footer Widgets Column"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:448 inc/admin/class-estore-admin.php:449
+#: inc/admin/class-estore-admin.php:453 inc/admin/class-estore-admin.php:454
 msgid "1,2,3,4 Columns"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:452
+#: inc/admin/class-estore-admin.php:457
 msgid "Demo Content"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:457 inc/customizer.php:61
+#: inc/admin/class-estore-admin.php:462
 msgid "Support"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:458
+#: inc/admin/class-estore-admin.php:463
 msgid "Forum"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:459
+#: inc/admin/class-estore-admin.php:464
 msgid "Forum + Emails/Support Ticket"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:462
+#: inc/admin/class-estore-admin.php:467
 msgid "Extra Options on Widgets"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:467 inc/widgets/class-estore-about.php:13
+#: inc/admin/class-estore-admin.php:472 inc/widgets/class-estore-about.php:13
 msgid "TG: About Widget"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:472
+#: inc/admin/class-estore-admin.php:477
 #: inc/widgets/class-estore-728x90-ad.php:13
 msgid "TG: Advertisement"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:477
+#: inc/admin/class-estore-admin.php:482
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:15
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:482
+#: inc/admin/class-estore-admin.php:487
 #: inc/widgets/class-estore-posts-grid.php:13
 msgid "TG: Category Grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:487
+#: inc/admin/class-estore-admin.php:492
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:15
 msgid "TG: Category Slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:492
+#: inc/admin/class-estore-admin.php:497
 #: inc/widgets/class-estore-featured-posts-widget.php:14
 msgid "TG: Featured Posts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:497
+#: inc/admin/class-estore-admin.php:502
 #: inc/widgets/class-estore-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:502
+#: inc/admin/class-estore-admin.php:507
 #: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:507
+#: inc/admin/class-estore-admin.php:512
 #: inc/widgets/classs-estore-logo-widget.php:13
 msgid "TG: Logo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:512
+#: inc/admin/class-estore-admin.php:517
 msgid "TG: Product grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:517
+#: inc/admin/class-estore-admin.php:522
 msgid "TG: Logos"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:522
+#: inc/admin/class-estore-admin.php:527
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:13
 msgid "TG: Products Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:527
+#: inc/admin/class-estore-admin.php:532
 msgid "TG: Product slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:532
+#: inc/admin/class-estore-admin.php:537
 #: inc/widgets/class-estore-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:537
+#: inc/admin/class-estore-admin.php:542
 #: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:542
+#: inc/admin/class-estore-admin.php:547
 msgid "TG: Testimonials"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:547
+#: inc/admin/class-estore-admin.php:552
 msgid "TG: Icon Text"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:552
+#: inc/admin/class-estore-admin.php:557
 msgid "TG: Products Tab"
 msgstr ""
 
@@ -455,7 +453,7 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:28 inc/customizer.php:379
+#: inc/admin/meta-boxes.php:28 inc/customizer.php:358
 msgid "Default Layout"
 msgstr ""
 
@@ -475,280 +473,276 @@ msgstr ""
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:90
-msgid "eStore Important Links"
+#: inc/customizer.php:86
+msgid "View PRO version"
 msgstr ""
 
 #: inc/customizer.php:107
-msgid "Important Links"
-msgstr ""
-
-#: inc/customizer.php:128
 msgid "Choose the required option for Header Media placement"
 msgstr ""
 
-#: inc/customizer.php:132
+#: inc/customizer.php:111
 msgid "Position One: Display Header Media just above the site Title/Text"
 msgstr ""
 
-#: inc/customizer.php:133
+#: inc/customizer.php:112
 msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
 msgstr ""
 
-#: inc/customizer.php:145
+#: inc/customizer.php:124
 msgid "Change Header Settings here"
 msgstr ""
 
-#: inc/customizer.php:147
+#: inc/customizer.php:126
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:154
+#: inc/customizer.php:133
 msgid "Header Integrations"
 msgstr ""
 
-#: inc/customizer.php:167
+#: inc/customizer.php:146
 msgid "Enable Language Selection (WPML)"
 msgstr ""
 
-#: inc/customizer.php:180
+#: inc/customizer.php:159
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:201 inc/customizer.php:847
+#: inc/customizer.php:180 inc/customizer.php:826
 msgid "Upload logo"
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:202
 msgid "Choose the required option"
 msgstr ""
 
-#: inc/customizer.php:227
+#: inc/customizer.php:206
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:228
+#: inc/customizer.php:207
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:229
+#: inc/customizer.php:208
 msgid "Show both header logo and text"
 msgstr ""
 
-#: inc/customizer.php:230
+#: inc/customizer.php:209
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:240
+#: inc/customizer.php:219
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:258
+#: inc/customizer.php:237
 msgid "Activate the header top bar"
 msgstr ""
 
-#: inc/customizer.php:280
+#: inc/customizer.php:259
 msgid "Header Text"
 msgstr ""
 
-#: inc/customizer.php:281
+#: inc/customizer.php:260
 msgid "Paste the Font Awesome icon font"
 msgstr ""
 
-#: inc/customizer.php:301
+#: inc/customizer.php:280
 msgid "Header Search"
 msgstr ""
 
-#: inc/customizer.php:318
+#: inc/customizer.php:297
 msgid "Choose a search option"
 msgstr ""
 
-#: inc/customizer.php:322
+#: inc/customizer.php:301
 msgid "WordPress search"
 msgstr ""
 
-#: inc/customizer.php:323
+#: inc/customizer.php:302
 msgid "WooCommerce search"
 msgstr ""
 
-#: inc/customizer.php:336
+#: inc/customizer.php:315
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:338
+#: inc/customizer.php:317
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:368
+#: inc/customizer.php:347
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:398
+#: inc/customizer.php:377
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:416
+#: inc/customizer.php:395
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:435
+#: inc/customizer.php:414
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:453
+#: inc/customizer.php:432
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:472
+#: inc/customizer.php:451
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:490
+#: inc/customizer.php:469
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:486
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:511
+#: inc/customizer.php:490
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:512
+#: inc/customizer.php:491
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:523
+#: inc/customizer.php:502
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:543
+#: inc/customizer.php:522
 msgid "Write your Custom CSS here"
 msgstr ""
 
-#: inc/customizer.php:554
+#: inc/customizer.php:533
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:571
+#: inc/customizer.php:550
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:575
+#: inc/customizer.php:554
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:576
+#: inc/customizer.php:555
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:577
+#: inc/customizer.php:556
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:578
+#: inc/customizer.php:557
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:590
+#: inc/customizer.php:569
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:592
+#: inc/customizer.php:571
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:599
+#: inc/customizer.php:578
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:611
+#: inc/customizer.php:590
 msgid "Check to display the author bio."
 msgstr ""
 
-#: inc/customizer.php:619
+#: inc/customizer.php:598
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:631
+#: inc/customizer.php:610
 msgid "Check to activate the related posts"
 msgstr ""
 
-#: inc/customizer.php:644
+#: inc/customizer.php:623
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:648
+#: inc/customizer.php:627
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:649
+#: inc/customizer.php:628
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:656 inc/woocommerce.php:122
+#: inc/customizer.php:635 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:679 inc/woocommerce.php:145
+#: inc/customizer.php:658 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:694
+#: inc/customizer.php:673
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:696
+#: inc/customizer.php:675
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:713
+#: inc/customizer.php:692
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:733
+#: inc/customizer.php:712
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:753
+#: inc/customizer.php:732
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:773
+#: inc/customizer.php:752
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:793
+#: inc/customizer.php:772
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:813
+#: inc/customizer.php:792
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:825
+#: inc/customizer.php:804
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/demo-config.php:31
+#: inc/demo-config.php:28
 msgid "eStore Pro Default"
 msgstr ""
 
-#: inc/demo-config.php:36
+#: inc/demo-config.php:33
 msgid "eStore Pro Fashion"
 msgstr ""
 
-#: inc/demo-config.php:41
+#: inc/demo-config.php:38
 msgid "eStore Pro Tech"
 msgstr ""
 

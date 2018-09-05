@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.2.9 - 2018-09-05 =
 * Update - Upsell link
 
 = Version 1.2.8 - 2018-07-20 =
