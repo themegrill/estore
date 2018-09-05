@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Update - Upsell link
+
 = Version 1.2.8 - 2018-07-20 =
 * Fix - Image upload button in customize option
 * Fix - Image gap removed between products of Shop page
