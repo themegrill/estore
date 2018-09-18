@@ -4,11 +4,11 @@
  *
  * This is the template that displays all of the <head> section and everything up until </header>
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ * @link       https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ThemeGrill
+ * @package    ThemeGrill
  * @subpackage eStore
- * @since eStore 0.1
+ * @since      eStore 0.1
  */
 
 ?><!DOCTYPE html>
@@ -53,7 +53,7 @@
 								array(
 									'theme_location' => 'header',
 									'menu_id'        => 'header-menu',
-									'fallback_cb'    => false
+									'fallback_cb'    => false,
 								)
 							);
 							?>
@@ -101,16 +101,6 @@
 				<div class="logo-wrapper clearfix">
 					<?php if ( ( get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'show_both' || get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'header_logo_only' ) ) {
 
-						// Checking for theme defined logo
-						if ( get_theme_mod( 'estore_logo', '' ) != '' ) {
-							?>
-							<div class="logo">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-								   title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img
-											src="<?php echo esc_url( get_theme_mod( 'estore_logo' ) ); ?>"
-											alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/></a>
-							</div> <!-- logo end -->
-						<?php }
 						if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
 							estore_the_custom_logo();
 						}
@@ -203,7 +193,7 @@
 								array(
 									'theme_location' => 'secondary',
 									'menu_id'        => 'category-menu',
-									'fallback_cb'    => 'false'
+									'fallback_cb'    => 'false',
 								)
 							);
 							?>

@@ -161,31 +161,6 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	if ( ! function_exists( 'the_custom_logo' ) ) {
-		// Logo Upload
-		$wp_customize->add_setting(
-			'estore_logo',
-			array(
-				'default'           => '',
-				'capability'        => 'edit_theme_options',
-				'sanitize_callback' => 'esc_url_raw',
-			)
-		);
-
-		$wp_customize->add_control(
-			new WP_Customize_Image_Control(
-				$wp_customize,
-				'estore_logo',
-				array(
-					'label'   => esc_html__( 'Upload logo', 'estore' ),
-					'section' => 'estore_header_logo',
-					'setting' => 'estore_logo',
-				)
-			)
-		);
-	}
-
-
 	// Logo Placement
 	$wp_customize->add_setting(
 		'estore_logo_placement',
