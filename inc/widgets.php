@@ -73,8 +73,8 @@ function estore_widgets_init() {
       'name'          => esc_html__( 'Front Page Sidebar', 'estore' ),
       'id'            => 'estore_sidebar_front',
       'description'   => '',
-      'before_widget' => '<section id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</section>',
+      'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+      'after_widget'  => '</div></section>',
       'before_title'  => '<h4 class="widget-title">',
       'after_title'   => '</h4>'
    ) );
