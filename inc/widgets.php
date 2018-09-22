@@ -1,4 +1,4 @@
-register_sidebar<?php
+<?php
 /**
  * Contains all the functions related to sidebar and widget.
  *
