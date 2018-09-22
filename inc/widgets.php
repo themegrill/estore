@@ -1,4 +1,4 @@
-<?php
+register_sidebar<?php
 /**
  * Contains all the functions related to sidebar and widget.
  *
@@ -20,8 +20,8 @@ function estore_widgets_init() {
       'name'          => esc_html__( 'Right Sidebar', 'estore' ),
       'id'            => 'estore_sidebar_right',
       'description'   => '',
-      'before_widget' => '<section id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</section>',
+      'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+      'after_widget'  => '</div></section>',
       'before_title'  => '<h4 class="widget-title"><span>',
       'after_title'   => '</span></h4>'
    ) );
@@ -30,8 +30,8 @@ function estore_widgets_init() {
 		'name'          => esc_html__( 'Left Sidebar', 'estore' ),
 		'id'            => 'estore_sidebar_left',
 		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+		'after_widget'  => '</div></section>',
 		'before_title'  => '<h4 class="widget-title"><span>',
 		'after_title'   => '</span></h4>'
 	) );
@@ -40,8 +40,8 @@ function estore_widgets_init() {
       'name'          => esc_html__( 'Header Right Sidebar', 'estore' ),
       'id'            => 'estore_sidebar_header',
       'description'   => '',
-      'before_widget' => '<section id="%1$s" class="widget %2$s">',
-      'after_widget'  => '</section>',
+      'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+      'after_widget'  => '</div></section>',
       'before_title'  => '<h4 class="widget-title"><span>',
       'after_title'   => '</span></h4>'
    ) );
@@ -51,8 +51,8 @@ function estore_widgets_init() {
 		'name'          => esc_html__( 'Front Page: Slider Area', 'estore' ),
 		'id'            => 'estore_sidebar_slider',
 		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+		'after_widget'  => '</div></section>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>'
 	) );
@@ -62,8 +62,8 @@ function estore_widgets_init() {
 		'name'          => esc_html__( 'Front Page: Area beside Slider', 'estore' ),
 		'id'            => 'estore_sidebar_slider_beside',
 		'description'   => '',
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+		'after_widget'  => '</div></section>',
 		'before_title'  => '<h4 class="widget-title">',
 		'after_title'   => '</h4>'
 	) );
@@ -86,8 +86,8 @@ function estore_widgets_init() {
 		'name'          => esc_html__( 'Footer Sidebar 1', 'estore' ),
 		'id'            => 'estore_footer_sidebar1',
 		'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</section>',
+		'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+		'after_widget'  => '</div></section>',
 		'before_title'  => '<h4 class="widget-title"><span>',
 		'after_title'   => '</span></h4>',
 	) );
@@ -97,8 +97,8 @@ function estore_widgets_init() {
 			'name'          => esc_html__( 'Footer Sidebar 2', 'estore' ),
 			'id'            => 'estore_footer_sidebar2',
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+			'after_widget'  => '</div></section>',
 			'before_title'  => '<h4 class="widget-title"><span>',
 			'after_title'   => '</span></h4>',
 		) );
@@ -109,8 +109,8 @@ function estore_widgets_init() {
 			'name'          => esc_html__( 'Footer Sidebar 3', 'estore' ),
 			'id'            => 'estore_footer_sidebar3',
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+			'after_widget'  => '</div></section>',
 			'before_title'  => '<h4 class="widget-title"><span>',
 			'after_title'   => '</span></h4>',
 		) );
@@ -121,8 +121,8 @@ function estore_widgets_init() {
 			'name'          => esc_html__( 'Footer Sidebar 4', 'estore' ),
 			'id'            => 'estore_footer_sidebar4',
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<section id="%1$s" class="widget %2$s"><div class="tg-container">',
+			'after_widget'  => '</div></section>',
 			'before_title'  => '<h4 class="widget-title"><span>',
 			'after_title'   => '</span></h4>',
 		) );
