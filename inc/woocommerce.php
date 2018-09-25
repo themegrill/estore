@@ -59,8 +59,8 @@ function estore_woocommerce_widgets_init() {
 		'description'   => esc_html__( 'Widget area for WooCommerce Pages.', 'estore' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="widget-title"><span>',
-		'after_title'   => '</span></h4>'
+		'before_title'  => '<h3 class="widget-title"><span>',
+		'after_title'   => '</span></h3>'
 	) );
 
 	// Register Widgets using WooCommerce data

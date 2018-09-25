@@ -15,7 +15,7 @@ get_header();
 	<div id="content" class="site-content"><!-- #content.site-content -->
 		<div class="page-header clearfix">
 			<div class="tg-container">
-				<?php the_title('<h2 class="entry-title">', '</h2>'); ?>
+				<?php estore_entry_title(); ?>
 				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
 			</div>
 		</div>

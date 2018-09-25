@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="content" class="site-content">
 		<div class="page-header clearfix">
 			<div class="tg-container">
-				<h2 class="entry-title"><?php esc_html_e( '404', 'estore' );?></h2>
+				<?php estore_entry_title(); ?>
 				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
 			</div>
 		</div>
