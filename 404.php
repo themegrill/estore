@@ -35,7 +35,7 @@ get_header(); ?>
 								<span class="error"><?php esc_html_e( 'error', 'estore' ); ?></span>
 							</div>
 							<header class="page-not-found">
-								<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.' , 'estore' ); ?></h1>
+								<h2 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.' , 'estore' ); ?></h2>
 							</header>
 
 							<p class="message"><?php esc_html_e( 'It looks like nothing was found at this location. Try the search below.', 'estore' ); ?></p>
