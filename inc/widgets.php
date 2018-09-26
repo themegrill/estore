@@ -22,8 +22,8 @@ function estore_widgets_init() {
       'description'   => '',
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
-      'before_title'  => '<h4 class="widget-title"><span>',
-      'after_title'   => '</span></h4>'
+      'before_title'  => '<h3 class="widget-title"><span>',
+      'after_title'   => '</span></h3>'
    ) );
 	// Registering Left Sidebar
 	register_sidebar( array(
@@ -32,8 +32,8 @@ function estore_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="widget-title"><span>',
-		'after_title'   => '</span></h4>'
+		'before_title'  => '<h3 class="widget-title"><span>',
+		'after_title'   => '</span></h3>'
 	) );
    // Register Header Right Sidebar
    register_sidebar( array(
@@ -42,8 +42,8 @@ function estore_widgets_init() {
       'description'   => '',
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
-      'before_title'  => '<h4 class="widget-title"><span>',
-      'after_title'   => '</span></h4>'
+      'before_title'  => '<h3 class="widget-title"><span>',
+      'after_title'   => '</span></h3>'
    ) );
 
 	// Register Slider Sidebar
@@ -53,8 +53,8 @@ function estore_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>'
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>'
 	) );
 
 	// Register Area beside slider Sidebar
@@ -64,8 +64,8 @@ function estore_widgets_init() {
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="widget-title">',
-		'after_title'   => '</h4>'
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>'
 	) );
 
    // Register Front Page Sidebar
@@ -75,8 +75,8 @@ function estore_widgets_init() {
       'description'   => '',
       'before_widget' => '<section id="%1$s" class="widget %2$s">',
       'after_widget'  => '</section>',
-      'before_title'  => '<h4 class="widget-title">',
-      'after_title'   => '</h4>'
+      'before_title'  => '<h3 class="widget-title">',
+      'after_title'   => '</h3>'
    ) );
 
 	// Footer Widgets
@@ -88,8 +88,8 @@ function estore_widgets_init() {
 		'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h4 class="widget-title"><span>',
-		'after_title'   => '</span></h4>',
+		'before_title'  => '<h3 class="widget-title"><span>',
+		'after_title'   => '</span></h3>',
 	) );
 
 	if ( $footer_sidebar_count >= 2 ) {
@@ -99,8 +99,8 @@ function estore_widgets_init() {
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title"><span>',
-			'after_title'   => '</span></h4>',
+			'before_title'  => '<h3 class="widget-title"><span>',
+			'after_title'   => '</span></h3>',
 		) );
 	}
 
@@ -111,8 +111,8 @@ function estore_widgets_init() {
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title"><span>',
-			'after_title'   => '</span></h4>',
+			'before_title'  => '<h3 class="widget-title"><span>',
+			'after_title'   => '</span></h3>',
 		) );
 	}
 
@@ -123,8 +123,8 @@ function estore_widgets_init() {
 			'description'   => esc_html__( 'Show widgets at Footer section', 'estore' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h4 class="widget-title"><span>',
-			'after_title'   => '</span></h4>',
+			'before_title'  => '<h3 class="widget-title"><span>',
+			'after_title'   => '</span></h3>',
 		) );
 	}
 
