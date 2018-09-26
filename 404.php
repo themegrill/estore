@@ -17,7 +17,7 @@ get_header(); ?>
 	<div id="content" class="site-content">
 		<div class="page-header clearfix">
 			<div class="tg-container">
-				<?php estore_entry_title(); ?>
+				<h2 class="entry-title"><?php esc_html_e( '404', 'estore' );?></h2>
 				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
 			</div>
 		</div>
@@ -35,7 +35,7 @@ get_header(); ?>
 								<span class="error"><?php esc_html_e( 'error', 'estore' ); ?></span>
 							</div>
 							<header class="page-not-found">
-								<h2 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.' , 'estore' ); ?></h2>
+								<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.' , 'estore' ); ?></h1>
 							</header>
 
 							<p class="message"><?php esc_html_e( 'It looks like nothing was found at this location. Try the search below.', 'estore' ); ?></p>
