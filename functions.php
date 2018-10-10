@@ -234,3 +234,26 @@ require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-acti
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require_once get_template_directory() . '/inc/jetpack.php';
 }
+
+if ( ! function_exists( 'estore_entry_title' ) ) :
+
+	/**
+	 *
+	 */
+	function estore_entry_title() {
+
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title">', '</h1>' );
+		elseif ( is_archive() ) :
+			the_archive_title( '<h1 class="page-title">', '</h1>' );
+		elseif ( is_404() ) :
+			?>
+			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'estore' ); ?></h1>
+		<?php
+		else :
+			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+
+	}
+
+endif;

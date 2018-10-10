@@ -94,7 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.0 - 2018-09-26 =
+* Fix - Heading tag
+* Fix - Search Title
 * Remove - Backward compatible for header logo
 
 = Version 1.2.9 - 2018-09-05 =

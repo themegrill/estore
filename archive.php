@@ -18,7 +18,7 @@ get_header(); ?>
 		<div class="page-header clearfix">
 			<div class="tg-container">
 				<?php
-				the_archive_title('<h2 class="entry-title">', '</h2>');
+				estore_entry_title();
 				the_archive_description('<div class="taxonomy-description">', '</div>');
 				?>
 				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>

@@ -30,7 +30,7 @@ $estore_layout = estore_woocommerce_layout_class();
 		<div class="tg-container">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-				<h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
+				<h2 class="entry-title"><?php woocommerce_page_title(); ?></h2>
 
 			<?php endif; ?>
 			<h3 class="entry-sub-title"><?php woocommerce_breadcrumb(); ?></h3>
