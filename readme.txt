@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - WooCommerce template issue
+
 = Version 1.3.0 - 2018-09-26 =
 * Fix - Heading tag
 * Fix - Search Title
