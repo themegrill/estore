@@ -49,7 +49,6 @@
         float: left;
         margin: 20px 0 0 3%;
         text-align: center;
-        width: 47%;
      	@include transition(all 0.5s ease);
         &:hover {
             background: $color__link;
@@ -110,7 +109,6 @@
         float: left;
         margin: 20px 0 0 3%;
         text-align: center;
-        width: 47%;
         font-weight: 400;
         background: none;
         @include transition(all 0.5s ease);

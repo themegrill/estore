@@ -1475,7 +1475,6 @@ body {
   float: left;
   margin: 20px 0 0 3%;
   text-align: center;
-  width: 47%;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease; }
@@ -1527,7 +1526,6 @@ body {
     float: left;
     margin: 20px 0 0 3%;
     text-align: center;
-    width: 47%;
     font-weight: 400;
     background: none;
     -webkit-transition: all 0.5s ease;
@@ -3563,7 +3561,7 @@ article .entry-content {
   color: #fff;
   font-weight: 600;
   height: 36px;
-  padding: 0 10px;
+  padding: 0 20px;
   line-height: 32px;
   -webkit-transition: background 0.5s ease;
   -moz-transition: background 0.5s ease;
