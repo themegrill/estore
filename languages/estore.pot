@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.3.0\n"
+"Project-Id-Version: eStore 1.3.1\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2018-09-26 11:31:39+00:00\n"
+"POT-Creation-Date: 2018-11-12 09:29:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1634,11 +1634,11 @@ msgstr ""
 msgid "Create an account?"
 msgstr ""
 
-#: woocommerce/checkout/form-checkout.php:28
+#: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to checkout."
 msgstr ""
 
-#: woocommerce/checkout/form-checkout.php:56
+#: woocommerce/checkout/form-checkout.php:54
 msgid "Your order"
 msgstr ""
 
