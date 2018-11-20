@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.3.2 - 2018-11-20 =
 * Added - Gutenberg compatibility
 * Tweak - Add alt attributes to missed img tags
 
