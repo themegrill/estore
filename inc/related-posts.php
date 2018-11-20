@@ -15,9 +15,18 @@
 				<div class="tg-column-3">
 
 					<?php if ( has_post_thumbnail() ): ?>
+						<?php
+						$title_attribute     = esc_attr( get_the_title( $post->ID ) );
+						$thumb_id            = get_post_thumbnail_id( get_the_ID() );
+						$img_altr            = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
+						$img_alt             = ! empty( $img_altr ) ? $img_altr : $title_attribute;
+						$post_thumbnail_attr = array(
+							'alt'   => esc_attr( $img_alt ),
+							'title' => esc_attr( $title_attribute ),
+						); ?>
 						<div class="post-thumbnails">
 							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-								<?php the_post_thumbnail( 'estore-featured-image' ); ?>
+								<?php the_post_thumbnail( 'estore-featured-image', $post_thumbnail_attr ); ?>
 							</a>
 						</div>
 					<?php endif; ?>
