@@ -94,6 +94,10 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Added - Gutenberg compatibility
+* Tweak - Add alt attributes to missed img tags
+
 = Version 1.3.1 - 2018-11-12 =
 * Fix - WooCommerce template issue
 
