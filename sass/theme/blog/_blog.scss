@@ -171,13 +171,13 @@ article .entry-content {
 .wp-pagenavi .pages {
 	color: #8c8c8c;
 }
- 
+
 // author-bio
 
 .author-box {
     background: $color__background-screen;
 	padding: 20px;
-	
+
 	.author-img {
 		float: left;
 	}
@@ -239,4 +239,25 @@ article .entry-content {
 
 .related-posts-main-title {
     margin-top: 30px;
+}
+
+.no_sidebar_full_width,
+.no_sidebar_content_centered {
+	overflow: hidden;
+
+	.alignfull {
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+		max-width: unset;
+
+		img {
+			max-width: unset;
+		}
+	}
+
+	.alignwide {
+		margin-left: -100px;
+		margin-right: -100px;
+		max-width: unset;
+	}
 }
