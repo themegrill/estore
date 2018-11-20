@@ -47,8 +47,7 @@ module.exports = function( grunt ){
 		// Compile all .scss files.
 		sass: {
 			options: {
-				sourceMap: false,
-				includePaths: require( 'node-bourbon' ).includePaths
+				sourceMap: false
 			},
 			compile: {
 				files: [{
@@ -61,6 +60,17 @@ module.exports = function( grunt ){
 			}
 		},
 
+		postcss: {
+			options: {
+				processors: require( 'autoprefixer' )({browsers: ['last 4 version', '> 10%', '> 5% in US']})
+			},
+			dist:{
+				files:{
+					'style.css':'style.css'
+				}
+			}
+		},
+
 		// Watch changes for assets.
 		watch: {
 			css: {
@@ -68,7 +78,7 @@ module.exports = function( grunt ){
 					'<%= dirs.css %>/*.scss',
 					'<%= dirs.css %>/**/*.scss'
 				],
-				tasks: ['sass']
+				tasks: ['sass', 'postcss']
 			},
 			js: {
 				files: [
@@ -165,7 +175,8 @@ module.exports = function( grunt ){
 	]);
 
 	grunt.registerTask( 'css', [
-		'sass'
+		'sass',
+		'postcss'
 	]);
 
 	grunt.registerTask( 'dev', [
