@@ -94,10 +94,13 @@ class estore_728x90_ad extends WP_Widget {
 			<?php }
 			$output = '';
 			if ( !empty( $image_url ) ) {
+				$attachment_post_id = attachment_url_to_postid( $image_url );
+				$img_altr           = get_post_meta( $attachment_post_id, '_wp_attachment_image_alt', true );
+				$img_alt            = ! empty( $img_altr ) ? $img_altr : $title;
 				$output .= '<div class="image_with_link-content">';
 				if ( !empty( $image_link ) ) {
 					$output .= '<a href="'.esc_url($image_link).'" class="single_image_with_link" target="_blank" rel="nofollow">
-								<img src="'.esc_url($image_url).'" />
+								<img src="'.esc_url($image_url).'" alt="'.esc_attr( $img_alt ).'" />
 							</a>';
 				} else {
 					$output .= '<img src="'.esc_url($image_url).'" />';
