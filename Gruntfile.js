@@ -158,6 +158,7 @@ module.exports = function( grunt ){
 
 	// Load NPM tasks to be used here
 	grunt.loadNpmTasks( 'grunt-sass' );
+	grunt.loadNpmTasks( 'grunt-postcss' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-glotpress' );
 	grunt.loadNpmTasks( 'grunt-checktextdomain' );
