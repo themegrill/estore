@@ -21,6 +21,11 @@
      .category-menu {
          width: 15%;
      }
+
+     .no_sidebar_full_width .alignwide {
+         margin-left: -10px;
+         margin-right: -10px;
+     }
  }
 
  @media (max-width: 979px) {
@@ -466,6 +471,12 @@
     .author-box .author-description-wrapper {
         margin-left: 0;
     }
+
+     .no_sidebar_full_width .alignwide,
+     .no_sidebar_content_centered .alignwide {
+         margin-left: 0;
+         margin-right: 0;
+     }
  }
 
  @media (max-width: 480px) {
