@@ -91,8 +91,11 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 									$thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
 									//$image = wp_get_attachment_url( $thumbnail_id );
 									$image = wp_get_attachment_image_src( $thumbnail_id, 'estore-featured-image');
+									$img_altr = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
+									$img_alt = ! empty( $img_altr ) ? $img_altr : '';
+
 									if ( $image[0] ) {
-										echo '<img src="' . esc_url( $image[0] ) . '" alt="" />';
+										echo '<img src="' . esc_url( $image[0] ) . '" alt="' .esc_attr( $img_alt ). '" />';
 									}
 									// @todo: Default Place holder image needed
 									?>

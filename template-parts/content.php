@@ -18,7 +18,15 @@
 		<span class="posted-on"><a href="<?php echo esc_url( get_the_permalink() ); ?>"><?php the_time( get_option( 'date_format' ) ); ?></a></span>
 		<?php }
 		if ( has_post_thumbnail() ) { ?>
-			<?php the_post_thumbnail( 'estore-slider' ); ?>
+			<?php $title_attribute = esc_attr( get_the_title( $post->ID ) );
+			$thumb_id              = get_post_thumbnail_id( get_the_ID() );
+			$img_altr              = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
+			$img_alt               = ! empty( $img_altr ) ? $img_altr : $title_attribute;
+			$post_thumbnail_attr   = array(
+				'alt'   => esc_attr( $img_alt ),
+				'title' => esc_attr( $title_attribute ),
+			); ?>
+			<?php the_post_thumbnail( 'estore-slider', $post_thumbnail_attr ); ?>
 		<?php } ?>
 	</div>
 	<?php

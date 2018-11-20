@@ -121,9 +121,12 @@ class estore_woocommerce_product_slider extends WP_Widget {
 					?>
 					<li>
 						<?php
-						$image_id = get_post_thumbnail_id();
-						$image_url = wp_get_attachment_image_src($image_id,'estore-slider', false); ?>
-						<img src="<?php echo esc_url( $image_url[0] ); ?>">
+						$image_id        = get_post_thumbnail_id();
+						$image_url       = wp_get_attachment_image_src( $image_id, 'estore-slider', false );
+						$title_attribute = esc_attr( get_the_title( $post->ID ) );
+						$img_altr        = get_post_meta( $image_id, '_wp_attachment_image_alt', true );
+						$img_alt         = ! empty( $img_altr ) ? $img_altr : $title_attribute; ?>
+						<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php echo esc_attr( $img_alt ); ?>">
 						<div class="slider-caption-wrapper">
 							<h3 class="slider-title"> <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> </h3>
 							<div class="slider-content"><?php the_excerpt(); ?></div>
