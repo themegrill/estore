@@ -2849,6 +2849,9 @@ article .entry-content {
     margin-right: -100px;
     max-width: unset; }
 
+ul.wp-block-gallery {
+  margin: 0; }
+
 /*--------------------------------------------------------------
 ## products
 --------------------------------------------------------------*/
