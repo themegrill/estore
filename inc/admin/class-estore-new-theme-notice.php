@@ -66,7 +66,7 @@ class eStore_New_Theme_Notice {
 			esc_html__( 'Zakra - our new most flexible free WordPress theme. %1$s Zakra is fully compatible with Gutenberg, Elementor and other major page builders. Comes with %2$s to quickly setup your new website.', 'estore' ),
 			sprintf(
 				'<a target="_blank" href="%1$s"><strong>%2$s</strong></a>',
-				esc_url( 'https://themegrill.com/themes/zakra/?utm_source=estore-dashboard&utm_medium=notice-link&utm_campaign=zakra-page' ),
+				esc_url( admin_url( 'theme-install.php?theme=zakra' ) ),
 				esc_html__( 'Check it out!', 'estore' )
 			),
 			sprintf(
