@@ -222,10 +222,11 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 }
 
 /**
- * eStore About Page
+ * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-admin.php';
+	require get_template_directory() . '/inc/admin/class-estore-new-theme-notice.php';
 }
 
 /**

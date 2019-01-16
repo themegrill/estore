@@ -164,6 +164,15 @@
 		width: 48%;
 	}
 
+	.tg-column-wrapper .tg-column-4:nth-child(2n+1):after {
+		content: "";
+		display: table
+	}
+
+	.tg-column-wrapper .tg-column-4:nth-child(2n+1) {
+		clear: both
+	}
+
 	.product-list-wrap .product-list-block .product-list-content {
 		float: left;
 		width: 45%;
