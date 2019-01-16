@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.4 - 2019-01-16 =
 * Tweak - Added width and height attribute in TG: Logo widget
 
 = Version 1.3.3 - 2018-12-04 =
