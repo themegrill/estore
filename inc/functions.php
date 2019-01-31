@@ -94,3 +94,18 @@ if ( ! function_exists( 'estore_related_posts_function' ) ) {
 		return $query;
 	}
 }
+
+if ( ! function_exists( 'estore_pingback_header' ) ) :
+
+	/**
+	 * Add a pingback url auto-discovery header for single posts, pages, or attachments.
+	 */
+	function estore_pingback_header() {
+		if ( is_singular() && pings_open() ) {
+			printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
+		}
+	}
+
+endif;
+
+add_action( 'wp_head', 'estore_pingback_header' );
