@@ -1,12 +1,21 @@
 jQuery(document).ready(function() {
 
+	/**
+	 * Search box.
+	 */
 	( function () {
-		var searchBox, icon;
+		var searchBox, icon, searchWrapperArr;
 
-		searchBox = document.getElementsByClassName( 'header-search-box' )[0];
-		icon = document.getElementsByClassName( 'search-wrapper' )[0].getElementsByClassName( 'search-icon' )[0];
+		searchBox        = document.getElementsByClassName( 'header-search-box' )[0];
+		searchWrapperArr = document.getElementsByClassName( 'search-wrapper' );
+		icon             = searchWrapperArr[0] ? searchWrapperArr[0].getElementsByClassName( 'search-icon' )[0] : '';
 
-		var showHideSearchForm = function( action ) {
+		// Return if no search icon.
+		if ( ! icon ) {
+			return;
+		}
+
+		var showHideSearchForm = function ( action ) {
 			if ( action === 'hide' ) {
 				searchBox.classList.remove( 'active' );
 				return;
@@ -33,14 +42,14 @@ jQuery(document).ready(function() {
 		} );
 
 		// on click outside form
-		document.addEventListener( 'click', function (ev) {
-			if ( ev.target.closest('.header-search-box') || ev.target.closest('.search-icon') ) {
+		document.addEventListener( 'click', function ( ev ) {
+			if ( ev.target.closest( '.header-search-box' ) || ev.target.closest( '.search-icon' ) ) {
 				return;
 			}
 			showHideSearchForm( 'hide' );
 		} );
 
-	} )();
+	} )(); // END: Search box.
 
 	jQuery('.bottom-header-wrapper .category-toggle').click(function() {
 		jQuery('#category-navigation').slideToggle('slow');
