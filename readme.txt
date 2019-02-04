@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.3.5 - 2019-02-04 =
 * Fix - JS error message while no search icon
 * Tweak - Modify pingback url autodiscovery for single posts, pages, or attachments.
 
