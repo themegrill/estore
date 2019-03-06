@@ -25,6 +25,85 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 			add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 			add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
 			add_action( 'wp_loaded', array( $this, 'admin_notice' ) );
+			add_action( 'wp_ajax_import_button', array( $this, 'estore_ajax_import_button_handler' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'estore_ajax_enqueue_scripts' ) );
+		}
+
+		/**
+		 * Localize array for import button AJAX request.
+		 */
+		public function estore_ajax_enqueue_scripts() {
+			wp_enqueue_script( 'plugin-install' );
+			wp_enqueue_script( 'updates' );
+			wp_enqueue_script( 'estore-plugin-install-helper', get_template_directory_uri() . '/inc/admin/js/plugin-handle.js', array( 'jquery' ), 1, true );
+			wp_localize_script(
+				'estore-plugin-install-helper', 'estore_plugin_helper',
+				array(
+					'activating' => esc_html__( 'Activating ', 'estore' ),
+				)
+			);
+			$translation_array = array(
+				'uri'      => esc_url( admin_url( '/themes.php?page=demo-importer&browse=all&estore-hide-notice=welcome' ) ),
+				'btn_text' => esc_html__( 'Processing...', 'estore' ),
+				'nonce'    => wp_create_nonce( 'estore_demo_import_nonce' ),
+			);
+			wp_localize_script( 'estore-plugin-install-helper', 'estore_redirect_demo_page', $translation_array );
+		}
+
+		/**
+		 * Handle the AJAX process while import or get started button clicked.
+		 */
+		public function estore_ajax_import_button_handler() {
+			check_ajax_referer( 'estore_demo_import_nonce', 'security' );
+			$state = '';
+			if ( is_plugin_active( 'themegrill-demo-importer/themegrill-demo-importer.php' ) ) {
+				$state = 'activated';
+			} elseif ( file_exists( WP_PLUGIN_DIR . '/themegrill-demo-importer/themegrill-demo-importer.php' ) ) {
+				$state = 'installed';
+			}
+			if ( 'activated' === $state ) {
+				$response['redirect'] = admin_url( '/themes.php?page=demo-importer&browse=all&estore-hide-notice=welcome' );
+			} elseif ( 'installed' === $state ) {
+				$response['redirect'] = admin_url( '/themes.php?page=demo-importer&browse=all&estore-hide-notice=welcome' );
+				if ( current_user_can( 'activate_plugin' ) ) {
+					$result = activate_plugin( 'themegrill-demo-importer/themegrill-demo-importer.php' );
+					if ( is_wp_error( $result ) ) {
+						$response['errorCode']    = $result->get_error_code();
+						$response['errorMessage'] = $result->get_error_message();
+					}
+				}
+			} else {
+				$response['redirect'] = admin_url( '/themes.php?page=demo-importer&browse=all&estore-hide-notice=welcome' );
+				/**
+				 * Install Plugin.
+				 */
+				include_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
+				include_once ABSPATH . 'wp-admin/includes/plugin-install.php';
+				$api      = plugins_api( 'plugin_information', array(
+					'slug'   => sanitize_key( wp_unslash( 'themegrill-demo-importer' ) ),
+					'fields' => array(
+						'sections' => false,
+					),
+				) );
+				$skin     = new WP_Ajax_Upgrader_Skin();
+				$upgrader = new Plugin_Upgrader( $skin );
+				$result   = $upgrader->install( $api->download_link );
+				if ( $result ) {
+					$response['installed'] = 'succeed';
+				} else {
+					$response['installed'] = 'failed';
+				}
+				// Activate plugin.
+				if ( current_user_can( 'activate_plugin' ) ) {
+					$result = activate_plugin( 'themegrill-demo-importer/themegrill-demo-importer.php' );
+					if ( is_wp_error( $result ) ) {
+						$response['errorCode']    = $result->get_error_code();
+						$response['errorMessage'] = $result->get_error_message();
+					}
+				}
+			}
+			wp_send_json( $response );
+			exit();
 		}
 
 		/**
