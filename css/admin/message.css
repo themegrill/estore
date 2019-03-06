@@ -1,12 +1,31 @@
 .estore-message {
 	overflow: hidden;
 	position: relative;
-	border-left-color: #2ea2cc !important;
+	border: 10px solid #97d2e7 !important;
 }
+
+.estore-message-wrapper {
+	width: 400px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.estore-message-wrapper .submit {
+	text-align: center;
+	padding-top: 25px;
+}
+
+.submit a.btn-get-started:before {
+	margin: 0 4px 3px 0;
+	vertical-align: middle;
+}
+
 .estore-message a.button-primary,
 .estore-message a.button-secondary {
 	text-decoration: none !important;
 }
+
 .estore-message a.estore-message-close {
 	position: absolute;
 	top: 0;
@@ -16,6 +35,7 @@
 	line-height: 1.23076923;
 	text-decoration: none;
 }
+
 .estore-message a.estore-message-close:before {
 	position: absolute;
 	top: 8px;

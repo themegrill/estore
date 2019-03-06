@@ -90,13 +90,23 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		public function welcome_notice() {
 			?>
 			<div id="message" class="updated estore-message">
-				<a class="estore-message-close notice-dismiss"
-				   href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'estore-hide-notice', 'welcome' ) ), 'estore_hide_notices_nonce', '_estore_notice_nonce' ) ); ?>"><?php _e( 'Dismiss', 'estore' ); ?></a>
-				<p><?php printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-welcome' ) ) . '">', '</a>' ); ?></p>
-				<p class="submit">
-					<a class="button-secondary"
-					   href="<?php echo esc_url( admin_url( 'themes.php?page=estore-welcome' ) ); ?>"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a>
-				</p>
+				<a class="estore-message-close notice-dismiss" href="<?php echo esc_url( wp_nonce_url( remove_query_arg( array( 'activated' ), add_query_arg( 'estore-hide-notice', 'welcome' ) ), 'estore_hide_notices_nonce', '_estore_notice_nonce' ) ); ?>">
+					<?php esc_html_e( 'Dismiss', 'estore' ); ?>
+				</a>
+
+				<div class="estore-message-wrapper">
+					<div class="estore-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/estore-logo.png" alt="<?php esc_html_e( 'eStore', 'estore' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
+					</div>
+
+					<p>
+						<?php printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-welcome' ) ) . '">', '</a>' ); ?>
+					</p>
+
+					<div class="submit">
+						<a class="btn-get-started button button-primary button-hero" href="#" data-name="" data-slug="" aria-label="<?php esc_html_e( 'Get started with eStore', 'estore' ); ?>"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a>
+					</div>
+				</div>
 			</div>
 			<?php
 		}
