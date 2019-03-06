@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.3.6 - 2019-03-06 =
 * Tweak - Added site library and demo import process in About eStore page.
 
 = Version 1.3.5 - 2019-02-04 =
