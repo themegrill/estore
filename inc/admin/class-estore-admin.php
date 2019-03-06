@@ -24,7 +24,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		public function __construct() {
 			add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 			add_action( 'wp_loaded', array( __CLASS__, 'hide_notices' ) );
-			add_action( 'load-themes.php', array( $this, 'admin_notice' ) );
+			add_action( 'wp_loaded', array( $this, 'admin_notice' ) );
 		}
 
 		/**
@@ -33,9 +33,9 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		public function admin_menu() {
 			$theme = wp_get_theme( get_template() );
 
-			$page = add_theme_page( esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'estore-welcome', array(
+			$page = add_theme_page( esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), esc_html__( 'About', 'estore' ) . ' ' . $theme->display( 'Name' ), 'activate_plugins', 'estore-sitelibrary', array(
 				$this,
-				'welcome_screen',
+				'sitelibrary_screen',
 			) );
 			add_action( 'admin_print_styles-' . $page, array( $this, 'enqueue_styles' ) );
 		}
@@ -57,13 +57,9 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 
 			wp_enqueue_style( 'estore-message', get_template_directory_uri() . '/css/admin/message.css', array(), $estore_version );
 
-
 			// Let's bail on theme activation.
-			if ( 'themes.php' == $pagenow && isset( $_GET['activated'] ) ) {
-				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
-				update_option( 'estore_admin_notice_welcome', 1 );
-				// No option? Let run the notice wizard again..
-			} elseif ( ! get_option( 'estore_admin_notice_welcome' ) ) {
+			$notice_nag = get_option( 'estore_admin_notice_welcome' );
+			if ( ! $notice_nag ) {
 				add_action( 'admin_notices', array( $this, 'welcome_notice' ) );
 			}
 		}
@@ -76,11 +72,20 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 				if ( ! wp_verify_nonce( $_GET['_estore_notice_nonce'], 'estore_hide_notices_nonce' ) ) {
 					wp_die( __( 'Action failed. Please refresh the page and retry.', 'estore' ) );
 				}
+
 				if ( ! current_user_can( 'manage_options' ) ) {
 					wp_die( __( 'Cheatin&#8217; huh?', 'estore' ) );
 				}
+
 				$hide_notice = sanitize_text_field( $_GET['estore-hide-notice'] );
 				update_option( 'estore_admin_notice_' . $hide_notice, 1 );
+
+				// Hide.
+				if ( 'welcome' === $_GET['estore-hide-notice'] ) {
+					update_option( 'estore_admin_notice_' . $hide_notice, 1 );
+				} else { // Show.
+					delete_option( 'estore_admin_notice_' . $hide_notice );
+				}
 			}
 		}
 
@@ -153,16 +158,23 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 			</p>
 
 			<h2 class="nav-tab-wrapper">
-				<a class="nav-tab <?php if ( empty( $_GET['tab'] ) && $_GET['page'] == 'estore-welcome' ) {
+				<a class="nav-tab <?php if ( empty( $_GET['tab'] ) && $_GET['page'] == 'estore-sitelibrary' ) {
 					echo 'nav-tab-active';
-				} ?>"
-				   href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'estore-welcome' ), 'themes.php' ) ) ); ?>">
-					<?php echo $theme->display( 'Name' ); ?>
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array( 'page' => 'estore-sitelibrary' ), 'themes.php' ) ) ); ?>">
+					<?php esc_html_e( 'Site Library', 'estore' ); ?>
+				</a>
+				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'welcome' ) {
+					echo 'nav-tab-active';
+				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
+					'page' => 'estore-sitelibrary',
+					'tab'  => 'welcome',
+				), 'themes.php' ) ) ); ?>">
+					<?php esc_html_e( 'Getting Started', 'estore' ); ?>
 				</a>
 				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'supported_plugins' ) {
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'estore-welcome',
+					'page' => 'estore-sitelibrary',
 					'tab'  => 'supported_plugins',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Supported Plugins', 'estore' ); ?>
@@ -170,7 +182,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'free_vs_pro' ) {
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'estore-welcome',
+					'page' => 'estore-sitelibrary',
 					'tab'  => 'free_vs_pro',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Free Vs Pro', 'estore' ); ?>
@@ -178,7 +190,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 				<a class="nav-tab <?php if ( isset( $_GET['tab'] ) && $_GET['tab'] == 'changelog' ) {
 					echo 'nav-tab-active';
 				} ?>" href="<?php echo esc_url( admin_url( add_query_arg( array(
-					'page' => 'estore-welcome',
+					'page' => 'estore-sitelibrary',
 					'tab'  => 'changelog',
 				), 'themes.php' ) ) ); ?>">
 					<?php esc_html_e( 'Changelog', 'estore' ); ?>
@@ -188,10 +200,10 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		}
 
 		/**
-		 * Welcome screen page.
+		 * Site library screen page.
 		 */
-		public function welcome_screen() {
-			$current_tab = empty( $_GET['tab'] ) ? 'about' : sanitize_title( $_GET['tab'] );
+		public function sitelibrary_screen() {
+			$current_tab = empty( $_GET['tab'] ) ? 'library' : sanitize_title( $_GET['tab'] );
 
 			// Look for a {$current_tab}_screen method.
 			if ( is_callable( array( $this, $current_tab . '_screen' ) ) ) {
@@ -199,7 +211,30 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 			}
 
 			// Fallback to about screen.
-			return $this->about_screen();
+			return $this->sitelibrary_display_screen();
+		}
+
+		/**
+		 * Render site library.
+		 */
+		public function sitelibrary_display_screen() {
+			?>
+			<div class="wrap about-wrap">
+				<?php
+				$this->intro();
+
+				// Display site library.
+				echo eStore_Site_Library::estore_site_library_page_content();
+				?>
+			</div>
+			<?php
+		}
+
+		/**
+		 * Welcome screen page.
+		 */
+		public function welcome_screen() {
+			$this->about_screen();
 		}
 
 		/**
@@ -214,6 +249,15 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 
 				<div class="changelog point-releases">
 					<div class="under-the-hood two-col">
+						<div class="col">
+							<h3><?php esc_html_e( 'Import Demo', 'estore' ); ?></h3>
+							<p><?php esc_html_e( 'Needs ThemeGrill Demo Importer plugin.', 'estore' ) ?></p>
+
+							<div class="submit">
+								<a class="btn-get-started button button-primary button-hero" href="#" data-name="" data-slug="" aria-label="<?php esc_html_e( 'Import', 'estore' ); ?>"><?php esc_html_e( 'Import', 'estore' ); ?></a>
+							</div>
+						</div>
+
 						<div class="col">
 							<h3><?php esc_html_e( 'Theme Customizer', 'estore' ); ?></h3>
 							<p><?php esc_html_e( 'All Theme Options are available via Customize screen.', 'estore' ) ?></p>
