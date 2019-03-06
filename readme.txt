@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Tweak - Added site library and demo import process in About eStore page.
+
 = Version 1.3.5 - 2019-02-04 =
 * Fix - JS error message while no search icon
 * Tweak - Modify pingback url autodiscovery for single posts, pages, or attachments.
