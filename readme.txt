@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version - TBD =
+* Update - BxSlider to 4.2.15
+
 = Version 1.3.6 - 2019-03-06 =
 * Tweak - Added site library and demo import process in About eStore page.
 
