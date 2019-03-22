@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version - TBD =
+= Version 1.3.7 - 2019-03-22 =
 * Update - BxSlider to 4.2.15
 
 = Version 1.3.6 - 2019-03-06 =
