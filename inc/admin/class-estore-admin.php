@@ -33,6 +33,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		 * Localize array for import button AJAX request.
 		 */
 		public function estore_ajax_enqueue_scripts() {
+			wp_enqueue_script( 'updates' );
 			wp_enqueue_script( 'estore-plugin-install-helper', get_template_directory_uri() . '/inc/admin/js/plugin-handle.js', array( 'jquery' ), 1, true );
 			wp_localize_script(
 				'estore-plugin-install-helper', 'estore_plugin_helper',
@@ -72,7 +73,6 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 				}
 			} else {
 				wp_enqueue_script( 'plugin-install' );
-				wp_enqueue_script( 'updates' );
 
 				$response['redirect'] = admin_url( '/themes.php?page=demo-importer&browse=all&estore-hide-notice=welcome' );
 				/**
