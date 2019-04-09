@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' );
 
-$estore_layout = estore_woocommerce_layout_class();
+$estore_layout = function_exists( 'estore_woocommerce_layout_class' ) ? estore_woocommerce_layout_class() : '';
 
 $categoryobj = get_queried_object();
 $cat_ID      = $categoryobj->term_id;

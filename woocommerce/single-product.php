@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' );
-$estore_layout = estore_woocommerce_layout_class();
+$estore_layout = function_exists( 'estore_woocommerce_layout_class' ) ? estore_woocommerce_layout_class() : '';
 ?>
 
 <div id="content" class="site-content">
