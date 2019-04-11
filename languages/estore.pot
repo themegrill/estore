@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.3.7\n"
+"Project-Id-Version: eStore 1.3.8\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2019-03-22 08:29:44+00:00\n"
+"POT-Creation-Date: 2019-04-11 06:05:29+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -90,27 +90,27 @@ msgstr ""
 msgid "Login / Register"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:42
+#: inc/admin/class-estore-admin.php:41
 msgid "Activating "
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:47
+#: inc/admin/class-estore-admin.php:46
 msgid "Processing..."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:115 inc/admin/class-estore-admin.php:210
+#: inc/admin/class-estore-admin.php:116 inc/admin/class-estore-admin.php:211
 msgid "About"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:152
+#: inc/admin/class-estore-admin.php:153
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:156
+#: inc/admin/class-estore-admin.php:157
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:178
+#: inc/admin/class-estore-admin.php:179
 msgid "Dismiss"
 msgstr ""
 
@@ -118,360 +118,360 @@ msgstr ""
 msgid "eStore"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:187
+#: inc/admin/class-estore-admin.php:188
 msgid ""
 "Welcome! Thank you for choosing eStore! To fully take advantage of the best "
 "our theme can offer please make sure you visit our %swelcome page%s."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:191
+#: inc/admin/class-estore-admin.php:192
 #: inc/admin/class-estore-site-library.php:97
 msgid "Get started with eStore"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:225
+#: inc/admin/class-estore-admin.php:226
 msgid "Theme Info"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:229
+#: inc/admin/class-estore-admin.php:230
 msgid "View Demo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:232 inc/admin/class-estore-admin.php:370
-#: inc/admin/class-estore-admin.php:695
+#: inc/admin/class-estore-admin.php:233 inc/admin/class-estore-admin.php:371
+#: inc/admin/class-estore-admin.php:696
 msgid "View Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:236
+#: inc/admin/class-estore-admin.php:237
 msgid "Rate this theme"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:243
+#: inc/admin/class-estore-admin.php:244
 msgid "Site Library"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:251
+#: inc/admin/class-estore-admin.php:252
 msgid "Getting Started"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:259
+#: inc/admin/class-estore-admin.php:260
 msgid "Supported Plugins"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:267
+#: inc/admin/class-estore-admin.php:268
 msgid "Free Vs Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:275
+#: inc/admin/class-estore-admin.php:276
 msgid "Changelog"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:332
+#: inc/admin/class-estore-admin.php:333
 msgid "Import Demo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:333
+#: inc/admin/class-estore-admin.php:334
 msgid "Needs ThemeGrill Demo Importer plugin."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:336
+#: inc/admin/class-estore-admin.php:337
 #: inc/admin/class-estore-site-library.php:97
 msgid "Import"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:341
+#: inc/admin/class-estore-admin.php:342
 msgid "Theme Customizer"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:342
+#: inc/admin/class-estore-admin.php:343
 msgid "All Theme Options are available via Customize screen."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:344
+#: inc/admin/class-estore-admin.php:345
 msgid "Customize"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:348 inc/admin/class-estore-admin.php:352
+#: inc/admin/class-estore-admin.php:349 inc/admin/class-estore-admin.php:353
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:349
+#: inc/admin/class-estore-admin.php:350
 msgid "Please view our documentation page to setup the theme."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:357
+#: inc/admin/class-estore-admin.php:358
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:358
+#: inc/admin/class-estore-admin.php:359
 msgid "Please put it in our dedicated support forum."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:361
+#: inc/admin/class-estore-admin.php:362
 msgid "Support Forum"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:366
+#: inc/admin/class-estore-admin.php:367
 msgid "Need more features?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:367 inc/admin/class-estore-admin.php:520
+#: inc/admin/class-estore-admin.php:368 inc/admin/class-estore-admin.php:521
 msgid "Upgrade to PRO version for more exciting features."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:375
+#: inc/admin/class-estore-admin.php:376
 msgid "Got sales related question?"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:376
+#: inc/admin/class-estore-admin.php:377
 msgid "Please send it via our sales contact page."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:379
+#: inc/admin/class-estore-admin.php:380
 msgid "Contact Page"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:386 inc/admin/class-estore-admin.php:395
+#: inc/admin/class-estore-admin.php:387 inc/admin/class-estore-admin.php:396
 msgid "Translate"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:390
+#: inc/admin/class-estore-admin.php:391
 msgid "Click below to translate this theme into your own language."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:407
+#: inc/admin/class-estore-admin.php:408
 msgid "Return to Updates"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:407
+#: inc/admin/class-estore-admin.php:408
 msgid "Return to Dashboard &rarr; Updates"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:410
+#: inc/admin/class-estore-admin.php:411
 msgid "Go to Dashboard &rarr; Home"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:410
+#: inc/admin/class-estore-admin.php:411
 msgid "Go to Dashboard"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:427
+#: inc/admin/class-estore-admin.php:428
 msgid "View changelog below."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:481
+#: inc/admin/class-estore-admin.php:482
 msgid "This theme recommends following plugins."
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:484
+#: inc/admin/class-estore-admin.php:485
 msgid "Social Icons"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:485 inc/admin/class-estore-admin.php:489
-#: inc/admin/class-estore-admin.php:493
+#: inc/admin/class-estore-admin.php:486 inc/admin/class-estore-admin.php:490
+#: inc/admin/class-estore-admin.php:494
 msgid " by ThemeGrill"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:488
+#: inc/admin/class-estore-admin.php:489
 msgid "Easy Social Sharing"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:492
+#: inc/admin/class-estore-admin.php:493
 msgid "Everest Forms – Easy Contact Form and Form Builder"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:496
+#: inc/admin/class-estore-admin.php:497
 msgid "WP-PageNavi"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:498
+#: inc/admin/class-estore-admin.php:499
 msgid "WooCommerce"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:500
+#: inc/admin/class-estore-admin.php:501
 msgid "YITH WooCommerce Wishlist"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:503
+#: inc/admin/class-estore-admin.php:504
 msgid "WPML"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:525
+#: inc/admin/class-estore-admin.php:526
 msgid "Features"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:527
+#: inc/admin/class-estore-admin.php:528
 msgid "eStore Pro"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:532
+#: inc/admin/class-estore-admin.php:533
 msgid "Different Header Layouts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:533
+#: inc/admin/class-estore-admin.php:534
 msgid "Default header layout (free)"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:534
+#: inc/admin/class-estore-admin.php:535
 msgid "3 different header layouts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:537
+#: inc/admin/class-estore-admin.php:538
 msgid "Google Fonts Option"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:539
+#: inc/admin/class-estore-admin.php:540
 msgid "600+"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:542
+#: inc/admin/class-estore-admin.php:543
 msgid "Font Size options"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:547
+#: inc/admin/class-estore-admin.php:548
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:548 inc/customizer.php:301
+#: inc/admin/class-estore-admin.php:549 inc/customizer.php:301
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:549
+#: inc/admin/class-estore-admin.php:550
 msgid "Multiple Color Options"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:552
+#: inc/admin/class-estore-admin.php:553
 msgid "Translation Ready"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:557
+#: inc/admin/class-estore-admin.php:558
 msgid "Woocommerce Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:562
+#: inc/admin/class-estore-admin.php:563
 msgid "YITH Wishlist Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:567
+#: inc/admin/class-estore-admin.php:568
 msgid "WPML Compatible"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:572
+#: inc/admin/class-estore-admin.php:573
 msgid "RTL Support"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:577
+#: inc/admin/class-estore-admin.php:578
 msgid "Footer Copyright Editor"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:582
+#: inc/admin/class-estore-admin.php:583
 msgid "Footer Widgets Column"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:583 inc/admin/class-estore-admin.php:584
+#: inc/admin/class-estore-admin.php:584 inc/admin/class-estore-admin.php:585
 msgid "1,2,3,4 Columns"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:587
+#: inc/admin/class-estore-admin.php:588
 msgid "Demo Content"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:592
+#: inc/admin/class-estore-admin.php:593
 msgid "Support"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:593
+#: inc/admin/class-estore-admin.php:594
 msgid "Forum"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:594
+#: inc/admin/class-estore-admin.php:595
 msgid "Forum + Emails/Support Ticket"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:597
+#: inc/admin/class-estore-admin.php:598
 msgid "Extra Options on Widgets"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:602 inc/widgets/class-estore-about.php:13
+#: inc/admin/class-estore-admin.php:603 inc/widgets/class-estore-about.php:13
 msgid "TG: About Widget"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:607
+#: inc/admin/class-estore-admin.php:608
 #: inc/widgets/class-estore-728x90-ad.php:13
 msgid "TG: Advertisement"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:612
+#: inc/admin/class-estore-admin.php:613
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:15
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:617
+#: inc/admin/class-estore-admin.php:618
 #: inc/widgets/class-estore-posts-grid.php:13
 msgid "TG: Category Grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:622
+#: inc/admin/class-estore-admin.php:623
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:15
 msgid "TG: Category Slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:627
+#: inc/admin/class-estore-admin.php:628
 #: inc/widgets/class-estore-featured-posts-widget.php:14
 msgid "TG: Featured Posts"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:632
+#: inc/admin/class-estore-admin.php:633
 #: inc/widgets/class-estore-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:637
+#: inc/admin/class-estore-admin.php:638
 #: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:642
+#: inc/admin/class-estore-admin.php:643
 #: inc/widgets/classs-estore-logo-widget.php:14
 msgid "TG: Logo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:647
+#: inc/admin/class-estore-admin.php:648
 msgid "TG: Product grid"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:652
+#: inc/admin/class-estore-admin.php:653
 msgid "TG: Logos"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:657
+#: inc/admin/class-estore-admin.php:658
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:13
 msgid "TG: Products Carousel"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:662
+#: inc/admin/class-estore-admin.php:663
 msgid "TG: Product slider"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:667
+#: inc/admin/class-estore-admin.php:668
 #: inc/widgets/class-estore-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:672
+#: inc/admin/class-estore-admin.php:673
 #: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo WC Category"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:677
+#: inc/admin/class-estore-admin.php:678
 msgid "TG: Testimonials"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:682
+#: inc/admin/class-estore-admin.php:683
 msgid "TG: Icon Text"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:687
+#: inc/admin/class-estore-admin.php:688
 msgid "TG: Products Tab"
 msgstr ""
 
@@ -850,7 +850,7 @@ msgstr ""
 msgid "Error 404"
 msgstr ""
 
-#: inc/estore.php:201 inc/widgets/class-estore-about.php:32
+#: inc/estore.php:196 inc/widgets/class-estore-about.php:32
 msgid "Page"
 msgstr ""
 
