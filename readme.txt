@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - PHP error for breadcrumb on attachment pages.
+
 = Version 1.3.7 - 2019-03-22 =
 * Fix - Upload Theme button not working
 * Update - BxSlider to 4.2.15
