@@ -84,7 +84,7 @@ class estore_woocommerce_vertical_promo_widget extends WP_Widget {
 				<div class="collection-block">
 					<figure class="slider-collection-img">
 						<?php
-						$thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+						$thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
 						//$image = wp_get_attachment_url( $thumbnail_id );
 						$image = wp_get_attachment_image_src( $thumbnail_id, 'estore-featured-image');
 						if ( $image[0] ) {

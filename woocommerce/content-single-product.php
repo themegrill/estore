@@ -13,10 +13,12 @@
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author 	WooThemes
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.6.0
  */
 
 defined( 'ABSPATH' ) || exit;
+
+global $product;
 
 ?>
 
@@ -34,7 +36,7 @@ defined( 'ABSPATH' ) || exit;
 	 }
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 		/**
