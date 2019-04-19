@@ -88,7 +88,7 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 							<a href="<?php echo esc_url( $cat_link ); ?>">
 								<figure class="collection-thumb-img">
 									<?php
-									$thumbnail_id = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+									$thumbnail_id = get_term_meta( $cat->term_id, 'thumbnail_id', true );
 									//$image = wp_get_attachment_url( $thumbnail_id );
 									$image = wp_get_attachment_image_src( $thumbnail_id, 'estore-featured-image');
 									$img_altr = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
