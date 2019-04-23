@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version 1.3.8 - 2019-04-11 =
+= Version 1.3.8 - 2019-04-23 =
 * Fix     - PHP error for breadcrumb on attachment pages.
 * Tweaks  - Update WooCommerce templates to version 3.6.0.
 
