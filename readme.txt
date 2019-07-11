@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.3.9 - 2019-07-11 =
 * Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
 * Tweak - Added message to make user aware while installing and activating the ThemeGrill demo importer plugin.
 
