@@ -186,6 +186,8 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 
 					<p>
 						<?php printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-welcome' ) ) . '">', '</a>' ); ?>
+
+						<span class="plugin-install-notice"><?php esc_html_e( 'Clicking the button below will install and activate the ThemeGrill demo importer plugin.', 'estore' ); ?></span>
 					</p>
 
 					<div class="submit">
@@ -302,7 +304,13 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 			<div class="wrap about-wrap">
 				<?php
 				$this->intro();
+				?>
 
+				<div class="plugin-install-notice">
+					<?php esc_html_e( 'Clicking the "Import" button in any of the demos below will install and activate the ThemeGrill demo importer plugin.', 'estore' ); ?>
+				</div>
+
+				<?php
 				// Display site library.
 				echo eStore_Site_Library::estore_site_library_page_content();
 				?>

@@ -196,6 +196,10 @@ table tr .btn-wrapper .button:hover {
 	border-left: 15px solid transparent;
 }
 
+.plugin-install-notice {
+	margin: 20px 0 0;
+}
+
 @media (max-width: 1400px) {
 	.about-wrap h1 {
 		font-size: 30px;

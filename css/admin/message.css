@@ -5,7 +5,7 @@
 }
 
 .estore-message-wrapper {
-	width: 400px;
+	width: 500px;
 	text-align: center;
 	margin: 0 auto;
 	padding: 50px 0;
@@ -42,4 +42,10 @@
 	left: 0;
 	-webkit-transition: all .1s ease-in-out;
 	transition: all .1s ease-in-out;
+}
+
+.estore-message-wrapper .plugin-install-notice {
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 0;
 }
