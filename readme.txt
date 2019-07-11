@@ -94,6 +94,10 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Tweak - Added `wp_body_open` function to support WordPress 5.2 `wp_body_open` hook.
+* Tweak - Added message to make user aware while installing and activating the ThemeGrill demo importer plugin.
+
 = Version 1.3.8 - 2019-04-23 =
 * Fix     - PHP error for breadcrumb on attachment pages.
 * Tweaks  - Update WooCommerce templates to version 3.6.0.
