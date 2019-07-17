@@ -137,7 +137,7 @@ module.exports = function( grunt ){
 		// Compress files and folders.
 		compress: {
 			options: {
-				archive: 'estore.zip'
+				archive: 'dist/estore.zip'
 			},
 			files: {
 				src: [

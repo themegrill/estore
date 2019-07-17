@@ -11,6 +11,9 @@ project.properties
 .sass-cache
 .sass-cache/*
 
+# Dist folder
+/dist/
+
 # Grunt
 /node_modules/
 /deploy/

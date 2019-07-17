@@ -27,5 +27,12 @@
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.1.0"
-  }
+  },
+  "scripts": {
+    "styles": "grunt sass",
+    "uglify": "grunt uglify",
+    "makepot": "grunt makepot",
+    "compress": "grunt compress",
+    "build": "npm run styles && npm run uglify && npm run makepot && npm run compress"
+   }
 }
