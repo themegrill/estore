@@ -82,13 +82,16 @@
 }
 
 #site-navigation ul li:hover > .sub-menu,
-#site-navigation ul li:hover > .children {
+#site-navigation ul li:hover > .children,
+#site-navigation ul li.sfHover > .sub-menu,
+#site-navigation ul li.sfHover > .children  {
     top: 100%;
     visibility: visible;
     opacity: 1;
 }
 
-#site-navigation ul.sub-menu > li:hover > .sub-menu {
+#site-navigation ul.sub-menu > li:hover > .sub-menu,
+#site-navigation ul.sub-menu > li.sfHover > .sub-menu {
     top: 0;
     visibility: visible;
     opacity: 1;
