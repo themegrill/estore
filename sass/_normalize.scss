@@ -437,6 +437,10 @@ a:active {
     color: $color__link-hover;
 }
 
+a:focus {
+	outline: thin dotted;
+}
+
 
 /*--------------------------------------------------------------
 6.0 Accessibility
