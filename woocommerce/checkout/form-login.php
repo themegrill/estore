@@ -12,7 +12,7 @@
  * @see http://docs.woothemes.com/document/template-structure/
  * @author WooThemes
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.8.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -23,14 +23,14 @@ if ( is_user_logged_in() || 'no' === get_option( 'woocommerce_enable_checkout_lo
 ?>
 <div class="login-form-info-wrapper">
 	<?php
-	wc_print_notice( apply_filters( 'woocommerce_checkout_login_message', __( 'Returning customer?', 'estore' ) ) . ' <a href="#" class="showlogin">' . __( 'Click here to login', 'estore' ) . '</a>', 'notice' );
+	wc_print_notice( apply_filters( 'woocommerce_checkout_login_message', esc_html__( 'Returning customer?', 'estore' ) ) . ' <a href="#" class="showlogin">' . esc_html__( 'Click here to login', 'estore' ) . '</a>', 'notice' );
 	?>
 
 	<?php
 		woocommerce_login_form(
 			array(
 				'message'  => __( 'If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.', 'estore' ),
-				'redirect' => wc_get_page_permalink( 'checkout' ),
+				'redirect' => wc_get_checkout_url(),
 				'hidden'   => true
 			)
 		);
