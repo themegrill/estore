@@ -45,14 +45,11 @@ function estore_layout_class() {
 
 	$layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
 
-
-	// Front page displays in Reading Settings
-	$page_for_posts = get_option('page_for_posts');
-
 	// Get Layout meta
-	if($post) {
+	if ( $post ) {
 		$layout_meta = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
 	}
+
 	// Home page if Posts page is assigned
 	if( is_home() && !( is_front_page() ) ) {
 		$queried_id = get_option( 'page_for_posts' );
