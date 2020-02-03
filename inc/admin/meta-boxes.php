@@ -12,10 +12,10 @@ add_action( 'add_meta_boxes', 'estore_add_custom_box' );
  * Add Meta Boxes.
  */
 function estore_add_custom_box() {
-	// Adding layout meta box for Page
-	add_meta_box( 'page-layout', esc_html__( 'Select Layout', 'estore' ), 'estore_layout_call', 'page', 'side', 'default' );
-	// Adding layout meta box for Post
-	add_meta_box( 'page-layout', esc_html__( 'Select Layout', 'estore' ), 'estore_layout_call', 'post', 'side', 'default' );
+
+	// Layout meta option for post and page.
+	add_meta_box( 'page-layout', esc_html__( 'Select Layout', 'estore' ), 'estore_layout_call', array( 'post', 'page' ), 'side', 'default' );
+
 }
 
 /****************************************************************************************/
