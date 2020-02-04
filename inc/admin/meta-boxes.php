@@ -22,51 +22,45 @@ function estore_add_custom_box() {
 }
 add_action( 'add_meta_boxes', 'estore_add_custom_box' );
 
-/****************************************************************************************/
-
-global $estore_page_specific_layout;
-
-$estore_page_specific_layout = array(
-	'default-layout'              => array(
-		'id'    => 'estore_page_specific_layout',
-		'value' => 'default_layout',
-		'label' => esc_html__( 'Default Layout', 'estore' )
-	),
-	'right-sidebar'               => array(
-		'id'    => 'estore_page_specific_layout',
-		'value' => 'right_sidebar',
-		'label' => esc_html__( 'Right Sidebar', 'estore' )
-	),
-	'left-sidebar'                => array(
-		'id'    => 'estore_page_specific_layout',
-		'value' => 'left_sidebar',
-		'label' => esc_html__( 'Left Sidebar', 'estore' )
-	),
-	'no-sidebar-full-width'       => array(
-		'id'    => 'estore_page_specific_layout',
-		'value' => 'no_sidebar_full_width',
-		'label' => esc_html__( 'No Sidebar Full Width', 'estore' )
-	),
-	'no-sidebar-content-centered' => array(
-		'id'    => 'estore_page_specific_layout',
-		'value' => 'no_sidebar_content_centered',
-		'label' => esc_html__( 'No Sidebar Content Centered', 'estore' )
-	)
-);
-
-/****************************************************************************************/
-
 /**
  * Displays metabox to for select layout option
  */
 function estore_layout_call() {
 
-	global $estore_page_specific_layout, $post;
+	global $post;
+
+	$page_specific_layout = array(
+		'default-layout'              => array(
+			'id'    => 'estore_page_specific_layout',
+			'value' => 'default_layout',
+			'label' => esc_html__( 'Default Layout', 'estore' )
+		),
+		'right-sidebar'               => array(
+			'id'    => 'estore_page_specific_layout',
+			'value' => 'right_sidebar',
+			'label' => esc_html__( 'Right Sidebar', 'estore' )
+		),
+		'left-sidebar'                => array(
+			'id'    => 'estore_page_specific_layout',
+			'value' => 'left_sidebar',
+			'label' => esc_html__( 'Left Sidebar', 'estore' )
+		),
+		'no-sidebar-full-width'       => array(
+			'id'    => 'estore_page_specific_layout',
+			'value' => 'no_sidebar_full_width',
+			'label' => esc_html__( 'No Sidebar Full Width', 'estore' )
+		),
+		'no-sidebar-content-centered' => array(
+			'id'    => 'estore_page_specific_layout',
+			'value' => 'no_sidebar_content_centered',
+			'label' => esc_html__( 'No Sidebar Content Centered', 'estore' )
+		)
+	);
 
 	// Use nonce for verification
 	wp_nonce_field( basename( __FILE__ ), 'custom_meta_box_nonce' );
 
-	foreach ( $estore_page_specific_layout as $field ) {
+	foreach ( $page_specific_layout as $field ) {
 		$layout_meta = get_post_meta( $post->ID, $field['id'], true );
 		switch ( $field['id'] ) {
 
@@ -92,8 +86,6 @@ function estore_layout_call() {
  * @hooked to save_post hook
  */
 function estore_save_custom_meta( $post_id ) {
-
-	global $estore_page_specific_layout;
 
 	// Verify the nonce before proceeding.
 	if ( ! isset( $_POST['custom_meta_box_nonce'] ) || ! wp_verify_nonce( $_POST['custom_meta_box_nonce'], basename( __FILE__ ) ) ) {
