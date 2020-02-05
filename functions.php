@@ -204,8 +204,15 @@ require get_template_directory() . '/inc/widgets.php';
  */
 require get_template_directory() . '/inc/custom-header.php';
 
-// Load functions
+/**
+ * Load Functions.
+ */
 require get_template_directory() . '/inc/functions.php';
+
+/**
+ * Helper Functions.
+ */
+require get_template_directory() . '/inc/helpers.php';
 
 /**
  * eStore Functions.

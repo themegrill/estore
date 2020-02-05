@@ -37,45 +37,37 @@ function estore_entry_meta() {
 endif;
 
 if ( ! function_exists( 'estore_layout_class' ) ) :
-/**
- * Generate layout class for sidebar based on customizer and post meta settings.
- */
-function estore_layout_class() {
-	global $post;
+	/**
+	 * Generate layout class for sidebar based on customizer and post meta settings.
+	 */
+	function estore_layout_class() {
+		$layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
 
-	$layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
+		// Get Layout meta.
+		$layout_meta = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
 
-	// Get Layout meta
-	if ( $post ) {
-		$layout_meta = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-	}
+		// For blog page while static front page.
+		if ( is_home() && ! ( is_front_page() ) ) {
+			$layout_meta = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
 
-	// Home page if Posts page is assigned
-	if( is_home() && !( is_front_page() ) ) {
-		$queried_id = get_option( 'page_for_posts' );
-		$layout_meta = get_post_meta( $queried_id, 'estore_page_specific_layout', true );
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+			}
+		} elseif ( is_page() ) {
+			$layout = get_theme_mod( 'estore_default_page_layout', 'right_sidebar' );
 
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-	 		$layout = get_post_meta( $queried_id, 'estore_page_specific_layout', true );
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+			}
+		} elseif ( is_single() ) {
+			$layout = get_theme_mod( 'estore_default_single_post_layout', 'right_sidebar' );
+
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+			}
 		}
+		return $layout;
 	}
-
-	elseif( is_page() ) {
-		$layout = get_theme_mod( 'estore_default_page_layout', 'right_sidebar' );
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-			$layout = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-		}
-	}
-
-	elseif( is_single() ) {
-		$layout = get_theme_mod( 'estore_default_single_post_layout', 'right_sidebar' );
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-			$layout = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-		}
-	}
-
-	return $layout;
-}
 endif;
 
 if ( ! function_exists( 'estore_breadcrumbs' ) ) :
