@@ -48,22 +48,20 @@ if ( ! function_exists( 'estore_layout_class' ) ) :
 
 		// For blog page while static front page.
 		if ( is_home() && ! ( is_front_page() ) ) {
-			$layout_meta = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
-
 			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+				$layout = $layout_meta;
 			}
 		} elseif ( is_page() ) {
 			$layout = get_theme_mod( 'estore_default_page_layout', 'right_sidebar' );
 
 			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+				$layout = $layout_meta;
 			}
 		} elseif ( is_single() ) {
 			$layout = get_theme_mod( 'estore_default_single_post_layout', 'right_sidebar' );
 
 			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-				$layout = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
+				$layout = $layout_meta;
 			}
 		}
 		return $layout;
