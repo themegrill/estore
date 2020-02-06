@@ -8,32 +8,36 @@
  */
 
 if ( ! function_exists( 'estore_entry_meta' ) ) :
-/**
- * Display meta description of post.
- */
-function estore_entry_meta() {
-	if ( 'post' == get_post_type() && get_theme_mod('estore_postmeta', '') == '' ) :
-	echo '<div class="entry-meta">';
+	/**
+	 * Display meta description of post.
+	 */
+	function estore_entry_meta() {
+		if ( get_post_type() == 'post' && get_theme_mod( 'estore_postmeta', '' ) == '' ) { ?>
+			<div class="entry-meta">
+				<?php
+				if ( get_theme_mod( 'estore_postmeta_author', '' ) == '' ) { ?>
+					<span class="byline author vcard"><i class="fa fa-user"></i><a
+							href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"
+							title="<?php echo esc_attr( get_the_author() ); ?>"><?php echo esc_html( get_the_author() ); ?></a></span>
+				<?php }
 
-   	?>
-   		<?php if ( get_theme_mod('estore_postmeta_author', '') == '' ) { ?>
-		<span class="byline author vcard"><i class="fa fa-user"></i><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo esc_attr(get_the_author()); ?>"><?php echo esc_html( get_the_author() ); ?></a></span>
-		<?php }
+				if ( ! post_password_required() && comments_open() && get_theme_mod( 'estore_postmeta_comment', '' ) == '' ) { ?>
+					<span class="comments-link"><i
+							class="fa fa-comments-o"></i><?php comments_popup_link( esc_html__( '0 Comment', 'estore' ), esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?></span>
+				<?php }
 
-		if ( ! post_password_required() && comments_open() && get_theme_mod('estore_postmeta_comment', '') == '' ) { ?>
-		<span class="comments-link"><i class="fa fa-comments-o"></i><?php comments_popup_link( esc_html__( '0 Comment', 'estore' ), esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?></span>
-		<?php }
+				if ( has_category() && get_theme_mod( 'estore_postmeta_category', '' ) == '' ) { ?>
+					<span class="cat-links"><i class="fa fa-folder-open"></i><?php the_category( ', ' ); ?></span>
+				<?php }
 
-		if( has_category() && get_theme_mod('estore_postmeta_category', '') == '' ){ ?>
-		<span class="cat-links"><i class="fa fa-folder-open"></i><?php the_category(', '); ?></span>
-		<?php }
-
-		$tags_list = get_the_tag_list( '<span class="tag-links">', ', ', '</span>' );
-		if ( $tags_list && get_theme_mod('estore_postmeta_tags', '') == '' ) echo $tags_list;
-
-		echo '</div>';
-	endif;
-}
+				$tags_list = get_the_tag_list( '<span class="tag-links">', ', ', '</span>' );
+				if ( $tags_list && get_theme_mod( 'estore_postmeta_tags', '' ) == '' ) {
+					echo $tags_list;
+				} ?>
+			</div>
+			<?php
+		}
+	}
 endif;
 
 if ( ! function_exists( 'estore_layout_class' ) ) :
