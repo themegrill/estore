@@ -16,55 +16,55 @@
 
 get_header();
 
-	do_action( 'estore_before_body_content' );
+do_action( 'estore_before_body_content' );
 
-	$estore_layout = estore_layout_class();
-	?>
+$estore_layout = estore_layout_class();
+?>
 	<div id="content" class="site-content">
-	<?php
-	if( is_home() && !( is_front_page() ) ) {
-		$queried_id = get_option( 'page_for_posts' );
-	?>
-		<div class="page-header clearfix">
-			<div class="tg-container">
-				<h2 class="entry-title"><?php echo get_the_title( $queried_id ); ?></h2>
-				<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
+		<?php
+		if ( is_home() && ! ( is_front_page() ) ) :
+			$queried_id = get_option( 'page_for_posts' );
+			?>
+			<div class="page-header clearfix">
+				<div class="tg-container">
+					<h2 class="entry-title"><?php echo get_the_title( $queried_id ); ?></h2>
+					<h3 class="entry-sub-title"><?php estore_breadcrumbs(); ?></h3>
+				</div>
 			</div>
-		</div>
-	<?php } ?>
-		<main id="main" class="clearfix <?php echo esc_attr($estore_layout); ?>">
+		<?php endif; ?>
+		<main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
 			<div class="tg-container">
 				<div id="primary">
-					<?php if ( have_posts() ) : ?>
+					<?php
+					if ( have_posts() ) :
 
-					   <?php /* Start the Loop */ ?>
-					   <?php while ( have_posts() ) : the_post(); ?>
+						// Load posts loop.
+						while ( have_posts() ) :
+							the_post();
 
-						  <?php
+							/*
+							 * Include the Post-Format-specific template for the content.
+							 * If you want to override this in a child theme, then include a file
+							 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+							 */
+							get_template_part( 'template-parts/content', get_post_format() );
 
-							 /*
-							  * Include the Post-Format-specific template for the content.
-							  * If you want to override this in a child theme, then include a file
-							  * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-							  */
-							 get_template_part( 'template-parts/content', get_post_format() );
-						  ?>
-
-						<?php endwhile;
+						endwhile;
 
 						get_template_part( 'navigation', 'none' );
 
-						else : ?>
+					else :
 
-					   <?php get_template_part( 'template-parts/content', 'none' ); ?>
+						get_template_part( 'template-parts/content', 'none' );
 
-					<?php endif; ?>
+					endif;
+					?>
 				</div> <!-- Primary end -->
 				<?php estore_sidebar_select(); ?>
 			</div>
 		</main>
 	</div><!-- #content .site-content -->
 
-	<?php do_action( 'estore_after_body_content' ); ?>
-
-<?php get_footer(); ?>
+<?php
+do_action( 'estore_after_body_content' );
+get_footer();
