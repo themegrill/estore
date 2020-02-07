@@ -37,3 +37,25 @@ if ( ! function_exists( 'estore_get_post_id' ) ) :
 
 	}
 endif;
+
+if ( ! function_exists( 'estore_post_thumbnail' ) ) :
+	/**
+	 * Displays post thumbnail.
+	 */
+	function estore_post_thumbnail() {
+
+		if ( has_post_thumbnail() ) {
+			$title_attribute     = esc_attr( get_the_title() );
+			$thumb_id            = get_post_thumbnail_id( get_the_ID() );
+			$img_altr            = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
+			$img_alt             = ! empty( $img_altr ) ? $img_altr : $title_attribute;
+			$post_thumbnail_attr = array(
+				'alt'   => esc_attr( $img_alt ),
+				'title' => esc_attr( $title_attribute ),
+			);
+
+			the_post_thumbnail( 'estore-slider', $post_thumbnail_attr );
+		}
+
+	}
+endif;
