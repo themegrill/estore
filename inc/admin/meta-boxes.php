@@ -4,9 +4,8 @@
  *
  * @package ThemeGrill
  * @subpackage eStore
- * @since eStore 1.0.0
+ * @since eStore 1.0
  */
-
 
 /**
  * Add Meta Boxes.
@@ -20,52 +19,73 @@ function estore_add_custom_box() {
 }
 add_action( 'add_meta_boxes', 'estore_add_custom_box' );
 
+/****************************************************************************************/
+
+global $estore_page_specific_layout;
+$estore_page_specific_layout = array(
+	'default-layout'              => array(
+		'id'    => 'estore_page_specific_layout',
+		'value' => 'default_layout',
+		'label' => esc_html__( 'Default Layout', 'estore' )
+	),
+	'right-sidebar'               => array(
+		'id'    => 'estore_page_specific_layout',
+		'value' => 'right_sidebar',
+		'label' => esc_html__( 'Right Sidebar', 'estore' )
+	),
+	'left-sidebar'                => array(
+		'id'    => 'estore_page_specific_layout',
+		'value' => 'left_sidebar',
+		'label' => esc_html__( 'Left Sidebar', 'estore' )
+	),
+	'no-sidebar-full-width'       => array(
+		'id'    => 'estore_page_specific_layout',
+		'value' => 'no_sidebar_full_width',
+		'label' => esc_html__( 'No Sidebar Full Width', 'estore' )
+	),
+	'no-sidebar-content-centered' => array(
+		'id'    => 'estore_page_specific_layout',
+		'value' => 'no_sidebar_content_centered',
+		'label' => esc_html__( 'No Sidebar Content Centered', 'estore' )
+	)
+);
+
+/****************************************************************************************/
+
+function estore_layout_call() {
+	global $estore_page_specific_layout;
+	estore_meta_form( $estore_page_specific_layout );
+}
+
 /**
  * Displays metabox to for select layout option
  */
-function estore_layout_call() {
+function estore_meta_form( $estore_metabox_field ) {
 	global $post;
-
-	$page_specific_layout = array(
-		'default-layout'              => array(
-			'value' => 'default_layout',
-			'label' => esc_html__( 'Default Layout', 'estore' )
-		),
-		'right-sidebar'               => array(
-			'value' => 'right_sidebar',
-			'label' => esc_html__( 'Right Sidebar', 'estore' )
-		),
-		'left-sidebar'                => array(
-			'value' => 'left_sidebar',
-			'label' => esc_html__( 'Left Sidebar', 'estore' )
-		),
-		'no-sidebar-full-width'       => array(
-			'value' => 'no_sidebar_full_width',
-			'label' => esc_html__( 'No Sidebar Full Width', 'estore' )
-		),
-		'no-sidebar-content-centered' => array(
-			'value' => 'no_sidebar_content_centered',
-			'label' => esc_html__( 'No Sidebar Content Centered', 'estore' )
-		)
-	);
 
 	// Use nonce for verification.
 	wp_nonce_field( basename( __FILE__ ), 'custom_meta_box_nonce' );
 
-	foreach ( $page_specific_layout as $field ) {
-		$layout_meta = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
+	foreach ( $estore_metabox_field as $field ) {
+		$layout_meta = get_post_meta( $post->ID, $field['id'], true );
+		switch ( $field['id'] ) {
 
-		if ( empty( $layout_meta ) ) {
-			$layout_meta = 'default_layout';
+			// Layout
+			case 'estore_page_specific_layout':
+				if ( empty( $layout_meta ) ) {
+					$layout_meta = 'default_layout';
+				} ?>
+
+				<input class="post-format" type="radio" id="<?php echo esc_attr( $field['value'] ); ?>"
+				       name="<?php echo esc_attr( $field['id'] ); ?>"
+				       value="<?php echo esc_attr( $field['value'] ); ?>" <?php checked( $field['value'], $layout_meta ); ?>/>
+				<label class="post-format-icon"
+				       for="<?php echo esc_attr( $field['value'] ); ?>"><?php echo esc_html( $field['label'] ); ?></label>
+				<br/>
+				<?php
+
+				break;
 		}
-		?>
-		<input class="post-format" type="radio" id="<?php echo esc_attr( $field['value'] ); ?>"
-		       name="<?php echo esc_attr( 'estore_page_specific_layout' ); ?>"
-		       value="<?php echo esc_attr( $field['value'] ); ?>" <?php checked( $field['value'], $layout_meta ); ?>/>
-		<label class="post-format-icon"
-		       for="<?php echo esc_attr( $field['value'] ); ?>"><?php echo esc_html( $field['label'] ); ?></label>
-		<br/>
-		<?php
 	}
 }
 
@@ -74,6 +94,8 @@ function estore_layout_call() {
  * @hooked to save_post hook
  */
 function estore_save_custom_meta( $post_id ) {
+	global $estore_page_specific_layout;
+
 	// Verify the nonce before proceeding.
 	if ( ! isset( $_POST['custom_meta_box_nonce'] ) || ! wp_verify_nonce( $_POST['custom_meta_box_nonce'], basename( __FILE__ ) ) ) {
 		return;
@@ -92,12 +114,14 @@ function estore_save_custom_meta( $post_id ) {
 		return $post_id;
 	}
 
-	// Execute this saving function.
-	$old = get_post_meta( $post_id, 'estore_page_specific_layout', true );
-	$new = sanitize_key( $_POST[ 'estore_page_specific_layout' ] );
+	foreach ( $estore_page_specific_layout as $field ) {
+		//Execute this saving function.
+		$old = get_post_meta( $post_id, $field['id'], true );
+		$new = sanitize_key( $_POST[ $field['id'] ] );
 
-	if ( $new && $new != $old ) {
-		update_post_meta( $post_id, 'estore_page_specific_layout', $new );
-	}
+		if ( $new && $new != $old ) {
+			update_post_meta( $post_id, $field['id'], $new );
+		}
+	} // end foreach
 }
 add_action( 'save_post', 'estore_save_custom_meta' );
