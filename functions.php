@@ -74,21 +74,12 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		// Adding excerpt option box for pages as well
 		add_post_type_support( 'page', 'excerpt' );
 
-		// Recommended Logo size.
-		$logo_width  = 100;
-		$logo_height = 100;
-
-		// Double recommended size for Retina logo.
-		if ( estore_options( 'estore_retina_logo_upload', false ) ) {
-			$logo_width  = floor( $logo_width * 2 );
-			$logo_height = floor( $logo_height * 2 );
-		}
 
 		// Adds Support for Custom Logo Introduced in WordPress 4.5
 		add_theme_support( 'custom-logo',
 			array(
-				'height'      => $logo_height,
-				'width'       => $logo_width,
+				'height'      => 80,
+				'width'       => 160,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)

@@ -7,22 +7,6 @@
  * @since eStore 1.2.5
  */
 
-/****************************************************************************************/
-
-// estore theme options
-function estore_options( $id, $default = false ) {
-	// getting options value
-	$estore_options = get_option( 'estore' );
-
-	if ( isset( $estore_options[ $id ] ) ) {
-		return $estore_options[ $id ];
-	} else {
-		return $default;
-	}
-}
-
-/****************************************************************************************/
-
 /**
  * Header search form
  */
@@ -131,7 +115,6 @@ add_action( 'wp_head', 'estore_pingback_header' );
 /**
  * Update image attributes for retina logo.
  *
- * @see estore_change_logo_attr()
  */
 if ( ! function_exists( 'estore_change_logo_attr' ) ) :
 	function estore_change_logo_attr( $attr, $attachment, $size ) {
@@ -143,10 +126,8 @@ if ( ! function_exists( 'estore_change_logo_attr' ) ) :
 
 		if ( isset( $attr['class'] ) && 'custom-logo' === $attr['class'] ) {
 
-			if ( 1 == estore_options( 'estore_different_retina_logo', 0 ) ) {
-				$retina_logo = estore_options( 'estore_retina_logo_upload', '' );
-
-				$attr['srcset'] = '';
+			if ( 1 == get_theme_mod( 'estore_different_retina_logo', 0 ) ) {
+				$retina_logo = get_theme_mod( 'estore_retina_logo_upload', '' );
 
 				if ( $retina_logo ) {
 					$attr['srcset'] = $custom_logo . ' 1x,' . $retina_logo . ' 2x';

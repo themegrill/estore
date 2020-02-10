@@ -187,14 +187,13 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	// Retina Logo Option.
-	$wp_customize->add_setting( 'estore[estore_different_retina_logo]', array(
+	$wp_customize->add_setting( 'estore_different_retina_logo', array(
 		'default'           => 0,
-		'type'              => 'option',
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'estore_sanitize_checkbox',
 	) );
 
-	$wp_customize->add_control( 'estore[estore_different_retina_logo]', array(
+	$wp_customize->add_control( 'estore_different_retina_logo', array(
 		'type'     => 'checkbox',
 		'priority' => 8,
 		'label'    => esc_html__( 'Different Logo for Retina Devices.', 'estore' ),
@@ -202,19 +201,18 @@ function estore_customize_register( $wp_customize ) {
 	) );
 
 	// Retina Logo Upload.
-	$wp_customize->add_setting( 'estore[estore_retina_logo_upload]', array(
+	$wp_customize->add_setting( 'estore_retina_logo_upload', array(
 		'default'           => '',
-		'type'              => 'option',
 		'capability'        => 'edit_theme_options',
 		'sanitize_callback' => 'esc_url_raw',
 	) );
 
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'estore[estore_retina_logo_upload]', array(
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'estore_retina_logo_upload', array(
 		'label'           => esc_html__( 'Retina Logo', 'estore' ),
 		'priority'        => 8,
-		'setting'         => 'estore[estore_retina_logo_upload]',
+		'setting'         => 'estore_retina_logo_upload',
 		'section'         => 'title_tagline',
-		'active_callback' => 'estore_retina_logo_option',
+		'active_callback' => 'estore_retina_logo',
 	) ) );
 
 	// Header Top Bar Section
@@ -846,8 +844,8 @@ function estore_customize_register( $wp_customize ) {
 	}
 
 	// Active Callback for Retina Logo.
-	function estore_retina_logo_option() {
-		if ( estore_options('estore_different_retina_logo', 0 ) == 1 ) {
+	function estore_retina_logo() {
+		if ( get_theme_mod('estore_different_retina_logo', 0 ) == 1 ) {
 			return true;
 		}
 
