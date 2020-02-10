@@ -68,13 +68,15 @@ function estore_meta_form( $estore_metabox_field ) {
 
 	foreach ( $estore_metabox_field as $field ) {
 		$layout_meta = get_post_meta( $post->ID, $field['id'], true );
+
 		switch ( $field['id'] ) {
 
-			// Layout
+			// Layout.
 			case 'estore_page_specific_layout':
 				if ( empty( $layout_meta ) ) {
 					$layout_meta = 'default_layout';
-				} ?>
+				}
+				?>
 
 				<input class="post-format" type="radio" id="<?php echo esc_attr( $field['value'] ); ?>"
 				       name="<?php echo esc_attr( $field['id'] ); ?>"
@@ -83,7 +85,6 @@ function estore_meta_form( $estore_metabox_field ) {
 				       for="<?php echo esc_attr( $field['value'] ); ?>"><?php echo esc_html( $field['label'] ); ?></label>
 				<br/>
 				<?php
-
 				break;
 		}
 	}
@@ -115,7 +116,7 @@ function estore_save_custom_meta( $post_id ) {
 	}
 
 	foreach ( $estore_page_specific_layout as $field ) {
-		//Execute this saving function.
+		// Execute this saving function.
 		$old = get_post_meta( $post_id, $field['id'], true );
 		$new = sanitize_key( $_POST[ $field['id'] ] );
 
