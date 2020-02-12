@@ -94,6 +94,11 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.2 - 2020-02-12 =
+* Feature     - Added Retina logo option.
+* Enhancement - Code refactor and fixes minor design issues.
+* Fix         - Logo position in mobile devices.
+
 = Version 1.4.1 - 2019-11-15 =
 * Fix   - Link for `skip-link` to content area.
 * Tweak - Update `screen-reader-text` CSS.
