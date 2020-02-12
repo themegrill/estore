@@ -22,8 +22,11 @@ if ( ! function_exists( 'estore_entry_meta' ) ) :
 				<?php }
 
 				if ( ! post_password_required() && comments_open() && get_theme_mod( 'estore_postmeta_comment', '' ) == '' ) { ?>
-					<span class="comments-link"><i
-							class="fa fa-comments-o"></i><?php comments_popup_link( esc_html__( '0 Comment', 'estore' ), esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?></span>
+					<span class="comments-link">
+						<i class="fa fa-comments-o"></i>
+						<?php comments_popup_link( esc_html__( '0 Comment', 'estore' ),
+							esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?>
+					</span>
 				<?php }
 
 				if ( has_category() && get_theme_mod( 'estore_postmeta_category', '' ) == '' ) { ?>
@@ -238,8 +241,6 @@ function estore_category_color_css(){
 
 	$categories = get_terms( 'category', array( 'hide_empty' => false ) );
 
-	//print_r($categories);
-
 	$cat_color_css = '';
 	foreach($categories as $category){
 		$cat_color = get_theme_mod( 'estore_category_color_'.strtolower($category->name) );
@@ -274,23 +275,23 @@ if( ! function_exists( 'estore_darkcolor' ) ) :
  * Source: http://stackoverflow.com/questions/3512311/how-to-generate-lighter-darker-color-with-php
  */
 function estore_darkcolor($hex, $steps) {
-	// Steps should be between -255 and 255. Negative = darker, positive = lighter
+	// Steps should be between -255 and 255. Negative = darker, positive = lighter.
 	$steps = max(-255, min(255, $steps));
 
-	// Normalize into a six character long hex string
+	// Normalize into a six character long hex string.
 	$hex = str_replace('#', '', $hex);
 	if (strlen($hex) == 3) {
 		$hex = str_repeat(substr($hex,0,1), 2).str_repeat(substr($hex,1,1), 2).str_repeat(substr($hex,2,1), 2);
 	}
 
-	// Split into three parts: R, G and B
+	// Split into three parts: R, G and B.
 	$color_parts = str_split($hex, 2);
 	$return = '#';
 
 	foreach ($color_parts as $color) {
-		$color   = hexdec($color); // Convert to decimal
-		$color   = max(0,min(255,$color + $steps)); // Adjust color
-		$return .= str_pad(dechex($color), 2, '0', STR_PAD_LEFT); // Make two char hex code
+		$color   = hexdec($color); // Convert to decimal.
+		$color   = max(0,min(255,$color + $steps)); // Adjust color.
+		$return .= str_pad(dechex($color), 2, '0', STR_PAD_LEFT); // Make two char hex code.
 	}
 
 	return $return;
