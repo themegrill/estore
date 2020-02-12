@@ -74,9 +74,12 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		// Adding excerpt option box for pages as well
 		add_post_type_support( 'page', 'excerpt' );
 
+
 		// Adds Support for Custom Logo Introduced in WordPress 4.5
 		add_theme_support( 'custom-logo',
 			array(
+				'height'      => 80,
+				'width'       => 160,
 				'flex-width'  => true,
 				'flex-height' => true,
 			)
@@ -204,8 +207,15 @@ require get_template_directory() . '/inc/widgets.php';
  */
 require get_template_directory() . '/inc/custom-header.php';
 
-// Load functions
+/**
+ * Load Functions.
+ */
 require get_template_directory() . '/inc/functions.php';
+
+/**
+ * Helper Functions.
+ */
+require get_template_directory() . '/inc/helpers.php';
 
 /**
  * eStore Functions.

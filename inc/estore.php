@@ -8,198 +8,207 @@
  */
 
 if ( ! function_exists( 'estore_entry_meta' ) ) :
-/**
- * Display meta description of post.
- */
-function estore_entry_meta() {
-	if ( 'post' == get_post_type() && get_theme_mod('estore_postmeta', '') == '' ) :
-	echo '<div class="entry-meta">';
+	/**
+	 * Display meta description of post.
+	 */
+	function estore_entry_meta() {
+		if ( get_post_type() == 'post' && get_theme_mod( 'estore_postmeta', '' ) == '' ) { ?>
+			<div class="entry-meta">
+				<?php
+				if ( get_theme_mod( 'estore_postmeta_author', '' ) == '' ) { ?>
+					<span class="byline author vcard"><i class="fa fa-user"></i><a
+							href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"
+							title="<?php echo esc_attr( get_the_author() ); ?>"><?php echo esc_html( get_the_author() ); ?></a></span>
+				<?php }
 
-   	?>
-   		<?php if ( get_theme_mod('estore_postmeta_author', '') == '' ) { ?>
-		<span class="byline author vcard"><i class="fa fa-user"></i><a href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>" title="<?php echo esc_attr(get_the_author()); ?>"><?php echo esc_html( get_the_author() ); ?></a></span>
-		<?php }
+				if ( ! post_password_required() && comments_open() && get_theme_mod( 'estore_postmeta_comment', '' ) == '' ) { ?>
+					<span class="comments-link"><i
+							class="fa fa-comments-o"></i><?php comments_popup_link( esc_html__( '0 Comment', 'estore' ), esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?></span>
+				<?php }
 
-		if ( ! post_password_required() && comments_open() && get_theme_mod('estore_postmeta_comment', '') == '' ) { ?>
-		<span class="comments-link"><i class="fa fa-comments-o"></i><?php comments_popup_link( esc_html__( '0 Comment', 'estore' ), esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?></span>
-		<?php }
+				if ( has_category() && get_theme_mod( 'estore_postmeta_category', '' ) == '' ) { ?>
+					<span class="cat-links"><i class="fa fa-folder-open"></i><?php the_category( ', ' ); ?></span>
+				<?php }
 
-		if( has_category() && get_theme_mod('estore_postmeta_category', '') == '' ){ ?>
-		<span class="cat-links"><i class="fa fa-folder-open"></i><?php the_category(', '); ?></span>
-		<?php }
-
-		$tags_list = get_the_tag_list( '<span class="tag-links">', ', ', '</span>' );
-		if ( $tags_list && get_theme_mod('estore_postmeta_tags', '') == '' ) echo $tags_list;
-
-		echo '</div>';
-	endif;
-}
+				$tags_list = get_the_tag_list( '<span class="tag-links">', ', ', '</span>' );
+				if ( $tags_list && get_theme_mod( 'estore_postmeta_tags', '' ) == '' ) {
+					echo $tags_list;
+				} ?>
+			</div>
+			<?php
+		}
+	}
 endif;
 
 if ( ! function_exists( 'estore_layout_class' ) ) :
-/**
- * Generate layout class for sidebar based on customizer and post meta settings.
- */
-function estore_layout_class() {
-	global $post;
+	/**
+	 * Generate layout class for sidebar based on customizer and post meta settings.
+	 */
+	function estore_layout_class() {
+		$layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
 
-	$layout = get_theme_mod( 'estore_global_layout', 'right_sidebar' );
+		// Get Layout meta.
+		$layout_meta = get_post_meta( estore_get_post_id(), 'estore_page_specific_layout', true );
 
+		// For blog page while static front page.
+		if ( is_home() && ! ( is_front_page() ) ) {
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = $layout_meta;
+			}
+		} elseif ( is_page() ) {
+			$layout = get_theme_mod( 'estore_default_page_layout', 'right_sidebar' );
 
-	// Front page displays in Reading Settings
-	$page_for_posts = get_option('page_for_posts');
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = $layout_meta;
+			}
+		} elseif ( is_single() ) {
+			$layout = get_theme_mod( 'estore_default_single_post_layout', 'right_sidebar' );
 
-	// Get Layout meta
-	if($post) {
-		$layout_meta = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-	}
-	// Home page if Posts page is assigned
-	if( is_home() && !( is_front_page() ) ) {
-		$queried_id = get_option( 'page_for_posts' );
-		$layout_meta = get_post_meta( $queried_id, 'estore_page_specific_layout', true );
-
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-	 		$layout = get_post_meta( $queried_id, 'estore_page_specific_layout', true );
+			if ( $layout_meta != 'default_layout' && $layout_meta != '' ) {
+				$layout = $layout_meta;
+			}
 		}
+		return $layout;
 	}
-
-	elseif( is_page() ) {
-		$layout = get_theme_mod( 'estore_default_page_layout', 'right_sidebar' );
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-			$layout = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-		}
-	}
-
-	elseif( is_single() ) {
-		$layout = get_theme_mod( 'estore_default_single_post_layout', 'right_sidebar' );
-		if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
-			$layout = get_post_meta( $post->ID, 'estore_page_specific_layout', true );
-		}
-	}
-
-	return $layout;
-}
 endif;
 
 if ( ! function_exists( 'estore_breadcrumbs' ) ) :
-/**
- * Display Breadcrumbs
- *
- * This code is a modified version of Melissacabral's original menu code for dimox_breadcrumbs().
- *
- */
-function estore_breadcrumbs(){
-  /* === OPTIONS === */
-	$text['home']     = esc_html__('Home', 'estore'); // text for the 'Home' link
-	$text['category'] = esc_html__('Archive by Category "%s"', 'estore'); // text for a category page
-	$text['tax'] 	  = esc_html__('Archive for "%s"', 'estore'); // text for a taxonomy page
-	$text['search']   = esc_html__('Search Results for "%s" query', 'estore'); // text for a search results page
-	$text['tag']      = esc_html__('Posts Tagged "%s"', 'estore'); // text for a tag page
-	$text['author']   = esc_html__('Articles Posted by %s', 'estore'); // text for an author page
-	$text['404']      = esc_html__('Error 404', 'estore'); // text for the 404 page
-	$showCurrent = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
-	$showOnHome  = 1; // 1 - show breadcrumbs on the homepage, 0 - don't show
-	$delimiter   = '&nbsp;&frasl;&nbsp;'; // delimiter between crumbs
-	$before      = '<span class="current">'; // tag before the current crumb
-	$after       = '</span>'; // tag after the current crumb
-	/* === END OF OPTIONS === */
-	global $post;
-	$homeLink   = esc_url(home_url()) . '/';
-	$linkBefore = '<span typeof="v:Breadcrumb">';
-	$linkAfter = '</span>';
-	$linkAttr = ' rel="v:url" property="v:title"';
-	$link = $linkBefore . '<a' . $linkAttr . ' href="%1$s">%2$s</a>' . $linkAfter;
-	if (is_home() || is_front_page()) {
-		if ($showOnHome == 1) echo '<div id="crumbs"><a href="' . $homeLink . '">' . $text['home'] . '</a></div>';
-	} else {
-		echo '<div id="crumbs" xmlns:v="http://rdf.data-vocabulary.org/#">' . sprintf($link, $homeLink, $text['home']) . $delimiter;
+	/**
+	 * Display Breadcrumbs
+	 *
+	 * This code is a modified version of Melissacabral's original menu code for dimox_breadcrumbs().
+	 *
+	 */
+	function estore_breadcrumbs() {
+		// Start of options.
+		$text['home']     = esc_html__( 'Home', 'estore' ); // text for the 'Home' link
+		$text['category'] = esc_html__( 'Archive by Category "%s"', 'estore' ); // text for a category page
+		$text['tax']      = esc_html__( 'Archive for "%s"', 'estore' ); // text for a taxonomy page
+		$text['search']   = esc_html__( 'Search Results for "%s" query', 'estore' ); // text for a search results page
+		$text['tag']      = esc_html__( 'Posts Tagged "%s"', 'estore' ); // text for a tag page
+		$text['author']   = esc_html__( 'Articles Posted by %s', 'estore' ); // text for an author page
+		$text['404']      = esc_html__( 'Error 404', 'estore' ); // text for the 404 page
+		$showCurrent      = 1; // 1 - show current post/page title in breadcrumbs, 0 - don't show
+		$showOnHome       = 1; // 1 - show breadcrumbs on the homepage, 0 - don't show
+		$delimiter        = '&nbsp;&frasl;&nbsp;'; // delimiter between crumbs
+		$before           = '<span class="current">'; // tag before the current crumb
+		$after            = '</span>'; // tag after the current crumb
+		// End of options.
+		global $post;
+		$homeLink   = esc_url( home_url() ) . '/';
+		$linkBefore = '<span typeof="v:Breadcrumb">';
+		$linkAfter  = '</span>';
+		$linkAttr   = ' rel="v:url" property="v:title"';
+		$link       = $linkBefore . '<a' . $linkAttr . ' href="%1$s">%2$s</a>' . $linkAfter;
+		$thisCat    = get_category( get_query_var( 'cat' ), false );
 
-		if ( is_category() ) {
-			$thisCat = get_category(get_query_var('cat'), false);
-			if ($thisCat->parent != 0) {
-				$cats = get_category_parents($thisCat->parent, TRUE, $delimiter);
-				$cats = str_replace('<a', $linkBefore . '<a' . $linkAttr, $cats);
-				$cats = str_replace('</a>', '</a>' . $linkAfter, $cats);
-				echo $cats;
+		if ( is_home() || is_front_page() ) {
+			if ( $showOnHome == 1 ) {
+				echo '<div id="crumbs"><a href="' . $homeLink . '">' . $text['home'] . '</a></div>';
 			}
-			echo $before . sprintf($text['category'], single_cat_title('', false)) . $after;
-		} elseif( is_tax() ){
-			$thisCat = get_category(get_query_var('cat'), false);
-			if ($thisCat->parent != 0) {
-				$cats = get_category_parents($thisCat->parent, TRUE, $delimiter);
-				$cats = str_replace('<a', $linkBefore . '<a' . $linkAttr, $cats);
-				$cats = str_replace('</a>', '</a>' . $linkAfter, $cats);
-				echo $cats;
+		} else {
+			echo '<div id="crumbs" xmlns:v="http://rdf.data-vocabulary.org/#">' . sprintf( $link, $homeLink, $text['home'] ) . $delimiter;
+			if ( is_category() ) {
+				if ( $thisCat->parent != 0 ) {
+					$cats = get_category_parents( $thisCat->parent, true, $delimiter );
+					$cats = str_replace( '<a', $linkBefore . '<a' . $linkAttr, $cats );
+					$cats = str_replace( '</a>', '</a>' . $linkAfter, $cats );
+					echo $cats;
+				}
+				echo $before . sprintf( $text['category'], single_cat_title( '', false ) ) . $after;
+			} elseif ( is_tax() ) {
+				if ( $thisCat->parent != 0 ) {
+					$cats = get_category_parents( $thisCat->parent, true, $delimiter );
+					$cats = str_replace( '<a', $linkBefore . '<a' . $linkAttr, $cats );
+					$cats = str_replace( '</a>', '</a>' . $linkAfter, $cats );
+					echo $cats;
+				}
+				echo $before . sprintf( $text['tax'], single_cat_title( '', false ) ) . $after;
+			} elseif ( is_search() ) {
+				echo $before . sprintf( $text['search'], get_search_query() ) . $after;
+			} elseif ( is_day() ) {
+				echo sprintf( $link, get_year_link( get_the_time( 'Y' ) ), get_the_time( 'Y' ) ) . $delimiter;
+				echo sprintf( $link, get_month_link( get_the_time( 'Y' ), get_the_time( 'm' ) ), get_the_time( 'F' ) ) . $delimiter;
+				echo $before . get_the_time( 'd' ) . $after;
+			} elseif ( is_month() ) {
+				echo sprintf( $link, get_year_link( get_the_time( 'Y' ) ), get_the_time( 'Y' ) ) . $delimiter;
+				echo $before . get_the_time( 'F' ) . $after;
+			} elseif ( is_year() ) {
+				echo $before . get_the_time( 'Y' ) . $after;
+			} elseif ( is_single() && ! is_attachment() ) {
+				if ( get_post_type() != 'post' ) {
+					$post_type = get_post_type_object( get_post_type() );
+					$slug      = $post_type->rewrite;
+					printf( $link, $homeLink . '/' . $slug['slug'] . '/', $post_type->labels->singular_name );
+					if ( $showCurrent == 1 ) {
+						echo $delimiter . $before . get_the_title() . $after;
+					}
+				} else {
+					$cat  = get_the_category();
+					$cat  = $cat[0];
+					$cats = get_category_parents( $cat, true, $delimiter );
+					if ( $showCurrent == 0 ) {
+						$cats = preg_replace( "#^(.+)$delimiter$#", "$1", $cats );
+					}
+					$cats = str_replace( '<a', $linkBefore . '<a' . $linkAttr, $cats );
+					$cats = str_replace( '</a>', '</a>' . $linkAfter, $cats );
+					echo $cats;
+					if ( $showCurrent == 1 ) {
+						echo $before . get_the_title() . $after;
+					}
+				}
+			} elseif ( ! is_single() && ! is_page() && get_post_type() != 'post' && ! is_404() ) {
+				$post_type = get_post_type_object( get_post_type() );
+				echo $before . $post_type->labels->singular_name . $after;
+			} elseif ( is_attachment() ) {
+				$parent = get_post( $post->post_parent );
+				printf( $link, get_permalink( $parent ), $parent->post_title );
+				if ( $showCurrent == 1 ) {
+					echo $delimiter . $before . get_the_title() . $after;
+				}
+			} elseif ( is_page() && ! $post->post_parent ) {
+				if ( $showCurrent == 1 ) {
+					echo $before . get_the_title() . $after;
+				}
+			} elseif ( is_page() && $post->post_parent ) {
+				$parent_id   = $post->post_parent;
+				$breadcrumbs = array();
+				while ( $parent_id ) {
+					$page          = get_post( $parent_id );
+					$breadcrumbs[] = sprintf( $link, get_permalink( $page->ID ), get_the_title( $page->ID ) );
+					$parent_id     = $page->post_parent;
+				}
+				$breadcrumbs = array_reverse( $breadcrumbs );
+				for ( $i = 0; $i < count( $breadcrumbs ); $i++ ) {
+					echo $breadcrumbs[ $i ];
+					if ( $i != count( $breadcrumbs ) - 1 ) {
+						echo $delimiter;
+					}
+				}
+				if ( $showCurrent == 1 ) {
+					echo $delimiter . $before . get_the_title() . $after;
+				}
+			} elseif ( is_tag() ) {
+				echo $before . sprintf( $text['tag'], single_tag_title( '', false ) ) . $after;
+			} elseif ( is_author() ) {
+				global $author;
+				$userdata = get_userdata( $author );
+				echo $before . sprintf( $text['author'], $userdata->display_name ) . $after;
+			} elseif ( is_404() ) {
+				echo $before . $text['404'] . $after;
 			}
-			echo $before . sprintf($text['tax'], single_cat_title('', false)) . $after;
-
-		}elseif ( is_search() ) {
-			echo $before . sprintf($text['search'], get_search_query()) . $after;
-		} elseif ( is_day() ) {
-			echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-			echo sprintf($link, get_month_link(get_the_time('Y'),get_the_time('m')), get_the_time('F')) . $delimiter;
-			echo $before . get_the_time('d') . $after;
-		} elseif ( is_month() ) {
-			echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-			echo $before . get_the_time('F') . $after;
-		} elseif ( is_year() ) {
-			echo $before . get_the_time('Y') . $after;
-		} elseif ( is_single() && !is_attachment() ) {
-			if ( get_post_type() != 'post' ) {
-				$post_type = get_post_type_object(get_post_type());
-				$slug = $post_type->rewrite;
-				printf($link, $homeLink . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
-				if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
-			} else {
-				$cat = get_the_category(); $cat = $cat[0];
-				$cats = get_category_parents($cat, TRUE, $delimiter);
-				if ($showCurrent == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
-				$cats = str_replace('<a', $linkBefore . '<a' . $linkAttr, $cats);
-				$cats = str_replace('</a>', '</a>' . $linkAfter, $cats);
-				echo $cats;
-				if ($showCurrent == 1) echo $before . get_the_title() . $after;
+			if ( get_query_var( 'paged' ) ) {
+				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
+					echo ' (';
+				}
+				echo esc_html__( 'Page', 'estore' ) . ' ' . get_query_var( 'paged' );
+				if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) {
+					echo ')';
+				}
 			}
-		} elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-			$post_type = get_post_type_object(get_post_type());
-			echo $before . $post_type->labels->singular_name . $after;
-		} elseif ( is_attachment() ) {
-			$parent = get_post($post->post_parent);
-			printf($link, get_permalink($parent), $parent->post_title);
-			if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
-		} elseif ( is_page() && !$post->post_parent ) {
-			if ($showCurrent == 1) echo $before . get_the_title() . $after;
-		} elseif ( is_page() && $post->post_parent ) {
-			$parent_id  = $post->post_parent;
-			$breadcrumbs = array();
-			while ($parent_id) {
-				$page = get_page($parent_id);
-				$breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
-				$parent_id  = $page->post_parent;
-			}
-			$breadcrumbs = array_reverse($breadcrumbs);
-			for ($i = 0; $i < count($breadcrumbs); $i++) {
-				echo $breadcrumbs[$i];
-				if ($i != count($breadcrumbs)-1) echo $delimiter;
-			}
-			if ($showCurrent == 1) echo $delimiter . $before . get_the_title() . $after;
-		} elseif ( is_tag() ) {
-			echo $before . sprintf($text['tag'], single_tag_title('', false)) . $after;
-		} elseif ( is_author() ) {
-	 		global $author;
-			$userdata = get_userdata($author);
-			echo $before . sprintf($text['author'], $userdata->display_name) . $after;
-		} elseif ( is_404() ) {
-			echo $before . $text['404'] . $after;
+			echo '</div>';
 		}
-		if ( get_query_var('paged') ) {
-			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-			echo esc_html__( 'Page', 'estore' ) . ' ' . get_query_var('paged');
-			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
-		}
-		echo '</div>';
-	}
-} // end estore_breadcrumbs()
-
+	} // End estore_breadcrumbs().
 endif;
 
 if ( ! function_exists( 'estore_sidebar_select' ) ) :

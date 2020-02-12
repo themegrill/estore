@@ -37,11 +37,11 @@ function estore_header_search_box() {
  *
  * @since 1.2.5
  */
-function estore_product_searchform ( $form ) {
+function estore_product_searchform( $form ) {
 
-	$form = '<form role="search" method="get" class="estore-wc-product-search" action=" '. esc_url( home_url( '/' ) ) . '">
+	$form = '<form role="search" method="get" class="estore-wc-product-search" action=" ' . esc_url( home_url( '/' ) ) . '">
 		<label class="screen-reader-text" for="estore-wc-search-field">' . esc_html__( 'Search for:', 'estore' ) . '</label>
-		<input type="search" id="estore-wc-search-field" class="search-field" placeholder="'. esc_attr__( 'Search products ...', 'estore' ) . '" value="' . get_search_query() . '" name="s" />
+		<input type="search" id="estore-wc-search-field" class="search-field" placeholder="' . esc_attr__( 'Search products ...', 'estore' ) . '" value="' . get_search_query() . '" name="s" />
 		<button type="submit" class="searchsubmit" value="' . esc_attr_x( 'Search', 'submit button', 'estore' ) . '">
 			<i class="fa fa-search"></i>
 		</button>
@@ -51,7 +51,8 @@ function estore_product_searchform ( $form ) {
 	return $form;
 
 }
-add_filter( 'get_product_search_form' , 'estore_product_searchform', 10, 1 );
+
+add_filter( 'get_product_search_form', 'estore_product_searchform', 10, 1 );
 
 /*
  * Related posts.
@@ -109,3 +110,35 @@ if ( ! function_exists( 'estore_pingback_header' ) ) :
 endif;
 
 add_action( 'wp_head', 'estore_pingback_header' );
+
+
+/**
+ * Update image attributes for retina logo.
+ *
+ */
+if ( ! function_exists( 'estore_change_logo_attr' ) ) :
+	function estore_change_logo_attr( $attr, $attachment, $size ) {
+		$custom_logo = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
+
+		if ( ! empty( $custom_logo ) ) {
+			$custom_logo = $custom_logo[0];
+		}
+
+		if ( isset( $attr['class'] ) && 'custom-logo' === $attr['class'] ) {
+
+			if ( 1 == get_theme_mod( 'estore_different_retina_logo', 0 ) ) {
+				$retina_logo = get_theme_mod( 'estore_retina_logo_upload', '' );
+
+				if ( $retina_logo ) {
+					$attr['srcset'] = $custom_logo . ' 1x,' . $retina_logo . ' 2x';
+				}
+			}
+		}
+
+		return $attr;
+	}
+endif;
+
+add_filter( 'wp_get_attachment_image_attributes', 'estore_change_logo_attr', 10, 3 );
+
+

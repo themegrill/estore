@@ -186,6 +186,35 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
+	// Retina Logo Option.
+	$wp_customize->add_setting( 'estore_different_retina_logo', array(
+		'default'           => 0,
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'estore_sanitize_checkbox',
+	) );
+
+	$wp_customize->add_control( 'estore_different_retina_logo', array(
+		'type'     => 'checkbox',
+		'priority' => 8,
+		'label'    => esc_html__( 'Different Logo for Retina Devices.', 'estore' ),
+		'section'  => 'title_tagline',
+	) );
+
+	// Retina Logo Upload.
+	$wp_customize->add_setting( 'estore_retina_logo_upload', array(
+		'default'           => '',
+		'capability'        => 'edit_theme_options',
+		'sanitize_callback' => 'esc_url_raw',
+	) );
+
+	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'estore_retina_logo_upload', array(
+		'label'           => esc_html__( 'Retina Logo', 'estore' ),
+		'priority'        => 8,
+		'setting'         => 'estore_retina_logo_upload',
+		'section'         => 'title_tagline',
+		'active_callback' => 'estore_retina_logo',
+	) ) );
+
 	// Header Top Bar Section
 	$wp_customize->add_section(
 		'estore_header_bar',
@@ -812,6 +841,15 @@ function estore_customize_register( $wp_customize ) {
 				'render_callback' => '',
 			) );
 		}
+	}
+
+	// Active Callback for Retina Logo.
+	function estore_retina_logo() {
+		if ( get_theme_mod('estore_different_retina_logo', 0 ) == 1 ) {
+			return true;
+		}
+
+		return false;
 	}
 
 	// Check if WPML Active
