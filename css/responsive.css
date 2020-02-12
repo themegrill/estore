@@ -601,8 +601,13 @@
 		text-align: center;
 	}
 
+	.custom-logo-link {
+		float: none;
+		margin-right: 0;
+	}
+
 	.site-title-wrapper {
-		text-align: left;
+		text-align: center;
 	}
 
 	.widget-large-advertise,
@@ -614,7 +619,7 @@
 
 	.logo,
 	.site-title-wrapper {
-		display: inline-block;
+		display: block;
 		float: none;
 		vertical-align: top;
 	}
