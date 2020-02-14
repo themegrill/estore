@@ -30,15 +30,21 @@ function estore_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
-		$wp_customize->selective_refresh->add_partial( 'blogname', array(
-			'selector'        => '#site-title a',
-			'render_callback' => 'estore_customize_partial_blogname',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogname',
+			array(
+				'selector'        => '#site-title a',
+				'render_callback' => 'estore_customize_partial_blogname',
+			)
+		);
 
-		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
-			'selector'        => '#site-description',
-			'render_callback' => 'estore_customize_partial_blogdescription',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'blogdescription',
+			array(
+				'selector'        => '#site-description',
+				'render_callback' => 'estore_customize_partial_blogdescription',
+			)
+		);
 	}
 
 	/**
@@ -76,12 +82,14 @@ function estore_customize_register( $wp_customize ) {
 		}
 	}
 
-// Register `ESTORE_Upsell_Section` type section.
+	// Register `ESTORE_Upsell_Section` type section.
 	$wp_customize->register_section_type( 'ESTORE_Upsell_Section' );
 
-// Add `ESTORE_Upsell_Section` to display pro link.
+	// Add `ESTORE_Upsell_Section` to display pro link.
 	$wp_customize->add_section(
-		new ESTORE_Upsell_Section( $wp_customize, 'estore_upsell_section',
+		new ESTORE_Upsell_Section(
+			$wp_customize,
+			'estore_upsell_section',
 			array(
 				'title'      => esc_html__( 'View PRO version', 'estore' ),
 				'url'        => 'https://themegrill.com/themes/estore/?utm_source=estore-customizer&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro',
@@ -128,26 +136,33 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	// Header Integrations
-	$wp_customize->add_section( 'estore_header_integrations', array(
-		'priority' => 30,
-		'title'    => esc_html__( 'Header Integrations', 'estore' ),
-		'panel'    => 'estore_header_options',
-	) );
+	$wp_customize->add_section(
+		'estore_header_integrations',
+		array(
+			'priority' => 30,
+			'title'    => esc_html__( 'Header Integrations', 'estore' ),
+			'panel'    => 'estore_header_options',
+		)
+	);
 
 	// WPML Languages
-	$wp_customize->add_setting( 'estore_header_lang', array(
+	$wp_customize->add_setting(
+		'estore_header_lang',
+		array(
 			'default'           => '',
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'estore_sanitize_checkbox',
 		)
 	);
 
-	$wp_customize->add_control( 'estore_header_lang', array(
+	$wp_customize->add_control(
+		'estore_header_lang',
+		array(
 			'label'           => esc_html__( 'Enable Language Selection (WPML)', 'estore' ),
 			'section'         => 'estore_header_integrations',
 			'type'            => 'checkbox',
 			'active_callback' => 'estore_is_wpml_activate',
-			'priority'        => 40 // 10,20,30 for woocommerce settings
+			'priority'        => 40, // 10,20,30 for woocommerce settings.
 		)
 	);
 
@@ -165,7 +180,7 @@ function estore_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'estore_logo_placement',
 		array(
-			'default'           => '',
+			'default'           => 'header_logo_only',
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'estore_sanitize_radio',
 		)
@@ -187,33 +202,48 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	// Retina Logo Option.
-	$wp_customize->add_setting( 'estore_different_retina_logo', array(
-		'default'           => 0,
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'estore_sanitize_checkbox',
-	) );
+	$wp_customize->add_setting(
+		'estore_different_retina_logo',
+		array(
+			'default'           => 0,
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_checkbox',
+		)
+	);
 
-	$wp_customize->add_control( 'estore_different_retina_logo', array(
-		'type'     => 'checkbox',
-		'priority' => 8,
-		'label'    => esc_html__( 'Different Logo for Retina Devices.', 'estore' ),
-		'section'  => 'title_tagline',
-	) );
+	$wp_customize->add_control(
+		'estore_different_retina_logo',
+		array(
+			'type'     => 'checkbox',
+			'priority' => 8,
+			'label'    => esc_html__( 'Different Logo for Retina Devices.', 'estore' ),
+			'section'  => 'title_tagline',
+		)
+	);
 
 	// Retina Logo Upload.
-	$wp_customize->add_setting( 'estore_retina_logo_upload', array(
-		'default'           => '',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'esc_url_raw',
-	) );
+	$wp_customize->add_setting(
+		'estore_retina_logo_upload',
+		array(
+			'default'           => '',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'esc_url_raw',
+		)
+	);
 
-	$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'estore_retina_logo_upload', array(
-		'label'           => esc_html__( 'Retina Logo', 'estore' ),
-		'priority'        => 8,
-		'setting'         => 'estore_retina_logo_upload',
-		'section'         => 'title_tagline',
-		'active_callback' => 'estore_retina_logo',
-	) ) );
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'estore_retina_logo_upload',
+			array(
+				'label'           => esc_html__( 'Retina Logo', 'estore' ),
+				'priority'        => 8,
+				'setting'         => 'estore_retina_logo_upload',
+				'section'         => 'title_tagline',
+				'active_callback' => 'estore_retina_logo',
+			)
+		)
+	);
 
 	// Header Top Bar Section
 	$wp_customize->add_section(
@@ -270,10 +300,13 @@ function estore_customize_register( $wp_customize ) {
 
 	// Selective refresh for header top bar text
 	if ( isset( $wp_customize->selective_refresh ) ) {
-		$wp_customize->selective_refresh->add_partial( 'estore_bar_text', array(
-			'selector'        => '#header-ticker',
-			'render_callback' => 'estore_bar_text',
-		) );
+		$wp_customize->selective_refresh->add_partial(
+			'estore_bar_text',
+			array(
+				'selector'        => '#header-ticker',
+				'render_callback' => 'estore_bar_text',
+			)
+		);
 	}
 
 	// Header Search
@@ -374,7 +407,7 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		new Estore_Image_Radio_Control (
+		new Estore_Image_Radio_Control(
 			$wp_customize,
 			'estore_global_layout',
 			array(
@@ -411,7 +444,7 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		new Estore_Image_Radio_Control (
+		new Estore_Image_Radio_Control(
 			$wp_customize,
 			'estore_default_page_layout',
 			array(
@@ -428,7 +461,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Default Single Post Layout
+	// Default Single Post Layout.
 	$wp_customize->add_section(
 		'estore_default_single_post_layout_section',
 		array(
@@ -448,7 +481,7 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		new Estore_Image_Radio_Control (
+		new Estore_Image_Radio_Control(
 			$wp_customize,
 			'estore_default_single_post_layout',
 			array(
@@ -526,7 +559,8 @@ function estore_customize_register( $wp_customize ) {
 					'label'   => esc_html__( 'Write your Custom CSS here', 'estore' ),
 					'section' => 'estore_custom_css_section',
 				)
-			) );
+			)
+		);
 	}
 
 	// Footer Widget Section
@@ -577,76 +611,104 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	// Author bio.
-	$wp_customize->add_section( 'estore_author_bio_section', array(
-		'priority' => 7,
-		'title'    => esc_html__( 'Author Bio Option', 'estore' ),
-		'panel'    => 'estore_additional_options',
-	) );
+	$wp_customize->add_section(
+		'estore_author_bio_section',
+		array(
+			'priority' => 7,
+			'title'    => esc_html__( 'Author Bio Option', 'estore' ),
+			'panel'    => 'estore_additional_options',
+		)
+	);
 
-	$wp_customize->add_setting( 'estore_author_bio_setting', array(
-		'default'           => 0,
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'estore_sanitize_checkbox',
-	) );
+	$wp_customize->add_setting(
+		'estore_author_bio_setting',
+		array(
+			'default'           => 0,
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_checkbox',
+		)
+	);
 
-	$wp_customize->add_control( 'estore_author_bio_setting', array(
-		'type'    => 'checkbox',
-		'label'   => esc_html__( 'Check to display the author bio.', 'estore' ),
-		'setting' => 'estore_author_bio_setting',
-		'section' => 'estore_author_bio_section',
-	) );
+	$wp_customize->add_control(
+		'estore_author_bio_setting',
+		array(
+			'type'    => 'checkbox',
+			'label'   => esc_html__( 'Check to display the author bio.', 'estore' ),
+			'setting' => 'estore_author_bio_setting',
+			'section' => 'estore_author_bio_section',
+		)
+	);
 
 	// Related post
-	$wp_customize->add_section( 'estore_related_posts_section', array(
-		'priority' => 245,
-		'title'    => esc_html__( 'Related Posts', 'estore' ),
-		'panel'    => 'estore_additional_options',
-	) );
+	$wp_customize->add_section(
+		'estore_related_posts_section',
+		array(
+			'priority' => 245,
+			'title'    => esc_html__( 'Related Posts', 'estore' ),
+			'panel'    => 'estore_additional_options',
+		)
+	);
 
-	$wp_customize->add_setting( 'estore_related_posts_activate', array(
-		'default'           => 0,
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'estore_sanitize_checkbox',
-	) );
+	$wp_customize->add_setting(
+		'estore_related_posts_activate',
+		array(
+			'default'           => 0,
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_checkbox',
+		)
+	);
 
-	$wp_customize->add_control( 'estore_related_posts_activate', array(
-		'type'     => 'checkbox',
-		'label'    => esc_html__( 'Check to activate the related posts', 'estore' ),
-		'section'  => 'estore_related_posts_section',
-		'settings' => 'estore_related_posts_activate',
-	) );
+	$wp_customize->add_control(
+		'estore_related_posts_activate',
+		array(
+			'type'     => 'checkbox',
+			'label'    => esc_html__( 'Check to activate the related posts', 'estore' ),
+			'section'  => 'estore_related_posts_section',
+			'settings' => 'estore_related_posts_activate',
+		)
+	);
 
-	$wp_customize->add_setting( 'estore_related_posts', array(
-		'default'           => 'categories',
-		'capability'        => 'edit_theme_options',
-		'sanitize_callback' => 'estore_sanitize_radio',
-	) );
+	$wp_customize->add_setting(
+		'estore_related_posts',
+		array(
+			'default'           => 'categories',
+			'capability'        => 'edit_theme_options',
+			'sanitize_callback' => 'estore_sanitize_radio',
+		)
+	);
 
-	$wp_customize->add_control( 'estore_related_posts', array(
-		'type'     => 'radio',
-		'label'    => esc_html__( 'Related Posts Must Be Shown As:', 'estore' ),
-		'section'  => 'estore_related_posts_section',
-		'settings' => 'estore_related_posts',
-		'choices'  => array(
-			'categories' => esc_html__( 'Related Posts By Categories', 'estore' ),
-			'tags'       => esc_html__( 'Related Posts By Tags', 'estore' ),
-		),
-	) );
+	$wp_customize->add_control(
+		'estore_related_posts',
+		array(
+			'type'     => 'radio',
+			'label'    => esc_html__( 'Related Posts Must Be Shown As:', 'estore' ),
+			'section'  => 'estore_related_posts_section',
+			'settings' => 'estore_related_posts',
+			'choices'  => array(
+				'categories' => esc_html__( 'Related Posts By Categories', 'estore' ),
+				'tags'       => esc_html__( 'Related Posts By Tags', 'estore' ),
+			),
+		)
+	);
 
 	// Category Color Section
-	$wp_customize->add_section( 'estore_category_color_setting', array(
-		'priority' => 1,
-		'title'    => esc_html__( 'Category Color Settings', 'estore' ),
-		'panel'    => 'estore_additional_options',
-	) );
+	$wp_customize->add_section(
+		'estore_category_color_setting',
+		array(
+			'priority' => 1,
+			'title'    => esc_html__( 'Category Color Settings', 'estore' ),
+			'panel'    => 'estore_additional_options',
+		)
+	);
 
 	$priority         = 1;
-	$categories       = get_terms( 'category' ); // Get all Categories
+	$categories       = get_terms( 'category' ); // Get all Categories.
 	$wp_category_list = array();
 
 	foreach ( $categories as $category_list ) {
 
-		$wp_customize->add_setting( 'estore_category_color_' . esc_html( strtolower( $category_list->name ) ),
+		$wp_customize->add_setting(
+			'estore_category_color_' . esc_html( strtolower( $category_list->name ) ),
 			array(
 				'default'              => '',
 				'capability'           => 'edit_theme_options',
@@ -657,7 +719,8 @@ function estore_customize_register( $wp_customize ) {
 
 		$wp_customize->add_control(
 			new WP_Customize_Color_Control(
-				$wp_customize, 'estore_category_color_' . esc_html( strtolower( $category_list->name ) ),
+				$wp_customize,
+				'estore_category_color_' . esc_html( strtolower( $category_list->name ) ),
 				array(
 					'label'    => sprintf( esc_html__( ' %s', 'estore' ), esc_html( $category_list->name ) ),
 					'section'  => 'estore_category_color_setting',
@@ -834,18 +897,21 @@ function estore_customize_register( $wp_customize ) {
 			)
 		);
 
-		// Selective refresh for payment logo
+		// Selective refresh for payment logo.
 		if ( isset( $wp_customize->selective_refresh ) ) {
-			$wp_customize->selective_refresh->add_partial( 'estore_payment_logo' . $i, array(
-				'selector'        => '.payment-partner-wrapper',
-				'render_callback' => '',
-			) );
+			$wp_customize->selective_refresh->add_partial(
+				'estore_payment_logo' . $i,
+				array(
+					'selector'        => '.payment-partner-wrapper',
+					'render_callback' => '',
+				)
+			);
 		}
 	}
 
 	// Active Callback for Retina Logo.
 	function estore_retina_logo() {
-		if ( get_theme_mod('estore_different_retina_logo', 0 ) == 1 ) {
+		if ( get_theme_mod( 'estore_different_retina_logo', 0 ) == 1 ) {
 			return true;
 		}
 
@@ -887,37 +953,38 @@ function estore_customize_register( $wp_customize ) {
 		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 	}
 
-	// Sanitize Checkbox
+	// Sanitize Checkbox.
 	function estore_sanitize_checkbox( $input ) {
-		if ( $input == 1 ) {
+		if ( 1 == $input ) {
 			return 1;
 		} else {
 			return '';
 		}
 	}
 
-	// Sanitize Integer
+	// Sanitize Integer.
 	function estore_sanitize_integer( $input ) {
 		if ( is_numeric( $input ) ) {
 			return intval( $input );
 		}
 	}
 
-	// Sanitize Text
+	// Sanitize Text.
 	function estore_sanitize_text( $input ) {
 		return wp_kses_post( force_balance_tags( $input ) );
 	}
 
-	// Sanitize Color
+	// Sanitize Color.
 	function estore_hex_color_sanitize( $color ) {
-		if ( $unhashed = sanitize_hex_color_no_hash( $color ) ) {
+		if ( $unhashed = sanitize_hex_color_no_hash( $color ) )
+		{
 			return '#' . $unhashed;
 		}
 
 		return $color;
 	}
 
-	// Escape Color
+	// Escape Color.
 	function estore_color_escaping_sanitize( $input ) {
 		$input = esc_attr( $input );
 
@@ -946,7 +1013,13 @@ add_action( 'customize_register', 'estore_customize_register' );
  * @since eStore 1.2.3
  */
 function estore_customize_preview_js() {
-	wp_enqueue_script( 'estore-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), false, true );
+	wp_enqueue_script(
+		'estore-customizer',
+		get_template_directory_uri() . '/js/customizer.js',
+		array( 'customize-preview' ),
+		false,
+		true
+	);
 }
 
 add_action( 'customize_preview_init', 'estore_customize_preview_js' );
@@ -980,7 +1053,8 @@ function estore_bar_text() {
  */
 add_action( 'customize_controls_print_footer_scripts', 'estore_customizer_custom_scripts' );
 
-function estore_customizer_custom_scripts() { ?>
+function estore_customizer_custom_scripts() {
+	?>
 	<style>
 		/* Theme Instructions Panel CSS */
 		li#accordion-section-estore_upsell_section h3.accordion-section-title {
