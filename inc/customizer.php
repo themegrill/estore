@@ -237,7 +237,7 @@ function estore_customize_register( $wp_customize ) {
 			'estore_retina_logo_upload',
 			array(
 				'label'           => esc_html__( 'Retina Logo', 'estore' ),
-				'description'     => esc_html__( 'Please upload the retina logo double the size of logo. For eg: If you upload 100 * 100 pixels for logo then use 200 * 200 pixels for retina logo.', 'estore' ),
+				'description'     => esc_html__( 'Please upload the retina logo double the size of default logo. For eg: If you upload 100 * 100px for default logo then use 200 * 200px for retina logo.', 'estore' ),
 				'priority'        => 8,
 				'setting'         => 'estore_retina_logo_upload',
 				'section'         => 'title_tagline',
