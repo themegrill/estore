@@ -216,7 +216,7 @@ function estore_customize_register( $wp_customize ) {
 		array(
 			'type'     => 'checkbox',
 			'priority' => 8,
-			'label'    => esc_html__( 'Different Logo for Retina Devices.', 'estore' ),
+			'label'    => esc_html__( 'Different Logo for Retina Devices?', 'estore' ),
 			'section'  => 'title_tagline',
 		)
 	);
