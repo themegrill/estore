@@ -99,7 +99,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Media Placement
+	// Header Media Placement.
 	$wp_customize->add_setting(
 		'estore_header_media_placement',
 		array(
@@ -135,7 +135,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Integrations
+	// Header Integrations.
 	$wp_customize->add_section(
 		'estore_header_integrations',
 		array(
@@ -145,7 +145,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// WPML Languages
+	// WPML Languages.
 	$wp_customize->add_setting(
 		'estore_header_lang',
 		array(
@@ -166,7 +166,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Logo Section
+	// Logo Section.
 	$wp_customize->add_section(
 		'estore_header_logo',
 		array(
@@ -176,7 +176,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Logo Placement
+	// Logo Placement.
 	$wp_customize->add_setting(
 		'estore_logo_placement',
 		array(
@@ -246,7 +246,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Top Bar Section
+	// Header Top Bar Section.
 	$wp_customize->add_section(
 		'estore_header_bar',
 		array(
@@ -256,7 +256,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Bar Activation
+	// Header Bar Activation.
 	$wp_customize->add_setting(
 		'estore_bar_activation',
 		array(
@@ -275,7 +275,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Header Bar Left Section
+	// Header Bar Left Section.
 	$wp_customize->add_setting(
 		'estore_bar_text',
 		array(
@@ -299,7 +299,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Selective refresh for header top bar text
+	// Selective refresh for header top bar text.
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial(
 			'estore_bar_text',
@@ -310,7 +310,7 @@ function estore_customize_register( $wp_customize ) {
 		);
 	}
 
-	// Header Search
+	// Header Search.
 	$wp_customize->add_section(
 		'estore_header_search',
 		array(
@@ -356,7 +356,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Primary Color Setting
+	// Primary Color Setting.
 	$wp_customize->add_section(
 		'estore_primary_color_section',
 		array(
@@ -388,7 +388,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Default Layout
+	// Default Layout.
 	$wp_customize->add_section(
 		'estore_global_layout_section',
 		array(
@@ -425,7 +425,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Default Pages Layout
+	// Default Pages Layout.
 	$wp_customize->add_section(
 		'estore_default_page_layout_section',
 		array(
@@ -499,7 +499,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Default Single Post Layout
+	// Default Single Post Layout.
 	$wp_customize->add_section(
 		'estore_archive_page_section',
 		array(
@@ -532,7 +532,7 @@ function estore_customize_register( $wp_customize ) {
 	);
 
 	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
-		// Custom CSS Section
+		// Custom CSS Section.
 		$wp_customize->add_section(
 			'estore_custom_css_section',
 			array(
@@ -564,7 +564,7 @@ function estore_customize_register( $wp_customize ) {
 		);
 	}
 
-	// Footer Widget Section
+	// Footer Widget Section.
 	$wp_customize->add_section(
 		'estore_footer_widget_section',
 		array(
@@ -692,7 +692,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Category Color Section
+	// Category Color Section.
 	$wp_customize->add_section(
 		'estore_category_color_setting',
 		array(
@@ -733,7 +733,7 @@ function estore_customize_register( $wp_customize ) {
 		$priority ++;
 	}
 
-	// Post Meta Section
+	// Post Meta Section.
 	$wp_customize->add_section(
 		'estore_postmeta_section',
 		array(
@@ -744,7 +744,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Setting
+	// Post Meta Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta',
 		array(
@@ -764,7 +764,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Date Setting
+	// Post Meta Date Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta_date',
 		array(
@@ -784,7 +784,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Author Setting
+	// Post Meta Author Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta_author',
 		array(
@@ -804,7 +804,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Comment Count Setting
+	// Post Meta Comment Count Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta_comment',
 		array(
@@ -824,7 +824,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Category Setting
+	// Post Meta Category Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta_category',
 		array(
@@ -844,7 +844,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Post Meta Tags Setting
+	// Post Meta Tags Setting.
 	$wp_customize->add_setting(
 		'estore_postmeta_tags',
 		array(
@@ -864,7 +864,7 @@ function estore_customize_register( $wp_customize ) {
 		)
 	);
 
-	// Payment Partners Logo Section
+	// Payment Partners Logo Section.
 	$wp_customize->add_section(
 		'estore_payment_logo_section',
 		array(
@@ -919,7 +919,7 @@ function estore_customize_register( $wp_customize ) {
 		return false;
 	}
 
-	// Check if WPML Active
+	// Check if WPML Active.
 	function estore_is_wpml_activate() {
 		if ( function_exists( 'icl_object_id' ) ) {
 			return true;
@@ -942,7 +942,7 @@ function estore_customize_register( $wp_customize ) {
 		return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 	}
 
-	// Sanitize Radio Button
+	// Sanitize Radio Button.
 	function estore_sanitize_radio( $input, $setting ) {
 		// Ensure input is a slug.
 		$input = sanitize_key( $input );
@@ -977,8 +977,7 @@ function estore_customize_register( $wp_customize ) {
 
 	// Sanitize Color.
 	function estore_hex_color_sanitize( $color ) {
-		if ( $unhashed = sanitize_hex_color_no_hash( $color ) )
-		{
+		if ( $unhashed = sanitize_hex_color_no_hash( $color ) ) {
 			return '#' . $unhashed;
 		}
 
@@ -992,7 +991,7 @@ function estore_customize_register( $wp_customize ) {
 		return $input;
 	}
 
-	// Sanitize Choices
+	// Sanitize Choices.
 	function estore_sanitize_choices( $input, $setting ) {
 		global $wp_customize;
 
