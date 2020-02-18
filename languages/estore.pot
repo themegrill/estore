@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: eStore 1.4.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-02-12 06:22:37+00:00\n"
+"POT-Creation-Date: 2020-02-18 10:15:23+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -344,7 +344,7 @@ msgstr ""
 msgid "Color Palette"
 msgstr ""
 
-#: inc/admin/class-estore-admin.php:557 inc/customizer.php:330
+#: inc/admin/class-estore-admin.php:557 inc/customizer.php:364
 msgid "Primary Color Option"
 msgstr ""
 
@@ -507,7 +507,7 @@ msgstr ""
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:29 inc/customizer.php:362
+#: inc/admin/meta-boxes.php:29 inc/customizer.php:396
 msgid "Default Layout"
 msgstr ""
 
@@ -527,272 +527,279 @@ msgstr ""
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:86
+#: inc/customizer.php:94
 msgid "View PRO version"
 msgstr ""
 
-#: inc/customizer.php:107
+#: inc/customizer.php:115
 msgid "Choose the required option for Header Media placement"
 msgstr ""
 
-#: inc/customizer.php:111
+#: inc/customizer.php:119
 msgid "Position One: Display Header Media just above the site Title/Text"
 msgstr ""
 
-#: inc/customizer.php:112
+#: inc/customizer.php:120
 msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
 msgstr ""
 
-#: inc/customizer.php:124
+#: inc/customizer.php:132
 msgid "Change Header Settings here"
 msgstr ""
 
-#: inc/customizer.php:126
+#: inc/customizer.php:134
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:133
+#: inc/customizer.php:143
 msgid "Header Integrations"
 msgstr ""
 
-#: inc/customizer.php:146
+#: inc/customizer.php:161
 msgid "Enable Language Selection (WPML)"
 msgstr ""
 
-#: inc/customizer.php:159
+#: inc/customizer.php:174
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:177
+#: inc/customizer.php:192
 msgid "Choose the required option"
 msgstr ""
 
-#: inc/customizer.php:181
+#: inc/customizer.php:196
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:182
+#: inc/customizer.php:197
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:183
+#: inc/customizer.php:198
 msgid "Show both header logo and text"
 msgstr ""
 
-#: inc/customizer.php:184
+#: inc/customizer.php:199
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:199
-msgid "Different Logo for Retina Devices."
+#: inc/customizer.php:219
+msgid "Different Logo for Retina Devices?"
 msgstr ""
 
-#: inc/customizer.php:211
+#: inc/customizer.php:239
 msgid "Retina Logo"
 msgstr ""
 
-#: inc/customizer.php:223
+#: inc/customizer.php:240
+msgid ""
+"Please upload the retina logo double the size of default logo. For eg: If "
+"you upload 100 * 100px for default logo then use 200 * 200px for retina "
+"logo."
+msgstr ""
+
+#: inc/customizer.php:254
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:241
+#: inc/customizer.php:272
 msgid "Activate the header top bar"
 msgstr ""
 
-#: inc/customizer.php:263
+#: inc/customizer.php:294
 msgid "Header Text"
 msgstr ""
 
-#: inc/customizer.php:264
+#: inc/customizer.php:295
 msgid "Paste the Font Awesome icon font"
 msgstr ""
 
-#: inc/customizer.php:284
+#: inc/customizer.php:318
 msgid "Header Search"
 msgstr ""
 
-#: inc/customizer.php:301
+#: inc/customizer.php:335
 msgid "Choose a search option"
 msgstr ""
 
-#: inc/customizer.php:305
+#: inc/customizer.php:339
 msgid "WordPress search"
 msgstr ""
 
-#: inc/customizer.php:306
+#: inc/customizer.php:340
 msgid "WooCommerce search"
 msgstr ""
 
-#: inc/customizer.php:319
+#: inc/customizer.php:353
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:321
+#: inc/customizer.php:355
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:351
+#: inc/customizer.php:385
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:381
+#: inc/customizer.php:415
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:399
+#: inc/customizer.php:433
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:418
+#: inc/customizer.php:452
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:436
+#: inc/customizer.php:470
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:455
+#: inc/customizer.php:489
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:473
+#: inc/customizer.php:507
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:490
+#: inc/customizer.php:524
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:494
+#: inc/customizer.php:528
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:495
+#: inc/customizer.php:529
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:506
+#: inc/customizer.php:540
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:526
+#: inc/customizer.php:560
 msgid "Write your Custom CSS here"
 msgstr ""
 
-#: inc/customizer.php:537
+#: inc/customizer.php:572
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:554
+#: inc/customizer.php:589
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:558
+#: inc/customizer.php:593
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:559
+#: inc/customizer.php:594
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:560
+#: inc/customizer.php:595
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:561
+#: inc/customizer.php:596
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:573
+#: inc/customizer.php:608
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:575
+#: inc/customizer.php:610
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:582
+#: inc/customizer.php:619
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:594
+#: inc/customizer.php:637
 msgid "Check to display the author bio."
 msgstr ""
 
-#: inc/customizer.php:602
+#: inc/customizer.php:648
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:614
+#: inc/customizer.php:666
 msgid "Check to activate the related posts"
 msgstr ""
 
-#: inc/customizer.php:627
+#: inc/customizer.php:685
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:631
+#: inc/customizer.php:689
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:632
+#: inc/customizer.php:690
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:639 inc/woocommerce.php:122
+#: inc/customizer.php:700 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:662 inc/woocommerce.php:145
+#: inc/customizer.php:726 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:677
+#: inc/customizer.php:741
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:679
+#: inc/customizer.php:743
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:696
+#: inc/customizer.php:760
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:716
+#: inc/customizer.php:780
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:736
+#: inc/customizer.php:800
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:756
+#: inc/customizer.php:820
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:776
+#: inc/customizer.php:840
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:796
+#: inc/customizer.php:860
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:808
+#: inc/customizer.php:872
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/customizer.php:830
+#: inc/customizer.php:894
 msgid "Upload logo"
 msgstr ""
 
@@ -1720,7 +1727,7 @@ msgid ""
 msgstr ""
 
 #: woocommerce/single-product/related.php:26
-msgid "Related Products"
+msgid "Related products"
 msgstr ""
 
 #. Theme URI of the plugin/theme

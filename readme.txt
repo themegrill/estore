@@ -98,6 +98,7 @@ If you want the theme to be translated into your language, feel free to contribu
 * Feature     - Added Retina logo option.
 * Enhancement - Code refactor and fixes minor design issues.
 * Fix         - Logo position in mobile devices.
+* Tweak 	  - Update WooCommerce template version to 3.9.0.
 
 = Version 1.4.1 - 2019-11-15 =
 * Fix   - Link for `skip-link` to content area.
