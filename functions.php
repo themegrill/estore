@@ -213,6 +213,13 @@ require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/functions.php';
 
 /**
+ * Admin.
+ */
+if ( is_admin() ) {
+	require get_template_directory() . '/inc/admin/tdi-notice.php';
+}
+
+/**
  * Helper Functions.
  */
 require get_template_directory() . '/inc/helpers.php';
