@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.3 - 2020-02-20 =
+* Tweak   - Minor Enhancement.
+
 = Version 1.4.2 - 2020-02-18 =
 * Feature     - Added Retina logo option.
 * Enhancement - Code refactor and fixes minor design issues.
