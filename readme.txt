@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.4 - 2020-02-24 =
+* Fix - PHP fatar error on get_plugins function.
+
 = Version 1.4.3 - 2020-02-20 =
 * Tweak   - Minor Enhancement.
 
