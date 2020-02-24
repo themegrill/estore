@@ -55,16 +55,23 @@ class Estore_TDI_Notice {
 			);
 
 			echo $msg;
+
+			$close_tdi_notice = wp_nonce_url(
+				add_query_arg( 'tdi_close_notice', 'true', admin_url( '?nag_ignore_estore_tdi_notice' ) ),
+				'close_notice_' . get_current_user_id(),
+				'estore_tdi_notice_nonce_nag'
+			);
 			?>
-			<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( wp_nonce_url( '?nag_ignore_estore_tdi_notice=0', 'close-notice', 'tdi-nonce' ) ); ?>"></a>
+			<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( $close_tdi_notice ); ?>"></a>
 		</div>
 		<?php
 	}
 
 	public function ignore_tdi_notice() {
 		$user_id = get_current_user_id();
+
 		if ( is_admin() ) {
-			if ( isset( $_GET['tdi-nonce'] ) && wp_verify_nonce( $_GET['tdi-nonce'], 'close-notice' ) ) {
+			if ( isset( $_GET['estore_tdi_notice_nonce_nag'] ) && wp_verify_nonce( $_GET['estore_tdi_notice_nonce_nag'], 'close_notice_' . $user_id ) ) {
 				add_user_meta( $user_id, 'ignore_estore_tdi_notice', 'true', true );
 			}
 		}
