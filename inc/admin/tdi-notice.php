@@ -27,9 +27,7 @@ class Estore_TDI_Notice {
 		if ( $ignored_notice ) {
 			return;
 		}
-
-		if ( current_user_can( 'administrator' ) ) {
-			?>
+		?>
 			<div class="error updated tdi-notice" style="position:relative;">
 
 				<?php
@@ -67,17 +65,19 @@ class Estore_TDI_Notice {
 				<a class="notice-dismiss" style="text-decoration:none;" href="<?php echo esc_url( $close_tdi_notice ); ?>"></a>
 			</div>
 			<?php
-		}
 	}
 
 	public function ignore_tdi_notice() {
 		$user_id = get_current_user_id();
 
-		if ( current_user_can( 'administrator' ) ) {
-			if ( isset( $_GET['estore_ignore_tdi_notice_nag'] ) && '0' == $_GET['estore_ignore_tdi_notice_nag'] ) {
-				if ( isset( $_GET['estore_tdi_notice_nonce_nag'] ) && wp_verify_nonce( $_GET['estore_tdi_notice_nonce_nag'], 'estore_tdi_notice_close_' . $user_id ) ) {
-					add_user_meta( $user_id, 'ignore_estore_tdi_notice', 'true', true );
-				}
+		if ( ! current_user_can( 'manage_options' ) ) {
+			return;
+		}
+
+
+		if ( isset( $_GET['estore_ignore_tdi_notice_nag'] ) && '0' == $_GET['estore_ignore_tdi_notice_nag'] ) {
+			if ( isset( $_GET['estore_tdi_notice_nonce_nag'] ) && wp_verify_nonce( $_GET['estore_tdi_notice_nonce_nag'], 'estore_tdi_notice_close_' . $user_id ) ) {
+				add_user_meta( $user_id, 'ignore_estore_tdi_notice', 'true', true );
 			}
 		}
 	}
