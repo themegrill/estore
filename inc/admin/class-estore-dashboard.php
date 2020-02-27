@@ -40,7 +40,8 @@ class Estore_Dashboard {
 	}
 
 	public function create_menu() {
-		$theme        = wp_get_theme();
+		$theme = wp_get_theme();
+
 		/* translators: %s: Theme Name. */
 		$theme_page_name = sprintf( esc_html__( '%s Options', 'estore' ), $theme->Name );
 
@@ -57,7 +58,7 @@ class Estore_Dashboard {
 	}
 
 	public function option_page() {
-		$theme        = wp_get_theme();
+		$theme = wp_get_theme();
 		?>
 		<div class="wrap">
 		<div class="estore-header">
@@ -109,25 +110,5 @@ class Estore_Dashboard {
 		<?php
 	}
 }
-
-$config = array(
-	'menu_name'       => __( 'About eStore', 'estore' ),
-	'page_name'       => __( 'About eStore', 'estore' ),
-	'welcome_content' => __( 'eStore is beautifully designed clean WordPress blog theme. Easy to setup and has a nice set of features that make your site stand out. It is suitable for personal, fashion, food, travel, business, professional, niche and any kind of blogging sites. Comes with various demos for various purposes, which you can easily import with the help of ThemeGrill Demo Importer plugin.', 'estore' ),
-	/* translators: s - theme name */
-	'welcome_title'   => sprintf( __( 'Welcome to %s! : Version ', 'estore' ), 'eStore' ),
-	'tabs'            => array(
-		'site_library'        => __( 'Site Library', 'estore' ),
-		'getting_started'     => __( 'Getting Started', 'estore' ),
-		'recommended_plugins' => __( 'Recommended Plugins', 'estore' ),
-		'support'             => __( 'Support', 'estore' ),
-		'changelog'           => __( 'Changelog', 'estore' ),
-	),
-
-	'site_library' => array(
-		'one' => array(),
-	),
-
-);
 
 Estore_Dashboard::instance();
