@@ -10,7 +10,7 @@
 class Estore_Dashboard {
 	private static $instance;
 
-	public static function instance( $config ) {
+	public static function instance() {
 
 		if ( is_null( self::$instance ) ) {
 			self::$instance = new self();
@@ -37,9 +37,12 @@ class Estore_Dashboard {
 	}
 
 	public function create_menu() {
+		/* translators: %s: Theme Name. */
+		$theme_page_name = sprintf( esc_html__( '%s Options', 'estore' ), $theme->Name );
+
 		add_theme_page(
-			'eStore Options',
-			'eStore Options',
+			$theme_page_name,
+			$theme_page_name,
 			'edit_theme_options',
 			'estore-options',
 			array(
@@ -123,4 +126,4 @@ $config = array(
 
 );
 
-Estore_Dashboard::instance( apply_filters( 'estore_about_page_array', $config ) );
+Estore_Dashboard::instance();
