@@ -7,6 +7,9 @@
  * @since   1.4.5
  */
 
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 class Estore_Dashboard {
 	private static $instance;
 
