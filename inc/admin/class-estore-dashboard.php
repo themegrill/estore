@@ -40,6 +40,7 @@ class Estore_Dashboard {
 	}
 
 	public function create_menu() {
+		$theme        = wp_get_theme();
 		/* translators: %s: Theme Name. */
 		$theme_page_name = sprintf( esc_html__( '%s Options', 'estore' ), $theme->Name );
 

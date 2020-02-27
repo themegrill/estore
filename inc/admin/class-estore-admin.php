@@ -168,10 +168,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					</div>
 
 					<p>
-						<?php
-						/* translators: %s: Option page link. */
-						printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %1$swelcome page%2$s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-options' ) ) . '">', '</a>' );
-						?>
+						<?php printf( esc_html__( 'Welcome! Thank you for choosing eStore! To fully take advantage of the best our theme can offer please make sure you visit our %swelcome page%s.', 'estore' ), '<a href="' . esc_url( admin_url( 'themes.php?page=estore-options' ) ) . '">', '</a>' ); ?>
 
 						<span class="plugin-install-notice"><?php esc_html_e( 'Clicking the button below will install and activate the ThemeGrill demo importer plugin.', 'estore' ); ?></span>
 					</p>
