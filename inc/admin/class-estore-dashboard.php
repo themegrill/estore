@@ -91,7 +91,7 @@ class Estore_Dashboard {
 						<ul>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-media-text">' . esc_html__( 'Documentation', 'estore' ) . '</a>', esc_url( 'https://docs.themegrill.com/estore/' ) ); ?></li>
 							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-layout">' . esc_html__( 'Starter Demos', 'estore' ) . '</a>', esc_url( 'https://demo.themegrill.com/estore-demos/' ) ); ?></li>
-							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon welcome-add-page">' . esc_html__( 'Premium Version', 'estore' ) . '</a>', esc_url( 'https://themegrill.com/themes/estore/' ) ); ?></li>
+							<li><?php printf( '<a target="_blank" href="%s" class="welcome-icon dashicons-migrate">' . esc_html__( 'Premium Version', 'estore' ) . '</a>', esc_url( 'https://themegrill.com/themes/estore/' ) ); ?></li>
 						</ul>
 					</div>
 
