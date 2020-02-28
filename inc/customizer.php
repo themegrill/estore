@@ -291,10 +291,11 @@ function estore_customize_register( $wp_customize ) {
 			$wp_customize,
 			'estore_bar_text',
 			array(
-				'label'       => esc_html__( 'Header Text', 'estore' ),
-				'description' => esc_html__( 'Paste the Font Awesome icon font', 'estore' ),
-				'section'     => 'estore_header_bar',
-				'setting'     => 'estore_bar_text',
+				'label'           => esc_html__( 'Header Text', 'estore' ),
+				'description'     => esc_html__( 'Paste the Font Awesome icon font', 'estore' ),
+				'section'         => 'estore_header_bar',
+				'setting'         => 'estore_bar_text',
+				'active_callback' => 'estore_header_text_active',
 			)
 		)
 	);
@@ -305,7 +306,7 @@ function estore_customize_register( $wp_customize ) {
 			'estore_bar_text',
 			array(
 				'selector'        => '#header-ticker',
-				'render_callback' => 'estore_bar_text',
+				'render_callback' => 'estore_bar_text_render',
 			)
 		);
 	}
@@ -1043,7 +1044,7 @@ function estore_customize_partial_blogdescription() {
 }
 
 // Function for top eader text selective refresh support
-function estore_bar_text() {
+function estore_bar_text_render() {
 	$header_bar_text = get_theme_mod( 'estore_bar_text' );
 	echo wp_kses_post( $header_bar_text );
 }

@@ -1,6 +1,7 @@
 <?php
-if ( ! class_exists( 'WP_Customize_Control' ) )
-    return NULL;
+if ( ! class_exists( 'WP_Customize_Control' ) ) {
+	return null;
+}
 
 /**
  * Class to create a custom text editor control
@@ -63,11 +64,11 @@ class Estore_Text_Editor_Control extends WP_Customize_Control {
 		</label>
 		<?php
 		$settings = array(
-			'textarea_name'    => $this->id,
-			'teeny'            => true,
+			'textarea_name' => $this->id,
+			'teeny'         => true,
 		);
-		wp_editor( esc_textarea( $this->value() ), $this->id, $settings );
+		wp_editor( $this->value(), $this->id, $settings );
 
-		do_action('admin_print_footer_scripts');
+		do_action( 'admin_print_footer_scripts' );
 	}
 }
