@@ -2579,7 +2579,7 @@ body {
 	margin: 15px 0 20px;
 }
 
-.hot-content-wrapper .single_add_to_wishlist {
+.hot-content-wrapper .single_add_to_wishlist, .hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  a{
 	background: #00A9E0;
 	border-radius: 25px;
 	padding: 5px 15px;
@@ -2588,9 +2588,13 @@ body {
 	font-weight: 600;
 }
 
-.hot-content-wrapper .single_add_to_wishlist:hover {
+.hot-content-wrapper .single_add_to_wishlist:hover, .hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  a:hover {
 	background: #0191BC;
 	color: #ffffff;
+}
+
+.hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  span {
+	display: none;
 }
 
 .hot-content-wrapper .single_add_to_wishlist i {
