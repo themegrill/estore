@@ -1,0 +1,18 @@
+.theme-review-notice .links {
+	margin: 10px 0;
+}
+
+.theme-review-notice .links a {
+	height: auto;
+	padding: 3px 15px;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+.theme-review-notice .links a .dashicons {
+	line-height: 1.2;
+}
+
+.theme-review-notice .links a.button-primary {
+	margin-left: 0;
+}

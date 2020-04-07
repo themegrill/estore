@@ -217,6 +217,7 @@ require get_template_directory() . '/inc/functions.php';
  */
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/tdi-notice.php';
+	require get_template_directory() . '/inc/admin/class-estore-theme-review-notice.php';
 }
 
 /**
