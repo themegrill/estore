@@ -233,10 +233,9 @@ class estore_woocommerce_product_grid extends WP_Widget {
 										</div>
 										<?php
 										if( function_exists( 'YITH_WCWL' ) ){
-											$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
-											?>
-											<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
-										<?php } ?>
+											echo do_shortcode( '[yith_wcwl_add_to_wishlist link_classes="single_add_to_wishlist"]' );
+										}
+										?>
 									</div> <!-- hot-content-wrapper end -->
 								</div> <!-- hot-product-content-wrapper end -->
 							</div> <!-- hot product block end -->

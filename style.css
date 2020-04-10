@@ -2579,7 +2579,7 @@ body {
 	margin: 15px 0 20px;
 }
 
-.hot-content-wrapper .single_add_to_wishlist {
+.hot-content-wrapper .single_add_to_wishlist, .hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  a{
 	background: #00A9E0;
 	border-radius: 25px;
 	padding: 5px 15px;
@@ -2588,9 +2588,13 @@ body {
 	font-weight: 600;
 }
 
-.hot-content-wrapper .single_add_to_wishlist:hover {
+.hot-content-wrapper .single_add_to_wishlist:hover, .hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  a:hover {
 	background: #0191BC;
 	color: #ffffff;
+}
+
+.hot-content-wrapper .yith-wcwl-wishlistexistsbrowse  span {
+	display: none;
 }
 
 .hot-content-wrapper .single_add_to_wishlist i {
@@ -3041,7 +3045,7 @@ body {
 	background: none;
 }
 
-.featured-slider li .single_add_to_wishlist {
+.featured-slider li .single_add_to_wishlist, .featured-slider li .yith-wcwl-wishlistexistsbrowse a {
 	background: #ffc300 none repeat scroll 0 0;
 	border-radius: 25px;
 	color: #ffffff;
@@ -3051,8 +3055,12 @@ body {
 	margin: 10px 0 15px;
 }
 
-.featured-slider li .single_add_to_wishlist:hover {
+.featured-slider li .single_add_to_wishlist:hover, .featured-slider li .yith-wcwl-wishlistexistsbrowse a:hover {
 	background: #e2ae04;
+}
+
+.featured-slider li .yith-wcwl-wishlistexistsbrowse span {
+	display: none;
 }
 
 .featured-slider li .single_add_to_wishlist i {
@@ -3698,7 +3706,7 @@ ul.wp-block-gallery {
 
 .woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .add_to_wishlist.button.alt,
 .woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a,
-.woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a {
+.woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a {
 	background: #00A9E0 none repeat scroll 0 0;
 	border-radius: 25px;
 	color: #ffffff;
@@ -3712,7 +3720,7 @@ ul.wp-block-gallery {
 
 .woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .add_to_wishlist.button.alt:hover,
 .woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistexistsbrowse a:hover,
-.woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-wishlistaddedbrowse a:hover {
+.woocommerce-page ul.products li.product .yith-wcwl-add-to-wishlist .yith-wcwl-add-button a:hover {
 	background: #0191BC;
 }
 
