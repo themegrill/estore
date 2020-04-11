@@ -1043,10 +1043,16 @@ function estore_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
-// Function for top eader text selective refresh support
-function estore_bar_text_render() {
+// Function for top header text selective refresh support
+function estore_bar_text() {
 	$header_bar_text = get_theme_mod( 'estore_bar_text' );
 	echo wp_kses_post( $header_bar_text );
+}
+
+function estore_bar_text_render() {
+	_deprecated_function( __FUNCTION__, '1.4.6', 'estore_bar_text()' );
+
+	estore_bar_text();
 }
 
 /*
