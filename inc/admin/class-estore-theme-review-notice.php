@@ -38,7 +38,6 @@ class eStore_Theme_Review_Notice {
 		// Set the installed time in `estore_theme_installed_time` option table.
 		$option = get_option( 'estore_theme_installed_time' );
 
-
 		if ( ! $option ) {
 			update_option( 'estore_theme_installed_time', time() );
 		}
