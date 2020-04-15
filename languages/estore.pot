@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.4.5\n"
+"Project-Id-Version: eStore 1.4.6\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-02-27 11:27:08+00:00\n"
+"POT-Creation-Date: 2020-04-14 07:44:58+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "error"
 msgstr ""
 
-#: 404.php:38 functions.php:290
+#: 404.php:38 functions.php:291
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
@@ -130,66 +130,89 @@ msgstr ""
 msgid "Get started with eStore"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:46
+#: inc/admin/class-estore-dashboard.php:51
 #. translators: %s: Theme Name.
 msgid "%s Options"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:68
+#: inc/admin/class-estore-dashboard.php:78
 #. translators: %s: Theme version.
 msgid "eStore %s"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:74
+#: inc/admin/class-estore-dashboard.php:84
 msgid "Welcome to eStore!"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:78
+#: inc/admin/class-estore-dashboard.php:88
 #. translators: %s: Theme Name.
 msgid "Important links to get you started with %s"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:84
+#: inc/admin/class-estore-dashboard.php:94
 msgid "Get Started"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:87
+#: inc/admin/class-estore-dashboard.php:97
 msgid "Learn Basics"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:92
+#: inc/admin/class-estore-dashboard.php:102
 msgid "Next Steps"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:94
+#: inc/admin/class-estore-dashboard.php:104
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:95
+#: inc/admin/class-estore-dashboard.php:105
 msgid "Starter Demos"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:96
+#: inc/admin/class-estore-dashboard.php:106
 msgid "Premium Version"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:101
+#: inc/admin/class-estore-dashboard.php:111
 msgid "Further Actions"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:103
+#: inc/admin/class-estore-dashboard.php:113
+#: inc/admin/class-estore-theme-review-notice.php:105
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:104
+#: inc/admin/class-estore-dashboard.php:114
 msgid "Leave a review"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:78
+#. Translators: %1$s current user display name.
+msgid ""
+"Howdy, %1$s! It seems that you have been using this theme for more than 15 "
+"days. We hope you are happy with everything that the theme has to offer. If "
+"you can spare a minute, please help us by leaving a 5-star review on "
+"WordPress.org.  By spreading the love, we can continue to develop new "
+"amazing features in the future, for free!"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:89
+msgid "Sure"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:94
+msgid "Maybe later"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:99
+msgid "I already did"
 msgstr ""
 
 #: inc/admin/meta-boxes.php:15
 msgid "Select Layout"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:29 inc/customizer.php:396
+#: inc/admin/meta-boxes.php:29 inc/customizer.php:397
 msgid "Default Layout"
 msgstr ""
 
@@ -324,196 +347,196 @@ msgstr ""
 msgid "Paste the Font Awesome icon font"
 msgstr ""
 
-#: inc/customizer.php:318
+#: inc/customizer.php:319
 msgid "Header Search"
 msgstr ""
 
-#: inc/customizer.php:335
+#: inc/customizer.php:336
 msgid "Choose a search option"
 msgstr ""
 
-#: inc/customizer.php:339
+#: inc/customizer.php:340
 msgid "WordPress search"
 msgstr ""
 
-#: inc/customizer.php:340
+#: inc/customizer.php:341
 msgid "WooCommerce search"
 msgstr ""
 
-#: inc/customizer.php:353
+#: inc/customizer.php:354
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:355
+#: inc/customizer.php:356
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:364
+#: inc/customizer.php:365
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/customizer.php:385
+#: inc/customizer.php:386
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:415
+#: inc/customizer.php:416
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:433
+#: inc/customizer.php:434
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:452
+#: inc/customizer.php:453
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:470
+#: inc/customizer.php:471
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:489
+#: inc/customizer.php:490
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:507
+#: inc/customizer.php:508
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:524
+#: inc/customizer.php:525
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:528
+#: inc/customizer.php:529
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:529
+#: inc/customizer.php:530
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:540
+#: inc/customizer.php:541
 msgid "Custom CSS"
 msgstr ""
 
-#: inc/customizer.php:560
+#: inc/customizer.php:561
 msgid "Write your Custom CSS here"
 msgstr ""
 
-#: inc/customizer.php:572
+#: inc/customizer.php:573
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:589
+#: inc/customizer.php:590
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:593
+#: inc/customizer.php:594
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:594
+#: inc/customizer.php:595
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:595
+#: inc/customizer.php:596
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:596
+#: inc/customizer.php:597
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:608
+#: inc/customizer.php:609
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:610
+#: inc/customizer.php:611
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:619
+#: inc/customizer.php:620
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:637
+#: inc/customizer.php:638
 msgid "Check to display the author bio."
 msgstr ""
 
-#: inc/customizer.php:648
+#: inc/customizer.php:649
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:666
+#: inc/customizer.php:667
 msgid "Check to activate the related posts"
 msgstr ""
 
-#: inc/customizer.php:685
+#: inc/customizer.php:686
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:689
+#: inc/customizer.php:690
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:690
+#: inc/customizer.php:691
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: inc/customizer.php:700 inc/woocommerce.php:122
+#: inc/customizer.php:701 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
-#: inc/customizer.php:726 inc/woocommerce.php:145
+#: inc/customizer.php:727 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:741
+#: inc/customizer.php:742
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:743
+#: inc/customizer.php:744
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:760
+#: inc/customizer.php:761
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:780
+#: inc/customizer.php:781
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:800
+#: inc/customizer.php:801
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:820
+#: inc/customizer.php:821
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:840
+#: inc/customizer.php:841
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:860
+#: inc/customizer.php:861
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:872
+#: inc/customizer.php:873
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/customizer.php:894
+#: inc/customizer.php:895
 msgid "Upload logo"
 msgstr ""
 

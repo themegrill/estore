@@ -94,9 +94,10 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version 1.4.6 - TBD =
+= Version 1.4.6 - 2020-04-14 =
 * Fix     - Customizer header top bar output
 * Fix 	  - Theme page name and version in child theme
+* Tweak   - Add review notice message
 
 = Version 1.4.5 - 2020-02-27 =
 * Tweak - Refactor theme page according to WordPress theme guidelines.
