@@ -95,7 +95,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = Version 1.4.7 - TDB =
-* Tweak - Form CSS
+* Tweak		  - Unnecessary !important CSS declaration applied on input button.
 
 = Version 1.4.6 - 2020-04-14 =
 * Fix     - Customizer header top bar output
