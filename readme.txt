@@ -95,7 +95,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = Version 1.4.7 - TDB =
-* Fix - Customizer not loading issue.
+* Fix - Customizer not loading due to header top bar activate callback.
 
 = Version 1.4.6 - 2020-04-14 =
 * Fix     - Customizer header top bar output
