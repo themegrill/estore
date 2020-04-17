@@ -291,11 +291,10 @@ function estore_customize_register( $wp_customize ) {
 			$wp_customize,
 			'estore_bar_text',
 			array(
-				'label'           => esc_html__( 'Header Text', 'estore' ),
-				'description'     => esc_html__( 'Paste the Font Awesome icon font', 'estore' ),
-				'section'         => 'estore_header_bar',
-				'setting'         => 'estore_bar_text',
-				'active_callback' => 'estore_header_text_active',
+				'label'       => esc_html__( 'Header Text', 'estore' ),
+				'description' => esc_html__( 'Paste the Font Awesome icon font', 'estore' ),
+				'section'     => 'estore_header_bar',
+				'setting'     => 'estore_bar_text',
 			)
 		)
 	);
