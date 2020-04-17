@@ -83,8 +83,7 @@ if ( function_exists( 'wp_body_open' ) ) {
 									<?php } else { ?>
 										<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>"
 										   title="<?php esc_attr__( 'Login/Register', 'estore' ); ?>"
-										   class="user-icon"><?php esc_html_e( 'Login/ Register', 'estore' ); ?><i
-													class="fa fa-angle-down"> </i></a>
+										   class="user-icon"><?php esc_html_e( 'Login/ Register', 'estore' ); ?>
 									<?php } ?>
 								</div>
 							<?php endif;
