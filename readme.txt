@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.7 - TBD =
+* Enhancement - Removed angle down fav icon from login link.
+
 = Version 1.4.6 - 2020-04-14 =
 * Fix     - Customizer header top bar output
 * Fix 	  - Theme page name and version in child theme
