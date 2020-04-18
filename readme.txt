@@ -94,7 +94,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version 1.4.7 - TBD =
+= Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
 * Fix         - Customizer not loading due to header top bar activate callback.
 * Tweak       - Remove unnecessary !important CSS declaration applied on input button.
