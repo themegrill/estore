@@ -95,7 +95,8 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = Version 1.4.8 - TBD =
-* Tweak = Remove right vertical line beside currency in top header bar.
+* Tweak       - Remove right vertical line beside currency in top header bar.
+* Enhancement - Restructure navigation menu on mobile view.
 
 = Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
