@@ -65,8 +65,10 @@
         font-size: 12px;
         padding: 0 10px;
         font-weight: 600;
-        border-right: 1px solid #c0bfbf;
         @include transition(all 0.5s ease);
+		&:first-of-type {
+			border-right: 1px solid #c0bfbf;
+		}
         &:hover {
             background: #00a9e0;
             color: #ffffff;

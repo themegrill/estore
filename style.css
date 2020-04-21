@@ -1423,8 +1423,11 @@ body {
 	font-size: 12px;
 	padding: 0 10px;
 	font-weight: 600;
-	border-right: 1px solid #c0bfbf;
 	transition: all 0.5s ease;
+}
+
+.right-header-block a:first-of-type {
+	border-right: 1px solid #c0bfbf;
 }
 
 .right-header-block a:hover {
