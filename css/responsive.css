@@ -642,6 +642,14 @@
 		vertical-align: top;
 	}
 
+	.category-menu  {
+		width: 100%;
+	}
+
+	#site-navigation {
+		float: left;
+	}
+
 	.error-404.not-found .search-field {
 		width: 70%;
 	}
