@@ -121,14 +121,14 @@ class estore_logo_widget extends WP_Widget {
 		echo $before_widget; ?>
 
 		<div class="tg-container">
-			<div class="tg-column-wrapper">
+			<div class="tg-column-wrapper clearfix">
 				<?php if ( ! empty( $title ) ) { ?>
 					<?php echo $before_title . esc_html( $title ) . $after_title; ?>
 				<?php }
 
 				$output = '';
 				if ( ! empty( $image_array ) ) {
-					$output .= '<div class="tg-column-wrapper">';
+					$output .= '<div class="tg-column-wrapper clearfix">';
 					for ( $i = 1; $i < 6; $i ++ ) {
 						$j                  = $i - 1;
 						$attachment_post_id = attachment_url_to_postid( $image_array[ $j ] );
