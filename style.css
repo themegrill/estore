@@ -1426,10 +1426,6 @@ body {
 	transition: all 0.5s ease;
 }
 
-.right-header-block a:first-of-type {
-	border-right: 1px solid #c0bfbf;
-}
-
 .right-header-block a:hover {
 	background: #00a9e0;
 	color: #ffffff;
@@ -1437,6 +1433,10 @@ body {
 
 .right-header-block a i {
 	margin-left: 3px;
+}
+
+.login-register-wrap {
+	border-right: 1px solid #c0bfbf;
 }
 
 #lang_sel_click a.lang_sel_sel {

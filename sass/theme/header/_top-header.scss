@@ -66,9 +66,6 @@
         padding: 0 10px;
         font-weight: 600;
         @include transition(all 0.5s ease);
-		&:first-of-type {
-			border-right: 1px solid #c0bfbf;
-		}
         &:hover {
             background: #00a9e0;
             color: #ffffff;
@@ -78,6 +75,10 @@
         }
     }
 
+}
+
+.login-register-wrap {
+	border-right: 1px solid #c0bfbf;
 }
 
 #lang_sel_click a.lang_sel_sel {
