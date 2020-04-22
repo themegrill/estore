@@ -519,6 +519,14 @@
 		margin: 0px auto;
 	}
 
+	.blog-section .tg-column-wrapper .tg-column-3 {
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.blog-section .entry-btn {
+		margin-bottom: 20px;
+	}
+
 	.slider-caption-wrapper .slider-title {
 		font-size: 25px;
 	}
