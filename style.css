@@ -3393,6 +3393,14 @@ body {
 	padding-left: 0px;
 }
 
+.entry-meta span.comments-link span {
+	color: #787878;
+	border-left: none;
+	margin: 0;
+	font-size: 11px;
+	padding-left: 0;
+}
+
 article {
 	border-top: 1px solid #e4e4e4;
 	margin-top: 40px;
