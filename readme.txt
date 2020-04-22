@@ -95,9 +95,9 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = Version 1.4.8 - TBD =
-* Tweak - Remove vertical line appearing on the blog and latest news section when comment is closed.
-* Tweak - Add horizontal line between blog posts in mobile view on the blog and latest news section.
-* Tweak - Manage blog post meta data in mobile view on the blog and latest news section.
+* Tweak - Remove vertical line appearing on TG:Featured Posts section when comment is closed.
+* Tweak - Add horizontal line between blog posts in mobile view on the TG:Featured Posts section.
+* Tweak - Manage blog post meta data in mobile view on TG:Featured Posts section.
 * Tweak - Remove heart icon from read more button on TG: Category Carousel
 
 = Version 1.4.7 - 2020-04-18 =
