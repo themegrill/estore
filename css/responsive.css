@@ -189,7 +189,11 @@
 	}
 }
 
-@media (min-width: 769px) and (max-width: 817px) {
+@media (max-width: 817px) {
+
+	#header-ticker {
+		line-height: 26px;
+	}
 
 	.left-top-header {
 		float: none;
@@ -203,7 +207,6 @@
 		margin: 10px auto;
 		padding: 0;
 		text-align: center;
-		line-height: 26px;
 		font-size: 12px;
 	}
 
@@ -218,10 +221,6 @@
 @media (max-width: 768px) {
 	#masthead .widget_shopping_cart {
 		display: none;
-	}
-
-	#header-ticker {
-		line-height: 26px;
 	}
 
 	#site-navigation {
@@ -340,23 +339,6 @@
 
 	.sub-menu .sub-toggle {
 		right: 0;
-	}
-
-	.left-header-block {
-		border-right: medium none;
-		color: #6d6c6c;
-		display: block;
-		float: none;
-		margin: 10px auto;
-		padding: 0;
-		text-align: center;
-	}
-
-	.right-top-header {
-		clear: both;
-		display: table;
-		float: none;
-		margin: 0 auto;
 	}
 
 	.tg-container {
