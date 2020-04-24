@@ -100,6 +100,7 @@ If you want the theme to be translated into your language, feel free to contribu
 * Tweak - Manage blog post meta data in mobile view on TG:Featured Posts section.
 * Tweak - Remove heart icon from read more button on TG: Category Carousel.
 * Tweak - Align text and decrease font size in mobile and iPad, in portrait and landscape orientation on TG: Horizontal Promo WC category.
+* Tweak - Product list not displaying properly in iPhone 6-8 landscape on TG: Product Grid.
 
 = Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
