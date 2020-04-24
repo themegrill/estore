@@ -388,6 +388,10 @@
 		bottom: 40%;
 	}
 
+	.collection-thumb-block .collection-thumb-hover .collection-thumb-title-wrapper .collection-thumb-title {
+		font-size: 18px;
+	}
+
 	.widget_featured_posts_block .tg-column-wrapper .tg-column-3 {
 		display: inline-block;
 		float: none;
@@ -499,6 +503,12 @@
 		height: 36px;
 		margin-left: -3px;
 		width: 46px;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) and (orientation: landscape) {
+	.collection-thumb-block .collection-thumb-hover .collection-thumb-title-wrapper .collection-thumb-title {
+		font-size: 17px;
 	}
 }
 
