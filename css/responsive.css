@@ -189,6 +189,32 @@
 	}
 }
 
+@media (min-width: 769px) and (max-width: 817px) {
+
+	.left-top-header {
+		float: none;
+	}
+
+	.left-header-block {
+		border-right: medium none;
+		color: #6d6c6c;
+		display: block;
+		float: none;
+		margin: 10px auto;
+		padding: 0;
+		text-align: center;
+		line-height: 26px;
+		font-size: 12px;
+	}
+
+	.right-top-header {
+		clear: both;
+		display: table;
+		float: none;
+		margin: 0 auto;
+	}
+}
+
 @media (max-width: 768px) {
 	#masthead .widget_shopping_cart {
 		display: none;
@@ -436,7 +462,7 @@
 
 	.right-header-block a,
 	.right-top-header .top-header-menu-wrapper ul li a {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.slider-caption-wrapper .slider-btn i {
@@ -592,7 +618,7 @@
 
 	.right-header-block a,
 	.right-top-header .top-header-menu-wrapper ul li a {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	.logo-wrapper {
