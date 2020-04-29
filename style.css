@@ -4127,6 +4127,11 @@ ul.wp-block-gallery {
 	padding: 6px 0;
 }
 
+.woocommerce .woocommerce-cart-form button.button:disabled {
+	color: #fff;
+	padding: 0 20px;
+}
+
 .woocommerce .cart-collaterals .cart_totals {
 	float: left;
 	color: #333;
