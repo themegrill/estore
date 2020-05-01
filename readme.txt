@@ -94,6 +94,10 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.8 - TDB =
+* Enhancement - Improve update cart disabled button design.
+* Tweak       - Increase width and make proceed to checkout button mobile friendly.
+
 = Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
 * Fix         - Customizer not loading due to header top bar activate callback.

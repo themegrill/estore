@@ -84,6 +84,11 @@
     padding: 6px 0;
 }
 
+.woocommerce .woocommerce-cart-form button.button:disabled {
+	color: #fff;
+	padding: 0 20px;
+}
+
 .woocommerce .cart-collaterals {
     .cart_totals {
         float: left;
@@ -152,7 +157,7 @@
 
 .woocommerce-cart .woocommerce .wc-proceed-to-checkout {
     float: right;
-    width: 60%;
+    width: 65%;
     padding: 0;
     a.checkout-button {
         background: #333333 none repeat scroll 0 0;

@@ -461,6 +461,10 @@
 		width: 100%;
 	}
 
+	.woocommerce-cart .woocommerce .wc-proceed-to-checkout {
+		width: 100%;
+	}
+
 	.woocommerce-page .woocommerce-checkout #customer_details.col2-set .col-1,
 	.woocommerce-page .woocommerce-checkout #customer_details.col2-set .col-2 {
 		float: none;
