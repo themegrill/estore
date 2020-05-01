@@ -4,6 +4,19 @@
 }
 
 @media (max-width: 1200px) {
+	#site-navigation {
+		float: right;
+		margin-right: 20px;
+	}
+
+	#site-navigation ul li {
+		margin-left: 17px;
+	}
+
+	#site-navigation ul li a {
+		font-size: 13px;
+	}
+
 	.tg-container {
 		padding: 0 2%;
 		width: 96%;
@@ -189,13 +202,9 @@
 	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 936px) {
 	#masthead .widget_shopping_cart {
 		display: none;
-	}
-
-	#header-ticker {
-		line-height: 26px;
 	}
 
 	#site-navigation {
@@ -315,6 +324,17 @@
 	.sub-menu .sub-toggle {
 		right: 0;
 	}
+}
+
+@media (max-width: 817px) {
+
+	#header-ticker {
+		line-height: 26px;
+	}
+
+	.left-top-header {
+		float: none;
+	}
 
 	.left-header-block {
 		border-right: medium none;
@@ -324,6 +344,7 @@
 		margin: 10px auto;
 		padding: 0;
 		text-align: center;
+		font-size: 12px;
 	}
 
 	.right-top-header {
@@ -332,6 +353,9 @@
 		float: none;
 		margin: 0 auto;
 	}
+}
+
+@media (max-width: 768px) {
 
 	.tg-container {
 		width: 96%;
@@ -436,7 +460,7 @@
 
 	.right-header-block a,
 	.right-top-header .top-header-menu-wrapper ul li a {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.slider-caption-wrapper .slider-btn i {
@@ -592,7 +616,7 @@
 
 	.right-header-block a,
 	.right-top-header .top-header-menu-wrapper ul li a {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	.logo-wrapper {
@@ -640,6 +664,14 @@
 		display: inline-block;
 		float: none;
 		vertical-align: top;
+	}
+
+	.category-menu  {
+		width: 100%;
+	}
+
+	#site-navigation {
+		float: left;
 	}
 
 	.error-404.not-found .search-field {

@@ -65,7 +65,6 @@
         font-size: 12px;
         padding: 0 10px;
         font-weight: 600;
-        border-right: 1px solid #c0bfbf;
         @include transition(all 0.5s ease);
         &:hover {
             background: #00a9e0;
@@ -76,6 +75,10 @@
         }
     }
 
+}
+
+.login-register-wrap {
+	border-right: 1px solid #c0bfbf;
 }
 
 #lang_sel_click a.lang_sel_sel {

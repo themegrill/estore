@@ -1423,7 +1423,6 @@ body {
 	font-size: 12px;
 	padding: 0 10px;
 	font-weight: 600;
-	border-right: 1px solid #c0bfbf;
 	transition: all 0.5s ease;
 }
 
@@ -1434,6 +1433,10 @@ body {
 
 .right-header-block a i {
 	margin-left: 3px;
+}
+
+.login-register-wrap {
+	border-right: 1px solid #c0bfbf;
 }
 
 #lang_sel_click a.lang_sel_sel {
