@@ -654,4 +654,22 @@
 		float: left;
 		width: 100%;
 	}
+
+	#top-footer {
+		padding: 25px 0;
+	}
+
+	#top-footer .tg-column-wrapper .tg-column-4 {
+		padding-top: 0;
+	}
+
+	.copy-right, .payment-partner-wrapper {
+		float: none;
+		text-align: center;
+	}
+
+	.payment-partner-wrapper ul li {
+		float: none;
+		display: inline-block;
+	}
 }
