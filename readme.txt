@@ -94,6 +94,14 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.4.8 - TBD =
+* Tweak - Remove vertical line appearing on TG:Featured Posts section when comment is closed.
+* Tweak - Add horizontal line between blog posts in mobile view on the TG:Featured Posts section.
+* Tweak - Manage blog post meta data in mobile view on TG:Featured Posts section.
+* Tweak - Remove heart icon from read more button on TG: Category Carousel.
+* Tweak - Align text and decrease font size in mobile and iPad, in portrait and landscape orientation on TG: Horizontal Promo WC category.
+* Tweak - Product list not displaying properly in iPhone 6-8 landscape on TG: Product Grid.
+
 = Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
 * Fix         - Customizer not loading due to header top bar activate callback.

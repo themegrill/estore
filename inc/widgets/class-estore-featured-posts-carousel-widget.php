@@ -156,7 +156,7 @@ class estore_featured_posts_carousel_widget extends WP_Widget {
 							</figure>
 							<div class="featured-content-wrapper">
 								<h3 class="featured-title"> <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<a href="<?php the_permalink(); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Read More','estore'); ?><i class="fa fa-heart"></i></a>
+								<a href="<?php the_permalink(); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Read More','estore'); ?></a>
 							</div><!-- featured content wrapper -->
 						</li>
 					<?php
