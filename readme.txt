@@ -94,6 +94,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Tweak - Added new required header fields for style.css.
+
 = Version 1.4.7 - 2020-04-18 =
 * Enhancement - Removed angle down fav icon from login link.
 * Fix         - Customizer not loading due to header top bar activate callback.
