@@ -260,6 +260,9 @@ if ( class_exists( 'TG_Demo_Importer' ) ) {
 if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-admin.php';
 	require get_template_directory() . '/inc/admin/class-estore-dashboard.php';
+	require get_template_directory() . '/inc/admin/class-estore-notice.php';
+	require get_template_directory() . '/inc/admin/class-estore-welcome-notice.php';
+	require get_template_directory() . '/inc/admin/class-estore-upgrade-notice.php';
 }
 
 /**
