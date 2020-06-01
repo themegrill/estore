@@ -118,6 +118,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 			global $estore_version, $pagenow;
 
 			wp_enqueue_style( 'estore-message', get_template_directory_uri() . '/css/admin/message.css', array(), $estore_version );
+			wp_enqueue_style('estore-admin-style', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), ESTORE_THEME_VERSION);
 
 			// Let's bail on theme activation.
 			$notice_nag = get_option( 'estore_admin_notice_welcome' );
