@@ -34,5 +34,8 @@
     "makepot": "grunt makepot",
     "compress": "grunt compress",
     "build": "npm run styles && npm run uglify && npm run makepot && npm run compress"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
   }
 }
