@@ -267,6 +267,7 @@
 .editor-styles-wrapper textarea {
 	overflow: auto;
 	padding-left: 3px;
+	background: #eee;
 	vertical-align: top;
 	color: #666;
 	border: 1px solid #ccc;
@@ -376,5 +377,9 @@
 
 .editor-styles-wrapper .wp-caption .wp-caption-text {
 	margin: 10px 0;
+}
+
+.editor-styles-wrapper .wp-block-code {
+	background: #eee;
 }
 
