@@ -318,13 +318,6 @@
   /*--------------------------------------------------------------
 14.0 Media
 --------------------------------------------------------------*/
-.editor-styles-wrapper .page-content img.wp-smiley,
-.editor-styles-wrapper .entry-content img.wp-smiley,
-.editor-styles-wrapper .comment-content img.wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
 .editor-styles-wrapper .wp-caption {
   border: 1px solid #ccc;
   margin-bottom: 15px;
@@ -352,6 +345,3 @@
 .editor-styles-wrapper iframe,
 .editor-styles-wrapper object {
   max-width: 100%; }
-
-
-  
