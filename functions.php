@@ -162,6 +162,8 @@ function estore_scripts() {
 
 	wp_enqueue_script( 'superfish', get_template_directory_uri() . '/js/superfish' . $suffix . '.js', array( 'jquery' ), false, true );
 
+	wp_enqueue_style( 'estore-googlefonts', '//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
