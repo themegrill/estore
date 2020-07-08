@@ -7,14 +7,12 @@
 		margin-left: -20px;
 		margin-right: -20px;
 	}
+
 	.no_sidebar_content_centered #primary .entry-content > .alignwide {
 		margin-left: -50px;
 		margin-right: -50px;
 	}
-	.no_sidebar_content_centered #primary .entry-content > .alignfull {
-		margin-left: -100px;
-		margin-right: -100px;
-	}
+
 }
 
 @media (max-width: 1200px) {
@@ -44,13 +42,10 @@
 		margin-left: -20px;
 		margin-right: -20px;
 	}
+
 	.no_sidebar_content_centered #primary .entry-content > .alignwide {
 		margin-left: -50px;
 		margin-right: -50px;
-	}
-	.no_sidebar_content_centered #primary .entry-content > .alignfull {
-		margin-left: -100px;
-		margin-right: -100px;
 	}
 }
 
@@ -525,11 +520,6 @@
 
 	.no_sidebar_full_width #primary .entry-content > .alignwide,
 	.no_sidebar_content_centered #primary .entry-content > .alignwide {
-		margin-left: -15px;
-		margin-right: -15px;
-	}
-
-	.no_sidebar_content_centered #primary .entry-content > .alignfull {
 		margin-left: -15px;
 		margin-right: -15px;
 	}
