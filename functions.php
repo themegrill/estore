@@ -265,13 +265,6 @@ define( 'Estore_ADMIN_IMAGES_URL', get_template_directory_uri() . '/inc/admin/im
 require get_template_directory() . '/inc/admin/meta-boxes.php';
 
 /**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
-
-/**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
  */
 if ( is_admin() ) {
