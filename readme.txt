@@ -29,27 +29,6 @@ Resources packed within the theme.
   Copyright ©, Stephane Caron, GNU GPL v2, http://www.gnu.org/licenses/gpl-2.0.html
 
 * Images used in screenshot
-  Kids Clothes: https://pixabay.com/en/child-childrens-baby-children-s-817368/
-  Copyright © 2015, Bessi, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Watch Image: https://pixabay.com/en/wristwatch-watch-time-gadget-407096/
-  Copyright © 2014, SplitShire, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Shoes Image: https://pixabay.com/en/men-s-shoes-fashion-driving-875950/
-  Copyright © 2013, Rakin, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Header Ad Image: https://pixabay.com/en/jeans-fashion-ruptured-modern-828693/
-  Copyright © 2015, Unsplash, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Tie Image: https://pixabay.com/en/neckties-cravats-ties-fashion-210347/
-  Copyright © 2013, FULVIO_TOGNON, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Pair Image: https://pixabay.com/en/relaxed-male-man-jeans-leisure-498245/
-  Copyright © 2014, RyanMcGuire, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
-  Shoes for men Image: https://pixabay.com/en/fashion-shoes-leather-footwear-601565/
-  Copyright © 2014, stokpic, CC0 Public Domain, https://creativecommons.org/publicdomain/zero/1.0/deed.en
-
   Logo: Own Creation
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
 

@@ -141,14 +141,14 @@ class estore_featured_posts_carousel_widget extends WP_Widget {
 								<?php if($image_url[0]) { ?>
 									<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 								<?php } else { ?>
-									<img src="<?php echo get_template_directory_uri() . '/images/placeholder-blog.jpg'; ?>" alt="<?php the_title_attribute(); ?>">
+									<img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog.jpg' ); ?>" alt="<?php the_title_attribute(); ?>">
 								<?php } ?>
 								<div class="featured-hover-wrapper">
 									<div class="featured-hover-block">
 										<?php if($image_url[0]) { ?>
 											<a href="<?php echo esc_url( $image_url[0] ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"></i></a>
 										<?php } else { ?>
-											<a href="<?php echo get_template_directory_uri() . '/images/placeholder-blog.jpg'; ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"></i></a>
+											<a href="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog.jpg' ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"></i></a>
 										<?php } ?>
 										<a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>" class="link"> <i class="fa fa-link"> </i> </a>
 									</div>
