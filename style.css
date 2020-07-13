@@ -1131,7 +1131,8 @@ body {
 .no_sidebar_content_centered #primary .entry-content > .alignwide {
   margin-left: -100px;
   margin-right: -100px;
-  max-width: unset; }
+  max-width: unset;
+  width: unset; }
 
 /*--------------------------------------------------------------
 # Grid
