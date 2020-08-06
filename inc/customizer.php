@@ -92,7 +92,7 @@ function estore_customize_register( $wp_customize ) {
 			'estore_upsell_section',
 			array(
 				'title'      => esc_html__( 'View PRO version', 'estore' ),
-				'url'        => 'https://themegrill.com/themes/estore/?utm_source=estore-customizer&utm_medium=view-pro-link&utm_campaign=view-pro#free-vs-pro',
+				'url'        => 'https://themegrill.com/estore-pricing/?utm_source=estore-customizer&utm_medium=view-pricing-link&utm_campaign=upgrade',
 				'capability' => 'edit_theme_options',
 				'priority'   => 1,
 			)
