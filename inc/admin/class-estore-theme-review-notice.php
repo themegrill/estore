@@ -175,7 +175,7 @@ class eStore_Theme_Review_Notice {
 	 */
 	public function estore_theme_review_notice_enqueue() {
 
-		wp_enqueue_style( 'estore-theme-review-notice', get_template_directory_uri() . '/inc/admin/css/theme-review-notice.css' );
+		wp_enqueue_style( 'estore-theme-review-notice', get_template_directory_uri() . '/inc/admin/css/admin.css' );
 
 	}
 
