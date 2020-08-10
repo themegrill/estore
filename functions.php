@@ -265,6 +265,13 @@ define( 'Estore_ADMIN_IMAGES_URL', get_template_directory_uri() . '/inc/admin/im
 require get_template_directory() . '/inc/admin/meta-boxes.php';
 
 /**
+ * Assign the eStore version to a variable.
+ */
+$estore_theme = wp_get_theme( 'estore' );
+
+define( 'ESTORE_THEME_VERSION', $estore_theme->get( 'Version' ) );
+
+/**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.
  */
 if ( is_admin() ) {
