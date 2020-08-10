@@ -207,7 +207,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 											<?php if($image_url) { ?>
 												<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 											<?php } else { ?>
-												<img src="<?php echo get_template_directory_uri() . '/images/placeholder-shop-380x250.jpg'; ?>" alt="<?php the_title_attribute(); ?>" width="250" height="180" >
+												<img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-shop-380x250.jpg' ); ?>" alt="<?php the_title_attribute(); ?>" width="250" height="180">
 											<?php } ?>
 										</a>
 										<div class="cart-price-wrapper clearfix">

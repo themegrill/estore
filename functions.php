@@ -131,8 +131,15 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		add_theme_support( 'wc-product-gallery-zoom' );
 		add_theme_support( 'wc-product-gallery-slider' );
 
-		// Gutenberg layout support.
+		// Gutenberg wide layout support.
 		add_theme_support( 'align-wide' );
+
+		// Gutenberg block styles support.
+		add_theme_support( 'wp-block-styles' );
+
+		// Gutenberg responsive embeds support.
+		add_theme_support( 'responsive-embeds' );
+
 
 		// Selective refresh widgets support
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -172,6 +179,16 @@ function estore_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'estore_scripts' );
+
+/**
+ * Enqueue Google fonts and editor styles.
+ */
+function estore_block_editor_styles() {
+	wp_enqueue_style( 'estore-editor-googlefonts', '//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' );
+	wp_enqueue_style( 'estore-block-editor-styles', get_template_directory_uri() . '/style-editor-block.css' );
+}
+
+add_action( 'enqueue_block_editor_assets', 'estore_block_editor_styles', 1, 1 );
 
 /**
  * Enqeue scripts in admin section for widgets.
@@ -246,13 +263,6 @@ define( 'Estore_ADMIN_IMAGES_URL', get_template_directory_uri() . '/inc/admin/im
  * Design Related Metaboxes
  */
 require get_template_directory() . '/inc/admin/meta-boxes.php';
-
-/**
- * Load Demo Importer Configs.
- */
-if ( class_exists( 'TG_Demo_Importer' ) ) {
-	require get_template_directory() . '/inc/demo-config.php';
-}
 
 /**
  * Calling in the admin area for the Welcome Page as well as for the new theme notice too.

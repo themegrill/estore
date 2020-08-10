@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.4.7\n"
+"Project-Id-Version: eStore 1.4.8\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-04-18 03:11:43+00:00\n"
+"POT-Creation-Date: 2020-07-13 10:40:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "error"
 msgstr ""
 
-#: 404.php:38 functions.php:291
+#: 404.php:38 functions.php:301
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
@@ -538,18 +538,6 @@ msgstr ""
 
 #: inc/customizer.php:894
 msgid "Upload logo"
-msgstr ""
-
-#: inc/demo-config.php:28
-msgid "eStore Pro Default"
-msgstr ""
-
-#: inc/demo-config.php:33
-msgid "eStore Pro Fashion"
-msgstr ""
-
-#: inc/demo-config.php:38
-msgid "eStore Pro Tech"
 msgstr ""
 
 #: inc/estore.php:27 inc/related-posts.php:43
