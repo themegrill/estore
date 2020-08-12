@@ -35,7 +35,7 @@ class Estore_Dashboard {
 	public function enqueue_scripts() {
 		wp_enqueue_style(
 			'estore-admin-dashboard',
-			get_template_directory_uri() . '/admin/css/dashboard.css'
+			get_template_directory_uri() . 'inc/admin/css/admin.css'
 		);
 	}
 
