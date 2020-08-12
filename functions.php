@@ -273,12 +273,6 @@ if ( is_admin() ) {
 }
 
 /**
- * Load TGMPA Configs.
- */
-require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/class-tgm-plugin-activation.php' );
-require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/tgmpa-estore.php' );
-
-/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
