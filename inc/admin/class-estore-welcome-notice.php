@@ -1,9 +1,25 @@
 <?php
+/**
+ * eStore Welcome Notice Class.
+ *
+ * @author  ThemeGrill
+ * @package estore
+ * @since   1.4.9
+ */
+
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+/**
+ * Class eStore_Welcome_Notice
+ */
 class eStore_Welcome_Notice {
 
+	/**
+	 * Constructor function to include the required functionality for the class.
+	 *
+	 * eStore_Welcome_Notice constructor.
+	 */
     public function __construct() {
         add_action('wp_loaded', array($this, 'welcome_notice'), 20);
         add_action('wp_loaded', array($this, 'hide_notices'), 15);
@@ -43,7 +59,7 @@ class eStore_Welcome_Notice {
 
             <div class="estore-message__content">
                 <div class="estore-message__image">
-                    <img class="estore-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e('eStore', 'estore'); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose 
+                    <img class="estore-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e('eStore', 'estore'); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose
                                                                                                                                                                             ?>
                 </div>
 

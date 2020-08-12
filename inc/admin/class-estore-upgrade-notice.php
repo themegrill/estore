@@ -1,9 +1,25 @@
 <?php
+/**
+ * eStore Upgrade Notice Class.
+ *
+ * @author  ThemeGrill
+ * @package estore
+ * @since   1.4.9
+ */
+
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+/**
+ * Class eStore_Upgrade_Notice
+ */
 class eStore_Upgrade_Notice extends eStore_Notice {
 
+	/**
+	 * Constructor function to include the required functionality for the class.
+	 *
+	 * eStore_Upgrade_Notice constructor.
+	 */
 	public function __construct() {
 		if ( ! current_user_can( 'publish_posts' ) ) {
 			return;

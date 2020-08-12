@@ -1,7 +1,18 @@
 <?php
+/**
+ * eStore Notice Class.
+ *
+ * @author  ThemeGrill
+ * @package estore
+ * @since   1.4.9
+ */
+
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
+/**
+ * eStore_Notice Class.
+ */
 class eStore_Notice {
     public $name;
     public $type;
@@ -18,7 +29,7 @@ class eStore_Notice {
      * @param string $dismiss_url Notice permanent dismiss URL.
      * @param string $temporary_dismiss_url Notice temporary dismiss URL.
      *
-     * @since 1.2.0
+     * @since 1.4.9
      *
      */
     public function __construct($name, $type, $dismiss_url, $temporary_dismiss_url) {
