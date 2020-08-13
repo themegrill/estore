@@ -74,6 +74,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = TBD =
+* Tweak - Add and improve theme-related notices.
 * Remove - TGMPA library to recommend plugins.
 
 = Version 1.4.8 - 2020-07-13 =

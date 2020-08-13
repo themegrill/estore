@@ -1,0 +1,194 @@
+/**
+ * Notices.
+ */
+.estore-notice {
+	position: relative;
+	padding: 6px 40px 6px 12px;
+}
+
+.estore-notice .links {
+	margin: 0.5em 0;
+}
+
+.estore-notice .links a {
+	margin: 2px;
+}
+
+.estore-notice .links a > span {
+	vertical-align: middle;
+}
+
+.estore-notice .notice-text .coupon-code {
+	display: inline-block;
+}
+
+.estore-notice .notice-dismiss {
+	text-decoration: none;
+}
+
+/**
+ * Welcome notice.
+ */
+.estore-message__content {
+	display: flex;
+	align-items: center;
+}
+
+.estore-message__content .estore-message__image {
+	flex: 0 0 160px;
+	min-height: 100px;
+	margin-right: 12px;
+	padding-right: 12px;
+	border-right: 1px solid #FCFCFD;
+}
+
+.estore-message__content .estore-message__image .estore-screenshot {
+	width: 100%;
+	box-shadow: 0 0 1px 0 #ccd0d4;
+	margin: 0;
+	float: none;
+}
+
+.estore-message__content .estore-message__heading {
+	margin-top: 0;
+	margin-bottom: 12px;
+	line-height: 1.4;
+}
+
+.estore-message__content .estore-message__cta {
+	display: flex;
+	align-items: center;
+}
+
+.estore-message__content .estore-message__cta .plugin-install-notice {
+	margin-left: 15px;
+	line-height: 1.4;
+}
+
+.estore-message__content .estore-message__cta a:before {
+	margin: 5px;
+	vertical-align: middle;
+}
+
+a.estore-message-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 15px 10px 21px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+
+a.estore-message-close:before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+@media screen and (max-width: 782px) {
+	.estore-message__image {
+		display: none;
+	}
+}
+
+.theme-review-notice .links {
+	margin: 10px 0;
+}
+
+.theme-review-notice .links a {
+	height: auto;
+	padding: 3px 15px;
+	margin-left: 10px;
+	text-transform: uppercase;
+}
+
+.theme-review-notice .links a .dashicons {
+	line-height: 1.2;
+}
+
+.theme-review-notice .links a.button-primary {
+	margin-left: 0;
+}
+
+.estore-message {
+	overflow: hidden;
+	position: relative;
+	border: 10px solid #97d2e7 !important;
+}
+
+.estore-message-wrapper {
+	width: 500px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.estore-message-wrapper .submit {
+	text-align: center;
+	padding-top: 25px;
+}
+
+.submit a.btn-get-started:before {
+	margin: 0 4px 3px 0;
+	vertical-align: middle;
+}
+
+.estore-message a.button-primary,
+.estore-message a.button-secondary {
+	text-decoration: none !important;
+}
+
+.estore-message a.estore-message-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px 15px 10px 21px;
+	font-size: 13px;
+	line-height: 1.23076923;
+	text-decoration: none;
+}
+
+.estore-message a.estore-message-close:before {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	-webkit-transition: all .1s ease-in-out;
+	transition: all .1s ease-in-out;
+}
+
+.estore-message-wrapper .plugin-install-notice {
+	display: block;
+	font-size: 12px;
+	margin: 10px 0 0;
+}
+
+/**
+ * Dashboard page.
+ */
+.wrap .estore-header {
+	background-color: #fff;
+	padding: 12px 20px;
+	border-bottom: 1px solid #ccd0d4;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.appearance_page_estore-options .wrap {
+	margin-top: 0;
+}
+
+/**
+ * Responsive.
+ */
+@media (max-width: 600px) {
+	.estore-message__content .estore-screenshot {
+		display: none;
+	}
+	.estore-message__content .estore-message__text {
+		padding: 0;
+		width: 100%;
+	}
+}
