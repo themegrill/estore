@@ -233,7 +233,6 @@ require get_template_directory() . '/inc/functions.php';
  * Admin.
  */
 if ( is_admin() ) {
-	require get_template_directory() . '/inc/admin/tdi-notice.php';
 	require get_template_directory() . '/inc/admin/class-estore-theme-review-notice.php';
 }
 
@@ -271,12 +270,6 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-admin.php';
 	require get_template_directory() . '/inc/admin/class-estore-dashboard.php';
 }
-
-/**
- * Load TGMPA Configs.
- */
-require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/class-tgm-plugin-activation.php' );
-require_once( trailingslashit( get_template_directory() ) . 'inc/tgm-plugin-activation/tgmpa-estore.php' );
 
 /**
  * Load Jetpack compatibility file.
