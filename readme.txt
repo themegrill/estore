@@ -75,6 +75,7 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 = TBD =
 * Tweak - Add and improve theme-related notices.
+* Remove - TGMPA library to recommend plugins.
 
 = Version 1.4.8 - 2020-07-13 =
 * Add - Required header fields: `Tested up to` and `Requires PHP` in style.css.
