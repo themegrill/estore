@@ -59,7 +59,7 @@ class eStore_Welcome_Notice {
 
 			<div class="estore-message__content">
 				<div class="estore-message__image">
-					<img class="estore-screenshot" src="<?php echo get_template_directory_uri(); ?>/screenshot.jpg" alt="<?php esc_html_e( 'eStore', 'estore' ); ?>" />
+					<img class="estore-screenshot" src="<?php echo esc_url( get_template_directory_uri() ); ?>/screenshot.jpg" alt="<?php esc_attr_e( 'eStore', 'estore' ); ?>" />
 																   <?php
                     // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose
 																	?>

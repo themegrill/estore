@@ -54,7 +54,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 
 				<div class="estore-message-wrapper">
 					<div class="estore-logo">
-						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/estore-logo.png" alt="<?php esc_html_e( 'estore', 'estore' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
+						<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/estore-logo.png" alt="<?php esc_attr_e( 'estore', 'estore' ); ?>" /><?php // phpcs:ignore WordPress.XSS.EscapeOutput.OutputNotEscaped, Squiz.PHP.EmbeddedPhp.SpacingBeforeClose ?>
 					</div>
 
 					<p>
@@ -64,7 +64,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 					</p>
 
 					<div class="submit">
-						<a class="btn-get-started button button-primary button-hero" href="#" data-name="" data-slug="" aria-label="<?php esc_html_e( 'Get started with eStore', 'estore' ); ?>"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a>
+						<a class="btn-get-started button button-primary button-hero" href="#" data-name="" data-slug="" aria-label="<?php esc_attr_e( 'Get started with eStore', 'estore' ); ?>"><?php esc_html_e( 'Get started with eStore', 'estore' ); ?></a>
 					</div>
 				</div>
 			</div>
