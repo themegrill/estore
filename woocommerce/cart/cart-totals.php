@@ -9,9 +9,9 @@
  * as little as possible, but it does happen. When this occurs the version of the template file will.
  * be bumped and the readme will list any important changes.
  *
- * @see 	    http://docs.woothemes.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
+ * @see         http://docs.woothemes.com/document/template-structure/
+ * @author      WooThemes
+ * @package     WooCommerce\Templates
  * @version     2.3.6
  */
 
@@ -29,7 +29,12 @@ if ( 0 === sizeof( $crosssells ) ) {
 	$class = ' cart-total-with-cross-sell';
 }
 ?>
-<div class="cart_totals <?php if ( WC()->customer->has_calculated_shipping() ) echo 'calculated_shipping'; ?><?php echo $class; ?>">
+<div class="cart_totals 
+<?php
+if ( WC()->customer->has_calculated_shipping() ) {
+	echo 'calculated_shipping';}
+?>
+<?php echo $class; ?>">
 
 	<?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
@@ -73,12 +78,14 @@ if ( 0 === sizeof( $crosssells ) ) {
 			</tr>
 		<?php endforeach; ?>
 
-		<?php if ( wc_tax_enabled() && 'excl' === WC()->cart->tax_display_cart ) :
-			$estimated_text = 1||WC()->customer->is_customer_outside_base() && ! WC()->customer->has_calculated_shipping()
+		<?php
+		if ( wc_tax_enabled() && 'excl' === WC()->cart->tax_display_cart ) :
+			$estimated_text = 1 || WC()->customer->is_customer_outside_base() && ! WC()->customer->has_calculated_shipping()
 				? sprintf( ' <small>(' . esc_html__( 'estimated for %s', 'estore' ) . ')</small>', WC()->countries->estimated_for_prefix() . WC()->countries->countries[ WC()->countries->get_base_country() ] )
 				: '';
 
-			if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) : ?>
+			if ( 'itemized' === get_option( 'woocommerce_tax_total_display' ) ) :
+				?>
 				<?php foreach ( WC()->cart->get_tax_totals() as $code => $tax ) : ?>
 					<tr class="tax-rate tax-rate-<?php echo sanitize_title( $code ); ?>">
 						<th><?php echo esc_html( $tax->label ) . $estimated_text; ?></th>
@@ -88,7 +95,7 @@ if ( 0 === sizeof( $crosssells ) ) {
 			<?php else : ?>
 				<tr class="tax-total">
 					<th><?php echo esc_html( WC()->countries->tax_or_vat() ) . $estimated_text; ?></th>
-					<td data-title="<?php echo esc_html( WC()->countries->tax_or_vat() ); ?>"><?php wc_cart_totals_taxes_total_html(); ?></td>
+					<td data-title="<?php echo esc_attr( WC()->countries->tax_or_vat() ); ?>"><?php wc_cart_totals_taxes_total_html(); ?></td>
 				</tr>
 			<?php endif; ?>
 		<?php endif; ?>

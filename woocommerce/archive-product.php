@@ -12,7 +12,7 @@
  *
  * @see https://docs.woocommerce.com/document/template-structure/
  * @author WooThemes
- * @package WooCommerce/Templates
+ * @package WooCommerce\Templates
  * @version 3.4.0
  */
 
@@ -74,12 +74,17 @@ get_header( 'shop' );
 
 				<?php woocommerce_product_loop_start(); ?>
 
-				<?php if ( ! estore_woo_version_check( '3.3.0' ) ) :
+				<?php
+				if ( ! estore_woo_version_check( '3.3.0' ) ) :
 					woocommerce_product_subcategories();
-				endif; ?>
+				endif;
+				?>
 
-				<?php if ( ! function_exists( 'wc_get_loop_prop' ) || wc_get_loop_prop( 'total' ) ) :
-					while ( have_posts() ) : the_post(); ?>
+				<?php
+				if ( ! function_exists( 'wc_get_loop_prop' ) || wc_get_loop_prop( 'total' ) ) :
+					while ( have_posts() ) :
+						the_post();
+						?>
 
 						<?php
 						/**
@@ -89,10 +94,13 @@ get_header( 'shop' );
 						 */
 						do_action( 'woocommerce_shop_loop' );
 
-						wc_get_template_part( 'content', 'product' ); ?>
+						wc_get_template_part( 'content', 'product' );
+						?>
 
-					<?php endwhile; // end of the loop.
-				endif; ?>
+						<?php
+					endwhile; // end of the loop.
+				endif;
+				?>
 
 				<?php woocommerce_product_loop_end(); ?>
 
@@ -113,7 +121,8 @@ get_header( 'shop' );
 				 */
 				do_action( 'woocommerce_no_products_found' );
 
-			endif; ?>
+			endif;
+			?>
 
 			<?php
 			/**
@@ -132,8 +141,8 @@ get_header( 'shop' );
 			 */
 			do_action( 'woocommerce_sidebar' );
 			?>
-        </div>
-    </main>
+		</div>
+	</main>
 
 </div>
 

@@ -11,8 +11,8 @@
  * the readme will list any important changes.
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
- * @author 	WooThemes
- * @package WooCommerce/Templates
+ * @author  WooThemes
+ * @package WooCommerce\Templates
  * @version 3.6.0
  */
 
@@ -30,13 +30,13 @@ global $product;
 	 */
 	 do_action( 'woocommerce_before_single_product' );
 
-	 if ( post_password_required() ) {
-	 	echo get_the_password_form();
-	 	return;
-	 }
+if ( post_password_required() ) {
+	echo get_the_password_form();
+	return;
+}
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php  wc_product_class( '', $product ); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 		/**
@@ -81,4 +81,5 @@ global $product;
 
 </div>
 
-<?php do_action( 'woocommerce_after_single_product' );
+<?php
+do_action( 'woocommerce_after_single_product' );

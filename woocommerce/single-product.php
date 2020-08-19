@@ -10,9 +10,9 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woothemes.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
+ * @see         https://docs.woothemes.com/document/template-structure/
+ * @author      WooThemes
+ * @package     WooCommerce\Templates
  * @version     1.6.4
  */
 
@@ -37,7 +37,7 @@ $estore_layout = function_exists( 'estore_woocommerce_layout_class' ) ? estore_w
 		</div>
 	</div>
 
-	<main id="main" class="clearfix <?php echo esc_attr($estore_layout); ?>">
+	<main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
 		<div class="tg-container">
 		<?php
 			/**
@@ -51,7 +51,10 @@ $estore_layout = function_exists( 'estore_woocommerce_layout_class' ) ? estore_w
 			do_action( 'woocommerce_before_main_content' );
 		?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php
+			while ( have_posts() ) :
+				the_post();
+				?>
 
 				<?php wc_get_template_part( 'content', 'single-product' ); ?>
 

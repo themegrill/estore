@@ -5,7 +5,7 @@
  * Override this template by copying it to yourtheme/woocommerce/archive-product.php
  *
  * @author        WooThemes
- * @package    WooCommerce/Templates
+ * @package    WooCommerce\Templates
  * @version     2.0.0
  */
 
@@ -23,13 +23,14 @@ $cat_ID      = $categoryobj->term_id;
 
 <div id="content" class="site-content estore-cat-color_<?php echo $cat_ID; ?>">
 
-    <div class="page-header clearfix">
-        <div class="tg-container">
+	<div class="page-header clearfix">
+		<div class="tg-container">
 			<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-                <h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
+				<h1 class="entry-title"><?php woocommerce_page_title(); ?></h1>
 
-			<?php endif;
+				<?php
+			endif;
 
 			/**
 			 * woocommerce_archive_description hook
@@ -39,12 +40,12 @@ $cat_ID      = $categoryobj->term_id;
 			 */
 			do_action( 'woocommerce_archive_description' );
 			?>
-            <h3 class="entry-sub-title"><?php woocommerce_breadcrumb(); ?></h3>
-        </div>
-    </div>
+			<h3 class="entry-sub-title"><?php woocommerce_breadcrumb(); ?></h3>
+		</div>
+	</div>
 
-    <main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
-        <div class="tg-container">
+	<main id="main" class="clearfix <?php echo esc_attr( $estore_layout ); ?>">
+		<div class="tg-container">
 			<?php
 			/**
 			 * woocommerce_before_main_content hook
@@ -74,7 +75,8 @@ $cat_ID      = $categoryobj->term_id;
 				endif;
 
 				if ( ! function_exists( 'wc_get_loop_prop' ) || wc_get_loop_prop( 'total' ) ) :
-					while ( have_posts() ) : the_post();
+					while ( have_posts() ) :
+						the_post();
 
 						/**
 						 * Hook: woocommerce_shop_loop.
@@ -96,10 +98,12 @@ $cat_ID      = $categoryobj->term_id;
 				 */
 				do_action( 'woocommerce_after_shop_loop' );
 
-            elseif ( ! woocommerce_product_subcategories( array(
-				'before' => woocommerce_product_loop_start( false ),
-				'after'  => woocommerce_product_loop_end( false )
-			) ) ) :
+			elseif ( ! woocommerce_product_subcategories(
+				array(
+					'before' => woocommerce_product_loop_start( false ),
+					'after'  => woocommerce_product_loop_end( false ),
+				)
+			) ) :
 				wc_get_template( 'loop/no-products-found.php' );
 			endif;
 
@@ -117,8 +121,8 @@ $cat_ID      = $categoryobj->term_id;
 			 */
 			do_action( 'woocommerce_sidebar' );
 			?>
-        </div>
-    </main>
+		</div>
+	</main>
 
 </div>
 

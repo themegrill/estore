@@ -10,10 +10,10 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see 	    https://docs.woocommerce.com/document/template-structure/
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     3.0.0
+ * @see         https://docs.woocommerce.com/document/template-structure/
+ * @author      WooThemes
+ * @package     WooCommerce\Templates
+ * @version     4.4.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,23 +24,25 @@ if ( $cross_sells ) : ?>
 
 	<div class="cross-sells">
 
-		<h2 class="widget-title"><span><?php _e( 'You may be interested in&hellip;', 'estore' ) ?></span></h2>
+		<h2 class="widget-title"><span><?php _e( 'You may be interested in&hellip;', 'estore' ); ?></span></h2>
 
 		<?php woocommerce_product_loop_start(); ?>
 
 			<?php foreach ( $cross_sells as $cross_sell ) : ?>
 
 				<?php
-				 	$post_object = get_post( $cross_sell->get_id() );
+					$post_object = get_post( $cross_sell->get_id() );
 					setup_postdata( $GLOBALS['post'] =& $post_object );
-					wc_get_template_part( 'content', 'product' ); ?>
+					wc_get_template_part( 'content', 'product' );
+				?>
 
 			<?php endforeach; ?>
 
 		<?php woocommerce_product_loop_end(); ?>
 
 	</div>
-	
-<?php endif;
+
+	<?php
+endif;
 
 wp_reset_postdata();
