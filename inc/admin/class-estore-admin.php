@@ -30,7 +30,7 @@ if ( ! class_exists( 'eStore_Admin' ) ) :
 		 * Localize array for import button AJAX request.
 		 */
 		public function enqueue_scripts() {
-			 wp_enqueue_style( 'estore-admin-style', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), ESTORE_THEME_VERSION );
+			wp_enqueue_style( 'estore-admin-style', get_template_directory_uri() . '/inc/admin/css/admin.css', array(), ESTORE_THEME_VERSION );
 
 			wp_enqueue_script( 'estore-plugin-install-helper', get_template_directory_uri() . '/inc/admin/js/plugin-handle.js', array( 'jquery' ), ESTORE_THEME_VERSION, true );
 
