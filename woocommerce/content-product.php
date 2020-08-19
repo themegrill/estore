@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
- * @package WooCommerce/Templates
+ * @package WooCommerce\Templates
  * @version 3.6.0
  */
 
@@ -25,7 +25,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	return;
 }
 ?>
-<li <?php  wc_product_class( '', $product ); ?>>
+<li <?php wc_product_class( '', $product ); ?>>
 	<?php
 	/**
 	 * Hook: woocommerce_before_shop_loop_item hook.
