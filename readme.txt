@@ -73,7 +73,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.5.0 - 2020-08-20 =
 * Fix - Update WooCommerce template files.
 
 = Version 1.4.9 - 2020-08-14 =

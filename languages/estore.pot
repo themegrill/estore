@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.4.9\n"
+"Project-Id-Version: eStore 1.5.0\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-08-14 07:37:59+00:00\n"
+"POT-Creation-Date: 2020-08-20 04:53:04+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -81,8 +81,8 @@ msgstr ""
 msgid "Login/ Register"
 msgstr ""
 
-#: header.php:174 inc/woocommerce.php:511 woocommerce/cart/cart-totals.php:99
-#: woocommerce/cart/cart-totals.php:100
+#: header.php:174 inc/woocommerce.php:511 woocommerce/cart/cart-totals.php:106
+#: woocommerce/cart/cart-totals.php:107
 msgid "Total"
 msgstr ""
 
@@ -119,59 +119,59 @@ msgstr ""
 msgid "Get started with eStore"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:51
+#: inc/admin/class-estore-dashboard.php:42
 #. translators: %s: Theme Name.
 msgid "%s Options"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:78
+#: inc/admin/class-estore-dashboard.php:69
 #. translators: %s: Theme version.
 msgid "eStore %s"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:84
+#: inc/admin/class-estore-dashboard.php:75
 msgid "Welcome to eStore!"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:88
+#: inc/admin/class-estore-dashboard.php:79
 #. translators: %s: Theme Name.
 msgid "Important links to get you started with %s"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:94
+#: inc/admin/class-estore-dashboard.php:85
 msgid "Get Started"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:97
+#: inc/admin/class-estore-dashboard.php:88
 msgid "Learn Basics"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:102
+#: inc/admin/class-estore-dashboard.php:93
 msgid "Next Steps"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:104
+#: inc/admin/class-estore-dashboard.php:95
 msgid "Documentation"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:105
+#: inc/admin/class-estore-dashboard.php:96
 msgid "Starter Demos"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:106
+#: inc/admin/class-estore-dashboard.php:97
 msgid "Premium Version"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:111
+#: inc/admin/class-estore-dashboard.php:102
 msgid "Further Actions"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:113
+#: inc/admin/class-estore-dashboard.php:104
 #: inc/admin/class-estore-theme-review-notice.php:98
 msgid "Got theme support question?"
 msgstr ""
 
-#: inc/admin/class-estore-dashboard.php:114
+#: inc/admin/class-estore-dashboard.php:105
 msgid "Leave a review"
 msgstr ""
 
@@ -1077,19 +1077,19 @@ msgstr ""
 msgid "Tagged on: "
 msgstr ""
 
-#: woocommerce/cart/cart-totals.php:36
+#: woocommerce/cart/cart-totals.php:41
 msgid "Cart Totals"
 msgstr ""
 
-#: woocommerce/cart/cart-totals.php:41 woocommerce/cart/cart-totals.php:42
+#: woocommerce/cart/cart-totals.php:46 woocommerce/cart/cart-totals.php:47
 msgid "Subtotal"
 msgstr ""
 
-#: woocommerce/cart/cart-totals.php:63 woocommerce/cart/cart-totals.php:64
+#: woocommerce/cart/cart-totals.php:68 woocommerce/cart/cart-totals.php:69
 msgid "Shipping"
 msgstr ""
 
-#: woocommerce/cart/cart-totals.php:78
+#: woocommerce/cart/cart-totals.php:84
 msgid "estimated for %s"
 msgstr ""
 
