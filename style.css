@@ -2806,7 +2806,7 @@ article {
 
 article:first-child {
   border-top: none;
-  margin-top: 0px;
+  margin-top: 30px;
   padding-top: 0px; }
 
 .entry-btn .btn {
