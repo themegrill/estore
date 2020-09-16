@@ -295,7 +295,7 @@
         $(this).one('load error', function() {
           if (++count === total) { callback(); }
         }).each(function() {
-          if (this.complete || this.src == '') { $(this).trigger('load'); }
+          $(this).trigger('load');
         });
       });
     };
@@ -1082,7 +1082,11 @@
         start: {x: 0, y: 0},
         end: {x: 0, y: 0}
       };
-      slider.viewport.on('touchstart MSPointerDown pointerdown', onTouchStart);
+      var isTouch =  !!("ontouchstart" in window) || window.navigator.msMaxTouchPoints > 0;
+      if (isTouch) {
+        slider.viewport.bind('touchstart MSPointerDown pointerdown', onTouchStart);
+      }
+      // slider.viewport.on('touchstart MSPointerDown pointerdown', onTouchStart);
 
       //for browsers that have implemented pointer events and fire a click after
       //every pointerup regardless of whether pointerup is on same screen location as pointerdown or not
