@@ -73,6 +73,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - Link in slider not working on certain devices in Chrome.
+
 = Version 1.5.0 - 2020-08-20 =
 * Fix - Update WooCommerce template files.
 
