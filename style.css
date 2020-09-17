@@ -451,7 +451,7 @@ a:focus {
 #content[tabindex="-1"]:focus {
   outline: 0; }
 
-.blog .site-content {
+#main {
   margin-top: 30px; }
 
 /*--------------------------------------------------------------
