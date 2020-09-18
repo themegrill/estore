@@ -74,6 +74,7 @@ If you want the theme to be translated into your language, feel free to contribu
 
 == Changelog ==
 = TBD =
+* Fix - Design issue of spacing while latest posts.
 * Fix - Link in slider not working on certain devices in Chrome.
 * Tweak - Remove deprecate Custom CSS customize option provided via theme.
 
