@@ -11,7 +11,6 @@
 function estore_custom_controls() {
 
 	require_once get_template_directory() . '/inc/admin/customize-image-radio-control.php';
-	require_once get_template_directory() . '/inc/admin/customize-custom-css-control.php';
 	require_once get_template_directory() . '/inc/admin/customize-texteditor-control.php';
 
 }
@@ -530,39 +529,6 @@ function estore_customize_register( $wp_customize ) {
 			),
 		)
 	);
-
-	if ( ! function_exists( 'wp_update_custom_css_post' ) ) {
-		// Custom CSS Section.
-		$wp_customize->add_section(
-			'estore_custom_css_section',
-			array(
-				'priority' => 50,
-				'title'    => esc_html__( 'Custom CSS', 'estore' ),
-				'panel'    => 'estore_design_options',
-			)
-		);
-
-		$wp_customize->add_setting(
-			'estore_custom_css',
-			array(
-				'default'              => '',
-				'capability'           => 'edit_theme_options',
-				'sanitize_callback'    => 'wp_filter_nohtml_kses',
-				'sanitize_js_callback' => 'wp_filter_nohtml_kses',
-			)
-		);
-
-		$wp_customize->add_control(
-			new eStore_Custom_CSS_Control(
-				$wp_customize,
-				'estore_custom_css',
-				array(
-					'label'   => esc_html__( 'Write your Custom CSS here', 'estore' ),
-					'section' => 'estore_custom_css_section',
-				)
-			)
-		);
-	}
 
 	// Footer Widget Section.
 	$wp_customize->add_section(
