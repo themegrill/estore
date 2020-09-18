@@ -599,3 +599,11 @@ function estore_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'estore_body_classes' );
 
+function estore_body_class( $classes ) {
+if ( is_home()) {
+	$classes[] = 'page-header-disable';
+}
+	return $classes;
+}
+
+add_filter( 'body_class', 'estore_body_class' );
