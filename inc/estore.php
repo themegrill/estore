@@ -15,28 +15,40 @@ if ( ! function_exists( 'estore_entry_meta' ) ) :
 		if ( get_post_type() == 'post' && get_theme_mod( 'estore_postmeta', '' ) == '' ) { ?>
 			<div class="entry-meta">
 				<?php
-				if ( get_theme_mod( 'estore_postmeta_author', '' ) == '' ) { ?>
+				if ( get_theme_mod( 'estore_postmeta_author', '' ) == '' ) {
+					?>
 					<span class="byline author vcard"><i class="fa fa-user"></i><a
 							href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>"
 							title="<?php echo esc_attr( get_the_author() ); ?>"><?php echo esc_html( get_the_author() ); ?></a></span>
-				<?php }
+					<?php
+				}
 
-				if ( ! post_password_required() && comments_open() && get_theme_mod( 'estore_postmeta_comment', '' ) == '' ) { ?>
+				if ( ! post_password_required() && comments_open() && get_theme_mod( 'estore_postmeta_comment', '' ) == '' ) {
+					?>
 					<span class="comments-link">
 						<i class="fa fa-comments-o"></i>
-						<?php comments_popup_link( esc_html__( '0 Comment', 'estore' ),
-							esc_html__( '1 Comment', 'estore' ), esc_html__( ' % Comments', 'estore' ) ); ?>
+						<?php
+						comments_popup_link(
+							esc_html__( '0 Comment', 'estore' ),
+							esc_html__( '1 Comment', 'estore' ),
+							esc_html__( ' % Comments', 'estore' )
+						);
+						?>
 					</span>
-				<?php }
+					<?php
+				}
 
-				if ( has_category() && get_theme_mod( 'estore_postmeta_category', '' ) == '' ) { ?>
+				if ( has_category() && get_theme_mod( 'estore_postmeta_category', '' ) == '' ) {
+					?>
 					<span class="cat-links"><i class="fa fa-folder-open"></i><?php the_category( ', ' ); ?></span>
-				<?php }
+					<?php
+				}
 
 				$tags_list = get_the_tag_list( '<span class="tag-links">', ', ', '</span>' );
 				if ( $tags_list && get_theme_mod( 'estore_postmeta_tags', '' ) == '' ) {
 					echo $tags_list;
-				} ?>
+				}
+				?>
 			</div>
 			<?php
 		}
@@ -151,7 +163,7 @@ if ( ! function_exists( 'estore_breadcrumbs' ) ) :
 					$cat  = $cat[0];
 					$cats = get_category_parents( $cat, true, $delimiter );
 					if ( $showCurrent == 0 ) {
-						$cats = preg_replace( "#^(.+)$delimiter$#", "$1", $cats );
+						$cats = preg_replace( "#^(.+)$delimiter$#", '$1', $cats );
 					}
 					$cats = str_replace( '<a', $linkBefore . '<a' . $linkAttr, $cats );
 					$cats = str_replace( '</a>', '</a>' . $linkAfter, $cats );
@@ -215,103 +227,103 @@ if ( ! function_exists( 'estore_breadcrumbs' ) ) :
 endif;
 
 if ( ! function_exists( 'estore_sidebar_select' ) ) :
-/**
- * Select and show sidebar based on post meta and customizer default settings
- */
-function estore_sidebar_select() {
+	/**
+	 * Select and show sidebar based on post meta and customizer default settings
+	 */
+	function estore_sidebar_select() {
 
-	$layout = estore_layout_class();
+		$layout = estore_layout_class();
 
-	if( $layout != "no_sidebar_full_width" &&  $layout != "no_sidebar_content_centered" ) {
+		if ( $layout != 'no_sidebar_full_width' && $layout != 'no_sidebar_content_centered' ) {
 
-		if ( $layout == "right_sidebar" ) {
-			get_sidebar();
-		} else {
-			get_sidebar('left');
+			if ( $layout == 'right_sidebar' ) {
+				get_sidebar();
+			} else {
+				get_sidebar( 'left' );
+			}
 		}
 	}
-}
 endif;
 
-if( ! function_exists( 'estore_category_color_css' ) ) :
-/**
- * Generate color for Category and print on head
- */
-function estore_category_color_css(){
+if ( ! function_exists( 'estore_category_color_css' ) ) :
+	/**
+	 * Generate color for Category and print on head
+	 */
+	function estore_category_color_css() {
 
-	$categories = get_terms( 'category', array( 'hide_empty' => false ) );
+		$categories = get_terms( 'category', array( 'hide_empty' => false ) );
 
-	$cat_color_css = '';
-	foreach($categories as $category){
-		$cat_color = get_theme_mod( 'estore_category_color_'.strtolower($category->name) );
-		$hover_color = estore_darkcolor($cat_color, -200);
-		$cat_id = $category->term_id;
-		if(!empty($cat_color)) {
-			$cat_color_css .= '
+		$cat_color_css = '';
+		foreach ( $categories as $category ) {
+			$cat_color   = get_theme_mod( 'estore_category_color_' . strtolower( $category->name ) );
+			$hover_color = estore_darkcolor( $cat_color, -200 );
+			$cat_id      = $category->term_id;
+			if ( ! empty( $cat_color ) ) {
+				$cat_color_css .= '
 
 			/* Border Color */
-			.estore-cat-color_'.$cat_id.' .cart-wishlist-btn a i, .estore-cat-color_'.$cat_id.' .cart-wishlist-btn a i:hover, .estore-cat-color_'.$cat_id.' .hot-product-content-wrapper .hot-img{border-color: '.$cat_color.'}
+			.estore-cat-color_' . $cat_id . ' .cart-wishlist-btn a i, .estore-cat-color_' . $cat_id . ' .cart-wishlist-btn a i:hover, .estore-cat-color_' . $cat_id . ' .hot-product-content-wrapper .hot-img{border-color: ' . $cat_color . '}
 			/* Background Color */
-			.estore-cat-color_'.$cat_id.' .cart-wishlist-btn a i:hover, .estore-cat-color_'.$cat_id.' .hot-content-wrapper .single_add_to_wishlist, .estore-cat-color_'.$cat_id.' .hot-content-wrapper .single_add_to_wishlist:hover, .estore-cat-color_'.$cat_id.' .hot-product-title, .widget-collection .estore-cat-color_'.$cat_id.' .page-title::after, .estore-cat-color_'.$cat_id.' .widget-featured-collection .page-title:after{background: '.$cat_color.'}
+			.estore-cat-color_' . $cat_id . ' .cart-wishlist-btn a i:hover, .estore-cat-color_' . $cat_id . ' .hot-content-wrapper .single_add_to_wishlist, .estore-cat-color_' . $cat_id . ' .hot-content-wrapper .single_add_to_wishlist:hover, .estore-cat-color_' . $cat_id . ' .hot-product-title, .widget-collection .estore-cat-color_' . $cat_id . ' .page-title::after, .estore-cat-color_' . $cat_id . ' .widget-featured-collection .page-title:after{background: ' . $cat_color . '}
 			/* Color */
-			.estore-cat-color_'.$cat_id.' .sorting-form-wrapper a,.estore-cat-color_'.$cat_id.' .section-title-wrapper .section-title-block .page-title a:hover, .estore-cat-color_'.$cat_id.' .hot-content-wrapper .star-rating, .estore-cat-color_'.$cat_id.' .hot-content-wrapper .hot-title a:hover, .estore-cat-color_'.$cat_id.' .cart-wishlist-btn a i, .estore-cat-color_'.$cat_id.' .product-list-wrap .product-list-block .product-list-content .price ins, .estore-cat-color_'.$cat_id.' .product-list-wrap .product-list-block .product-list-content .product-list-title a:hover, .estore-cat-color_'.$cat_id.' .hot-product-content-wrapper .hot-img .cart-price-wrapper .add_to_cart_button:hover{color:'.$cat_color.'}
+			.estore-cat-color_' . $cat_id . ' .sorting-form-wrapper a,.estore-cat-color_' . $cat_id . ' .section-title-wrapper .section-title-block .page-title a:hover, .estore-cat-color_' . $cat_id . ' .hot-content-wrapper .star-rating, .estore-cat-color_' . $cat_id . ' .hot-content-wrapper .hot-title a:hover, .estore-cat-color_' . $cat_id . ' .cart-wishlist-btn a i, .estore-cat-color_' . $cat_id . ' .product-list-wrap .product-list-block .product-list-content .price ins, .estore-cat-color_' . $cat_id . ' .product-list-wrap .product-list-block .product-list-content .product-list-title a:hover, .estore-cat-color_' . $cat_id . ' .hot-product-content-wrapper .hot-img .cart-price-wrapper .add_to_cart_button:hover{color:' . $cat_color . '}
 			';
+			}
+		}
+
+		if ( ! empty( $cat_color_css ) ) {
+			?>
+		<!-- Category Color --><style type="text/css"><?php echo $cat_color_css; ?></style>
+			<?php
 		}
 	}
-
-	if( !empty( $cat_color_css ) ) {
-	?>
-		<!-- Category Color --><style type="text/css"><?php echo $cat_color_css; ?></style>
-	<?php
-	}
-}
 endif;
 
-add_action('wp_head', 'estore_category_color_css', 20);
+add_action( 'wp_head', 'estore_category_color_css', 20 );
 
-if( ! function_exists( 'estore_darkcolor' ) ) :
-/**
- * Generate darker color
- * Source: http://stackoverflow.com/questions/3512311/how-to-generate-lighter-darker-color-with-php
- */
-function estore_darkcolor($hex, $steps) {
-	// Steps should be between -255 and 255. Negative = darker, positive = lighter.
-	$steps = max(-255, min(255, $steps));
+if ( ! function_exists( 'estore_darkcolor' ) ) :
+	/**
+	 * Generate darker color
+	 * Source: http://stackoverflow.com/questions/3512311/how-to-generate-lighter-darker-color-with-php
+	 */
+	function estore_darkcolor( $hex, $steps ) {
+		// Steps should be between -255 and 255. Negative = darker, positive = lighter.
+		$steps = max( -255, min( 255, $steps ) );
 
-	// Normalize into a six character long hex string.
-	$hex = str_replace('#', '', $hex);
-	if (strlen($hex) == 3) {
-		$hex = str_repeat(substr($hex,0,1), 2).str_repeat(substr($hex,1,1), 2).str_repeat(substr($hex,2,1), 2);
+		// Normalize into a six character long hex string.
+		$hex = str_replace( '#', '', $hex );
+		if ( strlen( $hex ) == 3 ) {
+			$hex = str_repeat( substr( $hex, 0, 1 ), 2 ) . str_repeat( substr( $hex, 1, 1 ), 2 ) . str_repeat( substr( $hex, 2, 1 ), 2 );
+		}
+
+		// Split into three parts: R, G and B.
+		$color_parts = str_split( $hex, 2 );
+		$return      = '#';
+
+		foreach ( $color_parts as $color ) {
+			$color   = hexdec( $color ); // Convert to decimal.
+			$color   = max( 0, min( 255, $color + $steps ) ); // Adjust color.
+			$return .= str_pad( dechex( $color ), 2, '0', STR_PAD_LEFT ); // Make two char hex code.
+		}
+
+		return $return;
 	}
-
-	// Split into three parts: R, G and B.
-	$color_parts = str_split($hex, 2);
-	$return = '#';
-
-	foreach ($color_parts as $color) {
-		$color   = hexdec($color); // Convert to decimal.
-		$color   = max(0,min(255,$color + $steps)); // Adjust color.
-		$return .= str_pad(dechex($color), 2, '0', STR_PAD_LEFT); // Make two char hex code.
-	}
-
-	return $return;
-}
 endif;
 
 add_action( 'wp_head', 'estore_primary_color_css', 10 );
 
-if ( ! function_exists('estore_primary_color_css') ) :
-/**
- * Hooks the Custom Internal CSS to head section
- */
-function estore_primary_color_css() {
+if ( ! function_exists( 'estore_primary_color_css' ) ) :
+	/**
+	 * Hooks the Custom Internal CSS to head section
+	 */
+	function estore_primary_color_css() {
 
-	$primary_color   = get_theme_mod( 'estore_primary_color', '#00a9e0' );
-	$primary_dark    = estore_darkcolor($primary_color, -20);
+		$primary_color = get_theme_mod( 'estore_primary_color', '#00a9e0' );
+		$primary_dark  = estore_darkcolor( $primary_color, -20 );
 
-	$estore_internal_css = '';
-	if( $primary_color != '#00a9e0' ) {
-		$estore_internal_css = '
+		$estore_internal_css = '';
+		if ( $primary_color != '#00a9e0' ) {
+			$estore_internal_css = '
 		.navigation .nav-links a:hover,
 		.bttn:hover,
 		button,
@@ -370,7 +382,7 @@ function estore_primary_color_css() {
 		.woocommerce input.button.alt,
 		.sub-toggle,
 		.scrollup  {
-			background: '.$primary_color.';
+			background: ' . $primary_color . ';
 		}
 
 		a,
@@ -425,7 +437,7 @@ function estore_primary_color_css() {
 		#cancel-comment-reply-link,
 		#cancel-comment-reply-link:before,
 		.logged-in-as a {
-			color: '.$primary_color.';
+			color: ' . $primary_color . ';
 		}
 
 		.widget-title span,
@@ -450,26 +462,26 @@ function estore_primary_color_css() {
 		.woocommerce .woocommerce-message,
 		.menu-primary-container,
 		.comment-list .comment-body{
-			border-color: '.$primary_color.';
+			border-color: ' . $primary_color . ';
 		}
 
 		.search-wrapper .header-search-box:before,
 		#masthead .widget_shopping_cart::before{
-			border-bottom-color:'.$primary_color.';
+			border-bottom-color:' . $primary_color . ';
 		}
 
 		.big-slider .bx-controls .bx-prev:hover,
 		.category-slider .bx-controls .bx-prev:hover{
-			border-left-color:'.$primary_color.';
+			border-left-color:' . $primary_color . ';
 		}
 
 		.big-slider .bx-controls .bx-next:hover,
 		.category-slider .bx-controls .bx-next:hover{
-			border-right-color:'.$primary_color.';
+			border-right-color:' . $primary_color . ';
 		}
 
 		#primary-menu{
-			border-top-color:'.$primary_color.';
+			border-top-color:' . $primary_color . ';
 		}
 
 		a:hover,
@@ -492,7 +504,7 @@ function estore_primary_color_css() {
 		.woocommerce-cart .woocommerce table.shop_table.cart tr.cart_item td.product-name a:hover,
 		.woocommerce #content .wishlist_table tbody tr td.product-name a:hover,
 		.comment-author .fn .url:hover    {
-			color: '.$primary_dark.'
+			color: ' . $primary_dark . '
 		}
 
 		.hot-content-wrapper .single_add_to_wishlist:hover,
@@ -531,30 +543,30 @@ function estore_primary_color_css() {
 		.scrollup:hover,
 		.scrollup:active,
 		.scrollup:focus {
-			background: '.$primary_dark.'
+			background: ' . $primary_dark . '
 		}
 
 		.widget-collection .cart-wishlist-btn a i:hover,
 		.woocommerce-page ul.products li.product .products-img .products-hover-wrapper .products-hover-block a:hover{
-			border-color: '.$primary_dark.'
+			border-color: ' . $primary_dark . '
 		}
 
 
 		}';
-	}
+		}
 
-	if( !empty( $estore_internal_css ) ) {
-	?>
+		if ( ! empty( $estore_internal_css ) ) {
+			?>
 		<style type="text/css"><?php echo $estore_internal_css; ?></style>
-	<?php
-	}
+			<?php
+		}
 
-}
+	}
 endif;
 
 add_action( 'wp_enqueue_scripts', 'estore_prettyphoto' );
 
-if (  ! function_exists( 'estore_prettyphoto' ) ) {
+if ( ! function_exists( 'estore_prettyphoto' ) ) {
 
 	/**
 	 * Enqueue prettyphoto on pages
@@ -563,7 +575,7 @@ if (  ! function_exists( 'estore_prettyphoto' ) ) {
 		global $woocommerce;
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
-		if( ( class_exists('woocommerce') && ( is_woocommerce() || is_cart() || is_checkout() ) ) || is_front_page() ) {
+		if ( ( class_exists( 'woocommerce' ) && ( is_woocommerce() || is_cart() || is_checkout() ) ) || is_front_page() ) {
 			wp_enqueue_script( 'prettyPhoto', get_template_directory_uri() . '/js/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), null, true );
 			wp_enqueue_script( 'prettyPhoto-init', get_template_directory_uri() . '/js/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), null, true );
 			wp_enqueue_style( 'woocommerce_prettyPhoto_css', get_template_directory_uri() . '/css/prettyPhoto.css' ); // Prettyphoto css prefixed with woocommerce to make sure it won't load twice
@@ -574,7 +586,7 @@ if (  ! function_exists( 'estore_prettyphoto' ) ) {
 if ( ! function_exists( 'estore_the_custom_logo' ) ) {
 	/**
 	 * Displays the optional custom logo.
-	 *	 *
+	 *   *
 	 */
 	function estore_the_custom_logo() {
 		if ( function_exists( 'the_custom_logo' ) ) {
@@ -591,19 +603,14 @@ if ( ! function_exists( 'estore_the_custom_logo' ) ) {
  */
 function estore_body_classes( $classes ) {
 	// Adds a class for grid/list layout.
-	$layout_class = esc_attr(get_theme_mod( 'estore_archive_page_style', 'archive-list' ));
-	if (  is_archive() || is_search() || is_home() ) {
+	$layout_class = esc_attr( get_theme_mod( 'estore_archive_page_style', 'archive-list' ) );
+	if ( is_archive() || is_search() || is_home() ) {
 		$classes[] = $layout_class;
 	}
+	if ( is_home() ) {
+		$classes[] = 'page-header-disable';
+	}
+
 	return $classes;
 }
 add_filter( 'body_class', 'estore_body_classes' );
-
-function estore_body_class( $classes ) {
-if ( is_home()) {
-	$classes[] = 'page-header-disable';
-}
-	return $classes;
-}
-
-add_filter( 'body_class', 'estore_body_class' );
