@@ -451,6 +451,9 @@ a:focus {
 #content[tabindex="-1"]:focus {
   outline: 0; }
 
+.page-header-disable .site-content {
+  margin-top: 30px; }
+
 /*--------------------------------------------------------------
 7.0 Alignments
 --------------------------------------------------------------*/
