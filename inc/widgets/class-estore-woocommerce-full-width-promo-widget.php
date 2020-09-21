@@ -94,7 +94,7 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 									$img_altr = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 									$img_alt = ! empty( $img_altr ) ? $img_altr : '';
 
-									if ( $image[0] ) {
+									if ( !empty($image[0]) ) {
 										echo '<img src="' . esc_url( $image[0] ) . '" alt="' .esc_attr( $img_alt ). '" />';
 									}
 									// @todo: Default Place holder image needed
