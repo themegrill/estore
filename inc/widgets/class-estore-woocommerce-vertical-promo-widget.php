@@ -90,7 +90,7 @@ class estore_woocommerce_vertical_promo_widget extends WP_Widget {
 						$title_attribute = esc_attr( get_the_title( $thumbnail_id ) );
 						$img_altr        = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 						$img_alt         = ! empty( $img_altr ) ? $img_altr : $title_attribute;
-						if ( $image[0] ) {
+						if ( !empty($image[0]) ) {
 							echo '<img src="' . esc_url( $image[0] ) . '" alt="' .$img_alt. '" />';
 						}
 						// @todo: Default Place holder image needed
