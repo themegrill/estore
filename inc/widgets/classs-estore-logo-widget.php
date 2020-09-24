@@ -15,7 +15,8 @@ class estore_logo_widget extends WP_Widget {
 	}
 
 	function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance,
+		$instance = wp_parse_args(
+			(array) $instance,
 			array(
 				'title'       => '',
 				'logo_image1' => '',
@@ -53,13 +54,21 @@ class estore_logo_widget extends WP_Widget {
 			$image_url  = 'logo_image' . $i;
 			?>
 			<p>
-				<label for="<?php echo $this->get_field_id( $image_link ); ?>"> <?php esc_html_e( 'Logo Link ', 'estore' );
-					echo $i; ?></label>
+				<label for="<?php echo $this->get_field_id( $image_link ); ?>">
+									   <?php
+										esc_html_e( 'Logo Link ', 'estore' );
+										echo $i;
+										?>
+					</label>
 				<input type="text" class="widefat" id="<?php echo $this->get_field_id( $image_link ); ?>" name="<?php echo $this->get_field_name( $image_link ); ?>" value="<?php echo $instance[ $image_link ]; ?>" />
 			</p>
 			<p>
-				<label for="<?php echo $this->get_field_id( $image_url ); ?>"> <?php esc_html_e( 'Logo Image ', 'estore' );
-					echo $i; ?></label>
+				<label for="<?php echo $this->get_field_id( $image_url ); ?>">
+									   <?php
+										esc_html_e( 'Logo Image ', 'estore' );
+										echo $i;
+										?>
+					</label>
 			<div class="media-uploader" id="<?php echo $this->get_field_id( $image_url ); ?>">
 				<div class="custom_media_preview">
 					<?php if ( $instance[ $image_url ] != '' ) : ?>
@@ -71,7 +80,8 @@ class estore_logo_widget extends WP_Widget {
 			</div>
 			</p>
 
-		<?php } // Loop ending
+			<?php
+		} // Loop ending
 	}
 
 	function update( $new_instance, $old_instance ) {
@@ -118,13 +128,15 @@ class estore_logo_widget extends WP_Widget {
 			$j ++;
 		}
 
-		echo $before_widget; ?>
+		echo $before_widget;
+		?>
 
 		<div class="tg-container">
 			<div class="tg-column-wrapper">
 				<?php if ( ! empty( $title ) ) { ?>
 					<?php echo $before_title . esc_html( $title ) . $after_title; ?>
-				<?php }
+					<?php
+				}
 
 				$output = '';
 				if ( ! empty( $image_array ) ) {
@@ -143,10 +155,13 @@ class estore_logo_widget extends WP_Widget {
 								if ( function_exists( 'icl_t' ) ) {
 									$link_array[ $j ] = icl_t( 'eStore', 'TG: Logo Link' . $this->id . $j, $link_array[ $j ] );
 								}
-
-								$output .= '<a href="' . esc_url( $link_array[ $j ] ) . '" class="logo-link" target="_blank"><img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attributes[1] ) . '" height="' . esc_attr( $image_attributes[2] ) . '"></a>';
+								$image_attr1 = isset( $image_attributes[1] ) ? $image_attributes[1] : '';
+								$image_attr2 = isset( $image_attributes[2] ) ? $image_attributes[2] : '';
+								$output     .= '<a href="' . esc_url( $link_array[ $j ] ) . '" class="logo-link" target="_blank"><img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '"></a>';
 							} else {
-								$output .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attributes[1] ) . '" height="' . esc_attr( $image_attributes[2] ) . '">';
+								$image_attr1 = isset( $image_attributes[1] ) ? $image_attributes[1] : '';
+								$image_attr2 = isset( $image_attributes[2] ) ? $image_attributes[2] : '';
+								$output .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '">';
 							}
 							$output .= '</div>';
 						}
