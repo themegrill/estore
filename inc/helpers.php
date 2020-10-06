@@ -59,3 +59,12 @@ if ( ! function_exists( 'estore_post_thumbnail' ) ) :
 
 	}
 endif;
+
+if ( ! function_exists( 'estore_is_woocommerce_activated' ) ) {
+	/**
+	 * Query WooCommerce activation
+	 */
+	function estore_is_woocommerce_activated() {
+		return class_exists( 'WooCommerce' ) ? true : false;
+	}
+}

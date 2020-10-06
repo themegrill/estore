@@ -74,9 +74,9 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		// Adding excerpt option box for pages as well
 		add_post_type_support( 'page', 'excerpt' );
 
-
 		// Adds Support for Custom Logo Introduced in WordPress 4.5
-		add_theme_support( 'custom-logo',
+		add_theme_support(
+			'custom-logo',
 			array(
 				'height'      => 80,
 				'width'       => 160,
@@ -93,29 +93,40 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in two locations.
-		register_nav_menus( array(
-			'primary'   => esc_html__( 'Primary Menu', 'estore' ),
-			'header'    => esc_html__( 'Header Top Bar Menu', 'estore' ),
-			'secondary' => esc_html__( 'Secondary Menu', 'estore' ),
-		) );
+		register_nav_menus(
+			array(
+				'primary'   => esc_html__( 'Primary Menu', 'estore' ),
+				'header'    => esc_html__( 'Header Top Bar Menu', 'estore' ),
+				'secondary' => esc_html__( 'Secondary Menu', 'estore' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'estore_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'estore_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Cropping the images to different sizes to be used in the theme
 		add_image_size( 'estore-featured-image', 380, 250, true );
@@ -139,7 +150,6 @@ if ( ! function_exists( 'estore_setup' ) ) :
 
 		// Gutenberg responsive embeds support.
 		add_theme_support( 'responsive-embeds' );
-
 
 		// Selective refresh widgets support
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -279,6 +289,7 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-notice.php';
 	require get_template_directory() . '/inc/admin/class-estore-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-estore-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-estore-woocommerce-notice.php';
 }
 
 /**
@@ -302,7 +313,7 @@ if ( ! function_exists( 'estore_entry_title' ) ) :
 		elseif ( is_404() ) :
 			?>
 			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'estore' ); ?></h1>
-		<?php
+			<?php
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
