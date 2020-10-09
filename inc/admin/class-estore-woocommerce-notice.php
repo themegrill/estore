@@ -32,16 +32,40 @@ class eStore_WooCommerce_Notice {
 			'estore_hide_notices_nonce',
 			'_estore_notice_nonce'
 		);
-		if ( ! estore_is_woocommerce_activated() && current_user_can( 'install_plugins' ) ) :
-			?>
+
+		$plugin = 'woocommerce/woocommerce.php';
+
+		?>
 		<div id="message" class="notice notice-info estore-notice">
 			<a class="estore-notice-dismiss notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
 
 			<h2><?php esc_html_e( 'Thank you for choosing eStore.', 'estore' ); ?></h2>
 			<p><?php esc_html_e( 'To enable eCommerce features, you need to install the WooCommerce plugin.', 'estore' ); ?></p>
-		</div>
+
 			<?php
-		endif;
+			if ( _estore_is_woocommerce_installed() ) {
+				if ( ! current_user_can( 'activate_plugins' ) ) {
+					return;
+				}
+
+				$action_url   = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $plugin . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $plugin );
+				$button_label = esc_html__( 'Activate WooCommerce', 'woocommerce' );
+			} else {
+				if ( ! current_user_can( 'install_plugins' ) ) {
+					return;
+				}
+				$action_url   = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=woocommerce' ), 'install-plugin_woocommerce' );
+				$button_label = esc_html__( 'Install WooCommerce', 'woocommerce' );
+			}
+			echo '<p>' . sprintf(
+				/* Translators: 1: Notice CTA URL 2: Notice CTA text */
+				'<a href="%s" class="button-primary">%s</a>',
+				$action_url,
+				$button_label
+			) . '</p>';
+			?>
+			</div>
+		<?php
 	}
 
 	/**

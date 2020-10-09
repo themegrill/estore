@@ -60,11 +60,10 @@ if ( ! function_exists( 'estore_post_thumbnail' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'estore_is_woocommerce_activated' ) ) {
-	/**
-	 * Query WooCommerce activation
-	 */
-	function estore_is_woocommerce_activated() {
-		return class_exists( 'WooCommerce' ) ? true : false;
+if ( ! function_exists( '_estore_is_woocommerce_installed' ) ) {
+	function _estore_is_woocommerce_installed() {
+		$installed_plugins = get_plugins();
+
+		return isset( $installed_plugins['woocommerce/woocommerce.php'] );
 	}
 }
