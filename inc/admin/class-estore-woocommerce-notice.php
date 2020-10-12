@@ -19,7 +19,7 @@ class eStore_WooCommerce_Notice {
 
 	public function woocommerce_notice() {
 		if ( ! get_option( 'estore_admin_notice_welcome' ) ) {
-			add_action( 'admin_notices', array( $this, 'woocommerce_notice_markup' ) ); // Show notice.
+				add_action( 'admin_notices', array( $this, 'woocommerce_notice_markup' ) ); // Show notice.
 		}
 	}
 
