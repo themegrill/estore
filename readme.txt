@@ -31,6 +31,8 @@ Resources packed within the theme.
 * Images used in screenshot
   Logo: Own Creation
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
+  
+  Screenshot, Creative Commons Zero (CC0), https://pxhere.com/ link.
 
 * Images included inside images folder
   placeholder-blog.jpg
@@ -73,8 +75,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version 1.5.1 - 2020-09-22 =
-* Fix - Design issue of spacing while latest posts.
+= TBD =
 * Fix - Link in slider not working on certain devices in Chrome.
 * Tweak - Remove deprecate Custom CSS customize option provided via theme.
 
