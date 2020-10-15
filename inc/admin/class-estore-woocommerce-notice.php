@@ -18,8 +18,8 @@ class eStore_WooCommerce_Notice {
 	}
 
 	public function woocommerce_notice() {
-		if ( ! get_option( 'estore_admin_notice_welcome' ) ) {
-				add_action( 'admin_notices', array( $this, 'woocommerce_notice_markup' ) ); // Show notice.
+		if ( ! get_option( 'estore_admin_notice_welcome' ) && ! class_exists( 'WooCommerce' ) ) {
+			add_action('admin_notices', array($this, 'woocommerce_notice_markup')); // Show notice.
 		}
 	}
 
@@ -39,8 +39,7 @@ class eStore_WooCommerce_Notice {
 		<div id="message" class="notice notice-info estore-notice">
 			<a class="estore-notice-dismiss notice-dismiss" href="<?php echo esc_url( $dismiss_url ); ?>"></a>
 
-			<h2><?php esc_html_e( 'Thank you for choosing eStore.', 'estore' ); ?></h2>
-			<p><?php esc_html_e( 'To enable eCommerce features, you need to install the WooCommerce plugin.', 'estore' ); ?></p>
+			<p><?php esc_html_e( 'If you are planning to create an eCommerce site, install the WooCommerce plugin, otherwise you can dismiss this message notice.', 'estore' ); ?></p>
 
 			<?php
 			if ( _estore_is_woocommerce_installed() ) {
