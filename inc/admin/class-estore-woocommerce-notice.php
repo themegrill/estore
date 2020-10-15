@@ -58,10 +58,10 @@ class eStore_WooCommerce_Notice {
 			}
 			echo '<p>' . sprintf(
 				/* Translators: 1: Notice CTA URL 2: Notice CTA text */
-					'<a href="%s" class="button-primary">%s</a>',
-					$action_url,
-					$button_label
-				) . '</p>';
+				'<a href="%s" class="button-primary">%s</a>',
+				$action_url,
+				$button_label
+			) . '</p>';
 			?>
 		</div>
 		<?php
