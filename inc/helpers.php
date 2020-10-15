@@ -59,3 +59,11 @@ if ( ! function_exists( 'estore_post_thumbnail' ) ) :
 
 	}
 endif;
+
+if ( ! function_exists( '_estore_is_woocommerce_installed' ) ) {
+	function _estore_is_woocommerce_installed() {
+		$installed_plugins = get_plugins();
+
+		return isset( $installed_plugins['woocommerce/woocommerce.php'] );
+	}
+}

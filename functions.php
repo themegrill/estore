@@ -279,6 +279,7 @@ if ( is_admin() ) {
 	require get_template_directory() . '/inc/admin/class-estore-notice.php';
 	require get_template_directory() . '/inc/admin/class-estore-welcome-notice.php';
 	require get_template_directory() . '/inc/admin/class-estore-upgrade-notice.php';
+	require get_template_directory() . '/inc/admin/class-estore-woocommerce-notice.php';
 }
 
 /**
