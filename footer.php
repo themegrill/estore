@@ -17,7 +17,7 @@
 				<div class="copy-right">
 					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'estore' ), '<a href="' . esc_url( 'https://themegrill.com/themes/estore/' ) . '" target="_blank" rel="nofollow">eStore</a>', 'ThemeGrill' ); ?>
 					<span class="sep"> | </span>
-					<?php printf( esc_html__( 'Proudly powered by %s.', 'estore' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '">WordPress</a>' ); ?>
+					<?php printf( esc_html__( 'Proudly powered by %s.', 'estore' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '" target="_blank" rel="nofollow">WordPress</a>' ); ?>
 				</div>
 				<?php
 				$logos = array();
