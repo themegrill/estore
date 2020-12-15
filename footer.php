@@ -15,9 +15,9 @@
 		 <div id="bottom-footer" class="clearfix">
 			<div class="tg-container">
 				<div class="copy-right">
+					<?php printf( esc_html__( 'Copyright &copy; %1$s %2$s. All rights reserved.', 'estore' ), date( 'Y' ), '<a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr( get_bloginfo( 'name', 'display' ) ) . '" ><span>' . get_bloginfo( 'name', 'display' ) . '</span></a>' ); ?>
 					<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'estore' ), '<a href="' . esc_url( 'https://themegrill.com/themes/estore/' ) . '" target="_blank" rel="nofollow">eStore</a>', 'ThemeGrill' ); ?>
-					<span class="sep"> | </span>
-					<?php printf( esc_html__( 'Proudly powered by %s.', 'estore' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '" target="_blank" rel="nofollow">WordPress</a>' ); ?>
+					<?php printf( esc_html__( 'Powered by %s.', 'estore' ), '<a href="' . esc_url( 'https://wordpress.org/' ) . '" target="_blank" rel="nofollow">WordPress</a>' ); ?>
 				</div>
 				<?php
 				$logos = array();
