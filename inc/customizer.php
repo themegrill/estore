@@ -83,6 +83,7 @@ function estore_customize_register( $wp_customize ) {
 
 	// Register `ESTORE_Upsell_Section` type section.
 	$wp_customize->register_section_type( 'ESTORE_Upsell_Section' );
+	$wp_customize->register_control_type( 'Estore_Text_Editor_Control' );
 
 	// Add `ESTORE_Upsell_Section` to display pro link.
 	$wp_customize->add_section(
@@ -290,10 +291,9 @@ function estore_customize_register( $wp_customize ) {
 			$wp_customize,
 			'estore_bar_text',
 			array(
-				'label'       => esc_html__( 'Header Text', 'estore' ),
-				'description' => esc_html__( 'Paste the Font Awesome icon font', 'estore' ),
-				'section'     => 'estore_header_bar',
-				'setting'     => 'estore_bar_text',
+				'label'   => esc_html__( 'Header Text', 'estore' ),
+				'section' => 'estore_header_bar',
+				'setting' => 'estore_bar_text',
 			)
 		)
 	);
@@ -989,6 +989,35 @@ function estore_customize_preview_js() {
 }
 
 add_action( 'customize_preview_init', 'estore_customize_preview_js' );
+
+/**
+ * Enqueue customize controls scripts.
+ */
+function estore_enqueue_customize_controls() {
+
+	/**
+	 * Enqueue required Customize Controls CSS files.
+	 */
+	// Main CSS file.
+	wp_enqueue_style(
+		'estore-customize-controls',
+		get_template_directory_uri() . '/css/customize-controls.css',
+		array(),
+		false
+	);
+
+	wp_enqueue_script(
+		'estore-customize-controls',
+		get_template_directory_uri() . '/js/customize-controls.js',
+		array(
+			'wp-color-picker',
+		),
+		false,
+		true
+	);
+}
+
+add_action( 'customize_controls_enqueue_scripts', 'estore_enqueue_customize_controls' );
 
 /**
  * Render the site title for the selective refresh partial.

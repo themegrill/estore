@@ -1,0 +1,7 @@
+/**
+ * Editor control CSS
+ */
+
+.customize-control-estore-editor .wp-editor-tools .wp-editor-container textarea {
+	width: 100%;
+}
