@@ -75,6 +75,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.5.2 - 2020-12-21 =
+* Tweak - Update footer credit link with `rel="nofollow"` attributes.
+
 = Version 1.5.1 - 2020-09-22 =
 * Fix - Design issue of spacing while latest posts.
 * Fix - Link in slider not working on certain devices in Chrome.

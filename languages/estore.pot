@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.5.1\n"
+"Project-Id-Version: eStore 1.5.2\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2020-09-21 10:30:36+00:00\n"
+"POT-Creation-Date: 2020-12-21 06:51:34+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,11 +46,15 @@ msgid "Comments are closed."
 msgstr ""
 
 #: footer.php:18
+msgid "Copyright &copy; %1$s %2$s. All rights reserved."
+msgstr ""
+
+#: footer.php:19
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
 #: footer.php:20
-msgid "Proudly powered by %s."
+msgid "Powered by %s."
 msgstr ""
 
 #: functions.php:97
@@ -609,7 +613,7 @@ msgstr ""
 #: inc/widgets/class-estore-posts-grid.php:37
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:35
 #: inc/widgets/class-estore-woocommerce-product-grid.php:37
-#: inc/widgets/classs-estore-logo-widget.php:46
+#: inc/widgets/classs-estore-logo-widget.php:47
 msgid "Title:"
 msgstr ""
 
@@ -628,21 +632,21 @@ msgstr ""
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
-#: inc/widgets/classs-estore-logo-widget.php:70
+#: inc/widgets/classs-estore-logo-widget.php:79
 msgid "Choose an image"
 msgstr ""
 
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
-#: inc/widgets/classs-estore-logo-widget.php:70
+#: inc/widgets/classs-estore-logo-widget.php:79
 msgid "Use image"
 msgstr ""
 
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
-#: inc/widgets/classs-estore-logo-widget.php:70
+#: inc/widgets/classs-estore-logo-widget.php:79
 msgid "Select an Image"
 msgstr ""
 
@@ -934,15 +938,15 @@ msgstr ""
 msgid "TG: Logo"
 msgstr ""
 
-#: inc/widgets/classs-estore-logo-widget.php:49
+#: inc/widgets/classs-estore-logo-widget.php:50
 msgid "Add your clients/brands logo Here"
 msgstr ""
 
-#: inc/widgets/classs-estore-logo-widget.php:56
+#: inc/widgets/classs-estore-logo-widget.php:59
 msgid "Logo Link "
 msgstr ""
 
-#: inc/widgets/classs-estore-logo-widget.php:61
+#: inc/widgets/classs-estore-logo-widget.php:68
 msgid "Logo Image "
 msgstr ""
 
