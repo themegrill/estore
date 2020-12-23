@@ -75,6 +75,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix - Custom customize editor control not working since WordPress 5.6.
+
 = Version 1.5.2 - 2020-12-21 =
 * Tweak - Update footer credit link with `rel="nofollow"` attributes.
 
