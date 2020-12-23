@@ -271,6 +271,7 @@ function estore_customize_register( $wp_customize ) {
 		array(
 			'label'   => esc_html__( 'Activate the header top bar', 'estore' ),
 			'section' => 'estore_header_bar',
+			'setting' => 'estore_bar_activation',
 			'type'    => 'checkbox',
 		)
 	);
@@ -291,9 +292,10 @@ function estore_customize_register( $wp_customize ) {
 			$wp_customize,
 			'estore_bar_text',
 			array(
-				'label'   => esc_html__( 'Header Text', 'estore' ),
-				'section' => 'estore_header_bar',
-				'setting' => 'estore_bar_text',
+				'label'           => esc_html__( 'Header Text', 'estore' ),
+				'section'         => 'estore_header_bar',
+				'setting'         => 'estore_bar_text',
+				'active_callback' => 'estore_enable_header_text',
 			)
 		)
 	);
@@ -892,6 +894,14 @@ function estore_customize_register( $wp_customize ) {
 		} else {
 			return false;
 		}
+	}
+
+	function estore_enable_header_text() {
+		if ( get_theme_mod( 'estore_bar_activation', '' ) == 1 ) {
+			return true;
+		}
+		
+		return false;
 	}
 
 	/**
