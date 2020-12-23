@@ -295,7 +295,6 @@ function estore_customize_register( $wp_customize ) {
 				'label'           => esc_html__( 'Header Text', 'estore' ),
 				'section'         => 'estore_header_bar',
 				'setting'         => 'estore_bar_text',
-				'active_callback' => 'estore_enable_header_text',
 			)
 		)
 	);
