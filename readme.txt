@@ -75,6 +75,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - Some widgets not loading on firefox browser.
+
 = Version 1.5.3 - 2020-12-23 =
 * Fix - Custom customize editor control not working since WordPress 5.6.
 
