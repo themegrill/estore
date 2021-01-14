@@ -75,7 +75,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.5.4 - 2021-01-14 =
 * Fix - Some widgets not loading on firefox browser.
 
 = Version 1.5.3 - 2020-12-23 =
