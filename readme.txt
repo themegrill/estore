@@ -75,6 +75,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - Checkout form responsive design issue.
+
 = Version 1.5.5 - 2021-01-30 =
 * Tweak - Update WooCommerce template version to 4.7.0.
 
