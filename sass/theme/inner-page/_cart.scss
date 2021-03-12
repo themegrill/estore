@@ -77,6 +77,10 @@
             }
         }
     }
+
+    .button {
+        line-height: 1;
+    }
 }
 
 .woocommerce .quantity .qty {
@@ -105,12 +109,12 @@
                     font-weight: 700;
                     position: relative;
                     &:after{
-                    	content: "\f0d7";
-                    	right: -15px;
-                    	top: 50%;
-                    	@include transform(translateY(-50%));
-                    	position: absolute;
-                    	font-family: FontAwesome;
+                        content: "\f0d7";
+                        right: -15px;
+                        top: 50%;
+                        @include transform(translateY(-50%));
+                        position: absolute;
+                        font-family: FontAwesome;
                     }
                 }
                 select {
@@ -189,25 +193,25 @@
 }
 
 .cart-empty {
-  color: #00a9e0;
-  font-size: 32px;
-  font-weight: 700;
+    color: #00a9e0;
+    font-size: 32px;
+    font-weight: 700;
 }
 
 .return-to-shop {
 	a.button{
-	    background: #00a9e0 none repeat scroll 0 0;
-	    border-radius: 0;
-	    color: #fff;
-	    font-weight: 600;
-	    height: 36px;
-	    padding: 0 10px;
-	    display: inline-block;
-	    line-height: 36px;
-	    @include transition(background 0.5s ease);
-	    &:hover {
-	        background: $color__link-hover;
-	        color: #ffffff;
-	    }
+        background: #00a9e0 none repeat scroll 0 0;
+        border-radius: 0;
+        color: #fff;
+        font-weight: 600;
+        height: 36px;
+        padding: 0 10px;
+        display: inline-block;
+        line-height: 36px;
+        @include transition(background 0.5s ease);
+        &:hover {
+            background: $color__link-hover;
+            color: #ffffff;
+        }
 	}
 }
