@@ -5,6 +5,7 @@
         border: none;
         border-left: 3px solid $color__link;
         font-weight: 600;
+        margin-bottom: 30px;
 
         &:before {
             content: "\f05a";
@@ -20,14 +21,6 @@
             margin-left: 10px;
             display: inline-block;
         }
-    }
-
-    .woocommerce-info {
-        margin-bottom: 0 !important;
-    }
-
-    p.woocommerce-info {
-        margin-bottom: 30px !important;
     }
 
     .woocommerce-error {

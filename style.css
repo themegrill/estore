@@ -3530,7 +3530,8 @@ ul.wp-block-gallery {
 .woocommerce .woocommerce-message {
   border: none;
   border-left: 3px solid #00A9E0;
-  font-weight: 600; }
+  font-weight: 600;
+  margin-bottom: 30px; }
   .woocommerce .woocommerce-info:before,
   .woocommerce .woocommerce-error:before,
   .woocommerce .woocommerce-message:before {
@@ -3548,12 +3549,6 @@ ul.wp-block-gallery {
   .woocommerce .woocommerce-message .showcoupon {
     margin-left: 10px;
     display: inline-block; }
-
-.woocommerce .woocommerce-info {
-  margin-bottom: 0 !important; }
-
-.woocommerce p.woocommerce-info {
-  margin-bottom: 30px !important; }
 
 .woocommerce .woocommerce-error {
   border-left: 3px solid #F65656;
