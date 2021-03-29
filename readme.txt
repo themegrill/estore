@@ -75,6 +75,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - Structured data issue on breadcrumb.
+
 = Version 1.5.6 - 2021-03-23 =
 * Fix - Checkout form responsive design issue.
 * Fix - Cart page button design issue.
