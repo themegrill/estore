@@ -29,7 +29,7 @@ if ( 0 === sizeof( $crosssells ) ) {
 	$class = ' cart-total-with-cross-sell';
 }
 ?>
-<div class="cart_totals 
+<div class="cart_totals
 <?php
 if ( WC()->customer->has_calculated_shipping() ) {
 	echo 'calculated_shipping';}
@@ -79,7 +79,7 @@ if ( WC()->customer->has_calculated_shipping() ) {
 		<?php endforeach; ?>
 
 		<?php
-		if ( wc_tax_enabled() && 'excl' === WC()->cart->tax_display_cart ) :
+		if ( wc_tax_enabled() && 'excl' === WC()->cart->get_tax_price_display_mode() ) :
 			$estimated_text = 1 || WC()->customer->is_customer_outside_base() && ! WC()->customer->has_calculated_shipping()
 				? sprintf( ' <small>(' . esc_html__( 'estimated for %s', 'estore' ) . ')</small>', WC()->countries->estimated_for_prefix() . WC()->countries->countries[ WC()->countries->get_base_country() ] )
 				: '';
