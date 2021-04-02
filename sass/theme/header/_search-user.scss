@@ -90,3 +90,12 @@
 	opacity: 1;
 	visibility: visible;
 }
+
+.no-results input[type="search"] {
+	width: calc(100% - 43px);
+}
+
+.no-results form.searchform {
+	display: flex;
+	flex-wrap: wrap;
+}
