@@ -75,7 +75,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.5.8 - 2021-04-09 =
 * Tweak - Replace the deprecated method tax_display_cart.
 
 = Version 1.5.7 - 2021-04-02 =
