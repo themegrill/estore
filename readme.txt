@@ -32,7 +32,14 @@ Resources packed within the theme.
   Logo: Own Creation
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
   
-  Screenshot, Creative Commons Zero (CC0), https://pxhere.com/ link.
+  Screenshot, Creative Commons Zero (CC0).
+  https://pxhere.com/en/photo/914603
+  https://pxhere.com/en/photo/869156
+  https://pxhere.com/en/photo/704531
+  https://pxhere.com/en/photo/948934
+  https://pxhere.com/en/photo/1007414
+  https://pxhere.com/en/photo/759723
+  https://pxhere.com/en/photo/105985
 
 * Images included inside images folder
   placeholder-blog.jpg
