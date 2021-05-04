@@ -84,7 +84,7 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 = Version TBD =
 * Fix - Shop page responsive design issue.
-* Fix - Updated the license information for the images used in the screenshot.
+* Tweak - Update screenshot image source link.
 
 = Version 1.5.8 - 2021-04-09 =
 * Tweak - Replace the deprecated method tax_display_cart.
