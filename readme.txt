@@ -32,7 +32,8 @@ Resources packed within the theme.
   Logo: Own Creation
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
   
-  Screenshot, Creative Commons Zero (CC0).
+* Images used in the screenshot are licensed under Creative Commons Zero (CC0):
+
   https://pxhere.com/en/photo/105985
   https://pxhere.com/en/photo/914603
   https://pxhere.com/en/photo/704531
