@@ -32,8 +32,16 @@ Resources packed within the theme.
   Logo: Own Creation
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
   
-  Screenshot, Creative Commons Zero (CC0), https://pxhere.com/ link.
+* Images used in the screenshot are licensed under Creative Commons Zero (CC0):
 
+  https://pxhere.com/en/photo/105985
+  https://pxhere.com/en/photo/914603
+  https://pxhere.com/en/photo/704531
+  https://pxhere.com/en/photo/948934
+  https://pxhere.com/en/photo/1007414
+  https://pxhere.com/en/photo/759723
+  https://pxhere.com/en/photo/780576
+  
 * Images included inside images folder
   placeholder-blog.jpg
   Copyright © 2016, ThemeGrill, GPL v3 or later, http://www.gnu.org/licenses/gpl-3.0.txt
@@ -77,6 +85,7 @@ If you want the theme to be translated into your language, feel free to contribu
 == Changelog ==
 = Version TBD =
 * Fix - Shop page responsive design issue.
+* Tweak - Update screenshot image source link.
 
 = Version 1.5.8 - 2021-04-09 =
 * Tweak - Replace the deprecated method tax_display_cart.
