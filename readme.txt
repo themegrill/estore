@@ -83,7 +83,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.5.9 - 2021-05-07 =
 * Fix - Shop page responsive design issue.
 * Tweak - Update screenshot image source link.
 
