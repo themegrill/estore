@@ -315,7 +315,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 			$image_id  = get_post_thumbnail_id( $post->ID );
 			$image_url = wp_get_attachment_image_src( $image_id, $size, false ); ?>
 			<figure class="products-img">
-				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"><img
 							src="<?php echo esc_url( $image_url[0] ); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
@@ -339,7 +339,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 			<?php
 		} else { ?>
 			<figure class="products-img">
-				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php echo esc_attr(get_the_title()); ?>"><img
 							src="<?php echo estore_woocommerce_placeholder_img_src(); ?>"></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
@@ -384,7 +384,7 @@ if ( ! function_exists( 'woocommerce_template_loop_product_title' ) ) {
 	 * Show the product title in the product loop. By default this is an H3.
 	 */
 	function woocommerce_template_loop_product_title() {
-		echo '<h3 class="products-title"><a href=' . esc_url( get_the_permalink() ) . '>' . esc_html( get_the_title() ) . '</a></h3>';
+		echo '<h3 class="products-title"><a href=' . esc_url( get_the_permalink() ) . '>' . get_the_title() . '</a></h3>';
 	}
 }
 
