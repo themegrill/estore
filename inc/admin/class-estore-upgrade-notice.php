@@ -94,8 +94,8 @@ class eStore_Upgrade_Notice extends eStore_Notice {
 					),
 					'<strong>' . esc_html( $current_user->display_name ) . '</strong>',
 					'estore',
-					'<code class="coupon-code">upgrade15</code>',
-					'15%'
+					'<code class="coupon-code">TGFREEUSER</code>',
+					'25%'
 				);
 				?>
 			</p>
