@@ -282,33 +282,20 @@ function estore_customize_register( $wp_customize ) {
 		array(
 			'default'           => '',
 			'capability'        => 'edit_theme_options',
-			'transport'         => $customizer_selective_refresh,
 			'sanitize_callback' => 'estore_sanitize_text',
 		)
 	);
 
 	$wp_customize->add_control(
-		new Estore_Text_Editor_Control(
-			$wp_customize,
 			'estore_bar_text',
 			array(
 				'label'           => esc_html__( 'Header Text', 'estore' ),
 				'section'         => 'estore_header_bar',
-				'setting'         => 'estore_bar_text',
-			)
+				'settings'         => 'estore_bar_text',
+				'active_callback' => 'estore_enable_header_text',
 		)
 	);
 
-	// Selective refresh for header top bar text.
-	if ( isset( $wp_customize->selective_refresh ) ) {
-		$wp_customize->selective_refresh->add_partial(
-			'estore_bar_text',
-			array(
-				'selector'        => '#header-ticker',
-				'render_callback' => 'estore_bar_text',
-			)
-		);
-	}
 
 	// Header Search.
 	$wp_customize->add_section(
@@ -899,7 +886,7 @@ function estore_customize_register( $wp_customize ) {
 		if ( get_theme_mod( 'estore_bar_activation', '' ) == 1 ) {
 			return true;
 		}
-		
+
 		return false;
 	}
 

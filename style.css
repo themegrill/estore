@@ -103,7 +103,8 @@ a:focus {
 
 a:hover,
 a:active {
-  outline: 0; }
+	outline: 0; }
+
 
 a img {
   border: 0; }
