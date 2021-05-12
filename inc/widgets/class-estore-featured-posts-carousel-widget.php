@@ -138,14 +138,14 @@ class estore_featured_posts_carousel_widget extends WP_Widget {
 							$image_id = get_post_thumbnail_id();
 							$image_url = wp_get_attachment_image_src($image_id,'estore-square', false); ?>
 							<figure class="featured-img">
-								<?php if($image_url[0]) { ?>
+								<?php if ( ! empty( $image_url[0] ) ) { ?>
 									<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 								<?php } else { ?>
 									<img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog.jpg' ); ?>" alt="<?php the_title_attribute(); ?>">
 								<?php } ?>
 								<div class="featured-hover-wrapper">
 									<div class="featured-hover-block">
-										<?php if($image_url[0]) { ?>
+										<?php if ( ! empty( $image_url[0] ) ) { ?>
 											<a href="<?php echo esc_url( $image_url[0] ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"></i></a>
 										<?php } else { ?>
 											<a href="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog.jpg' ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"></i></a>
