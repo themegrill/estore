@@ -1,21 +1,22 @@
-/**
- * Notices.
- */
+/* Notices. */
 .estore-notice {
 	position: relative;
-	padding: 6px 40px 6px 12px;
+	padding: 8px 40px 8px 8px;
 }
 
 .estore-notice .links {
-	margin: 0.5em 0;
+	margin: 1.2em 0;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .estore-notice .links a {
-	margin: 2px;
+	margin-right: 10px;
 }
 
 .estore-notice .links a > span {
 	vertical-align: middle;
+	padding-right: 5px;
 }
 
 .estore-notice .notice-text .coupon-code {
@@ -26,12 +27,9 @@
 	text-decoration: none;
 }
 
-/**
- * Welcome notice.
- */
+/* Welcome notice. */
 .estore-message__content {
 	display: flex;
-	align-items: center;
 }
 
 .estore-message__content .estore-message__image {
@@ -88,29 +86,10 @@ a.estore-message-close:before {
 	transition: all .1s ease-in-out;
 }
 
-@media screen and (max-width: 782px) {
-	.estore-message__image {
+@media screen and (max-width: 768px) {
+	.estore-message__content .estore-message__image {
 		display: none;
 	}
-}
-
-.theme-review-notice .links {
-	margin: 10px 0;
-}
-
-.theme-review-notice .links a {
-	height: auto;
-	padding: 3px 15px;
-	margin-left: 10px;
-	text-transform: uppercase;
-}
-
-.theme-review-notice .links a .dashicons {
-	line-height: 1.2;
-}
-
-.theme-review-notice .links a.button-primary {
-	margin-left: 0;
 }
 
 .estore-message {
@@ -165,9 +144,7 @@ a.estore-message-close:before {
 	margin: 10px 0 0;
 }
 
-/**
- * Dashboard page.
- */
+/* Dashboard page. */
 .wrap .estore-header {
 	background-color: #fff;
 	padding: 12px 20px;
@@ -180,10 +157,8 @@ a.estore-message-close:before {
 	margin-top: 0;
 }
 
-/**
- * Responsive.
- */
-@media (max-width: 600px) {
+/* Responsive. */
+@media (max-width: 768px) {
 	.estore-message__content .estore-screenshot {
 		display: none;
 	}
@@ -191,4 +166,96 @@ a.estore-message-close:before {
 		padding: 0;
 		width: 100%;
 	}
+}
+
+/* eStore review notice */
+.estore-notice.theme-review-notice {
+	border-left-color: #30afb8;
+	padding: 20px 15px;
+}
+
+@media screen and (max-width: 768px) {
+	.estore-notice.theme-review-notice .estore-message__content {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.estore-notice.theme-review-notice a.btn {
+	display: flex;
+	max-width: fit-content;
+	justify-content: center;
+	align-items: center;
+}
+
+.estore-notice.theme-review-notice .estore-message__image {
+	flex: 0;
+	min-height: auto;
+	margin-right: 35px;
+	margin-left: 10px;
+	padding-right: 0;
+	border-right: none;
+}
+
+.estore-notice.theme-review-notice .estore-logo--png {
+	width: 80px;
+	height: 80px;
+}
+
+.estore-notice.theme-review-notice h3 {
+	font-size: 21px;
+	margin: 0;
+	line-height: 1;
+	color: #000;
+}
+
+.estore-notice.theme-review-notice p {
+	font-size: 14px;
+	line-height: 21px;
+	color: #3C434A;
+	margin: 0 0 6px 0;
+	max-width: 720px;
+}
+
+.estore-notice.theme-review-notice span.dashicons.dashicons-smiley.smile-icon {
+	background: #f7e143;
+	border-radius: 50%;
+	font-size: 15px;
+	border: 1px solid;
+	width: 17px;
+	height: 17px;
+}
+
+.estore-notice.theme-review-notice .button-primary {
+	background: #30afb8;
+	border-color: #30afb8;
+	box-shadow: none;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.estore-notice.theme-review-notice .button-primary {
+		margin-bottom: 10px;
+	}
+}
+
+.estore-notice.theme-review-notice .button-secondary {
+	color: #30afb8;
+	border-color: #30afb8;
+	background: #f6f7f7;
+	vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+	.estore-notice.theme-review-notice .button-secondary {
+		margin-bottom: 10px;
+	}
+}
+
+.estore-notice.theme-review-notice strong {
+	color: #000;
+}
+
+.estore-notice.theme-review-notice .links {
+	margin: 1.2em 0 5px 0;
 }
