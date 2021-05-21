@@ -88,7 +88,7 @@ class estore_logo_widget extends WP_Widget {
 		$instance          = $old_instance;
 		$instance['title'] = sanitize_text_field( $new_instance['title'] );
 
-		for ( $i = 1; $i < 7; $i ++ ) {
+		for ( $i = 1; $i < 6; $i ++ ) {
 			$image_link = 'logo_link' . $i;
 			$image_url  = 'logo_image' . $i;
 
