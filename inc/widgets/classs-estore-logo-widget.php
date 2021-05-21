@@ -161,7 +161,7 @@ class estore_logo_widget extends WP_Widget {
 							} else {
 								$image_attr1 = isset( $image_attributes[1] ) ? $image_attributes[1] : '';
 								$image_attr2 = isset( $image_attributes[2] ) ? $image_attributes[2] : '';
-								$output .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '">';
+								$output     .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '">';
 							}
 							$output .= '</div>';
 						}
