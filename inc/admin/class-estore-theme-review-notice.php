@@ -76,7 +76,6 @@ class eStore_Theme_Review_Notice {
 				<div class="estore-message__image">
 					<img class="estore-logo--png" src="<?php echo esc_url( get_template_directory_uri() . '/inc/admin/images/eStore-square-logo.png' ); ?>" alt="<?php esc_attr_e( 'eStore', 'estore' ); ?>" />
 				</div>
-
 				<div class="estore-message__text">
 					<h3><?php echo esc_html( 'HAKUNA MATATA!' ); ?></h3>
 					<p>(
