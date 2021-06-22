@@ -1148,8 +1148,8 @@ msgid ""
 "organized. Theme is fully compatible with WooCommerce and YITH WooCommerce "
 "Wishlist plugins. As an online store owner, attracting customers and "
 "selling products will be lot easier with this theme. Check the demo here: "
-"https://demo.themegrill.com/estore and get free support here: "
-"https://themegrill.com/support-forum/forum/estore-free/"
+"https://themegrilldemos.com/estore/ and get free support here: "
+"https://wordpress.org/support/theme/estore/"
 msgstr ""
 
 #. Author of the plugin/theme
