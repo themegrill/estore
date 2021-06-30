@@ -88,7 +88,7 @@ class estore_logo_widget extends WP_Widget {
 		$instance          = $old_instance;
 		$instance['title'] = sanitize_text_field( $new_instance['title'] );
 
-		for ( $i = 1; $i < 7; $i ++ ) {
+		for ( $i = 1; $i < 6; $i ++ ) {
 			$image_link = 'logo_link' . $i;
 			$image_url  = 'logo_image' . $i;
 
@@ -161,7 +161,7 @@ class estore_logo_widget extends WP_Widget {
 							} else {
 								$image_attr1 = isset( $image_attributes[1] ) ? $image_attributes[1] : '';
 								$image_attr2 = isset( $image_attributes[2] ) ? $image_attributes[2] : '';
-								$output .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '">';
+								$output     .= '<img src="' . esc_url( $image_array[ $j ] ) . '" width="' . esc_attr( $image_attr1 ) . '" height="' . esc_attr( $image_attr2 ) . '">';
 							}
 							$output .= '</div>';
 						}
