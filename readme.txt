@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= TBD =
+* Fix - Search button design issue caused by WP 5.8.
+
 = Version 1.6.0 - 2021-07-06 =
 * Enhancement - Added 'font-display: swap' CSS property for fonts to ensure better load performance.
 
