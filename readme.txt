@@ -86,6 +86,9 @@ If you want the theme to be translated into your language, feel free to contribu
 = TBD =
 * Fix - Mobile design issue of read more button on slider.
 
+= Version 1.6.0 - 2021-07-06 =
+* Enhancement - Added 'font-display: swap' CSS property for fonts to ensure better load performance.
+
 = Version 1.5.9 - 2021-05-07 =
 * Fix - Shop page responsive design issue.
 * Tweak - Update screenshot image source link.
