@@ -65,7 +65,6 @@
     left: 50%;
     top: 50%;
     @include transform(translate(-50%, -50%));
-    min-width: 245px;
     text-align: center;
     padding-bottom: 10px;
     .slider-title {

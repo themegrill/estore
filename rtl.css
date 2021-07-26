@@ -1285,6 +1285,7 @@ article.hentry .entry-footer > span {
     .slider-caption-wrapper .slider-btn {
         font-size: 13px;
         padding: 7px 0 7px 10px;
+		white-space: nowrap;
     }
     .widget_featured_posts_block .tg-column-wrapper .tg-column-3 {
         display: block;
