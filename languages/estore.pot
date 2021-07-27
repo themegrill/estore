@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: eStore 1.5.9\n"
+"Project-Id-Version: eStore 1.6.0\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2021-05-07 04:44:05+00:00\n"
+"POT-Creation-Date: 2021-07-06 08:58:41+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -171,7 +171,6 @@ msgid "Further Actions"
 msgstr ""
 
 #: inc/admin/class-estore-dashboard.php:104
-#: inc/admin/class-estore-theme-review-notice.php:98
 msgid "Got theme support question?"
 msgstr ""
 
@@ -180,6 +179,8 @@ msgid "Leave a review"
 msgstr ""
 
 #: inc/admin/class-estore-notice.php:70 inc/admin/class-estore-notice.php:89
+#: inc/admin/class-estore-theme-review-notice.php:154
+#: inc/admin/class-estore-theme-review-notice.php:172
 #: inc/admin/class-estore-welcome-notice.php:96
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
@@ -189,27 +190,50 @@ msgstr ""
 msgid "Cheatin&#8217; huh?"
 msgstr ""
 
-#: inc/admin/class-estore-theme-review-notice.php:71
-#. Translators: %1$s current user display name.
+#. Theme Name of the plugin/theme
+msgid "eStore"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:85
+#. translators: %s: Smile icon
+msgid "The above word is just to draw your attention. %s"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:94
+#. translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing
+#. of strong tag
 msgid ""
-"Howdy, %1$s! It seems that you have been using this theme for more than 15 "
-"days. We hope you are happy with everything that the theme has to offer. If "
-"you can spare a minute, please help us by leaving a 5-star review on "
-"WordPress.org.  By spreading the love, we can continue to develop new "
-"amazing features in the future, for free!"
+"Hope you are having a nice experience with %1$s %2$s %3$s theme. Please "
+"provide this theme a nice review."
 msgstr ""
 
-#: inc/admin/class-estore-theme-review-notice.php:83
-msgid "Sure"
+#: inc/admin/class-estore-theme-review-notice.php:102
+msgid "What benefit would you have?"
 msgstr ""
 
-#: inc/admin/class-estore-theme-review-notice.php:88
+#: inc/admin/class-estore-theme-review-notice.php:108
+#. translators: %s: Smiley icon
+msgid ""
+"Basically, it would encourage us to release updates regularly with new "
+"features & bug fixes so that you can keep on using the theme without any "
+"issues and also to provide free support like we have been doing. %s"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:117
+msgid "Sure, I'd love to!"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:122
+msgid "I already did!"
+msgstr ""
+
+#: inc/admin/class-estore-theme-review-notice.php:127
 #: inc/admin/class-estore-upgrade-notice.php:111
 msgid "Maybe later"
 msgstr ""
 
-#: inc/admin/class-estore-theme-review-notice.php:93
-msgid "I already did"
+#: inc/admin/class-estore-theme-review-notice.php:132
+msgid "I have a query"
 msgstr ""
 
 #: inc/admin/class-estore-upgrade-notice.php:106
@@ -220,10 +244,6 @@ msgstr ""
 
 #: inc/admin/class-estore-upgrade-notice.php:116
 msgid "Got pre sales queries?"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "eStore"
 msgstr ""
 
 #: inc/admin/class-estore-welcome-notice.php:73
@@ -608,7 +628,7 @@ msgstr ""
 
 #: inc/widgets/class-estore-728x90-ad.php:29
 #: inc/widgets/class-estore-about.php:27
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:35
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:36
 #: inc/widgets/class-estore-featured-posts-widget.php:33
 #: inc/widgets/class-estore-posts-grid.php:37
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:35
@@ -672,43 +692,43 @@ msgid ""
 "the carousel."
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:15
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:16
 msgid "TG: Category Carousel"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:39
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:40
 #: inc/widgets/class-estore-posts-grid.php:41
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:39
 #: inc/widgets/class-estore-woocommerce-product-grid.php:41
 msgid "Description:"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:43
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:44
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:31
 #: inc/widgets/class-estore-featured-posts-widget.php:37
 msgid "Number of posts to display:"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:48
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:49
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:36
 #: inc/widgets/class-estore-featured-posts-widget.php:42
 msgid "Show latest Posts"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:49
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:50
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:37
 #: inc/widgets/class-estore-featured-posts-widget.php:43
 msgid "Show posts from a category"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:53
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:54
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:41
 #: inc/widgets/class-estore-featured-posts-widget.php:47
 #: inc/widgets/class-estore-woocommerce-product-slider.php:41
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:159
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:168
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:104
 msgid "Read More"
 msgstr ""
