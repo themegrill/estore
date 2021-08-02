@@ -1886,8 +1886,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 80%;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
   .slider-caption-wrapper .slider-title {
     font-size: 32px;
     line-height: 40px;
