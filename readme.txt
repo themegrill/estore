@@ -83,7 +83,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= TBD =
+= Version 1.6.1 - 2021-08-02 =
 * Fix - Mobile design issue of read more button on slider.
 
 = Version 1.6.0 - 2021-07-06 =
