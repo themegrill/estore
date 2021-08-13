@@ -148,13 +148,13 @@ class eStore_Theme_Review_Notice {
 	public function ignore_theme_review_notice() {
 
 		// If user clicks to ignore the notice, add that to their user meta.
-		if ( isset( $_GET[ 'nag_estore_ignore_theme_review_notice' ] ) && isset( $_GET[ '_estore_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_estore_ignore_theme_review_notice'] ) && isset( $_GET['_estore_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_estore_ignore_theme_review_notice_nonce' ] ), 'nag_estore_ignore_theme_review_notice_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_estore_ignore_theme_review_notice_nonce'] ), 'nag_estore_ignore_theme_review_notice_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'estore' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_estore_ignore_theme_review_notice' ] ) {
+			if ( '0' === $_GET['nag_estore_ignore_theme_review_notice'] ) {
 				add_user_meta( get_current_user_id(), 'estore_ignore_theme_review_notice', 'true', true );
 			}
 		}
@@ -166,13 +166,13 @@ class eStore_Theme_Review_Notice {
 	public function ignore_theme_review_notice_partially() {
 
 		// If user clicks to ignore the notice, add that to their user meta.
-		if ( isset( $_GET[ 'nag_estore_ignore_theme_review_notice_partially' ] ) && isset( $_GET[ '_estore_ignore_theme_review_notice_nonce' ] ) ) {
+		if ( isset( $_GET['nag_estore_ignore_theme_review_notice_partially'] ) && isset( $_GET['_estore_ignore_theme_review_notice_nonce'] ) ) {
 
-			if ( ! wp_verify_nonce( wp_unslash( $_GET[ '_estore_ignore_theme_review_notice_nonce' ] ), 'nag_estore_ignore_theme_review_notice_partially_nonce' ) ) {
+			if ( ! wp_verify_nonce( wp_unslash( $_GET['_estore_ignore_theme_review_notice_nonce'] ), 'nag_estore_ignore_theme_review_notice_partially_nonce' ) ) {
 				wp_die( esc_html__( 'Action failed. Please refresh the page and retry.', 'estore' ) );
 			}
 
-			if ( '0' === $_GET[ 'nag_estore_ignore_theme_review_notice_partially' ] ) {
+			if ( '0' === $_GET['nag_estore_ignore_theme_review_notice_partially'] ) {
 				update_user_meta( get_current_user_id(), 'nag_estore_ignore_theme_review_notice_partially', time() );
 			}
 		}
