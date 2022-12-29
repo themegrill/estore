@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version TBD =
+* Fix - WooCommerce product thumbnail size issue.
+
 = Version 1.6.1 - 2021-08-02 =
 * Fix - Mobile design issue of read more button on slider.
 

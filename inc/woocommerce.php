@@ -315,7 +315,7 @@ if ( ! function_exists( 'estore_template_loop_product_thumbnail' ) ) {
 			$image_id  = get_post_thumbnail_id( $post->ID );
 			$image_url = wp_get_attachment_image_src( $image_id, $size, false ); ?>
 			<figure class="products-img">
-				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><?php woocommerce_template_loop_product_thumbnail() ?></a>
+				<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><?php woocommerce_template_loop_product_thumbnail(); ?></a>
 				<?php if ( $product->is_on_sale() ) : ?>
 					<?php echo apply_filters( 'woocommerce_sale_flash', '<div class="sales-tag">' . esc_html__( 'Sale!', 'estore' ) . '</div>', $post, $product ); ?>
 				<?php endif; ?>
