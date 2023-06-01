@@ -164,7 +164,7 @@ jQuery( window ).on(
 
 		jQuery( '.toggle-wrap .toggle' ).click(
 			function ( event ) {
-				jQuery( '#primary-menu,#menu-mobile' ).slideToggle( 'slow' );
+				jQuery( '#menu-mobile' ).slideToggle( 'slow' );
 			}
 		);
 
