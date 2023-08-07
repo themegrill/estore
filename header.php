@@ -43,9 +43,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 
 	<?php do_action( 'estore_before_header' ); ?>
 
-	<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_below_main_menu' ) == 'header_media_above_site_title' ) {
+	<?php
+	if ( get_theme_mod( 'estore_header_media_placement', 'header_media_below_main_menu' ) == 'header_media_above_site_title' ) {
 		estore_the_custom_header_markup();
-	} ?>
+	}
+	?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php if ( get_theme_mod( 'estore_bar_activation' ) == '1' ) : ?>
@@ -62,7 +64,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 
 					<div class="right-top-header">
 						<div class="top-header-menu-wrapper">
-							<?php wp_nav_menu(
+							<?php
+							wp_nav_menu(
 								array(
 									'theme_location' => 'header',
 									'menu_id'        => 'header-menu',
@@ -72,8 +75,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 							?>
 						</div> <!-- top-header-menu-wrapper end -->
 						<?php
-						if ( class_exists( 'woocommerce' ) ):
-							if ( get_theme_mod( 'estore_header_ac_btn', '' ) == '1' ):
+						if ( class_exists( 'woocommerce' ) ) :
+							if ( get_theme_mod( 'estore_header_ac_btn', '' ) == '1' ) :
 								?>
 								<div class="login-register-wrap right-header-block">
 									<?php if ( is_user_logged_in() ) { ?>
@@ -86,13 +89,15 @@ if ( function_exists( 'wp_body_open' ) ) {
 										   class="user-icon"><?php esc_html_e( 'Login/ Register', 'estore' ); ?>
 									<?php } ?>
 								</div>
-							<?php endif;
-							if ( get_theme_mod( 'estore_header_currency', '' ) == '1' ):
+								<?php
+							endif;
+							if ( get_theme_mod( 'estore_header_currency', '' ) == '1' ) :
 								?>
 								<div class="currency-wrap right-header-block">
-									<a href="#"><?php echo esc_html( get_woocommerce_currency() ); ?><?php echo "(" . esc_html( get_woocommerce_currency_symbol() ) . ")"; ?></a>
+									<a href="#"><?php echo esc_html( get_woocommerce_currency() ); ?><?php echo '(' . esc_html( get_woocommerce_currency_symbol() ) . ')'; ?></a>
 								</div> <!--currency-wrap end -->
-							<?php endif; // header currency check
+								<?php
+							endif; // header currency check
 							?>
 
 							<?php
@@ -111,12 +116,12 @@ if ( function_exists( 'wp_body_open' ) ) {
 		<div class="middle-header-wrapper clearfix">
 			<div class="tg-container">
 				<div class="logo-wrapper clearfix">
-					<?php if ( ( get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'show_both' || get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'header_logo_only' ) ) {
+					<?php
+					if ( ( get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'show_both' || get_theme_mod( 'estore_logo_placement', 'header_text_only' ) == 'header_logo_only' ) ) {
 
 						if ( function_exists( 'the_custom_logo' ) && has_custom_logo( $blog_id = 0 ) ) {
 							estore_the_custom_logo();
 						}
-
 					} // Checks for logo appearance
 
 					$screen_reader = 'with-logo-text';
@@ -138,9 +143,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 								   title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
 								   rel="home"><?php bloginfo( 'name' ); ?></a>
 							</h3>
-						<?php endif;
+							<?php
+						endif;
 						$description = get_bloginfo( 'description', 'display' );
-						if ( $description || is_customize_preview() ) : ?>
+						if ( $description || is_customize_preview() ) :
+							?>
 							<p id="site-description"><?php echo $description; ?></p>
 						<?php endif; ?>
 					</div>
@@ -148,18 +155,10 @@ if ( function_exists( 'wp_body_open' ) ) {
 
 				<div class="wishlist-cart-wrapper clearfix">
 					<?php
-					if ( function_exists( 'YITH_WCWL' ) ) {
-						$wishlist_url = YITH_WCWL()->get_wishlist_url();
+					echo do_shortcode( '[yith_wcwl_items_count]' );
+
+					if ( class_exists( 'woocommerce' ) ) :
 						?>
-						<div class="wishlist-wrapper">
-							<a class="quick-wishlist" href="<?php echo esc_url( $wishlist_url ); ?>" title="Wishlist">
-								<i class="fa fa-heart"></i>
-								<span class="wishlist-value"><?php echo absint( yith_wcwl_count_products() ); ?></span>
-							</a>
-						</div>
-						<?php
-					}
-					if ( class_exists( 'woocommerce' ) ) : ?>
 						<div class="cart-wrapper">
 							<div class="estore-cart-views">
 
@@ -201,7 +200,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 							<?php echo esc_html( $menu_name ); ?><i class="fa fa-navicon"> </i>
 						</div>
 						<nav id="category-navigation" class="category-menu-wrapper hide" role="navigation">
-							<?php wp_nav_menu(
+							<?php
+							wp_nav_menu(
 								array(
 									'theme_location' => 'secondary',
 									'menu_id'        => 'category-menu',
@@ -229,7 +229,8 @@ if ( function_exists( 'wp_body_open' ) ) {
 				</div> <!-- search-user-wrapper -->
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<div class="toggle-wrap"><span class="toggle"><i class="fa fa-reorder"> </i></span></div>
-					<?php wp_nav_menu(
+					<?php
+					wp_nav_menu(
 						array(
 							'theme_location' => 'primary',
 							'menu_id'        => 'primary-menu',
@@ -242,9 +243,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 		</div> <!-- bottom-header.wrapper end -->
 	</header>
 
-	<?php if ( get_theme_mod( 'estore_header_media_placement', 'header_media_below_main_menu' ) == 'header_media_below_main_menu' ) {
+	<?php
+	if ( get_theme_mod( 'estore_header_media_placement', 'header_media_below_main_menu' ) == 'header_media_below_main_menu' ) {
 		estore_the_custom_header_markup();
-	} ?>
+	}
+	?>
 
 	<?php do_action( 'estore_after_header' ); ?>
 	<?php do_action( 'estore_before_main' ); ?>
