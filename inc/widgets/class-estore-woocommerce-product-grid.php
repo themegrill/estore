@@ -266,12 +266,12 @@ class estore_woocommerce_product_grid extends WP_Widget {
 								<?php if ( $price_html = $product->get_price_html() ) : ?>
 									<span class="price"><span class="price-text"><?php esc_html_e('Price: ', 'estore'); ?></span><?php echo $price_html; ?></span>
 								<?php endif; ?>
-								<div class="cart-wishlist-btn">
+								<div class="cart-wishlist-btn" style="display: flex">
 									<?php
 									if( function_exists( 'YITH_WCWL' ) ){
-										$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
+										$url = $product->get_permalink();
 										?>
-										<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
+										<a href="<?php echo esc_url($url); ?>" style="display: block" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
 									<?php }
 									woocommerce_template_loop_add_to_cart( $product );
 									?>

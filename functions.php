@@ -74,9 +74,9 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		// Adding excerpt option box for pages as well
 		add_post_type_support( 'page', 'excerpt' );
 
-
 		// Adds Support for Custom Logo Introduced in WordPress 4.5
-		add_theme_support( 'custom-logo',
+		add_theme_support(
+			'custom-logo',
 			array(
 				'height'      => 80,
 				'width'       => 160,
@@ -93,29 +93,40 @@ if ( ! function_exists( 'estore_setup' ) ) :
 		add_theme_support( 'post-thumbnails' );
 
 		// This theme uses wp_nav_menu() in two locations.
-		register_nav_menus( array(
-			'primary'   => esc_html__( 'Primary Menu', 'estore' ),
-			'header'    => esc_html__( 'Header Top Bar Menu', 'estore' ),
-			'secondary' => esc_html__( 'Secondary Menu', 'estore' ),
-		) );
+		register_nav_menus(
+			array(
+				'primary'   => esc_html__( 'Primary Menu', 'estore' ),
+				'header'    => esc_html__( 'Header Top Bar Menu', 'estore' ),
+				'secondary' => esc_html__( 'Secondary Menu', 'estore' ),
+			)
+		);
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */
-		add_theme_support( 'html5', array(
-			'search-form',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'caption',
-		) );
+		add_theme_support(
+			'html5',
+			array(
+				'search-form',
+				'comment-form',
+				'comment-list',
+				'gallery',
+				'caption',
+			)
+		);
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'estore_custom_background_args', array(
-			'default-color' => 'ffffff',
-			'default-image' => '',
-		) ) );
+		add_theme_support(
+			'custom-background',
+			apply_filters(
+				'estore_custom_background_args',
+				array(
+					'default-color' => 'ffffff',
+					'default-image' => '',
+				)
+			)
+		);
 
 		// Cropping the images to different sizes to be used in the theme
 		add_image_size( 'estore-featured-image', 380, 250, true );
@@ -139,7 +150,6 @@ if ( ! function_exists( 'estore_setup' ) ) :
 
 		// Gutenberg responsive embeds support.
 		add_theme_support( 'responsive-embeds' );
-
 
 		// Selective refresh widgets support
 		add_theme_support( 'customize-selective-refresh-widgets' );
@@ -302,7 +312,7 @@ if ( ! function_exists( 'estore_entry_title' ) ) :
 		elseif ( is_404() ) :
 			?>
 			<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'estore' ); ?></h1>
-		<?php
+			<?php
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -310,3 +320,53 @@ if ( ! function_exists( 'estore_entry_title' ) ) :
 	}
 
 endif;
+
+if ( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_get_items_count' ) ) {
+	function yith_wcwl_get_items_count() {
+		ob_start();
+		?>
+		<div class="wishlist-wrapper">
+		<a class="quick-wishlist" href="<?php echo esc_url( YITH_WCWL()->get_wishlist_url() ); ?>">
+        <span class="yith-wcwl-items-count">
+          <i class="yith-wcwl-icon fa fa-heart-o"><span class="wishlist-value"><?php echo esc_html( yith_wcwl_count_all_products() ); ?></span></i>
+        </span>
+		</a>
+		</div>
+		<?php
+		return ob_get_clean();
+	}
+
+	add_shortcode( 'yith_wcwl_items_count', 'yith_wcwl_get_items_count' );
+}
+
+if ( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_ajax_update_count' ) ) {
+	function yith_wcwl_ajax_update_count() {
+		wp_send_json( array(
+			'count' => yith_wcwl_count_all_products()
+		) );
+	}
+
+	add_action( 'wp_ajax_yith_wcwl_update_wishlist_count', 'yith_wcwl_ajax_update_count' );
+	add_action( 'wp_ajax_nopriv_yith_wcwl_update_wishlist_count', 'yith_wcwl_ajax_update_count' );
+}
+
+if ( defined( 'YITH_WCWL' ) && ! function_exists( 'yith_wcwl_enqueue_custom_script' ) ) {
+	function yith_wcwl_enqueue_custom_script() {
+		wp_add_inline_script(
+			'jquery-yith-wcwl',
+			"
+        jQuery( function( $ ) {
+          $( document ).on( 'added_to_wishlist removed_from_wishlist', function() {
+            $.get( yith_wcwl_l10n.ajax_url, {
+              action: 'yith_wcwl_update_wishlist_count'
+            }, function( data ) {
+              $('.yith-wcwl-items-count i').children('span').html( data.count );
+            } );
+          } );
+        } );
+      "
+		);
+	}
+
+	add_action( 'wp_enqueue_scripts', 'yith_wcwl_enqueue_custom_script', 20 );
+}
