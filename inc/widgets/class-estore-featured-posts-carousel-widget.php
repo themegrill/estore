@@ -165,7 +165,21 @@ class estore_featured_posts_carousel_widget extends WP_Widget {
 							</figure>
 							<div class="featured-content-wrapper">
 								<h3 class="featured-title"> <a title="<?php the_title_attribute(); ?>" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<a href="<?php the_permalink(); ?>" class="single_add_to_wishlist" ><?php esc_html_e( 'Read More', 'estore' ); ?><i class="fa fa-heart"></i></a>
+								<?php if ( function_exists( 'YITH_WCWL' ) ) {
+									$product_id     = get_the_ID();
+									$wishlist_url   = esc_url( YITH_WCWL()->get_wishlist_url() );
+									$wishlist_url   = add_query_arg(
+										array(
+											'add_to_wishlist' => $product_id,
+										),
+										$wishlist_url
+									);
+									$wishlist_class = YITH_WCWL()->is_product_in_wishlist( $product_id ) ? 'yith-wcwl-wishlistexistsbrowse' : 'add_to_wishlist single_add_to_wishlist';?>
+									<a href="<?php echo esc_url( $wishlist_url ); ?>" class="<?php echo esc_html_e( $wishlist_class ); ?>" data-product-id="<?php echo esc_attr( $product_id ); ?>" data-product-type="simple" data-original-product-id="<?php echo esc_attr( $product_id ); ?>" data-title="<?php esc_attr_e( 'Add to Wishlist', 'estore' ); ?>" rel="nofollow">
+										<i class="fa fa-heart"></i>
+										<span><?php esc_html_e( 'Add to Wishlist', 'estore' ); ?></span>
+									</a>
+								<?php } ?>
 							</div><!-- featured content wrapper -->
 						</li>
 						<?php

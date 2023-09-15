@@ -231,11 +231,19 @@ class estore_woocommerce_product_grid extends WP_Widget {
 												echo '<div class="star-rating"></div>' ;
 											}?>
 										</div>
-										<?php
-										if( function_exists( 'YITH_WCWL' ) ){
-											$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
-											?>
-											<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
+										<?php if ( function_exists( 'YITH_WCWL' ) ) {
+											$product_id   = get_the_ID();
+											$wishlist_url = esc_url( YITH_WCWL()->get_wishlist_url() );
+											$wishlist_url = add_query_arg(
+												array(
+													'add_to_wishlist' => $product_id,
+												),
+												$wishlist_url
+											);  ?>
+											<a href="<?php echo esc_url( $wishlist_url ); ?>" class="add_to_wishlist single_add_to_wishlist" data-product-id="<?php echo esc_attr( $product_id ); ?>" data-product-type="simple" data-original-product-id="<?php echo esc_attr( $product_id ); ?>" data-title="<?php esc_attr_e( 'Add to Wishlist', 'estore' ); ?>" rel="nofollow">
+												<i class="fa fa-heart"></i>
+												<span><?php esc_html_e( 'Add to Wishlist', 'estore' ); ?></span>
+											</a>
 										<?php } ?>
 									</div> <!-- hot-content-wrapper end -->
 								</div> <!-- hot-product-content-wrapper end -->
@@ -267,14 +275,22 @@ class estore_woocommerce_product_grid extends WP_Widget {
 									<span class="price"><span class="price-text"><?php esc_html_e('Price: ', 'estore'); ?></span><?php echo $price_html; ?></span>
 								<?php endif; ?>
 								<div class="cart-wishlist-btn">
-									<?php
-									if( function_exists( 'YITH_WCWL' ) ){
-										$url = add_query_arg( 'add_to_wishlist', $product->get_id() );
-										?>
-										<a href="<?php echo esc_url($url); ?>" class="single_add_to_wishlist" ><?php esc_html_e('Add to Wishlist','estore'); ?><i class="fa fa-heart"></i></a>
-									<?php }
-									woocommerce_template_loop_add_to_cart( $product );
-									?>
+                              <?php if ( function_exists( 'YITH_WCWL' ) ) {
+									$product_id     = get_the_ID();
+									$wishlist_url   = esc_url( YITH_WCWL()->get_wishlist_url() );
+									$wishlist_url   = add_query_arg(
+										array(
+											'add_to_wishlist' => $product_id,
+										),
+										$wishlist_url
+									);
+									$wishlist_class = YITH_WCWL()->is_product_in_wishlist( $product_id ) ? 'yith-wcwl-wishlistexistsbrowse' : 'add_to_wishlist single_add_to_wishlist';?>
+									<a href="<?php echo esc_url( $wishlist_url ); ?>" class="<?php echo esc_html_e( $wishlist_class ); ?>" data-product-id="<?php echo esc_attr( $product_id ); ?>" data-product-type="simple" data-original-product-id="<?php echo esc_attr( $product_id ); ?>" data-title="<?php esc_attr_e( 'Add to Wishlist', 'estore' ); ?>" rel="nofollow">
+										<i class="fa fa-heart"></i>
+										<span><?php esc_html_e( 'Add to Wishlist', 'estore' ); ?></span>
+									</a>
+									
+								<?php } woocommerce_template_loop_add_to_cart( $product );  ?>
 
 								</div> <!-- cart-wishlist-btn end -->
 							</div>

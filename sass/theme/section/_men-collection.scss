@@ -190,6 +190,13 @@
                     border-color: $color_default_hover;
                 }
             }
+            &.yith-wcwl-wishlistexistsbrowse {
+                i {
+                    color: #ffffff !important;
+                    background: $color_default_hover;
+                    border-color: $color_default_hover;
+                }
+            }
         }
         a.added_to_cart {
             font-size: 14px;

@@ -177,3 +177,30 @@ jQuery( window ).on(
 				jQuery( this ).parent( '.page_item_has_children' ).children( 'ul.children' ).first().slideToggle( '1000' );
 			}
 		);
+
+		jQuery(
+			function ($) {
+				$( document ).on(
+					"added_to_wishlist removed_from_wishlist",
+					function () {
+						var $currentWishlistItem = $( this ).find(
+							".cart-wishlist-btn .single_add_to_wishlist"
+						);
+
+						// Remove the specified classes
+						$currentWishlistItem.removeClass( "add_to_wishlist" );
+
+						// Rest of your code
+						$.get(
+							yith_wcwl_l10n.ajax_url,
+							{
+								action: "yith_wcwl_update_wishlist_count",
+							},
+							function (data) {
+								$( ".wishlist-value" ).html( data.count );
+							}
+						);
+					}
+				);
+			}
+		);
