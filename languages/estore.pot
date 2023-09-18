@@ -1,183 +1,216 @@
-# Copyright (C) 2021 ThemeGrill
+# Copyright (C) 2023 ThemeGrill
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: eStore 1.6.1\n"
 "Report-Msgid-Bugs-To: themegrill@gmail.com\n"
-"POT-Creation-Date: 2021-08-02 12:21:41+00:00\n"
+"POT-Creation-Date: 2023-09-15 09:04:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2021-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: ThemeGrill <themegrill@gmail.com>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: 404.php:20 404.php:33
+#: 404.php:20 404.php:33 dist/estore/404.php:20 dist/estore/404.php:33
 msgid "404"
 msgstr ""
 
-#: 404.php:35
+#: 404.php:35 dist/estore/404.php:35
 msgid "error"
 msgstr ""
 
-#: 404.php:38 functions.php:304
+#: 404.php:38 dist/estore/404.php:38 dist/estore/functions.php:304
+#: functions.php:304
 msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
-#: 404.php:41
+#: 404.php:41 dist/estore/404.php:41
 msgid "It looks like nothing was found at this location. Try the search below."
 msgstr ""
 
-#: comments.php:42 comments.php:63
+#: comments.php:42 comments.php:63 dist/estore/comments.php:42
+#: dist/estore/comments.php:63
 msgid "Comment navigation"
 msgstr ""
 
-#: comments.php:45 comments.php:66
+#: comments.php:45 comments.php:66 dist/estore/comments.php:45
+#: dist/estore/comments.php:66
 msgid "Older Comments"
 msgstr ""
 
-#: comments.php:46 comments.php:67
+#: comments.php:46 comments.php:67 dist/estore/comments.php:46
+#: dist/estore/comments.php:67
 msgid "Newer Comments"
 msgstr ""
 
-#: comments.php:79
+#: comments.php:79 dist/estore/comments.php:79
 msgid "Comments are closed."
 msgstr ""
 
-#: footer.php:18
+#: dist/estore/footer.php:18 footer.php:18
 msgid "Copyright &copy; %1$s %2$s. All rights reserved."
 msgstr ""
 
-#: footer.php:19
+#: dist/estore/footer.php:19 footer.php:19
 msgid "Theme: %1$s by %2$s."
 msgstr ""
 
-#: footer.php:20
+#: dist/estore/footer.php:20 footer.php:20
 msgid "Powered by %s."
 msgstr ""
 
-#: functions.php:97
+#: dist/estore/functions.php:97 functions.php:97
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:98
+#: dist/estore/functions.php:98 functions.php:98
 msgid "Header Top Bar Menu"
 msgstr ""
 
-#: functions.php:99
+#: dist/estore/functions.php:99 functions.php:99
 msgid "Secondary Menu"
 msgstr ""
 
-#: header.php:42
+#: dist/estore/header.php:42 header.php:42
 msgid "Skip to content"
 msgstr ""
 
-#: header.php:81 header.php:82 header.php:221
+#: dist/estore/header.php:81 dist/estore/header.php:82
+#: dist/estore/header.php:221 header.php:81 header.php:82 header.php:221
 msgid "My Account"
 msgstr ""
 
-#: header.php:85
+#: dist/estore/header.php:85 header.php:85
 msgid "Login/Register"
 msgstr ""
 
-#: header.php:86
+#: dist/estore/header.php:86 header.php:86
 msgid "Login/ Register"
 msgstr ""
 
-#: header.php:174 inc/woocommerce.php:511 woocommerce/cart/cart-totals.php:114
+#: dist/estore/header.php:174 dist/estore/inc/woocommerce.php:510
+#: dist/estore/woocommerce/cart/cart-totals.php:114
+#: dist/estore/woocommerce/cart/cart-totals.php:115 header.php:174
+#: inc/woocommerce.php:510 woocommerce/cart/cart-totals.php:114
 #: woocommerce/cart/cart-totals.php:115
 msgid "Total"
 msgstr ""
 
-#: header.php:225
+#: dist/estore/header.php:225 header.php:225
 msgid "Login / Register"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:39
 #: inc/admin/class-estore-admin.php:39
 msgid "Processing..."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:52
 #: inc/admin/class-estore-admin.php:52
 msgid "Dismiss"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:57
 #: inc/admin/class-estore-admin.php:57
 msgid "estore"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:61
 #: inc/admin/class-estore-admin.php:61
 msgid ""
 "Welcome! Thank you for choosing eStore! To fully take advantage of the best "
 "our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:63
 #: inc/admin/class-estore-admin.php:63
 msgid ""
 "Clicking the button below will install and activate the ThemeGrill demo "
 "importer plugin."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-admin.php:67
+#: dist/estore/inc/admin/class-estore-welcome-notice.php:42
 #: inc/admin/class-estore-admin.php:67
 #: inc/admin/class-estore-welcome-notice.php:42
 msgid "Get started with eStore"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:42
 #: inc/admin/class-estore-dashboard.php:42
 #. translators: %s: Theme Name.
 msgid "%s Options"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:69
 #: inc/admin/class-estore-dashboard.php:69
 #. translators: %s: Theme version.
 msgid "eStore %s"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:75
 #: inc/admin/class-estore-dashboard.php:75
 msgid "Welcome to eStore!"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:79
 #: inc/admin/class-estore-dashboard.php:79
 #. translators: %s: Theme Name.
 msgid "Important links to get you started with %s"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:85
 #: inc/admin/class-estore-dashboard.php:85
 msgid "Get Started"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:88
 #: inc/admin/class-estore-dashboard.php:88
 msgid "Learn Basics"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:93
 #: inc/admin/class-estore-dashboard.php:93
 msgid "Next Steps"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:95
 #: inc/admin/class-estore-dashboard.php:95
 msgid "Documentation"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:96
 #: inc/admin/class-estore-dashboard.php:96
 msgid "Starter Demos"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:97
 #: inc/admin/class-estore-dashboard.php:97
 msgid "Premium Version"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:102
 #: inc/admin/class-estore-dashboard.php:102
 msgid "Further Actions"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:104
 #: inc/admin/class-estore-dashboard.php:104
 msgid "Got theme support question?"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-dashboard.php:105
 #: inc/admin/class-estore-dashboard.php:105
 msgid "Leave a review"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-notice.php:70
+#: dist/estore/inc/admin/class-estore-notice.php:89
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:154
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:172
+#: dist/estore/inc/admin/class-estore-welcome-notice.php:96
 #: inc/admin/class-estore-notice.php:70 inc/admin/class-estore-notice.php:89
 #: inc/admin/class-estore-theme-review-notice.php:154
 #: inc/admin/class-estore-theme-review-notice.php:172
@@ -185,6 +218,9 @@ msgstr ""
 msgid "Action failed. Please refresh the page and retry."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-notice.php:74
+#: dist/estore/inc/admin/class-estore-notice.php:93
+#: dist/estore/inc/admin/class-estore-welcome-notice.php:100
 #: inc/admin/class-estore-notice.php:74 inc/admin/class-estore-notice.php:93
 #: inc/admin/class-estore-welcome-notice.php:100
 msgid "Cheatin&#8217; huh?"
@@ -194,11 +230,13 @@ msgstr ""
 msgid "eStore"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:85
 #: inc/admin/class-estore-theme-review-notice.php:85
 #. translators: %s: Smile icon
 msgid "The above word is just to draw your attention. %s"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:94
 #: inc/admin/class-estore-theme-review-notice.php:94
 #. translators: %1$s: Opening of strong tag, %2$s: Theme's Name, %3$s: Closing
 #. of strong tag
@@ -207,10 +245,12 @@ msgid ""
 "provide this theme a nice review."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:102
 #: inc/admin/class-estore-theme-review-notice.php:102
 msgid "What benefit would you have?"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:108
 #: inc/admin/class-estore-theme-review-notice.php:108
 #. translators: %s: Smiley icon
 msgid ""
@@ -219,33 +259,41 @@ msgid ""
 "issues and also to provide free support like we have been doing. %s"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:117
 #: inc/admin/class-estore-theme-review-notice.php:117
 msgid "Sure, I'd love to!"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:122
 #: inc/admin/class-estore-theme-review-notice.php:122
 msgid "I already did!"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:127
+#: dist/estore/inc/admin/class-estore-upgrade-notice.php:111
 #: inc/admin/class-estore-theme-review-notice.php:127
 #: inc/admin/class-estore-upgrade-notice.php:111
 msgid "Maybe later"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-theme-review-notice.php:132
 #: inc/admin/class-estore-theme-review-notice.php:132
 msgid "I have a query"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-upgrade-notice.php:106
 #: inc/admin/class-estore-upgrade-notice.php:106
 #. Translators: %1$s current user display name., %2$s this theme name., %3$s
 #. discount coupon code., %4$s discount percentage.
 msgid "Upgrade to pro"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-upgrade-notice.php:116
 #: inc/admin/class-estore-upgrade-notice.php:116
 msgid "Got pre sales queries?"
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-welcome-notice.php:73
 #: inc/admin/class-estore-welcome-notice.php:73
 #. translators: 1: welcome page link starting html tag, 2: welcome page link
 #. ending html tag.
@@ -254,378 +302,403 @@ msgid ""
 "our theme can offer please make sure you visit our %1$swelcome page%2$s."
 msgstr ""
 
+#: dist/estore/inc/admin/class-estore-welcome-notice.php:82
 #: inc/admin/class-estore-welcome-notice.php:82
 msgid ""
 "Clicking the button will install and activate the ThemeGrill demo importer "
 "plugin."
 msgstr ""
 
-#: inc/admin/meta-boxes.php:15
+#: dist/estore/inc/admin/meta-boxes.php:15 inc/admin/meta-boxes.php:15
 msgid "Select Layout"
 msgstr ""
 
+#: dist/estore/inc/admin/meta-boxes.php:29 dist/estore/inc/customizer.php:396
 #: inc/admin/meta-boxes.php:29 inc/customizer.php:396
 msgid "Default Layout"
 msgstr ""
 
+#: dist/estore/inc/admin/meta-boxes.php:34 dist/estore/inc/widgets.php:20
 #: inc/admin/meta-boxes.php:34 inc/widgets.php:20
 msgid "Right Sidebar"
 msgstr ""
 
+#: dist/estore/inc/admin/meta-boxes.php:39 dist/estore/inc/widgets.php:30
 #: inc/admin/meta-boxes.php:39 inc/widgets.php:30
 msgid "Left Sidebar"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:44
+#: dist/estore/inc/admin/meta-boxes.php:44 inc/admin/meta-boxes.php:44
 msgid "No Sidebar Full Width"
 msgstr ""
 
-#: inc/admin/meta-boxes.php:49
+#: dist/estore/inc/admin/meta-boxes.php:49 inc/admin/meta-boxes.php:49
 msgid "No Sidebar Content Centered"
 msgstr ""
 
-#: inc/customizer.php:94
+#: dist/estore/inc/customizer.php:94 inc/customizer.php:94
 msgid "View PRO version"
 msgstr ""
 
-#: inc/customizer.php:115
+#: dist/estore/inc/customizer.php:115 inc/customizer.php:115
 msgid "Choose the required option for Header Media placement"
 msgstr ""
 
-#: inc/customizer.php:119
+#: dist/estore/inc/customizer.php:119 inc/customizer.php:119
 msgid "Position One: Display Header Media just above the site Title/Text"
 msgstr ""
 
-#: inc/customizer.php:120
+#: dist/estore/inc/customizer.php:120 inc/customizer.php:120
 msgid "Postion Two: Display Header Media just below the Main/Primary Menu"
 msgstr ""
 
-#: inc/customizer.php:132
+#: dist/estore/inc/customizer.php:132 inc/customizer.php:132
 msgid "Change Header Settings here"
 msgstr ""
 
-#: inc/customizer.php:134
+#: dist/estore/inc/customizer.php:134 inc/customizer.php:134
 msgid "Header Options"
 msgstr ""
 
-#: inc/customizer.php:143
+#: dist/estore/inc/customizer.php:143 inc/customizer.php:143
 msgid "Header Integrations"
 msgstr ""
 
-#: inc/customizer.php:161
+#: dist/estore/inc/customizer.php:161 inc/customizer.php:161
 msgid "Enable Language Selection (WPML)"
 msgstr ""
 
-#: inc/customizer.php:174
+#: dist/estore/inc/customizer.php:174 inc/customizer.php:174
 msgid "Header Logo"
 msgstr ""
 
-#: inc/customizer.php:192
+#: dist/estore/inc/customizer.php:192 inc/customizer.php:192
 msgid "Choose the required option"
 msgstr ""
 
-#: inc/customizer.php:196
+#: dist/estore/inc/customizer.php:196 inc/customizer.php:196
 msgid "Header Logo Only"
 msgstr ""
 
-#: inc/customizer.php:197
+#: dist/estore/inc/customizer.php:197 inc/customizer.php:197
 msgid "Header Text Only"
 msgstr ""
 
-#: inc/customizer.php:198
+#: dist/estore/inc/customizer.php:198 inc/customizer.php:198
 msgid "Show both header logo and text"
 msgstr ""
 
-#: inc/customizer.php:199
+#: dist/estore/inc/customizer.php:199 inc/customizer.php:199
 msgid "Disable"
 msgstr ""
 
-#: inc/customizer.php:219
+#: dist/estore/inc/customizer.php:219 inc/customizer.php:219
 msgid "Different Logo for Retina Devices?"
 msgstr ""
 
-#: inc/customizer.php:239
+#: dist/estore/inc/customizer.php:239 inc/customizer.php:239
 msgid "Retina Logo"
 msgstr ""
 
-#: inc/customizer.php:240
+#: dist/estore/inc/customizer.php:240 inc/customizer.php:240
 msgid ""
 "Please upload the retina logo double the size of default logo. For eg: If "
 "you upload 100 * 100px for default logo then use 200 * 200px for retina "
 "logo."
 msgstr ""
 
-#: inc/customizer.php:254
+#: dist/estore/inc/customizer.php:254 inc/customizer.php:254
 msgid "Header Top Bar"
 msgstr ""
 
-#: inc/customizer.php:272
+#: dist/estore/inc/customizer.php:272 inc/customizer.php:272
 msgid "Activate the header top bar"
 msgstr ""
 
-#: inc/customizer.php:295
+#: dist/estore/inc/customizer.php:295 inc/customizer.php:295
 msgid "Header Text"
 msgstr ""
 
-#: inc/customizer.php:318
+#: dist/estore/inc/customizer.php:318 inc/customizer.php:318
 msgid "Header Search"
 msgstr ""
 
-#: inc/customizer.php:335
+#: dist/estore/inc/customizer.php:335 inc/customizer.php:335
 msgid "Choose a search option"
 msgstr ""
 
-#: inc/customizer.php:339
+#: dist/estore/inc/customizer.php:339 inc/customizer.php:339
 msgid "WordPress search"
 msgstr ""
 
-#: inc/customizer.php:340
+#: dist/estore/inc/customizer.php:340 inc/customizer.php:340
 msgid "WooCommerce search"
 msgstr ""
 
-#: inc/customizer.php:353
+#: dist/estore/inc/customizer.php:353 inc/customizer.php:353
 msgid "Design Related Settings"
 msgstr ""
 
-#: inc/customizer.php:355
+#: dist/estore/inc/customizer.php:355 inc/customizer.php:355
 msgid "Design Options"
 msgstr ""
 
-#: inc/customizer.php:364
+#: dist/estore/inc/customizer.php:364 inc/customizer.php:364
 msgid "Primary Color Option"
 msgstr ""
 
-#: inc/customizer.php:385
+#: dist/estore/inc/customizer.php:385 inc/customizer.php:385
 msgid ""
 "This will reflect in links, buttons and many others. Choose a color to "
 "match your site"
 msgstr ""
 
-#: inc/customizer.php:415
+#: dist/estore/inc/customizer.php:415 inc/customizer.php:415
 msgid ""
 "Select default layout. This layout will be reflected in whole site "
 "archives, categories, search page etc. The layout for a single post and "
 "page can be controlled from below options"
 msgstr ""
 
-#: inc/customizer.php:433
+#: dist/estore/inc/customizer.php:433 inc/customizer.php:433
 msgid "Default Page Layout"
 msgstr ""
 
-#: inc/customizer.php:452
+#: dist/estore/inc/customizer.php:452 inc/customizer.php:452
 msgid ""
 "Select default layout for pages. This layout will be reflected in all pages "
 "unless unique layout is set for specific page"
 msgstr ""
 
-#: inc/customizer.php:470
+#: dist/estore/inc/customizer.php:470 inc/customizer.php:470
 msgid "Default Single Post Layout"
 msgstr ""
 
-#: inc/customizer.php:489
+#: dist/estore/inc/customizer.php:489 inc/customizer.php:489
 msgid ""
 "Select default layout for single posts. This layout will be reflected in "
 "all single posts unless unique layout is set for specific post"
 msgstr ""
 
-#: inc/customizer.php:507
+#: dist/estore/inc/customizer.php:507 inc/customizer.php:507
 msgid "Blog Layout"
 msgstr ""
 
-#: inc/customizer.php:524
+#: dist/estore/inc/customizer.php:524 inc/customizer.php:524
 msgid "Choose the layout style for archive pages."
 msgstr ""
 
-#: inc/customizer.php:528
+#: dist/estore/inc/customizer.php:528 inc/customizer.php:528
 msgid "List View"
 msgstr ""
 
-#: inc/customizer.php:529
+#: dist/estore/inc/customizer.php:529 inc/customizer.php:529
 msgid "Grid View"
 msgstr ""
 
-#: inc/customizer.php:539
+#: dist/estore/inc/customizer.php:539 inc/customizer.php:539
 msgid "Footer Widgets"
 msgstr ""
 
-#: inc/customizer.php:556
+#: dist/estore/inc/customizer.php:556 inc/customizer.php:556
 msgid "Choose the number of widget area you want in footer"
 msgstr ""
 
-#: inc/customizer.php:560
+#: dist/estore/inc/customizer.php:560 inc/customizer.php:560
 msgid "1 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:561
+#: dist/estore/inc/customizer.php:561 inc/customizer.php:561
 msgid "2 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:562
+#: dist/estore/inc/customizer.php:562 inc/customizer.php:562
 msgid "3 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:563
+#: dist/estore/inc/customizer.php:563 inc/customizer.php:563
 msgid "4 Footer Widget Area"
 msgstr ""
 
-#: inc/customizer.php:575
+#: dist/estore/inc/customizer.php:575 inc/customizer.php:575
 msgid "Some additional settings."
 msgstr ""
 
-#: inc/customizer.php:577
+#: dist/estore/inc/customizer.php:577 inc/customizer.php:577
 msgid "Additional Options"
 msgstr ""
 
-#: inc/customizer.php:586
+#: dist/estore/inc/customizer.php:586 inc/customizer.php:586
 msgid "Author Bio Option"
 msgstr ""
 
-#: inc/customizer.php:604
+#: dist/estore/inc/customizer.php:604 inc/customizer.php:604
 msgid "Check to display the author bio."
 msgstr ""
 
-#: inc/customizer.php:615
+#: dist/estore/inc/customizer.php:615 inc/customizer.php:615
 msgid "Related Posts"
 msgstr ""
 
-#: inc/customizer.php:633
+#: dist/estore/inc/customizer.php:633 inc/customizer.php:633
 msgid "Check to activate the related posts"
 msgstr ""
 
-#: inc/customizer.php:652
+#: dist/estore/inc/customizer.php:652 inc/customizer.php:652
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: inc/customizer.php:656
+#: dist/estore/inc/customizer.php:656 inc/customizer.php:656
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: inc/customizer.php:657
+#: dist/estore/inc/customizer.php:657 inc/customizer.php:657
 msgid "Related Posts By Tags"
 msgstr ""
 
+#: dist/estore/inc/customizer.php:667 dist/estore/inc/woocommerce.php:122
 #: inc/customizer.php:667 inc/woocommerce.php:122
 msgid "Category Color Settings"
 msgstr ""
 
+#: dist/estore/inc/customizer.php:693 dist/estore/inc/woocommerce.php:145
 #: inc/customizer.php:693 inc/woocommerce.php:145
 msgid " %s"
 msgstr ""
 
-#: inc/customizer.php:708
+#: dist/estore/inc/customizer.php:708 inc/customizer.php:708
 msgid "Post Meta Settings"
 msgstr ""
 
-#: inc/customizer.php:710
+#: dist/estore/inc/customizer.php:710 inc/customizer.php:710
 msgid "Note: This will only work in single posts."
 msgstr ""
 
-#: inc/customizer.php:727
+#: dist/estore/inc/customizer.php:727 inc/customizer.php:727
 msgid "Hide all post meta data under post title."
 msgstr ""
 
-#: inc/customizer.php:747
+#: dist/estore/inc/customizer.php:747 inc/customizer.php:747
 msgid "Hide date under post title."
 msgstr ""
 
-#: inc/customizer.php:767
+#: dist/estore/inc/customizer.php:767 inc/customizer.php:767
 msgid "Hide author under post title."
 msgstr ""
 
-#: inc/customizer.php:787
+#: dist/estore/inc/customizer.php:787 inc/customizer.php:787
 msgid "Hide comment count under post title."
 msgstr ""
 
-#: inc/customizer.php:807
+#: dist/estore/inc/customizer.php:807 inc/customizer.php:807
 msgid "Hide category under post title."
 msgstr ""
 
-#: inc/customizer.php:827
+#: dist/estore/inc/customizer.php:827 inc/customizer.php:827
 msgid "Hide tags under post title."
 msgstr ""
 
-#: inc/customizer.php:839
+#: dist/estore/inc/customizer.php:839 inc/customizer.php:839
 msgid "Payment Partners Logo"
 msgstr ""
 
-#: inc/customizer.php:861
+#: dist/estore/inc/customizer.php:861 inc/customizer.php:861
 msgid "Upload logo"
 msgstr ""
 
-#: inc/estore.php:32 inc/related-posts.php:43
+#: dist/estore/inc/estore.php:32 dist/estore/inc/related-posts.php:43
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:141
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:227 inc/estore.php:32
+#: inc/related-posts.php:43
 #: inc/widgets/class-estore-featured-posts-widget.php:141
 #: inc/widgets/class-estore-posts-grid.php:227
 msgid "0 Comment"
 msgstr ""
 
-#: inc/estore.php:33 inc/related-posts.php:43
+#: dist/estore/inc/estore.php:33 dist/estore/inc/related-posts.php:43
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:141
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:227 inc/estore.php:33
+#: inc/related-posts.php:43
 #: inc/widgets/class-estore-featured-posts-widget.php:141
 #: inc/widgets/class-estore-posts-grid.php:227
 msgid "1 Comment"
 msgstr ""
 
-#: inc/estore.php:34 inc/related-posts.php:43
+#: dist/estore/inc/estore.php:34 dist/estore/inc/related-posts.php:43
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:141
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:227 inc/estore.php:34
+#: inc/related-posts.php:43
 #: inc/widgets/class-estore-featured-posts-widget.php:141
 #: inc/widgets/class-estore-posts-grid.php:227
 msgid " % Comments"
 msgstr ""
 
-#: inc/estore.php:99
+#: dist/estore/inc/estore.php:99 inc/estore.php:99
 msgid "Home"
 msgstr ""
 
-#: inc/estore.php:100
+#: dist/estore/inc/estore.php:100 inc/estore.php:100
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: inc/estore.php:101
+#: dist/estore/inc/estore.php:101 inc/estore.php:101
 msgid "Archive for \"%s\""
 msgstr ""
 
-#: inc/estore.php:102
+#: dist/estore/inc/estore.php:102 inc/estore.php:102
 msgid "Search Results for \"%s\" query"
 msgstr ""
 
-#: inc/estore.php:103
+#: dist/estore/inc/estore.php:103 inc/estore.php:103
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: inc/estore.php:104
+#: dist/estore/inc/estore.php:104 inc/estore.php:104
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: inc/estore.php:105
+#: dist/estore/inc/estore.php:105 inc/estore.php:105
 msgid "Error 404"
 msgstr ""
 
-#: inc/estore.php:106
+#: dist/estore/inc/estore.php:106 inc/estore.php:106
 msgid "Page %s"
 msgstr ""
 
-#: inc/estore.php:107
+#: dist/estore/inc/estore.php:107 inc/estore.php:107
 msgid "Comment Page %s"
 msgstr ""
 
-#: inc/functions.php:43
+#: dist/estore/inc/functions.php:43 inc/functions.php:43
 msgid "Search for:"
 msgstr ""
 
-#: inc/functions.php:44
+#: dist/estore/inc/functions.php:44 inc/functions.php:44
 msgid "Search products ..."
 msgstr ""
 
-#: inc/related-posts.php:8
+#: dist/estore/inc/related-posts.php:8 inc/related-posts.php:8
 msgid "You May Also Like"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:7
 #: inc/widgets/class-estore-728x90-ad.php:7
 msgid "Add your Advertisement here"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:13
 #: inc/widgets/class-estore-728x90-ad.php:13
 msgid "TG: Advertisement"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:29
+#: dist/estore/inc/widgets/class-estore-about.php:27
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:36
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:33
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:37
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:35
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:37
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:47
 #: inc/widgets/class-estore-728x90-ad.php:29
 #: inc/widgets/class-estore-about.php:27
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:36
@@ -637,18 +710,25 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:32
 #: inc/widgets/class-estore-728x90-ad.php:32
 msgid "Add your Advertisement Images Here. Any size supported."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:34
 #: inc/widgets/class-estore-728x90-ad.php:34
 msgid "Advertisement Image Link "
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:38
 #: inc/widgets/class-estore-728x90-ad.php:38
 msgid "Advertisement Image "
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:46
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:59
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:79
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
@@ -656,6 +736,10 @@ msgstr ""
 msgid "Choose an image"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:46
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:59
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:79
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
@@ -663,6 +747,10 @@ msgstr ""
 msgid "Use image"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-728x90-ad.php:46
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:59
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:59
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:79
 #: inc/widgets/class-estore-728x90-ad.php:46
 #: inc/widgets/class-estore-posts-grid.php:59
 #: inc/widgets/class-estore-woocommerce-product-grid.php:59
@@ -670,32 +758,42 @@ msgstr ""
 msgid "Select an Image"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-about.php:7
 #: inc/widgets/class-estore-about.php:7
 msgid "Show your about page. Suitable for Click to Action."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-about.php:13
 #: inc/widgets/class-estore-about.php:13
 msgid "TG: About Widget"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-about.php:31
 #: inc/widgets/class-estore-about.php:31
 msgid "Select a page to display Title, Excerpt and Featured image."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-about.php:32
 #: inc/widgets/class-estore-about.php:32
 msgid "Page"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:8
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:8
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the carousel."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:16
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:16
 msgid "TG: Category Carousel"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:40
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:41
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:39
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:41
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:40
 #: inc/widgets/class-estore-posts-grid.php:41
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:39
@@ -703,24 +801,37 @@ msgstr ""
 msgid "Description:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:44
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:31
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:37
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:44
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:31
 #: inc/widgets/class-estore-featured-posts-widget.php:37
 msgid "Number of posts to display:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:49
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:36
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:42
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:49
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:36
 #: inc/widgets/class-estore-featured-posts-widget.php:42
 msgid "Show latest Posts"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:50
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:37
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:43
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:50
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:37
 #: inc/widgets/class-estore-featured-posts-widget.php:43
 msgid "Show posts from a category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:54
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:41
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:47
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:41
 #: inc/widgets/class-estore-featured-posts-carousel-widget.php:54
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:41
 #: inc/widgets/class-estore-featured-posts-widget.php:47
@@ -728,423 +839,532 @@ msgstr ""
 msgid "Select category"
 msgstr ""
 
-#: inc/widgets/class-estore-featured-posts-carousel-widget.php:168
-#: inc/widgets/class-estore-featured-posts-slider-widget.php:104
-msgid "Read More"
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:178
+#: dist/estore/inc/widgets/class-estore-featured-posts-carousel-widget.php:180
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:245
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:247
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:243
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:245
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:288
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:290
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:178
+#: inc/widgets/class-estore-featured-posts-carousel-widget.php:180
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:245
+#: inc/widgets/class-estore-woocommerce-product-carousel.php:247
+#: inc/widgets/class-estore-woocommerce-product-grid.php:243
+#: inc/widgets/class-estore-woocommerce-product-grid.php:245
+#: inc/widgets/class-estore-woocommerce-product-grid.php:288
+#: inc/widgets/class-estore-woocommerce-product-grid.php:290
+msgid "Add to Wishlist"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:8
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:8
 msgid ""
 "Display latest posts or posts of specific category, which will be used as "
 "the slider."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:15
 #: inc/widgets/class-estore-featured-posts-slider-widget.php:15
 msgid "TG: Category Slider"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-slider-widget.php:104
+#: inc/widgets/class-estore-featured-posts-slider-widget.php:104
+msgid "Read More"
+msgstr ""
+
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:8
 #: inc/widgets/class-estore-featured-posts-widget.php:8
 msgid "Display latest posts or posts of specific category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:14
 #: inc/widgets/class-estore-featured-posts-widget.php:14
 msgid "TG: Featured Posts"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:128
 #: inc/widgets/class-estore-featured-posts-widget.php:128
 msgid "Blog Image"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-featured-posts-widget.php:153
+#: dist/estore/template-parts/content.php:45
 #: inc/widgets/class-estore-featured-posts-widget.php:153
 #: template-parts/content.php:45
 msgid "Read more"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-full-width-promo-widget.php:7
 #: inc/widgets/class-estore-full-width-promo-widget.php:7
 msgid "Display some pages with featured image in horizontal layout."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-full-width-promo-widget.php:12
 #: inc/widgets/class-estore-full-width-promo-widget.php:12
 msgid "TG: Horizontal Promo"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-full-width-promo-widget.php:29
+#: dist/estore/inc/widgets/class-estore-vertical-promo-widget.php:29
 #: inc/widgets/class-estore-full-width-promo-widget.php:29
 #: inc/widgets/class-estore-vertical-promo-widget.php:29
 msgid "Pages"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:7
 #: inc/widgets/class-estore-posts-grid.php:7
 msgid "Show Featured Category Posts in Grid Layout."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:13
 #: inc/widgets/class-estore-posts-grid.php:13
 msgid "TG: Category Grid"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:44
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:44
 #: inc/widgets/class-estore-posts-grid.php:44
 #: inc/widgets/class-estore-woocommerce-product-grid.php:44
 msgid "Add your Category Image here."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:47
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:47
 #: inc/widgets/class-estore-posts-grid.php:47
 #: inc/widgets/class-estore-woocommerce-product-grid.php:47
 msgid "Image Link"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:51
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:51
 #: inc/widgets/class-estore-posts-grid.php:51
 #: inc/widgets/class-estore-woocommerce-product-grid.php:51
 msgid "Category Image"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:63
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:63
 #: inc/widgets/class-estore-posts-grid.php:63
 #: inc/widgets/class-estore-woocommerce-product-grid.php:63
 msgid "Choose where to align your image."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:66
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:66
 #: inc/widgets/class-estore-posts-grid.php:66
 #: inc/widgets/class-estore-woocommerce-product-grid.php:66
 msgid "Right Align"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:67
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:67
 #: inc/widgets/class-estore-posts-grid.php:67
 #: inc/widgets/class-estore-woocommerce-product-grid.php:67
 msgid "Left Align"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:71
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:53
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:71
 #: inc/widgets/class-estore-posts-grid.php:71
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:53
 #: inc/widgets/class-estore-woocommerce-product-grid.php:71
 msgid "Category:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:84
 #: inc/widgets/class-estore-posts-grid.php:84
 msgid "Number of Posts:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-posts-grid.php:153
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:173
+#: dist/estore/page-templates/template-wc-collection.php:61
 #: inc/widgets/class-estore-posts-grid.php:153
 #: inc/widgets/class-estore-woocommerce-product-grid.php:173
 #: page-templates/template-wc-collection.php:61
 msgid "View all"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-vertical-promo-widget.php:7
 #: inc/widgets/class-estore-vertical-promo-widget.php:7
 msgid "Display some pages in vertical layout with featured image."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-vertical-promo-widget.php:12
 #: inc/widgets/class-estore-vertical-promo-widget.php:12
 msgid "TG: Vertical Promo"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:7
 #: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:7
 msgid ""
 "Display WooCommerce Product Categories with featured image in horizontal "
 "layout."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:13
 #: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:13
 msgid "TG: Horizontal Promo WC Category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:30
+#: dist/estore/inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:30
 #: inc/widgets/class-estore-woocommerce-full-width-promo-widget.php:30
 #: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:30
 msgid "Category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:7
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:7
 msgid "Show WooCommerce Featured Products Carousel."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:13
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:13
 msgid "TG: Products Carousel"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:43
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:43
 msgid "Product Source:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:45
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:45
 msgid "Latest Products"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:46
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:46
 msgid "Featured Products"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:47
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:47
 msgid "On Sale Products"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:48
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:48
 msgid "Certain Category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:68
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:85
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:68
 #: inc/widgets/class-estore-woocommerce-product-grid.php:85
 msgid "Number of Products:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:73
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:73
 msgid "Check to hide image hover effect."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:206
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:220
+#: dist/estore/inc/woocommerce.php:320 dist/estore/inc/woocommerce.php:344
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:206
 #: inc/widgets/class-estore-woocommerce-product-grid.php:220
-#: inc/woocommerce.php:321 inc/woocommerce.php:345
+#: inc/woocommerce.php:320 inc/woocommerce.php:344
 msgid "Sale!"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-carousel.php:232
 #: inc/widgets/class-estore-woocommerce-product-carousel.php:232
 msgid "Price:"
 msgstr ""
 
-#: inc/widgets/class-estore-woocommerce-product-carousel.php:239
-#: inc/widgets/class-estore-woocommerce-product-grid.php:238
-#: inc/widgets/class-estore-woocommerce-product-grid.php:274
-msgid "Add to Wishlist"
-msgstr ""
-
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:7
 #: inc/widgets/class-estore-woocommerce-product-grid.php:7
 msgid "Show WooCommerce Featured Products Grid."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:13
 #: inc/widgets/class-estore-woocommerce-product-grid.php:13
 msgid "TG: Product Grid"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:200
 #: inc/widgets/class-estore-woocommerce-product-grid.php:200
 msgid "Hot products"
 msgstr ""
 
-#: inc/widgets/class-estore-woocommerce-product-grid.php:267
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-grid.php:275
+#: dist/estore/woocommerce/loop/price.php:26
+#: inc/widgets/class-estore-woocommerce-product-grid.php:275
 #: woocommerce/loop/price.php:26
 msgid "Price: "
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:8
 #: inc/widgets/class-estore-woocommerce-product-slider.php:8
 msgid "Display WooCommerce Product from category."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:15
 #: inc/widgets/class-estore-woocommerce-product-slider.php:15
 msgid "TG: Product Slider"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:31
 #: inc/widgets/class-estore-woocommerce-product-slider.php:31
 msgid "Number of products to display:"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:36
 #: inc/widgets/class-estore-woocommerce-product-slider.php:36
 msgid "Show Latest Products"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:37
 #: inc/widgets/class-estore-woocommerce-product-slider.php:37
 msgid "Show Products from a category"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-product-slider.php:133
 #: inc/widgets/class-estore-woocommerce-product-slider.php:133
 msgid "Add to Cart"
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:7
 #: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:7
 msgid ""
 "Display WooCommerce Product Categories in vertical layout with featured "
 "image."
 msgstr ""
 
+#: dist/estore/inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:13
 #: inc/widgets/class-estore-woocommerce-vertical-promo-widget.php:13
 msgid "TG: Vertical Promo WC Category"
 msgstr ""
 
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:8
 #: inc/widgets/classs-estore-logo-widget.php:8
 msgid "Add your clients/brand logo images here"
 msgstr ""
 
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:14
 #: inc/widgets/classs-estore-logo-widget.php:14
 msgid "TG: Logo"
 msgstr ""
 
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:50
 #: inc/widgets/classs-estore-logo-widget.php:50
 msgid "Add your clients/brands logo Here"
 msgstr ""
 
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:59
 #: inc/widgets/classs-estore-logo-widget.php:59
 msgid "Logo Link "
 msgstr ""
 
+#: dist/estore/inc/widgets/classs-estore-logo-widget.php:68
 #: inc/widgets/classs-estore-logo-widget.php:68
 msgid "Logo Image "
 msgstr ""
 
-#: inc/widgets.php:40
+#: dist/estore/inc/widgets.php:40 inc/widgets.php:40
 msgid "Header Right Sidebar"
 msgstr ""
 
-#: inc/widgets.php:51
+#: dist/estore/inc/widgets.php:51 inc/widgets.php:51
 msgid "Front Page: Slider Area"
 msgstr ""
 
-#: inc/widgets.php:62
+#: dist/estore/inc/widgets.php:62 inc/widgets.php:62
 msgid "Front Page: Area beside Slider"
 msgstr ""
 
-#: inc/widgets.php:73
+#: dist/estore/inc/widgets.php:73 inc/widgets.php:73
 msgid "Front Page Sidebar"
 msgstr ""
 
-#: inc/widgets.php:86
+#: dist/estore/inc/widgets.php:86 inc/widgets.php:86
 msgid "Footer Sidebar 1"
 msgstr ""
 
+#: dist/estore/inc/widgets.php:88 dist/estore/inc/widgets.php:99
+#: dist/estore/inc/widgets.php:111 dist/estore/inc/widgets.php:123
 #: inc/widgets.php:88 inc/widgets.php:99 inc/widgets.php:111
 #: inc/widgets.php:123
 msgid "Show widgets at Footer section"
 msgstr ""
 
-#: inc/widgets.php:97
+#: dist/estore/inc/widgets.php:97 inc/widgets.php:97
 msgid "Footer Sidebar 2"
 msgstr ""
 
-#: inc/widgets.php:109
+#: dist/estore/inc/widgets.php:109 inc/widgets.php:109
 msgid "Footer Sidebar 3"
 msgstr ""
 
-#: inc/widgets.php:121
+#: dist/estore/inc/widgets.php:121 inc/widgets.php:121
 msgid "Footer Sidebar 4"
 msgstr ""
 
-#: inc/woocommerce.php:57
+#: dist/estore/inc/woocommerce.php:57 inc/woocommerce.php:57
 msgid "Shop Sidebar"
 msgstr ""
 
-#: inc/woocommerce.php:59
+#: dist/estore/inc/woocommerce.php:59 inc/woocommerce.php:59
 msgid "Widget area for WooCommerce Pages."
 msgstr ""
 
-#: inc/woocommerce.php:83
+#: dist/estore/inc/woocommerce.php:83 inc/woocommerce.php:83
 msgid "WooCommerce Settings"
 msgstr ""
 
-#: inc/woocommerce.php:85
+#: dist/estore/inc/woocommerce.php:85 inc/woocommerce.php:85
 msgid "Change WooCommerce settings related to theme."
 msgstr ""
 
-#: inc/woocommerce.php:97
+#: dist/estore/inc/woocommerce.php:97 inc/woocommerce.php:97
 msgid "Enable My Account Button"
 msgstr ""
 
-#: inc/woocommerce.php:113
+#: dist/estore/inc/woocommerce.php:113 inc/woocommerce.php:113
 msgid "Enable Currency Symbol"
 msgstr ""
 
-#: inc/woocommerce.php:160
+#: dist/estore/inc/woocommerce.php:160 inc/woocommerce.php:160
 msgid "Archive Page Layout"
 msgstr ""
 
-#: inc/woocommerce.php:179
+#: dist/estore/inc/woocommerce.php:179 inc/woocommerce.php:179
 msgid ""
 "This layout will be reflected in archives, categories, search page etc. of "
 "WooCommerce."
 msgstr ""
 
-#: inc/woocommerce.php:197
+#: dist/estore/inc/woocommerce.php:197 inc/woocommerce.php:197
 msgid "Product Page Layout"
 msgstr ""
 
-#: inc/woocommerce.php:216
+#: dist/estore/inc/woocommerce.php:216 inc/woocommerce.php:216
 msgid "This layout will be reflected in product page of WooCommerce."
 msgstr ""
 
-#: inc/woocommerce.php:241
+#: dist/estore/inc/woocommerce.php:241 inc/woocommerce.php:241
 msgid "Check to hide hover effect on Product Images in WooCommerce Archive Pages."
 msgstr ""
 
+#: dist/estore/navigation.php:21 dist/estore/navigation.php:33
 #: navigation.php:21 navigation.php:33
 msgid "&larr; Previous"
 msgstr ""
 
+#: dist/estore/navigation.php:22 dist/estore/navigation.php:34
 #: navigation.php:22 navigation.php:34
 msgid "Next &rarr;"
 msgstr ""
 
+#: dist/estore/no-results.php:18 dist/estore/template-parts/content-none.php:22
 #: no-results.php:18 template-parts/content-none.php:22
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
+#: dist/estore/no-results.php:23 dist/estore/template-parts/content-none.php:26
 #: no-results.php:23 template-parts/content-none.php:26
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
+#: dist/estore/no-results.php:28 dist/estore/template-parts/content-none.php:31
 #: no-results.php:28 template-parts/content-none.php:31
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: search.php:22
+#: dist/estore/search.php:22 search.php:22
 msgid "Search Results"
 msgstr ""
 
+#: dist/estore/template-parts/content-none.php:16
 #: template-parts/content-none.php:16
 msgid "Nothing Found"
 msgstr ""
 
+#: dist/estore/template-parts/content-page.php:27
+#: dist/estore/template-parts/content-single.php:47
 #: template-parts/content-page.php:27 template-parts/content-single.php:47
 msgid "Pages:"
 msgstr ""
 
+#: dist/estore/template-parts/content-single.php:39
 #: template-parts/content-single.php:39
 msgid "Tagged on: "
 msgstr ""
 
+#: dist/estore/woocommerce/cart/cart-totals.php:41
 #: woocommerce/cart/cart-totals.php:41
 msgid "Cart Totals"
 msgstr ""
 
+#: dist/estore/woocommerce/cart/cart-totals.php:46
+#: dist/estore/woocommerce/cart/cart-totals.php:47
 #: woocommerce/cart/cart-totals.php:46 woocommerce/cart/cart-totals.php:47
 msgid "Subtotal"
 msgstr ""
 
+#: dist/estore/woocommerce/cart/cart-totals.php:68
+#: dist/estore/woocommerce/cart/cart-totals.php:69
 #: woocommerce/cart/cart-totals.php:68 woocommerce/cart/cart-totals.php:69
 msgid "Shipping"
 msgstr ""
 
+#: dist/estore/woocommerce/cart/cart-totals.php:92
 #: woocommerce/cart/cart-totals.php:92
 msgid "estimated for %s"
 msgstr ""
 
+#: dist/estore/woocommerce/cart/cross-sells.php:27
 #: woocommerce/cart/cross-sells.php:27
 msgid "You may be interested in&hellip;"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-billing.php:26
 #: woocommerce/checkout/form-billing.php:26
 msgid "Billing &amp; Shipping"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-billing.php:30
 #: woocommerce/checkout/form-billing.php:30
 msgid "Billing details"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-billing.php:55
 #: woocommerce/checkout/form-billing.php:55
 msgid "Create an account?"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-checkout.php:26
 #: woocommerce/checkout/form-checkout.php:26
 msgid "You must be logged in to checkout."
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-checkout.php:54
 #: woocommerce/checkout/form-checkout.php:54
 msgid "Your order"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-login.php:26
 #: woocommerce/checkout/form-login.php:26
 msgid "Returning customer?"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-login.php:26
 #: woocommerce/checkout/form-login.php:26
 msgid "Click here to login"
 msgstr ""
 
+#: dist/estore/woocommerce/checkout/form-login.php:32
 #: woocommerce/checkout/form-login.php:32
 msgid ""
 "If you have shopped with us before, please enter your details in the boxes "
@@ -1152,6 +1372,7 @@ msgid ""
 "Shipping section."
 msgstr ""
 
+#: dist/estore/woocommerce/single-product/related.php:26
 #: woocommerce/single-product/related.php:26
 msgid "Related products"
 msgstr ""
@@ -1188,29 +1409,30 @@ msgstr ""
 msgid "WooCommerce Category Collection"
 msgstr ""
 
-#: comments.php:33
+#: comments.php:33 dist/estore/comments.php:33
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
+#: dist/estore/inc/functions.php:45 dist/estore/searchform.php:12
 #: inc/functions.php:45 searchform.php:12
 msgctxt "submit button"
 msgid "Search"
 msgstr ""
 
-#: navigation.php:41
+#: dist/estore/navigation.php:41 navigation.php:41
 msgctxt "Previous post link"
 msgid "&larr;"
 msgstr ""
 
-#: navigation.php:42
+#: dist/estore/navigation.php:42 navigation.php:42
 msgctxt "Next post link"
 msgid "&rarr;"
 msgstr ""
 
-#: searchform.php:11
+#: dist/estore/searchform.php:11 searchform.php:11
 msgctxt "placeholder"
 msgid "Search &hellip;"
 msgstr ""
