@@ -83,8 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.6.2 - 2023-09-18 =
 * Fix - WooCommerce product thumbnail size issue.
+* Fix - Add to wishlist not working on home page.
 
 = Version 1.6.1 - 2021-08-02 =
 * Fix - Mobile design issue of read more button on slider.
