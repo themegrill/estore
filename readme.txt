@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.6.3 - 2024-04-23 =
+* Fix - WooCommerce template issue.
+
 = Version 1.6.2 - 2023-09-18 =
 * Fix   - WooCommerce product thumbnail size issue.
 * Fix   - Add to wishlist not working on home page.
