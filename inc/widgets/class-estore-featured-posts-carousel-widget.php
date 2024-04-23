@@ -175,7 +175,7 @@ class estore_featured_posts_carousel_widget extends WP_Widget {
 										$wishlist_url
 									);
 									$wishlist_class = YITH_WCWL()->is_product_in_wishlist( $product_id ) ? 'yith-wcwl-wishlistexistsbrowse' : 'add_to_wishlist single_add_to_wishlist';?>
-									<a href="<?php echo esc_url( $wishlist_url ); ?>" class="<?php echo esc_html_e( $wishlist_class ); ?>" data-product-id="<?php echo esc_attr( $product_id ); ?>" data-product-type="simple" data-original-product-id="<?php echo esc_attr( $product_id ); ?>" data-title="<?php esc_attr_e( 'Add to Wishlist', 'estore' ); ?>" rel="nofollow">
+									<a href="<?php echo esc_url( $wishlist_url ); ?>" class="<?php echo esc_html( $wishlist_class ); ?>" data-product-id="<?php echo esc_attr( $product_id ); ?>" data-product-type="simple" data-original-product-id="<?php echo esc_attr( $product_id ); ?>" data-title="<?php esc_attr_e( 'Add to Wishlist', 'estore' ); ?>" rel="nofollow">
 										<i class="fa fa-heart"></i>
 										<span><?php esc_html_e( 'Add to Wishlist', 'estore' ); ?></span>
 									</a>

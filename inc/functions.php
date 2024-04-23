@@ -39,17 +39,40 @@ function estore_header_search_box() {
  */
 function estore_product_searchform( $form ) {
 
-	$form = '<form role="search" method="get" class="estore-wc-product-search" action=" ' . esc_url( home_url( '/' ) ) . '">
-		<label class="screen-reader-text" for="estore-wc-search-field">' . esc_html__( 'Search for:', 'estore' ) . '</label>
-		<input type="search" id="estore-wc-search-field" class="search-field" placeholder="' . esc_attr__( 'Search products ...', 'estore' ) . '" value="' . get_search_query() . '" name="s" />
-		<button type="submit" class="searchsubmit" value="' . esc_attr_x( 'Search', 'submit button', 'estore' ) . '">
-			<i class="fa fa-search"></i>
-		</button>
-		<input type="hidden" name="post_type" value="product" />
-	</form>';
+	if ( ! class_exists( 'DOMDocument' ) || ! class_exists( 'DOMXPath' ) ) {
+		return $form;
+	}
+
+	libxml_use_internal_errors( true );
+	$dom = new DOMDocument();
+	$dom->loadHTML( $form );
+
+	$xpath = new DOMXPath( $dom );
+
+	$button = $xpath->query( "//button[@type='submit']" )->item( 0 );
+
+	$button->nodeValue = '';
+	$icon              = $dom->createElement( 'i' );
+	$icon->setAttribute( 'class', 'fa fa-search' );
+
+	$button->appendChild( $icon );
+
+	$button->setAttribute( 'class', 'searchsubmit' );
+
+	$query = "//form[contains(concat(' ', normalize-space(@class), ' '), ' woocommerce-product-search ')]";
+	$form  = $xpath->query( $query )->item( 0 );
+
+	$form->setAttribute( 'class', 'estore-wc-product-search' );
+
+	$content = '';
+	$body    = $dom->getElementsByTagName( 'body' )->item( 0 );
+
+	foreach ( $body->childNodes as $node ) {
+		$content .= $dom->saveHTML( $node );
+	}
+	$form = $content;
 
 	return $form;
-
 }
 
 add_filter( 'get_product_search_form', 'estore_product_searchform', 10, 1 );
