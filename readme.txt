@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.6.5 - 2024-10-24 =
+* Fix - WooCommerce template issue.
+
 = Version 1.6.4 - 2024-07-17 =
 * Fix - WooCommerce template issue.
 
