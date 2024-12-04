@@ -4,8 +4,8 @@ Theme URI: https://www.themegrill.com/themes/estore/
 Author: ThemeGrill
 Author URI: https://www.themegrill.com
 Description: eStore is a clean, beautiful and fully customizable responsive WooCommerce WordPress theme. This theme packs many premium features and several custom widgets which helps making your online store professional and well organized. Theme is fully compatible with WooCommerce and YITH WooCommerce Wishlist plugins. As an online store owner, attracting customers and selling products will be lot easier with this theme. Check the demo here: https://themegrilldemos.com/estore/ and get free support here: https://wordpress.org/support/theme/estore/
-Version: 1.6.5
-Tested up to: 6.6
+Version: 1.6.6
+Tested up to: 6.7
 Requires PHP: 7.4
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -921,7 +921,8 @@ body {
 	max-width: 100%; }
 
 /*--------------------------------------------------------------
-	# sidebar CSS--------------------------------------------------------------*/
+	# sidebar CSS
+--------------------------------------------------------------*/
 .widget-title {
 	border-bottom: 1px solid #d6d6d6;
 	font-size: 15px;
@@ -1094,7 +1095,8 @@ body {
 # layouts
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-	Inner page layout CSS--------------------------------------------------------------*/
+	Inner page layout CSS
+--------------------------------------------------------------*/
 #primary {
 	float: left;
 	width: 72.5%; }
@@ -2710,7 +2712,8 @@ body {
 # Blog
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-	blog page layout CSS--------------------------------------------------------------*/
+	blog page layout CSS
+--------------------------------------------------------------*/
 .page-header {
 	background: #f6f6f6 none repeat scroll 0 0;
 	margin-bottom: 70px;
@@ -2868,7 +2871,8 @@ article .entry-content {
 		clear: none; }
 
 /*--------------------------------------------------------------
-	Archive Grid layout--------------------------------------------------------------*/
+	Archive Grid layout
+--------------------------------------------------------------*/
 .archive-grid .entry-thumbnail .posted-on {
 	padding: 0 20px; }
 

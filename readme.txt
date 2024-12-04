@@ -83,7 +83,7 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
-= Version TBD =
+= Version 1.6.6 - 2024-12-04 =
 * Fix     - WooCommerce template issue.
 * Update  - Freemius SDK.
 
