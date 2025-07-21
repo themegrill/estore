@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.6.9 - 2025-07-21 =
+* Fix - WooCommerce template issue.
+
 = Version 1.6.8 - 2025-06-17 =
 * Update - Font awesome update to 6.7.2.
 
