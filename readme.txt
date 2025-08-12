@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.6.10 - 2025-08-12 =
+* Update    - General security measure.
+
 = Version 1.6.9 - 2025-07-21 =
 * Fix - WooCommerce template issue.
 
