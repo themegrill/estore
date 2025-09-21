@@ -125,7 +125,7 @@ class estore_featured_posts_widget extends WP_Widget {
 									);
 									the_post_thumbnail('estore-featured-image', $post_thumbnail_attr);
 								} else { ?>
-									<img src='<?php echo esc_url( get_template_directory_uri() ); ?>/images/placeholder-blog-380x250.jpg' alt='<?php esc_attr__( 'Blog Image', 'estore' ); ?>' width="380" height="250"/>
+									<img src='<?php echo esc_url( get_template_directory_uri() ); ?>/images/placeholder-blog-380x250.jpg' alt='<?php esc_attr_e( 'Blog Image', 'estore' ); ?>' width="380" height="250"/>
 								<?php } ?>
 							</figure>
 
