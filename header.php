@@ -78,11 +78,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 								<div class="login-register-wrap right-header-block">
 									<?php if ( is_user_logged_in() ) { ?>
 										<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>"
-										   title="<?php esc_attr__( 'My Account', 'estore' ); ?>"
+										   title="<?php esc_attr_e( 'My Account', 'estore' ); ?>"
 										   class="user-icon"><?php esc_html_e( 'My Account', 'estore' ); ?></a>
 									<?php } else { ?>
 										<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>"
-										   title="<?php esc_attr__( 'Login/Register', 'estore' ); ?>"
+										   title="<?php esc_attr_e( 'Login/Register', 'estore' ); ?>"
 										   class="user-icon"><?php esc_html_e( 'Login/ Register', 'estore' ); ?>
 									<?php } ?>
 								</div>
@@ -218,11 +218,11 @@ if ( function_exists( 'wp_body_open' ) ) {
 					<div class="user-wrapper search-user-block">
 						<?php if ( is_user_logged_in() ) { ?>
 							<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>"
-							   title="<?php esc_attr__( 'My Account', 'estore' ); ?>" class="user-icon"><i
+							   title="<?php esc_attr_e( 'My Account', 'estore' ); ?>" class="user-icon"><i
 										class="fa fa-user"></i></a>
 						<?php } else { ?>
 							<a href="<?php echo esc_url( get_permalink( get_option( 'woocommerce_myaccount_page_id' ) ) ); ?>"
-							   title="<?php esc_attr__( 'Login / Register', 'estore' ); ?>" class="user-icon"><i
+							   title="<?php esc_attr_e( 'Login / Register', 'estore' ); ?>" class="user-icon"><i
 										class="fa fa-user-times"></i></a>
 						<?php } ?>
 					</div>
