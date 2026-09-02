@@ -1,0 +1,25 @@
+name: Build Testable ZIP
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  zip:
+    uses: wpeverest/.github/.github/workflows/pr-build-zip.yml@master
+    with:
+      node-version: '0.x'
+      php-version: '7.4'
+      package-manager: npm
+      composer-install: false
+      build-command: npm run build
+      zip-glob: 'dist/*.zip'
+      artifacts-bucket: themegrill-pr-artifacts
+      public-base-url: https://themegrill-pr-artifacts.s3.amazonaws.com
+      s3-region: us-east-1
+    secrets:
+      BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+      ARTIFACTS_KEY: ${{ secrets.ARTIFACTS_KEY }}
+      ARTIFACTS_SECRET: ${{ secrets.ARTIFACTS_SECRET }}
