@@ -138,20 +138,27 @@ class estore_posts_grid extends WP_Widget {
 			$cat_image_link = icl_t( 'eStore', 'TG: Category Grid Image Link'. $this->id, $cat_image_link );
 		}
 
+		$category_link = ! empty( $category ) ? get_term_link( (int) $category, 'category' ) : '';
+		if ( is_wp_error( $category_link ) ) {
+			$category_link = '';
+		}
+
 		echo $before_widget; ?>
 		<div class="tg-container estore-cat-color_<?php echo $category; ?> <?php echo $align; ?>">
 			<div class="section-title-wrapper clearfix">
 				<div class="section-title-block">
 					<?php if ( !empty( $title ) ) { ?>
-						<h3 class="page-title"><a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php echo esc_html( $title ); ?></a></h3>
+						<h3 class="page-title"><?php if ( $category_link ) : ?><a href="<?php echo esc_url( $category_link ); ?>"><?php endif; ?><?php echo esc_html( $title ); ?><?php if ( $category_link ) : ?></a><?php endif; ?></h3>
 					<?php }
 					if ( !empty( $subtitle ) ) { ?>
 						<h4 class="page-sub-title"><?php echo esc_textarea( $subtitle );?></h4>
 					<?php } ?>
 				</div>
+				<?php if ( $category_link ) : ?>
 				<div class="sorting-form-wrapper">
-					<a href="<?php echo esc_url( get_term_link( $category ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
+					<a href="<?php echo esc_url( $category_link ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
 				</div>
+				<?php endif; ?>
 			</div>
 			<div class="collection-block-wrapper tg-column-wrapper clearfix">
 				<div class="tg-column-4 collection-block">
