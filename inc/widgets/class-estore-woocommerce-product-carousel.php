@@ -197,7 +197,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 							$image_id = get_post_thumbnail_id();
 							$image_url = wp_get_attachment_image_src($image_id,'estore-square', false); ?>
 							<figure class="featured-img">
-								<?php if($image_url[0]) { ?>
+								<?php if ( ! empty( $image_url[0] ) ) { ?>
 									<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>"></a>
 								<?php } else { ?>
 									<a href="<?php echo esc_url( get_permalink( $product->get_id() ) ); ?>" alt="<?php the_title(); ?>"><img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>"></a>
@@ -209,7 +209,7 @@ class estore_woocommerce_product_carousel extends WP_Widget {
 								<?php if ( $hide_thumbnail_mask != 1 ) : ?>
 									<div class="featured-hover-wrapper">
 										<div class="featured-hover-block">
-											<?php if($image_url[0]) { ?>
+											<?php if ( ! empty( $image_url[0] ) ) { ?>
 												<a href="<?php echo esc_url( $image_url[0] ); ?>" class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>
 											<?php } else {?>
 												<a href="<?php echo estore_woocommerce_placeholder_img_src(); ?>"  class="zoom" data-rel="prettyPhoto"><i class="fa fa-search-plus"> </i></a>

@@ -189,7 +189,7 @@ class estore_posts_grid extends WP_Widget {
 									$image_url = wp_get_attachment_image_src($image_id,'estore-medium-image', false); ?>
 									<figure class="hot-img">
 										<a href="<?php the_permalink(); ?>">
-											<?php if($image_url[0]){ ?>
+											<?php if ( ! empty( $image_url[0] ) ){ ?>
 												<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 											<?php } else { ?>
 												<img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog-380x250.jpg' ); ?>" alt="<?php the_title_attribute(); ?>">
@@ -217,7 +217,7 @@ class estore_posts_grid extends WP_Widget {
 							$image_url = wp_get_attachment_image_src($image_id,'estore-product-grid', false); ?>
 							<figure class="product-list-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php if($image_url[0]){ ?>
+									<?php if ( ! empty( $image_url[0] ) ){ ?>
 										<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 									<?php } else { ?>
 										<img src="<?php echo esc_url( get_template_directory_uri() . '/images/placeholder-blog.jpg' ); ?>" alt="<?php the_title_attribute(); ?>" width="75" height="75">

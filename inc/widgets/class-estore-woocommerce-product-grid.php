@@ -269,7 +269,7 @@ class estore_woocommerce_product_grid extends WP_Widget {
 							$image_url = wp_get_attachment_image_src($image_id,'estore-product-grid', false); ?>
 							<figure class="product-list-img">
 								<a href="<?php the_permalink(); ?>">
-									<?php if($image_url[0]) { ?>
+									<?php if ( ! empty( $image_url[0] ) ) { ?>
 										<img src="<?php echo esc_url( $image_url[0] ); ?>" alt="<?php the_title_attribute(); ?>">
 									<?php } else { ?>
 										<img src="<?php echo estore_woocommerce_placeholder_img_src(); ?>" alt="<?php the_title_attribute(); ?>" width="75" height="75">
