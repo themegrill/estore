@@ -84,7 +84,7 @@ class eStore_Welcome_Notice {
 
 					<div class="estore-message__cta">
 						<?php echo $this->import_button_html(); ?>
-						<span class="plugin-install-notice"><?php esc_html_e( 'Clicking the button will install and activate the ThemeGrill demo importer plugin.', 'estore' ); ?></span>
+						<span class="plugin-install-notice"><?php esc_html_e( 'Clicking the button will install and activate the Starter Templates & Sites Pack by ThemeGrill plugin.', 'estore' ); ?></span>
 					</div>
 				</div>
 			</div>
