@@ -88,6 +88,8 @@ If you want the theme to be translated into your language, feel free to contribu
 * Fix - Hero slider shows the full-size image when the estore-slider image size has not been generated.
 * Fix - PHP 8 warning in the product grid, product carousel and posts grid widgets when an item has no featured image.
 * Fix - PHP 8 warnings and deprecations when a widget is saved without every field.
+* Fix - Category title is now escaped, the description is sanitised and the links are guarded in the WooCommerce collection template.
+* Fix - PHP warning in the shop product loop when a product's featured image has been deleted.
 * Update - Tested up to WordPress 7.1.
 
 = Version 1.6.11 - 2025-11-11 =
