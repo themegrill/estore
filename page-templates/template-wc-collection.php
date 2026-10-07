@@ -48,18 +48,25 @@ get_header();
 
 				$get_featured_cat = new WP_Query( $args_woo_cat );
 
-				if ( $get_featured_cat -> have_posts() ) : ?>
+				if ( $get_featured_cat -> have_posts() ) :
+				$category_link = get_term_link( (int) $woo_category->term_id, 'product_cat' );
+				if ( is_wp_error( $category_link ) ) {
+					$category_link = '';
+				}
+				?>
 				<section class="product-collection estore-cat-color_<?php echo $woo_category->term_id; ?>">
 					<div class="section-title-wrapper clearfix">
 						<div class="section-title-block">
-							<h2 class="page-title"><a href="<?php echo esc_url( get_term_link( $woo_category->term_id ) ); ?>"><?php echo $woo_category->name; ?></a></h2>
+							<h2 class="page-title"><?php if ( $category_link ) : ?><a href="<?php echo esc_url( $category_link ); ?>"><?php endif; ?><?php echo esc_html( $woo_category->name ); ?><?php if ( $category_link ) : ?></a><?php endif; ?></h2>
 							<?php if(!empty($woo_category->description)) : ?>
-							<h3 class="page-sub-title"><?php echo $woo_category->description; ?></h3>
+							<h3 class="page-sub-title"><?php echo wp_kses_post( $woo_category->description ); ?></h3>
 							<?php endif; ?>
 						</div> <!-- section-title-block end -->
+						<?php if ( $category_link ) : ?>
 						<div class="view-all">
-							<a href="<?php echo esc_url( get_term_link( $woo_category->term_id ) ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
+							<a href="<?php echo esc_url( $category_link ); ?>"><?php esc_html_e( 'View all', 'estore' ); ?></a>
 						</div> <!-- sorting-form-wrapper end -->
+						<?php endif; ?>
 					</div>
 
 					<ul class="products products-wrapper clearfix tg-column-wrapper">
