@@ -39,6 +39,16 @@ class estore_about extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'title', 'page_id'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 		$instance[ 'title' ]          = sanitize_text_field( $new_instance[ 'title' ] );
 		$instance[ 'page_id' ]        = absint( $new_instance[ 'page_id' ] );

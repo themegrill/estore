@@ -55,6 +55,16 @@ class estore_woocommerce_product_slider extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'number', 'type', 'category'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 
 		$instance[ 'number' ]   = absint( $new_instance[ 'number' ] );

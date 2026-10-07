@@ -45,6 +45,16 @@ class estore_woocommerce_full_width_promo_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'cat_id0', 'cat_id1', 'cat_id2'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 		for ( $i = 0; $i < 3; $i++ ) {
 			$var              = 'cat_id' . $i;

@@ -49,6 +49,16 @@ class estore_728x90_ad extends WP_Widget {
 
 	<?php }
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'title', '728x90_image_link', '728x90_image_url'
+				),
+				''
+			)
+		);
+
 		$instance                = $old_instance;
 		$instance[ 'title' ]     = sanitize_text_field( $new_instance[ 'title' ] );
 

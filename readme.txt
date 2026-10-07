@@ -87,6 +87,7 @@ If you want the theme to be translated into your language, feel free to contribu
 * Fix - Error in the posts grid and product grid widgets when the selected category no longer exists.
 * Fix - Hero slider shows the full-size image when the estore-slider image size has not been generated.
 * Fix - PHP 8 warning in the product grid, product carousel and posts grid widgets when an item has no featured image.
+* Fix - PHP 8 warnings and deprecations when a widget is saved without every field.
 * Update - Tested up to WordPress 7.1.
 
 = Version 1.6.11 - 2025-11-11 =

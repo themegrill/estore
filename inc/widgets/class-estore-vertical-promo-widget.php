@@ -40,6 +40,16 @@ class estore_vertical_promo_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'page_id0', 'page_id1'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 		for( $i=0; $i<2; $i++ ) {
 			$var = 'page_id'.$i;

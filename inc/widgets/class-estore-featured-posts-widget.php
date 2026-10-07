@@ -52,6 +52,16 @@ class estore_featured_posts_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'title', 'number', 'type', 'category'
+				),
+				''
+			)
+		);
+
 		$instance = $old_instance;
 
 		$instance[ 'title' ]       = sanitize_text_field( $new_instance[ 'title' ] );
