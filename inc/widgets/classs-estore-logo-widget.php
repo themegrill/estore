@@ -85,6 +85,17 @@ class estore_logo_widget extends WP_Widget {
 	}
 
 	function update( $new_instance, $old_instance ) {
+		$new_instance = wp_parse_args(
+			(array) $new_instance,
+			array_fill_keys(
+				array(
+					'title', 'logo_link1', 'logo_link2', 'logo_link3', 'logo_link4', 'logo_link5',
+					'logo_image1', 'logo_image2', 'logo_image3', 'logo_image4', 'logo_image5'
+				),
+				''
+			)
+		);
+
 		$instance          = $old_instance;
 		$instance['title'] = sanitize_text_field( $new_instance['title'] );
 
