@@ -83,6 +83,9 @@ If you want the theme to be translated into your language, feel free to contribu
 /**********************************************************/
 
 == Changelog ==
+= Version 1.6.14 - 2026-10-12 =
+* Fix - Cross-site scripting through the comment-page value in the single-post breadcrumb.
+
 = Version 1.6.13 - 2026-10-07 =
 * Fix - Error in the posts grid and product grid widgets when the selected category no longer exists.
 * Fix - Hero slider shows the full-size image when the estore-slider image size has not been generated.
