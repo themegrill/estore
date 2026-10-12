@@ -287,7 +287,7 @@ if ( ! function_exists( 'estore_breadcrumbs' ) ) :
 
 						echo $sep . sprintf( $link, get_permalink(), get_the_title(), $position );
 
-						echo $sep . $before . sprintf( $text['cpage'], get_query_var( 'cpage' ) ) . $after;
+						echo $sep . $before . sprintf( $text['cpage'], absint( get_query_var( 'cpage' ) ) ) . $after;
 					} else {
 
 						if ( $show_current ) {
