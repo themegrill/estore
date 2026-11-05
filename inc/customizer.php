@@ -180,7 +180,7 @@ function estore_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'estore_logo_placement',
 		array(
-			'default'           => 'header_logo_only',
+			'default'           => 'header_text_only',
 			'capability'        => 'edit_theme_options',
 			'sanitize_callback' => 'estore_sanitize_radio',
 		)
